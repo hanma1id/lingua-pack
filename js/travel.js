@@ -129,8 +129,9 @@ function renderList(items) {
         ${it.pronIpa ? `<div class="item-pron-ipa">${esc(it.pronIpa)}</div>` : ""}
         ${it.pronKo ? `<div class="item-pron-ko">${renderPronKo(it.pronKo)}</div>` : ""}
       </div>
-      <div class="item-korean">${esc(it.korean)}</div>
-      ${it.english ? `<div class="item-english">${esc(it.english)}</div>` : ""}
+      <div class="item-meaning">
+        <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
+      </div>
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
     </div>
   `).join("");
