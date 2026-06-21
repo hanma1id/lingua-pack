@@ -17,11 +17,9 @@
 <body>
   <header class="app-header">
     <div class="header-row">
-      <button class="back-btn" type="button"
-              onclick="var p=new URLSearchParams(location.search);if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1)history.back();else location.href='home.html?lang='+(p.get('lang')||'en')+'&tab=travel';"
-              aria-label="뒤로">←</button>
-      <h1 id="pageTitle">여행 회화</h1>
-      <a class="home-link" href="index.html?force=1" title="언어 바꾸기">🌐</a>
+      <button class="back-btn" id="backBtn" type="button" aria-label="뒤로">←</button>
+      <select id="langSelect" class="lang-select" aria-label="언어 선택"></select>
+      <h1 id="pageTitle" class="page-subtitle">여행 회화</h1>
     </div>
     <div class="header-controls">
       <div class="view-mode-bar" id="modeBar">

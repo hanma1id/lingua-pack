@@ -55,9 +55,29 @@ a { color: var(--accent); text-decoration: none; }
 .header-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .header-row h1 { flex: 1; font-size: 1.1rem; margin: 0; }
+/* 하위 페이지 제목 — 드롭다운 옆에 작게 */
+.page-subtitle {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--ink-soft);
+  font-weight: 600;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 홈의 작은 브랜드 텍스트 — 드롭다운이 메인 */
+.brand-mini {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.5px;
+  margin-left: auto;
+}
 .back-btn, .home-link, .lang-switch {
   font-size: 1.5rem;
   width: 44px;

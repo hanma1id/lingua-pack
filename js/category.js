@@ -29,11 +29,39 @@ const $rateBar = document.getElementById("rateBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
 const $footer = document.getElementById("footerArea");
+const $backBtn = document.getElementById("backBtn");
+const $langSelect = document.getElementById("langSelect");
 
 let _mode = "list";
 let _data = null;
 let _ttsLang = "en-US";
-let _activeRepeatId = null;  // 어떤 카드에서 반복 중인지 (data-action 식별용)
+let _activeRepeatId = null;
+let _langs = [];
+
+/* ----- 백 버튼 — 무조건 home으로 (필수 단어 탭) ----- */
+$backBtn?.addEventListener("click", () => {
+  stopRepeat();
+  location.href = `home.html?lang=${encodeURIComponent(lang)}&tab=essentials`;
+});
+
+/* ----- 언어 드롭다운 — 같은 카테고리 id로 다른 언어 이동 ----- */
+function renderLangSelect() {
+  // 영어는 학습 대상이 아닌 레퍼런스 — 제외
+  const choices = _langs.filter((l) => l.id !== "en");
+  $langSelect.innerHTML = choices.map((l) => {
+    const label = `${l.flag} ${l.name}${l.ready ? "" : " (준비 중)"}`;
+    const sel = l.id === lang ? " selected" : "";
+    const dis = l.ready ? "" : " disabled";
+    return `<option value="${l.id}"${sel}${dis}>${label}</option>`;
+  }).join("");
+  $langSelect.addEventListener("change", (e) => {
+    const newLang = e.target.value;
+    if (newLang === lang) return;
+    stopRepeat();
+    // 새 언어에도 같은 id 카테고리가 있는지는 모르니 일단 home으로
+    location.href = `home.html?lang=${encodeURIComponent(newLang)}&tab=essentials`;
+  });
+}
 
 function esc(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -173,6 +201,8 @@ function bindModeBar() {
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";
     _data = data;
+    _langs = langs;
+    renderLangSelect();
     $title.textContent = data.name || "카테고리";
     document.title = `${data.name} — ${langMeta?.name || lang}`;
     $loading.style.display = "none";

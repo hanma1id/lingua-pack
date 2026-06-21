@@ -1,7 +1,8 @@
 <!doctype html>
 <!-- ============================================================
      home.html — 메인 화면 (탭 2개)
-     URL — home.html?lang=en
+     URL — home.html?lang=es
+     상단 — 큰 언어 드롭다운 (🇪🇸 스페인어 ▾)
      1) 필수 단어 — 카테고리 타일
      2) 여행 회화 — 상황 타일
      ============================================================ -->
@@ -18,9 +19,9 @@
 <body>
   <header class="app-header">
     <div class="header-row">
-      <h1>Lingua Pack</h1>
-      <!-- 언어 드롭다운 — 학습 중인 언어가 한눈에 / 즉시 전환 -->
+      <!-- 큰 언어 드롭다운 — 좌측에 두드러지게, 학습 중인 언어가 한눈에 -->
       <select id="langSelect" class="lang-select" aria-label="언어 선택"></select>
+      <small class="brand-mini">Lingua Pack</small>
     </div>
     <div class="tab-bar" id="tabBar" role="tablist">
       <button class="active" data-tab="essentials">필수 단어</button>

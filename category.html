@@ -17,11 +17,10 @@
 <body>
   <header class="app-header">
     <div class="header-row">
-      <button class="back-btn" type="button"
-              onclick="var p=new URLSearchParams(location.search);if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1)history.back();else location.href='home.html?lang='+(p.get('lang')||'en')+'&tab=essentials';"
-              aria-label="뒤로">←</button>
-      <h1 id="pageTitle">카테고리</h1>
-      <a class="home-link" href="index.html?force=1" title="언어 바꾸기">🌐</a>
+      <button class="back-btn" id="backBtn" type="button" aria-label="뒤로">←</button>
+      <!-- 큰 언어 드롭다운 — 좌측에 두드러지게, 변경 시 같은 카테고리 다른 언어로 이동 -->
+      <select id="langSelect" class="lang-select" aria-label="언어 선택"></select>
+      <h1 id="pageTitle" class="page-subtitle">카테고리</h1>
     </div>
     <div class="header-controls">
       <div class="view-mode-bar" id="modeBar">
