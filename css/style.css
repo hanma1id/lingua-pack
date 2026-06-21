@@ -81,6 +81,36 @@ a { color: var(--accent); text-decoration: none; }
   gap: 6px;
 }
 
+/* 헤더 언어 드롭다운 — 학습 중인 언어가 한눈에, 즉시 전환 */
+.lang-select {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 8px 36px 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--accent);
+  cursor: pointer;
+  min-height: 44px;
+  appearance: none;
+  -webkit-appearance: none;
+  /* 우측 ▾ 화살표 */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><path d='M3 5l3 3 3-3' stroke='%234a6fa5' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  /* 모바일 — 탭 강조 회색 박스 제거 */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.lang-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.18);
+}
+.lang-select:hover { background-color: var(--bg-soft); }
+
 .container {
   max-width: 720px;
   margin: 0 auto;

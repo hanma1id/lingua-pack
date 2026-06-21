@@ -17,7 +17,7 @@ const params = new URLSearchParams(location.search);
 const lang = params.get("lang") || "en";
 setLastLang(lang);
 
-const $headerLang = document.getElementById("headerLang");
+const $langSelect = document.getElementById("langSelect");
 const $tabBar = document.getElementById("tabBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
@@ -32,10 +32,21 @@ function esc(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-function renderHeaderLang() {
-  const l = _langs.find((x) => x.id === lang);
-  if (!l) return;
-  $headerLang.innerHTML = `${l.flag} <span class="lang-name-mini">${esc(l.name)}</span>`;
+function renderLangSelect() {
+  // 옵션 — 준비 안 된 언어는 disabled
+  $langSelect.innerHTML = _langs.map((l) => {
+    const label = `${l.flag} ${l.name}${l.ready ? "" : " (준비 중)"}`;
+    const sel = l.id === lang ? " selected" : "";
+    const dis = l.ready ? "" : " disabled";
+    return `<option value="${l.id}"${sel}${dis}>${label}</option>`;
+  }).join("");
+  $langSelect.addEventListener("change", (e) => {
+    const newLang = e.target.value;
+    if (newLang === lang) return;
+    setLastLang(newLang);
+    // 같은 탭으로 이동 (?tab 유지)
+    location.href = `home.html?lang=${encodeURIComponent(newLang)}&tab=${encodeURIComponent(_tab)}`;
+  });
 }
 
 function renderTab() {
@@ -87,7 +98,7 @@ function syncTabUi() {
     const [langs, index] = await Promise.all([loadLanguages(), loadLangIndex(lang)]);
     _langs = langs;
     _index = index;
-    renderHeaderLang();
+    renderLangSelect();
     $loading.style.display = "none";
     renderTab();
   } catch (err) {
