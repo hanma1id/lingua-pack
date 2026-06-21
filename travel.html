@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- ============================================================
+     travel.html — 여행 회화 상세
+     URL — travel.html?lang=en&id=airport
+     리스트 / 플래시카드 두 모드.
+     ============================================================ -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#4a6fa5" />
+  <title>여행 회화</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <button class="back-btn" type="button"
+              onclick="if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1)history.back();else location.href='home.html?lang='+(new URLSearchParams(location.search).get('lang')||'en');"
+              aria-label="뒤로">←</button>
+      <h1 id="pageTitle">여행 회화</h1>
+      <a class="home-link" href="index.html?force=1" title="언어 바꾸기">🌐</a>
+    </div>
+    <div class="view-mode-bar" id="modeBar">
+      <button class="active" data-mode="list">목록</button>
+      <button data-mode="flash">플래시카드</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="loading">불러오는 중…</div>
+    <div id="contentArea" class="item-list"></div>
+  </main>
+
+  <script type="module" src="js/travel.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- ============================================================
+     home.html — 메인 화면 (탭 2개)
+     URL — home.html?lang=en
+     1) 필수 단어 — 카테고리 타일
+     2) 여행 회화 — 상황 타일
+     ============================================================ -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#4a6fa5" />
+  <title>Lingua Pack</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <h1>Lingua Pack</h1>
+      <a class="lang-switch" id="headerLang" href="index.html?force=1" title="언어 바꾸기">🌐</a>
+    </div>
+    <div class="tab-bar" id="tabBar" role="tablist">
+      <button class="active" data-tab="essentials">필수 단어</button>
+      <button data-tab="travel">여행 회화</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="loading">불러오는 중…</div>
+    <div id="contentArea"></div>
+  </main>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

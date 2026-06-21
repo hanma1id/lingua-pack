@@ -1,0 +1,9 @@
+{
+  "lang": "en",
+  "categories": [
+    { "id": "numbers", "name": "숫자", "emoji": "🔢", "count": 20 }
+  ],
+  "travel": [
+    { "id": "airport", "name": "공항·기내", "emoji": "✈️", "count": 10 }
+  ]
+}

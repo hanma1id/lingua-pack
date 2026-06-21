@@ -1,0 +1,28 @@
+{
+  "id": "numbers",
+  "name": "숫자 1-20",
+  "lang": "en",
+  "emoji": "🔢",
+  "items": [
+    { "foreign": "one",      "pronIpa": "/wʌn/",        "pronKo": "**원**",          "korean": "1, 하나" },
+    { "foreign": "two",      "pronIpa": "/tuː/",        "pronKo": "**투**ː",         "korean": "2, 둘" },
+    { "foreign": "three",    "pronIpa": "/θriː/",       "pronKo": "**쓰리**ː",       "korean": "3, 셋 (혀 끝을 살짝 내미는 th)" },
+    { "foreign": "four",     "pronIpa": "/fɔːr/",       "pronKo": "**포**ː",         "korean": "4, 넷" },
+    { "foreign": "five",     "pronIpa": "/faɪv/",       "pronKo": "**파**이브",      "korean": "5, 다섯" },
+    { "foreign": "six",      "pronIpa": "/sɪks/",       "pronKo": "**식**스",        "korean": "6, 여섯" },
+    { "foreign": "seven",    "pronIpa": "/ˈsɛvən/",     "pronKo": "**세**븐",        "korean": "7, 일곱" },
+    { "foreign": "eight",    "pronIpa": "/eɪt/",        "pronKo": "**에**잇",        "korean": "8, 여덟" },
+    { "foreign": "nine",     "pronIpa": "/naɪn/",       "pronKo": "**나**인",        "korean": "9, 아홉" },
+    { "foreign": "ten",      "pronIpa": "/tɛn/",        "pronKo": "**텐**",          "korean": "10, 열" },
+    { "foreign": "eleven",   "pronIpa": "/ɪˈlɛvən/",    "pronKo": "이**레**븐",      "korean": "11, 열하나" },
+    { "foreign": "twelve",   "pronIpa": "/twɛlv/",      "pronKo": "**트웰**브",      "korean": "12, 열둘" },
+    { "foreign": "thirteen", "pronIpa": "/ˌθɜːrˈtiːn/", "pronKo": "써**틴**ː",       "korean": "13, 열셋" },
+    { "foreign": "fourteen", "pronIpa": "/ˌfɔːrˈtiːn/", "pronKo": "포**틴**ː",       "korean": "14, 열넷" },
+    { "foreign": "fifteen",  "pronIpa": "/ˌfɪfˈtiːn/",  "pronKo": "피프**틴**ː",     "korean": "15, 열다섯" },
+    { "foreign": "sixteen",  "pronIpa": "/ˌsɪksˈtiːn/", "pronKo": "식스**틴**ː",     "korean": "16, 열여섯" },
+    { "foreign": "seventeen","pronIpa": "/ˌsɛvənˈtiːn/","pronKo": "세븐**틴**ː",     "korean": "17, 열일곱" },
+    { "foreign": "eighteen", "pronIpa": "/ˌeɪˈtiːn/",   "pronKo": "에이**틴**ː",     "korean": "18, 열여덟" },
+    { "foreign": "nineteen", "pronIpa": "/ˌnaɪnˈtiːn/", "pronKo": "나인**틴**ː",     "korean": "19, 열아홉" },
+    { "foreign": "twenty",   "pronIpa": "/ˈtwɛnti/",    "pronKo": "**트웬**티",      "korean": "20, 스물" }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "en",
+    "name": "영어",
+    "native": "English",
+    "flag": "🇺🇸",
+    "ttsLang": "en-US",
+    "ready": true
+  },
+  {
+    "id": "es",
+    "name": "스페인어",
+    "native": "Español",
+    "flag": "🇪🇸",
+    "ttsLang": "es-ES",
+    "ready": false
+  },
+  {
+    "id": "ja",
+    "name": "일본어",
+    "native": "日本語",
+    "flag": "🇯🇵",
+    "ttsLang": "ja-JP",
+    "ready": false
+  },
+  {
+    "id": "fr",
+    "name": "프랑스어",
+    "native": "Français",
+    "flag": "🇫🇷",
+    "ttsLang": "fr-FR",
+    "ready": false
+  },
+  {
+    "id": "zh",
+    "name": "중국어",
+    "native": "中文",
+    "flag": "🇨🇳",
+    "ttsLang": "zh-CN",
+    "ready": false
+  }
+]

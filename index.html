@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- ============================================================
+     index.html — 언어 선택 (첫 화면)
+     ------------------------------------------------------------
+     마지막 선택 언어가 있으면 자동으로 home.html?lang=... 로 이동.
+     처음이면 5개 언어 카드 표시. ?force=1 로 강제로 다시 고르기.
+     ============================================================ -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#4a6fa5" />
+  <title>Lingua Pack — 언어 선택</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <h1>Lingua Pack</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="lang-intro">
+      <h2>어떤 언어를 배우시겠어요?</h2>
+      <p>한 번에 한 언어씩 차근차근. 헤더에서 언제든 전환 가능합니다.</p>
+    </section>
+
+    <div id="loading" class="loading">불러오는 중…</div>
+    <div id="langGrid" class="lang-grid"></div>
+  </main>
+
+  <script type="module" src="js/lang-select.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "id": "airport",
+  "name": "공항·기내",
+  "lang": "en",
+  "emoji": "✈️",
+  "items": [
+    {
+      "foreign": "Where is gate 7?",
+      "pronIpa": "/wer ɪz ɡeɪt ˈsɛvən/",
+      "pronKo": "**웨**얼 이즈 **게**잇 **세**븐?",
+      "korean": "7번 게이트는 어디인가요?",
+      "context": "탑승 게이트 찾을 때"
+    },
+    {
+      "foreign": "Can I see your passport?",
+      "pronIpa": "/kæn aɪ siː jʊər ˈpæspɔːrt/",
+      "pronKo": "**캔** 아이 **씨**ː 유어 **패**스포ː트?",
+      "korean": "여권 좀 보여 주시겠어요?",
+      "context": "직원이 묻는 표현 (이해용)"
+    },
+    {
+      "foreign": "Here is my passport.",
+      "pronIpa": "/hɪər ɪz maɪ ˈpæspɔːrt/",
+      "pronKo": "**히**어 이즈 마이 **패**스포ː트.",
+      "korean": "여기 제 여권이에요.",
+      "context": "여권 제시할 때"
+    },
+    {
+      "foreign": "I'm here for tourism.",
+      "pronIpa": "/aɪm hɪər fɔːr ˈtʊrɪzəm/",
+      "pronKo": "**아**임 히어 포ː **투**리즘.",
+      "korean": "관광으로 왔어요.",
+      "context": "입국 심사에서 방문 목적"
+    },
+    {
+      "foreign": "I will stay for five days.",
+      "pronIpa": "/aɪ wɪl steɪ fɔːr faɪv deɪz/",
+      "pronKo": "**아**이 윌 **스테**이 포ː **파**이브 데이즈.",
+      "korean": "5일 머물 예정이에요.",
+      "context": "체류 기간 답할 때"
+    },
+    {
+      "foreign": "I have nothing to declare.",
+      "pronIpa": "/aɪ hæv ˈnʌθɪŋ tuː dɪˈkler/",
+      "pronKo": "**아**이 해브 **너**띵 투 디**클레**어.",
+      "korean": "신고할 물건이 없어요.",
+      "context": "세관 신고"
+    },
+    {
+      "foreign": "Could I have a window seat?",
+      "pronIpa": "/kʊd aɪ hæv ə ˈwɪndoʊ siːt/",
+      "pronKo": "**쿠**드 아이 해브 어 **윈**도우 **씨**ːㅌ?",
+      "korean": "창가 자리로 주실 수 있나요?",
+      "context": "체크인 카운터·기내"
+    },
+    {
+      "foreign": "Could you bring me some water?",
+      "pronIpa": "/kʊd juː brɪŋ miː sʌm ˈwɔːtər/",
+      "pronKo": "**쿠**드 유 **브링** 미ː **썸** **워**ː터?",
+      "korean": "물 좀 가져다 주실 수 있나요?",
+      "context": "기내 승무원에게"
+    },
+    {
+      "foreign": "Where can I find a taxi?",
+      "pronIpa": "/wer kæn aɪ faɪnd ə ˈtæksi/",
+      "pronKo": "**웨**얼 캔 아이 **파**인드 어 **택**시?",
+      "korean": "택시 어디서 탈 수 있나요?",
+      "context": "도착 후 공항에서"
+    },
+    {
+      "foreign": "I lost my luggage.",
+      "pronIpa": "/aɪ lɔːst maɪ ˈlʌɡɪdʒ/",
+      "pronKo": "**아**이 **로**ː스트 마이 **러**기지.",
+      "korean": "짐을 잃어버렸어요.",
+      "context": "수하물 분실 신고"
+    }
+  ]
+}
