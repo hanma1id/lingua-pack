@@ -1,0 +1,98 @@
+{
+  "id": "directions",
+  "name": "길찾기",
+  "lang": "en",
+  "emoji": "🗺️",
+  "items": [
+    {
+      "foreign": "Excuse me",
+      "pronIpa": "/ɪkˈskjuːz miː/",
+      "pronKo": "익스큐**즈** 미ː",
+      "korean": "실례합니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "모르는 사람에게 길을 묻거나 말을 걸 때 사용"
+    },
+    {
+      "foreign": "Where is the nearest subway station?",
+      "pronIpa": "/wɛər ɪz ðə ˈnɪərɪst ˈsʌbweɪ ˈsteɪʃn̩?/",
+      "pronKo": "웨어 이즈 더 **니어**리스트 **썹**웨이 **스테이**션?",
+      "korean": "가장 가까운 지하철역이 어디인가요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "지하철역 위치를 물을 때"
+    },
+    {
+      "foreign": "How can I get to the museum?",
+      "pronIpa": "/haʊ kæn aɪ ɡɛt tuː ðə mjuˈziːəm?/",
+      "pronKo": "하우 캔 아이 겟 투 더 뮤**지**엄?",
+      "korean": "박물관에 어떻게 갈 수 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "박물관으로 가는 방법을 물을 때"
+    },
+    {
+      "foreign": "Could you tell me where the restroom is?",
+      "pronIpa": "/kʊd juː tɛl miː wɛər ðə ˈrɛstruːm ɪz?/",
+      "pronKo": "쿠드 유 텔 미 웨어 더 **레스**트룸 이즈?",
+      "korean": "화장실이 어디인지 알려주시겠어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "화장실 위치를 공손하게 물을 때"
+    },
+    {
+      "foreign": "Go straight ahead.",
+      "pronIpa": "/ɡoʊ streɪt əˈhɛd./",
+      "pronKo": "고우 스트레이트 어**헤드**.",
+      "korean": "똑바로 직진하세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "길을 안내할 때"
+    },
+    {
+      "foreign": "Turn left at the next corner.",
+      "pronIpa": "/tɜːrn lɛft æt ðə nɛkst ˈkɔːrnər./",
+      "pronKo": "턴 레프트 앳 더 넥스트 **코**너.",
+      "korean": "다음 모퉁이에서 좌회전하세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "길을 안내할 때"
+    },
+    {
+      "foreign": "Turn right after the traffic lights.",
+      "pronIpa": "/tɜːrn raɪt ˈæftər ðə ˈtræfɪk ˈlaɪts./",
+      "pronKo": "턴 라이트 **애프**터 더 **트래**픽 **라**이츠.",
+      "korean": "신호등을 지난 후에 우회전하세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "길을 안내할 때"
+    },
+    {
+      "foreign": "It's on your left.",
+      "pronIpa": "/ɪts ɒn jɔːr lɛft./",
+      "pronKo": "잇츠 온 유어 **레**프트.",
+      "korean": "왼쪽에 있습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지가 왼쪽에 있다고 안내할 때"
+    },
+    {
+      "foreign": "It's on your right.",
+      "pronIpa": "/ɪts ɒn jɔːr raɪt./",
+      "pronKo": "잇츠 온 유어 **라**이트.",
+      "korean": "오른쪽에 있습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지가 오른쪽에 있다고 안내할 때"
+    },
+    {
+      "foreign": "How long does it take to walk there?",
+      "pronIpa": "/haʊ lɒŋ dʌz ɪt teɪk tuː wɔːk ðɛər?/",
+      "pronKo": "하우 롱 더즈 잇 테이크 투 워크 데어?",
+      "korean": "거기까지 걸어서 얼마나 걸리나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지까지 걸리는 시간을 물을 때"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "lang": "en",
+  "lang": "es",
   "categories": [
     {
       "id": "numbers",
@@ -43,7 +43,7 @@
       "id": "airport",
       "name": "공항·기내",
       "emoji": "✈️",
-      "count": 10
+      "count": 12
     },
     {
       "id": "greetings_intro",

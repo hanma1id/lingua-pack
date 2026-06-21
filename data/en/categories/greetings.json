@@ -1,0 +1,116 @@
+{
+  "id": "greetings",
+  "name": "인사",
+  "lang": "en",
+  "emoji": "👋",
+  "items": [
+    {
+      "foreign": "Hello",
+      "pronIpa": "/həˈloʊ/",
+      "pronKo": "헐**로**우",
+      "korean": "안녕하세요",
+      "example": "",
+      "exampleKo": "",
+      "context": "처음 만나거나 오랜만에 만난 사람에게"
+    },
+    {
+      "foreign": "Hi",
+      "pronIpa": "/haɪ/",
+      "pronKo": "**하이**",
+      "korean": "안녕",
+      "example": "",
+      "exampleKo": "",
+      "context": "친구나 편한 사이에서"
+    },
+    {
+      "foreign": "Good morning",
+      "pronIpa": "/ɡʊd ˈmɔːrnɪŋ/",
+      "pronKo": "굿 **모**닝",
+      "korean": "좋은 아침입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "아침 인사"
+    },
+    {
+      "foreign": "Good afternoon",
+      "pronIpa": "/ɡʊd ˌæftərˈnuːn/",
+      "pronKo": "굿 **애프**터눈",
+      "korean": "좋은 오후입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "점심 이후 저녁 전 인사"
+    },
+    {
+      "foreign": "Good evening",
+      "pronIpa": "/ɡʊd ˈiːvnɪŋ/",
+      "pronKo": "굿 **이**브닝",
+      "korean": "좋은 저녁입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "저녁 인사"
+    },
+    {
+      "foreign": "Good night",
+      "pronIpa": "/ɡʊd naɪt/",
+      "pronKo": "굿 **나**이트",
+      "korean": "안녕히 주무세요",
+      "example": "",
+      "exampleKo": "",
+      "context": "잠자리에 들기 전 인사"
+    },
+    {
+      "foreign": "Goodbye",
+      "pronIpa": "/ɡʊdˈbaɪ/",
+      "pronKo": "굿**바이**",
+      "korean": "안녕히 가세요/계세요",
+      "example": "",
+      "exampleKo": "",
+      "context": "헤어질 때"
+    },
+    {
+      "foreign": "See you later",
+      "pronIpa": "/siː juː ˈleɪtər/",
+      "pronKo": "씨 유 **레이**터",
+      "korean": "나중에 봐요",
+      "example": "",
+      "exampleKo": "",
+      "context": "가까운 미래에 다시 만날 것을 예상하며 헤어질 때"
+    },
+    {
+      "foreign": "Thank you",
+      "pronIpa": "/θæŋk juː/",
+      "pronKo": "**쌩**큐",
+      "korean": "감사합니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "누군가에게 고마움을 표현할 때"
+    },
+    {
+      "foreign": "Thanks",
+      "pronIpa": "/θæŋks/",
+      "pronKo": "**쌩**크스",
+      "korean": "고마워",
+      "example": "",
+      "exampleKo": "",
+      "context": "친구나 편한 사이에서 짧게 고마움을 표현할 때"
+    },
+    {
+      "foreign": "Sorry",
+      "pronIpa": "/ˈsɔːri/",
+      "pronKo": "**쏘**리",
+      "korean": "미안합니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "실수나 잘못에 대해 사과할 때"
+    },
+    {
+      "foreign": "Excuse me",
+      "pronIpa": "/ɪkˈskjuːz miː/",
+      "pronKo": "익스**큐**즈 미",
+      "korean": "실례합니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "다른 사람의 주의를 끌거나, 지나갈 때, 가벼운 사과를 할 때"
+    }
+  ]
+}

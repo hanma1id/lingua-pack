@@ -1,0 +1,98 @@
+{
+  "id": "greetings_intro",
+  "name": "인사·자기소개",
+  "lang": "es",
+  "emoji": "👋",
+  "items": [
+    {
+      "foreign": "Hola",
+      "pronIpa": "/ˈola/",
+      "pronKo": "**오**라",
+      "korean": "안녕",
+      "example": "",
+      "exampleKo": "",
+      "context": "처음 만났을 때, 또는 친구나 아는 사람에게 인사할 때 사용합니다."
+    },
+    {
+      "foreign": "Buenos días",
+      "pronIpa": "/ˈbwenoz ˈdi.as/",
+      "pronKo": "**부**에노스 **디**아스",
+      "korean": "좋은 아침이에요",
+      "example": "",
+      "exampleKo": "",
+      "context": "아침 인사로 사용합니다. 보통 정오까지 사용합니다."
+    },
+    {
+      "foreign": "Buenas tardes",
+      "pronIpa": "/ˈbwenaθ ˈtaɾðes/",
+      "pronKo": "**부**에나스 **따르**데스",
+      "korean": "좋은 오후예요",
+      "example": "",
+      "exampleKo": "",
+      "context": "점심 식사 후부터 해 질 녘까지 사용하는 오후 인사입니다."
+    },
+    {
+      "foreign": "Buenas noches",
+      "pronIpa": "/ˈbwenaθ ˈno.tʃes/",
+      "pronKo": "**부**에나스 **노**체스",
+      "korean": "좋은 밤이에요",
+      "example": "",
+      "exampleKo": "",
+      "context": "저녁 인사 및 잠자리에 들기 전 작별 인사로 사용합니다."
+    },
+    {
+      "foreign": "¿Cómo te llamas?",
+      "pronIpa": "/ˈkomo te ˈjamas/",
+      "pronKo": "**꼬**모 떼 **야**마스",
+      "korean": "이름이 뭐예요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 이름을 물어볼 때 사용합니다."
+    },
+    {
+      "foreign": "Me llamo [이름]",
+      "pronIpa": "/me ˈʝamo [이름]/",
+      "pronKo": "메 **야**모 [이름]",
+      "korean": "제 이름은 [이름]입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 이름을 소개할 때 사용합니다."
+    },
+    {
+      "foreign": "¿De dónde eres?",
+      "pronIpa": "/de ˈdonde ˈeɾes/",
+      "pronKo": "데 **돈**데 **에**레스",
+      "korean": "어디 출신이세요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 국적이나 출신지를 물어볼 때 사용합니다."
+    },
+    {
+      "foreign": "Soy de [나라]",
+      "pronIpa": "/soj de [나라]/",
+      "pronKo": "쏘이 데 [나라]",
+      "korean": "저는 [나라] 출신입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 국적이나 출신지를 소개할 때 사용합니다."
+    },
+    {
+      "foreign": "¿A qué te dedicas?",
+      "pronIpa": "/a ke te deˈðikas/",
+      "pronKo": "아 **께** 떼 데**디**까스",
+      "korean": "무슨 일을 하세요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 직업을 물어볼 때 사용합니다."
+    },
+    {
+      "foreign": "Soy [직업]",
+      "pronIpa": "/soj [직업]/",
+      "pronKo": "쏘이 [직업]",
+      "korean": "저는 [직업]입니다",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 직업을 소개할 때 사용합니다."
+    }
+  ]
+}

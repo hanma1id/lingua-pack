@@ -1,0 +1,98 @@
+{
+  "id": "shopping",
+  "name": "쇼핑·가격",
+  "lang": "en",
+  "emoji": "🛍️",
+  "items": [
+    {
+      "foreign": "How much is this?",
+      "pronIpa": "/haʊ mʌtʃ ɪz ðɪs/",
+      "pronKo": "하**우** 머치 이즈 디스?",
+      "korean": "이거 얼마예요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "물건 가격을 물어볼 때"
+    },
+    {
+      "foreign": "It's too expensive.",
+      "pronIpa": "/ɪts tuː ɪkˈspɛnsɪv/",
+      "pronKo": "잇츠 투 이**크**스펜시브.",
+      "korean": "너무 비싸요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "가격이 부담스러울 때"
+    },
+    {
+      "foreign": "Do you have this in another color?",
+      "pronIpa": "/duː juː hæv ðɪs ɪn əˈnʌðər ˈkʌlər/",
+      "pronKo": "두 유 해브 디스 인 어**너**더 **컬**러?",
+      "korean": "다른 색깔로 이거 있어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "원하는 색이 없을 때"
+    },
+    {
+      "foreign": "Do you have a smaller size?",
+      "pronIpa": "/duː juː hæv ə ˈsmɔːlər saɪz/",
+      "pronKo": "두 유 해브 어 **스몰**러 사이즈?",
+      "korean": "더 작은 사이즈 있어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "옷이나 신발 사이즈를 찾을 때"
+    },
+    {
+      "foreign": "Can I try this on?",
+      "pronIpa": "/kæn aɪ traɪ ðɪs ɒn/",
+      "pronKo": "캔 아이 트**라**이 디스 온?",
+      "korean": "이거 입어봐도 될까요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "옷을 입어보고 싶을 때"
+    },
+    {
+      "foreign": "Where is the fitting room?",
+      "pronIpa": "/wɛər ɪz ðə ˈfɪtɪŋ ruːm/",
+      "pronKo": "웨어 이즈 더 **핏**팅 룸?",
+      "korean": "탈의실이 어디예요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "옷을 입어볼 장소를 물을 때"
+    },
+    {
+      "foreign": "Is there a discount?",
+      "pronIpa": "/ɪz ðɛər ə ˈdɪskaʊnt/",
+      "pronKo": "이즈 데어 어 **디**스카운트?",
+      "korean": "할인되나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "가격 할인을 문의할 때"
+    },
+    {
+      "foreign": "Can I pay by credit card?",
+      "pronIpa": "/kæn aɪ peɪ baɪ ˈkrɛdɪt kɑːrd/",
+      "pronKo": "캔 아이 페이 바이 **크레**딧 카드?",
+      "korean": "신용카드로 결제할 수 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "결제 수단을 문의할 때"
+    },
+    {
+      "foreign": "I'll take it.",
+      "pronIpa": "/aɪl teɪk ɪt/",
+      "pronKo": "아일 **테**이크 잇.",
+      "korean": "이걸로 할게요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "구매를 결정했을 때"
+    },
+    {
+      "foreign": "Receipt",
+      "pronIpa": "/rɪˈsiːt/",
+      "pronKo": "리**씨**트",
+      "korean": "영수증",
+      "example": "Could I have a receipt, please?",
+      "exampleKo": "영수증 받을 수 있을까요?",
+      "context": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "directions",
+  "name": "길찾기",
+  "lang": "es",
+  "emoji": "🗺️",
+  "items": [
+    {
+      "foreign": "Disculpe, ¿dónde está la estación?",
+      "pronIpa": "/diˈkulpe | ˈdonde esˈta la estaˈθjon/",
+      "pronKo": "**디**스꿀**뻬**, **돈**데 에스**따** 라 에스따**씨온**?",
+      "korean": "실례합니다, 역은 어디에 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "모르는 장소의 위치를 물을 때 사용합니다."
+    },
+    {
+      "foreign": "¿Dónde está el museo?",
+      "pronIpa": "/ˈdonde esˈta el muˈseo/",
+      "pronKo": "**돈**데 에스**따** 엘 무**세**오?",
+      "korean": "박물관은 어디에 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "박물관의 위치를 물을 때 사용합니다."
+    },
+    {
+      "foreign": "¿Dónde están los servicios?",
+      "pronIpa": "/ˈdonde esˈtan los serˈβiθjos/",
+      "pronKo": "**돈**데 에스**딴** 로스 세르**비**시오스?",
+      "korean": "화장실은 어디에 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "공공장소에서 화장실 위치를 물을 때 사용합니다."
+    },
+    {
+      "foreign": "A la izquierda",
+      "pronIpa": "/a la iθˈkjeɾða/",
+      "pronKo": "아 라 이**스**끼에르**다**",
+      "korean": "왼쪽으로",
+      "example": "Gira a la izquierda.",
+      "exampleKo": "왼쪽으로 도세요."
+    },
+    {
+      "foreign": "A la derecha",
+      "pronIpa": "/a la deˈɾeʧa/",
+      "pronKo": "아 라 데**레**차",
+      "korean": "오른쪽으로",
+      "example": "Sigue a la derecha.",
+      "exampleKo": "오른쪽으로 계속 가세요."
+    },
+    {
+      "foreign": "Todo recto",
+      "pronIpa": "/ˈtodo ˈrekto/",
+      "pronKo": "**도**도 **렉**또",
+      "korean": "직진",
+      "example": "Sigue todo recto.",
+      "exampleKo": "직진하세요."
+    },
+    {
+      "foreign": "¿Está lejos?",
+      "pronIpa": "/esˈta ˈlexos/",
+      "pronKo": "에스**따** **레**호스?",
+      "korean": "멀리 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지가 얼마나 먼지 물을 때 사용합니다."
+    },
+    {
+      "foreign": "¿Está cerca?",
+      "pronIpa": "/esˈta ˈθeɾka/",
+      "pronKo": "에스**따** **세**르까?",
+      "korean": "가까이 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지가 가까운지 물을 때 사용합니다."
+    },
+    {
+      "foreign": "¿Cuánto se tarda en llegar?",
+      "pronIpa": "/ˈkwanto se ˈtaɾða en jeˈɣaɾ/",
+      "pronKo": "**꽌**또 세 **따르**다 엔 예**가르**?",
+      "korean": "도착하는 데 얼마나 걸리나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "목적지까지 가는 데 걸리는 시간을 물을 때 사용합니다."
+    },
+    {
+      "foreign": "Perdón, ¿cómo llego a la plaza?",
+      "pronIpa": "/peɾˈdon | ˈkomo ˈʝeɣo a la ˈplaθa/",
+      "pronKo": "뻬르**돈**, **꼬**모 **예**고 아 라 **쁠라**싸?",
+      "korean": "실례합니다, 광장까지 어떻게 가나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "특정 장소로 가는 방법을 물을 때 사용합니다."
+    }
+  ]
+}

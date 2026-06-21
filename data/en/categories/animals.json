@@ -1,0 +1,136 @@
+{
+  "id": "animals",
+  "name": "동물",
+  "lang": "en",
+  "emoji": "🐶",
+  "items": [
+    {
+      "foreign": "dog",
+      "pronIpa": "/dɔːɡ/",
+      "pronKo": "도**ㄱ**",
+      "korean": "개",
+      "example": "I have a dog.",
+      "exampleKo": "나는 개를 한 마리 가지고 있다."
+    },
+    {
+      "foreign": "cat",
+      "pronIpa": "/kæt/",
+      "pronKo": "캐**ㅌ**",
+      "korean": "고양이",
+      "example": "My cat is sleeping.",
+      "exampleKo": "내 고양이가 자고 있다."
+    },
+    {
+      "foreign": "cow",
+      "pronIpa": "/kaʊ/",
+      "pronKo": "카**우**",
+      "korean": "소",
+      "example": "Cows eat grass.",
+      "exampleKo": "소는 풀을 먹는다."
+    },
+    {
+      "foreign": "horse",
+      "pronIpa": "/hɔːrs/",
+      "pronKo": "호**ㄹ**스",
+      "korean": "말",
+      "example": "He rides a horse.",
+      "exampleKo": "그는 말을 탄다."
+    },
+    {
+      "foreign": "pig",
+      "pronIpa": "/pɪɡ/",
+      "pronKo": "피**ㄱ**",
+      "korean": "돼지",
+      "example": "The pig is in the mud.",
+      "exampleKo": "돼지가 진흙 속에 있다."
+    },
+    {
+      "foreign": "chicken",
+      "pronIpa": "/ˈtʃɪkɪn/",
+      "pronKo": "치**키**ㄴ",
+      "korean": "닭",
+      "example": "I ate fried chicken.",
+      "exampleKo": "나는 프라이드 치킨을 먹었다."
+    },
+    {
+      "foreign": "duck",
+      "pronIpa": "/dʌk/",
+      "pronKo": "더**ㄱ**",
+      "korean": "오리",
+      "example": "A duck swam in the pond.",
+      "exampleKo": "오리 한 마리가 연못에서 헤엄쳤다."
+    },
+    {
+      "foreign": "sheep",
+      "pronIpa": "/ʃiːp/",
+      "pronKo": "쉽",
+      "korean": "양",
+      "example": "Sheep have wool.",
+      "exampleKo": "양은 털을 가지고 있다."
+    },
+    {
+      "foreign": "rabbit",
+      "pronIpa": "/ˈræbɪt/",
+      "pronKo": "래**비**ㅌ",
+      "korean": "토끼",
+      "example": "The rabbit hopped away.",
+      "exampleKo": "토끼가 깡충 뛰어 달아났다."
+    },
+    {
+      "foreign": "mouse",
+      "pronIpa": "/maʊs/",
+      "pronKo": "마**우**스",
+      "korean": "쥐",
+      "example": "A mouse ran across the floor.",
+      "exampleKo": "쥐 한 마리가 바닥을 가로질러 뛰어갔다."
+    },
+    {
+      "foreign": "lion",
+      "pronIpa": "/ˈlaɪən/",
+      "pronKo": "라**이**언",
+      "korean": "사자",
+      "example": "The lion roared loudly.",
+      "exampleKo": "사자가 크게 포효했다."
+    },
+    {
+      "foreign": "tiger",
+      "pronIpa": "/ˈtaɪɡər/",
+      "pronKo": "타**이**걸",
+      "korean": "호랑이",
+      "example": "Tigers are big cats.",
+      "exampleKo": "호랑이는 큰 고양잇과 동물이다."
+    },
+    {
+      "foreign": "bear",
+      "pronIpa": "/ber/",
+      "pronKo": "베**어**",
+      "korean": "곰",
+      "example": "A bear lives in the forest.",
+      "exampleKo": "곰 한 마리가 숲에 산다."
+    },
+    {
+      "foreign": "elephant",
+      "pronIpa": "/ˈelɪfənt/",
+      "pronKo": "엘**리**펀ㅌ",
+      "korean": "코끼리",
+      "example": "The elephant has a long trunk.",
+      "exampleKo": "코끼리는 긴 코를 가지고 있다."
+    },
+    {
+      "foreign": "monkey",
+      "pronIpa": "/ˈmʌŋki/",
+      "pronKo": "멍**키**",
+      "korean": "원숭이",
+      "example": "Monkeys like bananas.",
+      "exampleKo": "원숭이는 바나나를 좋아한다."
+    },
+    {
+      "foreign": "fish",
+      "pronIpa": "/fɪʃ/",
+      "pronKo": "피**쉬**",
+      "korean": "물고기",
+      "example": "I saw a fish in the river.",
+      "exampleKo": "나는 강에서 물고기를 보았다."
+    }
+  ]
+}

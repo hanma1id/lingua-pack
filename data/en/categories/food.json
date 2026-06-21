@@ -1,0 +1,152 @@
+{
+  "id": "food",
+  "name": "음식",
+  "lang": "en",
+  "emoji": "🍎",
+  "items": [
+    {
+      "foreign": "apple",
+      "pronIpa": "/ˈæpl/",
+      "pronKo": "**애**플",
+      "korean": "사과",
+      "example": "I like to eat an apple every day.",
+      "exampleKo": "나는 매일 사과를 먹는 것을 좋아한다."
+    },
+    {
+      "foreign": "bread",
+      "pronIpa": "/brɛd/",
+      "pronKo": "**브**레드",
+      "korean": "빵",
+      "example": "Would you like some bread with your soup?",
+      "exampleKo": "수프와 함께 빵을 좀 드릴까요?"
+    },
+    {
+      "foreign": "water",
+      "pronIpa": "/ˈwɔːtər/",
+      "pronKo": "**워**러",
+      "korean": "물",
+      "example": "Can I have a glass of water, please?",
+      "exampleKo": "물 한 잔 주시겠어요?"
+    },
+    {
+      "foreign": "meat",
+      "pronIpa": "/miːt/",
+      "pronKo": "**미**트",
+      "korean": "고기",
+      "example": "This restaurant serves delicious meat dishes.",
+      "exampleKo": "이 식당은 맛있는 고기 요리를 제공한다."
+    },
+    {
+      "foreign": "rice",
+      "pronIpa": "/raɪs/",
+      "pronKo": "**라**이스",
+      "korean": "밥, 쌀",
+      "example": "We usually eat rice with our meals.",
+      "exampleKo": "우리는 보통 식사에 밥을 곁들여 먹는다."
+    },
+    {
+      "foreign": "egg",
+      "pronIpa": "/ɛɡ/",
+      "pronKo": "**에**그",
+      "korean": "달걀, 계란",
+      "example": "I had two eggs for breakfast.",
+      "exampleKo": "나는 아침으로 달걀 두 개를 먹었다."
+    },
+    {
+      "foreign": "milk",
+      "pronIpa": "/mɪlk/",
+      "pronKo": "**밀**크",
+      "korean": "우유",
+      "example": "A glass of milk is good for your health.",
+      "exampleKo": "우유 한 잔은 건강에 좋다."
+    },
+    {
+      "foreign": "cheese",
+      "pronIpa": "/tʃiːz/",
+      "pronKo": "**치**즈",
+      "korean": "치즈",
+      "example": "I love pizza with lots of cheese.",
+      "exampleKo": "나는 치즈가 많이 들어간 피자를 좋아한다."
+    },
+    {
+      "foreign": "fish",
+      "pronIpa": "/fɪʃ/",
+      "pronKo": "**피**쉬",
+      "korean": "생선",
+      "example": "Salmon is a healthy type of fish.",
+      "exampleKo": "연어는 건강에 좋은 생선 종류이다."
+    },
+    {
+      "foreign": "chicken",
+      "pronIpa": "/ˈtʃɪkɪn/",
+      "pronKo": "**치**킨",
+      "korean": "닭고기",
+      "example": "Fried chicken is a popular dish.",
+      "exampleKo": "프라이드치킨은 인기 있는 요리이다."
+    },
+    {
+      "foreign": "coffee",
+      "pronIpa": "/ˈkɒfi/",
+      "pronKo": "**커**피",
+      "korean": "커피",
+      "example": "I need a cup of coffee to wake up.",
+      "exampleKo": "나는 잠을 깨기 위해 커피 한 잔이 필요하다."
+    },
+    {
+      "foreign": "tea",
+      "pronIpa": "/tiː/",
+      "pronKo": "**티**",
+      "korean": "차",
+      "example": "Would you like some tea?",
+      "exampleKo": "차 좀 드시겠어요?"
+    },
+    {
+      "foreign": "juice",
+      "pronIpa": "/dʒuːs/",
+      "pronKo": "**쥬**스",
+      "korean": "주스",
+      "example": "Orange juice is my favorite.",
+      "exampleKo": "오렌지 주스가 내가 가장 좋아하는 것이다."
+    },
+    {
+      "foreign": "sugar",
+      "pronIpa": "/ˈʃʊɡər/",
+      "pronKo": "**슈**거",
+      "korean": "설탕",
+      "example": "Do you want sugar in your coffee?",
+      "exampleKo": "커피에 설탕 넣으시겠어요?"
+    },
+    {
+      "foreign": "salt",
+      "pronIpa": "/sɔːlt/",
+      "pronKo": "**솔**트",
+      "korean": "소금",
+      "example": "A little salt can enhance the flavor.",
+      "exampleKo": "약간의 소금은 풍미를 향상시킬 수 있다."
+    },
+    {
+      "foreign": "vegetable",
+      "pronIpa": "/ˈvɛdʒtəbl/",
+      "pronKo": "**베**줴터블",
+      "korean": "채소",
+      "example": "Eating vegetables is important for a healthy diet.",
+      "exampleKo": "채소를 먹는 것은 건강한 식단을 위해 중요하다."
+    },
+    {
+      "foreign": "fruit",
+      "pronIpa": "/fruːt/",
+      "pronKo": "**프**뤁",
+      "korean": "과일",
+      "example": "Apples and bananas are common fruits.",
+      "exampleKo": "사과와 바나나는 흔한 과일이다."
+    },
+    {
+      "foreign": "soup",
+      "pronIpa": "/suːp/",
+      "pronKo": "**슾**",
+      "korean": "수프, 국",
+      "example": "This is a very hot and delicious soup.",
+      "exampleKo": "이것은 매우 뜨겁고 맛있는 수프이다."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "restaurant",
+  "name": "음식점 주문",
+  "lang": "en",
+  "emoji": "🍽️",
+  "items": [
+    {
+      "foreign": "Do you have a table for two?",
+      "pronIpa": "/duː juː hæv ə ˈteɪbl fɔːr tuː/",
+      "pronKo": "두 유 해**버** 테**이**블 포 투?",
+      "korean": "두 명 자리 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "식당에 도착해서 자리가 있는지 물어볼 때"
+    },
+    {
+      "foreign": "Can I see the menu, please?",
+      "pronIpa": "/kæn aɪ siː ðə ˈmɛnjuː pliːz/",
+      "pronKo": "캔 아이 씨 더 **메**뉴, 플리즈?",
+      "korean": "메뉴판 좀 볼 수 있을까요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "자리에 앉아 메뉴를 요청할 때"
+    },
+    {
+      "foreign": "What do you recommend?",
+      "pronIpa": "/wɒt duː juː ˌrɛkəˈmɛnd/",
+      "pronKo": "왓 두 유 **레**커멘드?",
+      "korean": "무엇을 추천하시나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "메뉴를 고르기 어려울 때 직원이 추천을 부탁할 때"
+    },
+    {
+      "foreign": "I'll have the steak.",
+      "pronIpa": "/aɪl hæv ðə steɪk/",
+      "pronKo": "아일 해브 더 **스**테이크.",
+      "korean": "스테이크로 할게요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "주문할 음식을 정했을 때"
+    },
+    {
+      "foreign": "Is it spicy?",
+      "pronIpa": "/ɪz ɪt ˈspaɪsi/",
+      "pronKo": "이즈 잇 **스**파이시?",
+      "korean": "매운가요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "음식의 매운 정도를 확인할 때"
+    },
+    {
+      "foreign": "Not too spicy, please.",
+      "pronIpa": "/nɒt tuː ˈspaɪsi pliːz/",
+      "pronKo": "낫 투 **스**파이시, 플리즈.",
+      "korean": "너무 맵지 않게 해주세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "매운 음식을 잘 못 먹을 때 주문 시 요청할 때"
+    },
+    {
+      "foreign": "Water, please.",
+      "pronIpa": "/ˈwɔːtər pliːz/",
+      "pronKo": "**워**터, 플리즈.",
+      "korean": "물 주세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "음료로 물을 요청할 때"
+    },
+    {
+      "foreign": "Can I have some more water?",
+      "pronIpa": "/kæn aɪ hæv sʌm mɔːr ˈwɔːtər/",
+      "pronKo": "캔 아이 해브 썸 모어 **워**터?",
+      "korean": "물 좀 더 주시겠어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "마시고 있는 물이 부족할 때 추가로 요청할 때"
+    },
+    {
+      "foreign": "Excuse me!",
+      "pronIpa": "/ɪkˈskjuːz miː/",
+      "pronKo": "익스큐**즈** 미!",
+      "korean": "저기요!",
+      "example": "",
+      "exampleKo": "",
+      "context": "직원을 부르거나 주의를 끌어야 할 때"
+    },
+    {
+      "foreign": "Check, please.",
+      "pronIpa": "/tʃɛk pliːz/",
+      "pronKo": "체크, 플리즈.",
+      "korean": "계산서 주세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "식사를 마치고 계산을 요청할 때"
+    },
+    {
+      "foreign": "Can I pay by credit card?",
+      "pronIpa": "/kæn aɪ peɪ baɪ ˈkrɛdɪt kɑːrd/",
+      "pronKo": "캔 아이 페이 바이 **크**레딧 카드?",
+      "korean": "신용카드로 계산해도 되나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "계산 시 결제 수단을 확인할 때"
+    },
+    {
+      "foreign": "Keep the change.",
+      "pronIpa": "/kiːp ðə tʃeɪndʒ/",
+      "pronKo": "킵 더 **체**인지.",
+      "korean": "잔돈은 가지세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "현금 계산 시 팁으로 잔돈을 주지 않아도 될 때"
+    }
+  ]
+}

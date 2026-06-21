@@ -1,0 +1,116 @@
+{
+  "id": "airport",
+  "name": "공항·기내",
+  "lang": "es",
+  "emoji": "✈️",
+  "items": [
+    {
+      "foreign": "Pasaporte",
+      "pronIpa": "/pasaporte/",
+      "pronKo": "**파**사**포**르테",
+      "korean": "여권",
+      "example": "Su pasaporte, por favor.",
+      "exampleKo": "여권을 보여주세요.",
+      "context": ""
+    },
+    {
+      "foreign": "¿Dónde está la puerta de embarque?",
+      "pronIpa": "/ˈdonde esta la ˈpweɾta de emˈbaɾke/",
+      "pronKo": "**돈**데 에스**타** 라 **뿌에**르따 데 엠**바**르께",
+      "korean": "탑승 게이트는 어디에 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "게이트 위치를 물을 때"
+    },
+    {
+      "foreign": "Mi vuelo es el número...",
+      "pronIpa": "/mi ˈbwelo es el ˈnumero/",
+      "pronKo": "미 **블루**엘로 에스 엘 **누**메로",
+      "korean": "제 비행기 편명은 ...번입니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 비행기 편명을 말할 때"
+    },
+    {
+      "foreign": "¿Cuánto tiempo se quedará?",
+      "pronIpa": "/ˈkwanto ˈtjempo se keðaˈɾa/",
+      "pronKo": "**쿠안**토 **띠엠**포 세 케다**라**",
+      "korean": "얼마나 머무르실 건가요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "체류 기간을 물을 때"
+    },
+    {
+      "foreign": "Me quedaré por...",
+      "pronIpa": "/me keðaˈɾe por/",
+      "pronKo": "메 케다**레** **포르**",
+      "korean": "...동안 머무를 것입니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 체류 기간을 말할 때"
+    },
+    {
+      "foreign": "Tengo que declarar algo.",
+      "pronIpa": "/ˈtengo ke deklaraɾ ˈalɣo/",
+      "pronKo": "**뗑**고 케 데클라**라르** **알**고",
+      "korean": "신고할 것이 있습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "세관 신고를 해야 할 때"
+    },
+    {
+      "foreign": "Nada que declarar.",
+      "pronIpa": "/ˈnaða ke deklaraɾ/",
+      "pronKo": "**나**다 케 데클라**라르**",
+      "korean": "신고할 것 없습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "세관 신고할 것이 없을 때"
+    },
+    {
+      "foreign": "Quisiera una manta, por favor.",
+      "pronIpa": "/kiˈsjera ˈuna ˈmanta por faˈβoɾ/",
+      "pronKo": "키**시**에라 Una **만**따 **포르** 파**보르**",
+      "korean": "담요 한 장 주시겠어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "기내에서 담요를 요청할 때"
+    },
+    {
+      "foreign": "Quisiera agua, por favor.",
+      "pronIpa": "/kiˈsjera ˈaɣwa por faˈβoɾ/",
+      "pronKo": "키**시**에라 **아**과 **포르** 파**보르**",
+      "korean": "물 한 잔 주시겠어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "기내에서 물을 요청할 때"
+    },
+    {
+      "foreign": "¿Me puede traer una almohada?",
+      "pronIpa": "/me ˈpweðe tɾaˈeɾ ˈuna almathopˈða/",
+      "pronKo": "메 **뿌에**데 트라**에르** Una 알모**아**다",
+      "korean": "베개 하나 가져다주시겠어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "기내에서 베개를 요청할 때"
+    },
+    {
+      "foreign": "Aterrizaje",
+      "pronIpa": "/aterisaχe/",
+      "pronKo": "아떼리**사**헤",
+      "korean": "착륙",
+      "example": "El aterrizaje fue suave.",
+      "exampleKo": "착륙은 부드러웠습니다.",
+      "context": ""
+    },
+    {
+      "foreign": "Equipaje",
+      "pronIpa": "/ekipiχaχe/",
+      "pronKo": "에끼**피**하헤",
+      "korean": "수하물",
+      "example": "¿Dónde está la cinta de equipaje?",
+      "exampleKo": "수하물 벨트는 어디에 있나요?",
+      "context": ""
+    }
+  ]
+}

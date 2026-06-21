@@ -1,0 +1,120 @@
+{
+  "id": "colors",
+  "name": "색깔",
+  "lang": "en",
+  "emoji": "🎨",
+  "items": [
+    {
+      "foreign": "red",
+      "pronIpa": "/red/",
+      "pronKo": "**레**드",
+      "korean": "빨간색",
+      "example": "a red apple",
+      "exampleKo": "빨간 사과"
+    },
+    {
+      "foreign": "blue",
+      "pronIpa": "/bluː/",
+      "pronKo": "**블**루ː",
+      "korean": "파란색",
+      "example": "the blue sky",
+      "exampleKo": "파란 하늘"
+    },
+    {
+      "foreign": "green",
+      "pronIpa": "/ɡriːn/",
+      "pronKo": "그**리**ːn",
+      "korean": "초록색",
+      "example": "green grass",
+      "exampleKo": "초록 잔디"
+    },
+    {
+      "foreign": "yellow",
+      "pronIpa": "/ˈjeləʊ/",
+      "pronKo": "**옐**로우",
+      "korean": "노란색",
+      "example": "a yellow banana",
+      "exampleKo": "노란 바나나"
+    },
+    {
+      "foreign": "orange",
+      "pronIpa": "/ˈɒrɪndʒ/",
+      "pronKo": "**오**린쥐",
+      "korean": "주황색",
+      "example": "an orange shirt",
+      "exampleKo": "주황색 셔츠"
+    },
+    {
+      "foreign": "purple",
+      "pronIpa": "/ˈpɜːpl/",
+      "pronKo": "**퍼**플",
+      "korean": "보라색",
+      "example": "purple flowers",
+      "exampleKo": "보라색 꽃"
+    },
+    {
+      "foreign": "pink",
+      "pronIpa": "/pɪŋk/",
+      "pronKo": "**핑**크",
+      "korean": "분홍색",
+      "example": "a pink dress",
+      "exampleKo": "분홍색 드레스"
+    },
+    {
+      "foreign": "brown",
+      "pronIpa": "/braʊn/",
+      "pronKo": "**브**라운",
+      "korean": "갈색",
+      "example": "brown eyes",
+      "exampleKo": "갈색 눈"
+    },
+    {
+      "foreign": "black",
+      "pronIpa": "/blæk/",
+      "pronKo": "**블**랙",
+      "korean": "검은색",
+      "example": "a black cat",
+      "exampleKo": "검은 고양이"
+    },
+    {
+      "foreign": "white",
+      "pronIpa": "/waɪt/",
+      "pronKo": "**화**이트",
+      "korean": "흰색",
+      "example": "a white cloud",
+      "exampleKo": "흰 구름"
+    },
+    {
+      "foreign": "gray",
+      "pronIpa": "/ɡreɪ/",
+      "pronKo": "그**레**이",
+      "korean": "회색",
+      "example": "a gray elephant",
+      "exampleKo": "회색 코끼리"
+    },
+    {
+      "foreign": "gold",
+      "pronIpa": "/ɡəʊld/",
+      "pronKo": "**골**드",
+      "korean": "금색",
+      "example": "a gold ring",
+      "exampleKo": "금반지"
+    },
+    {
+      "foreign": "silver",
+      "pronIpa": "/ˈsɪlvər/",
+      "pronKo": "**실**버",
+      "korean": "은색",
+      "example": "a silver spoon",
+      "exampleKo": "은색 숟가락"
+    },
+    {
+      "foreign": "navy",
+      "pronIpa": "/ˈneɪvi/",
+      "pronKo": "**네**이비",
+      "korean": "남색",
+      "example": "a navy uniform",
+      "exampleKo": "남색 제복"
+    }
+  ]
+}

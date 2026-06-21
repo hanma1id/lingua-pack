@@ -1,0 +1,134 @@
+{
+  "id": "family",
+  "name": "가족",
+  "lang": "en",
+  "emoji": "👨‍👩‍👧",
+  "items": [
+    {
+      "foreign": "mother",
+      "pronIpa": "/ˈmʌðər/",
+      "pronKo": "머**더**ㄹ",
+      "korean": "엄마",
+      "example": "My mother is a doctor.",
+      "exampleKo": "우리 엄마는 의사예요.",
+      "context": ""
+    },
+    {
+      "foreign": "father",
+      "pronIpa": "/ˈfɑːðər/",
+      "pronKo": "파**더**ㄹ",
+      "korean": "아빠",
+      "example": "My father works in an office.",
+      "exampleKo": "우리 아빠는 사무실에서 일해요.",
+      "context": ""
+    },
+    {
+      "foreign": "parent",
+      "pronIpa": "/ˈpeərənt/",
+      "pronKo": "페**어**런트",
+      "korean": "부모",
+      "example": "Parents should take care of their children.",
+      "exampleKo": "부모는 자녀를 돌봐야 합니다.",
+      "context": ""
+    },
+    {
+      "foreign": "son",
+      "pronIpa": "/sʌn/",
+      "pronKo": "써**언**",
+      "korean": "아들",
+      "example": "He is my son.",
+      "exampleKo": "이 아이는 제 아들입니다.",
+      "context": ""
+    },
+    {
+      "foreign": "daughter",
+      "pronIpa": "/ˈdɔːtər/",
+      "pronKo": "도**터**ㄹ",
+      "korean": "딸",
+      "example": "She is my daughter.",
+      "exampleKo": "이 아이는 제 딸입니다.",
+      "context": ""
+    },
+    {
+      "foreign": "brother",
+      "pronIpa": "/ˈbrʌðər/",
+      "pronKo": "브**러**더ㄹ",
+      "korean": "형제 (남자)",
+      "example": "I have one older brother.",
+      "exampleKo": "저는 남자 형제가 한 명 있어요.",
+      "context": ""
+    },
+    {
+      "foreign": "sister",
+      "pronIpa": "/ˈsɪstər/",
+      "pronKo": "시**스터**",
+      "korean": "자매 (여자)",
+      "example": "My sister is younger than me.",
+      "exampleKo": "제 여동생은 저보다 어립니다.",
+      "context": ""
+    },
+    {
+      "foreign": "sibling",
+      "pronIpa": "/ˈsɪblɪŋ/",
+      "pronKo": "시**블링**",
+      "korean": "형제자매 (남녀 모두)",
+      "example": "Do you have any siblings?",
+      "exampleKo": "형제자매가 있나요?",
+      "context": ""
+    },
+    {
+      "foreign": "grandmother",
+      "pronIpa": "/ˈɡrændmʌðər/",
+      "pronKo": "그랜**마**더ㄹ",
+      "korean": "할머니",
+      "example": "My grandmother bakes cookies.",
+      "exampleKo": "우리 할머니는 쿠키를 구우세요.",
+      "context": ""
+    },
+    {
+      "foreign": "grandfather",
+      "pronIpa": "/ˈɡrænfpɑːðər/",
+      "pronKo": "그랜**파**더ㄹ",
+      "korean": "할아버지",
+      "example": "My grandfather tells great stories.",
+      "exampleKo": "우리 할아버지는 재미있는 이야기를 잘 해주세요.",
+      "context": ""
+    },
+    {
+      "foreign": "grandparent",
+      "pronIpa": "/ˈɡrænpeərənt/",
+      "pronKo": "그랜**페**어런트",
+      "korean": "조부모",
+      "example": "I'm visiting my grandparents this weekend.",
+      "exampleKo": "이번 주말에 조부모님 댁에 갈 거예요.",
+      "context": ""
+    },
+    {
+      "foreign": "uncle",
+      "pronIpa": "/ˈʌŋkl/",
+      "pronKo": "엉**클**",
+      "korean": "삼촌, 외삼촌, 숙부",
+      "example": "My uncle lives in Canada.",
+      "exampleKo": "저의 삼촌은 캐나다에 살아요.",
+      "context": ""
+    },
+    {
+      "foreign": "aunt",
+      "pronIpa": "/ɑːnt/",
+      "pronKo": "앤**트**",
+      "korean": "숙모, 이모, 고모",
+      "example": "My aunt is a teacher.",
+      "exampleKo": "저의 이모는 선생님이에요.",
+      "context": ""
+    },
+    {
+      "foreign": "cousin",
+      "pronIpa": "/ˈkʌzn/",
+      "pronKo": "커**즌**",
+      "korean": "사촌",
+      "example": "I have many cousins.",
+      "exampleKo": "저는 사촌이 많아요.",
+      "context": ""
+    }
+  ]
+}

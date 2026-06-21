@@ -1,0 +1,98 @@
+{
+  "id": "shopping",
+  "name": "쇼핑·가격",
+  "lang": "es",
+  "emoji": "🛍️",
+  "items": [
+    {
+      "foreign": "¿Cuánto cuesta?",
+      "pronIpa": "/ˈkwanto ˈkwesta/",
+      "pronKo": "**ꀦ**안토 **퀘**스타",
+      "korean": "얼마예요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "가격을 물어볼 때"
+    },
+    {
+      "foreign": "Es muy caro.",
+      "pronIpa": "/es ˈmwi ˈkaɾo/",
+      "pronKo": "에스 **무이** **까**로",
+      "korean": "너무 비싸요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "가격이 비싸다고 느낄 때"
+    },
+    {
+      "foreign": "¿Tiene más barato?",
+      "pronIpa": "/ˈtje.ne mas baˈɾato/",
+      "pronKo": "**띠에**네 **마스** **바**라토",
+      "korean": "더 싼 거 있어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "더 저렴한 상품을 찾을 때"
+    },
+    {
+      "foreign": "¿Tiene en otro color?",
+      "pronIpa": "/ˈtje.ne en ˈotɾo koˈloɾ/",
+      "pronKo": "**띠에**네 엔 **오**트로 **콜**로르",
+      "korean": "다른 색깔 있어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "다른 색상의 제품을 문의할 때"
+    },
+    {
+      "foreign": "¿Tiene talla más pequeña?",
+      "pronIpa": "/ˈtje.ne ˈta.ʎa mas peˈke.ɲa/",
+      "pronKo": "**띠에**네 **따**야 **마스** **뻬**께냐",
+      "korean": "더 작은 사이즈 있어요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "옷이나 신발의 사이즈를 문의할 때"
+    },
+    {
+      "foreign": "Quisiera una talla más grande.",
+      "pronIpa": "/kiˈsje.ɾa ˈu.na ˈta.ʎa mas ˈgɾan.de/",
+      "pronKo": "끼**시에**라 **우**나 **따**야 **마스** **그란**데",
+      "korean": "더 큰 사이즈로 주세요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "더 큰 사이즈를 원할 때"
+    },
+    {
+      "foreign": "¿Me puede hacer un descuento?",
+      "pronIpa": "/me ˈpwe.ðe aˈθeɾ un desˈkwento/",
+      "pronKo": "메 **뿌에**데 아**쎄르** 운 데스**껜**토",
+      "korean": "할인 좀 해주실 수 있나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "할인을 요청할 때"
+    },
+    {
+      "foreign": "Aceptan tarjeta de crédito.",
+      "pronIpa": "/aˈθep.tan taɾˈxe.ta ðe ˈkɾe.ðito/",
+      "pronKo": "아**셉**탄 따르**헤**따 데 **크레**디또",
+      "korean": "신용카드 받나요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "결제 수단을 문의할 때"
+    },
+    {
+      "foreign": "Pago en efectivo.",
+      "pronIpa": "/ˈpa.ɣo en efeˈkti.βo/",
+      "pronKo": "**빠**고 엔 에페**띁**보",
+      "korean": "현금으로 계산할게요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "현금 결제를 할 때"
+    },
+    {
+      "foreign": "Me lo llevo.",
+      "pronIpa": "/me lo ˈʎe.βo/",
+      "pronKo": "메 로 **이예**보",
+      "korean": "이걸로 살게요.",
+      "example": "",
+      "exampleKo": "",
+      "context": "구매를 결정했을 때"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "greetings_intro",
+  "name": "인사·자기소개",
+  "lang": "en",
+  "emoji": "👋",
+  "items": [
+    {
+      "foreign": "Hello",
+      "pronIpa": "/həˈloʊ/",
+      "pronKo": "허**로우**",
+      "korean": "안녕하세요",
+      "example": "",
+      "exampleKo": "",
+      "context": "처음 만난 사람에게 인사할 때"
+    },
+    {
+      "foreign": "Hi",
+      "pronIpa": "/haɪ/",
+      "pronKo": "하이",
+      "korean": "안녕",
+      "example": "",
+      "exampleKo": "",
+      "context": "친한 사이나 편한 상황에서 인사할 때"
+    },
+    {
+      "foreign": "Nice to meet you.",
+      "pronIpa": "/naɪs tə miːt juː/",
+      "pronKo": "나이스 투 밋 유",
+      "korean": "만나서 반갑습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "처음 만난 사람에게 인사하며 하는 말"
+    },
+    {
+      "foreign": "What's your name?",
+      "pronIpa": "/wɒts jɔːr neɪm?/",
+      "pronKo": "왓츠 유어 네임?",
+      "korean": "이름이 무엇인가요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 이름을 물어볼 때"
+    },
+    {
+      "foreign": "My name is [Name].",
+      "pronIpa": "/maɪ neɪm ɪz [neɪm]/",
+      "pronKo": "마이 네임 이즈 [이름]",
+      "korean": "제 이름은 [이름]입니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 이름을 말할 때"
+    },
+    {
+      "foreign": "Where are you from?",
+      "pronIpa": "/wɛər ɑːr juː frɒm?/",
+      "pronKo": "웨어 아 유 프롬?",
+      "korean": "어디에서 왔나요? (국적 묻기)",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 국적이나 출신지를 물어볼 때"
+    },
+    {
+      "foreign": "I'm from [Country].",
+      "pronIpa": "/aɪm frɒm [ˈkʌntri]/",
+      "pronKo": "아임 프롬 [나라]",
+      "korean": "저는 [나라]에서 왔습니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 국적이나 출신지를 말할 때"
+    },
+    {
+      "foreign": "What do you do?",
+      "pronIpa": "/wɒt duː juː duː?/",
+      "pronKo": "왓 두 유 두?",
+      "korean": "무슨 일을 하세요? (직업 묻기)",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 직업을 물어볼 때"
+    },
+    {
+      "foreign": "I'm a [Job].",
+      "pronIpa": "/aɪm ə [dʒɒb]/",
+      "pronKo": "아임 어 [직업]",
+      "korean": "저는 [직업]입니다.",
+      "example": "",
+      "exampleKo": "",
+      "context": "자신의 직업을 말할 때"
+    },
+    {
+      "foreign": "What are your hobbies?",
+      "pronIpa": "/wɒt ɑːr jɔːr ˈhɒbiz?/",
+      "pronKo": "왓 아 유어 **호**비즈?",
+      "korean": "취미가 무엇인가요?",
+      "example": "",
+      "exampleKo": "",
+      "context": "상대방의 취미를 물어볼 때"
+    }
+  ]
+}

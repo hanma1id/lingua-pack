@@ -1,0 +1,168 @@
+{
+  "id": "numbers",
+  "name": "숫자 1-20",
+  "lang": "es",
+  "emoji": "🔢",
+  "items": [
+    {
+      "foreign": "uno",
+      "pronIpa": "/ˈu.no/",
+      "pronKo": "**우**노",
+      "korean": "하나",
+      "example": "Tengo uno.",
+      "exampleKo": "나는 하나가 있어."
+    },
+    {
+      "foreign": "dos",
+      "pronIpa": "/dos/",
+      "pronKo": "**도**스",
+      "korean": "둘",
+      "example": "Dos perros.",
+      "exampleKo": "강아지 두 마리."
+    },
+    {
+      "foreign": "tres",
+      "pronIpa": "/tɾes/",
+      "pronKo": "**트**레스",
+      "korean": "셋",
+      "example": "Tres libros.",
+      "exampleKo": "책 세 권."
+    },
+    {
+      "foreign": "cuatro",
+      "pronIpa": "/ˈkwa.tɾo/",
+      "pronKo": "**쿠**아트로",
+      "korean": "넷",
+      "example": "Cuatro sillas.",
+      "exampleKo": "의자 네 개."
+    },
+    {
+      "foreign": "cinco",
+      "pronIpa": "/ˈθiŋ.ko/",
+      "pronKo": "**씽**코",
+      "korean": "다섯",
+      "example": "Cinco dedos.",
+      "exampleKo": "손가락 다섯 개."
+    },
+    {
+      "foreign": "seis",
+      "pronIpa": "/seis/",
+      "pronKo": "**세**이스",
+      "korean": "여섯",
+      "example": "Seis manzanas.",
+      "exampleKo": "사과 여섯 개."
+    },
+    {
+      "foreign": "siete",
+      "pronIpa": "/ˈsje.te/",
+      "pronKo": "**시에**테",
+      "korean": "일곱",
+      "example": "Siete días.",
+      "exampleKo": "칠 일."
+    },
+    {
+      "foreign": "ocho",
+      "pronIpa": "/ˈo.tʃo/",
+      "pronKo": "**오**초",
+      "korean": "여덟",
+      "example": "Ocho horas.",
+      "exampleKo": "여덟 시간."
+    },
+    {
+      "foreign": "nueve",
+      "pronIpa": "/ˈnwe.βe/",
+      "pronKo": "**누에**베",
+      "korean": "아홉",
+      "example": "Nueve pisos.",
+      "exampleKo": "아홉 층."
+    },
+    {
+      "foreign": "diez",
+      "pronIpa": "/djeθ/",
+      "pronKo": "**디에**스",
+      "korean": "열",
+      "example": "Diez minutos.",
+      "exampleKo": "십 분."
+    },
+    {
+      "foreign": "once",
+      "pronIpa": "/ˈon.θe/",
+      "pronKo": "**온**세",
+      "korean": "열하나",
+      "example": "Once años.",
+      "exampleKo": "열한 살."
+    },
+    {
+      "foreign": "doce",
+      "pronIpa": "/ˈdo.θe/",
+      "pronKo": "**도**세",
+      "korean": "열둘",
+      "example": "Doce meses.",
+      "exampleKo": "열두 달."
+    },
+    {
+      "foreign": "trece",
+      "pronIpa": "/ˈtɾe.θe/",
+      "pronKo": "**트레**세",
+      "korean": "열셋",
+      "example": "Trece personas.",
+      "exampleKo": "열세 명."
+    },
+    {
+      "foreign": "catorce",
+      "pronIpa": "/kaˈtoɾ.θe/",
+      "pronKo": "**카토**르세",
+      "korean": "열넷",
+      "example": "Catorce euros.",
+      "exampleKo": "십사 유로."
+    },
+    {
+      "foreign": "quince",
+      "pronIpa": "/ˈkin.θe/",
+      "pronKo": "**낀**세",
+      "korean": "열다섯",
+      "example": "Quince días.",
+      "exampleKo": "열닷새."
+    },
+    {
+      "foreign": "dieciséis",
+      "pronIpa": "/dje.siˈseis/",
+      "pronKo": "**디에**시**세**이스",
+      "korean": "열여섯",
+      "example": "Dieciséis años.",
+      "exampleKo": "열여섯 살."
+    },
+    {
+      "foreign": "diecisiete",
+      "pronIpa": "/dje.siˈsje.te/",
+      "pronKo": "**디에**시**시에**테",
+      "korean": "열일곱",
+      "example": "Diecisiete grados.",
+      "exampleKo": "섭씨 십칠도."
+    },
+    {
+      "foreign": "dieciocho",
+      "pronIpa": "/dje.θiˈo.tʃo/",
+      "pronKo": "**디에**치**오**초",
+      "korean": "열여덟",
+      "example": "Dieciocho kilómetros.",
+      "exampleKo": "십팔 킬로미터."
+    },
+    {
+      "foreign": "diecinueve",
+      "pronIpa": "/dje.θiˈnwe.βe/",
+      "pronKo": "**디에**치**누에**베",
+      "korean": "열아홉",
+      "example": "Diecinueve años.",
+      "exampleKo": "열아홉 살."
+    },
+    {
+      "foreign": "veinte",
+      "pronIpa": "/ˈβein.te/",
+      "pronKo": "**베인**테",
+      "korean": "스물",
+      "example": "Veinte personas.",
+      "exampleKo": "스무 명."
+    }
+  ]
+}

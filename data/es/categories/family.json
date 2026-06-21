@@ -1,0 +1,134 @@
+{
+  "id": "family",
+  "name": "가족",
+  "lang": "es",
+  "emoji": "👨‍👩‍👧",
+  "items": [
+    {
+      "foreign": "madre",
+      "pronIpa": "/'maðɾe/",
+      "pronKo": "**마**드로",
+      "korean": "엄마",
+      "example": "Mi madre es muy amable.",
+      "exampleKo": "우리 엄마는 매우 친절하시다.",
+      "context": ""
+    },
+    {
+      "foreign": "padre",
+      "pronIpa": "/'paðɾe/",
+      "pronKo": "**빠**드로",
+      "korean": "아빠",
+      "example": "Mi padre trabaja mucho.",
+      "exampleKo": "우리 아빠는 일을 많이 하신다.",
+      "context": ""
+    },
+    {
+      "foreign": "hermano",
+      "pronIpa": "/eɾ'mano/",
+      "pronKo": "에르**마**노",
+      "korean": "남자 형제 (오빠, 남동생)",
+      "example": "Tengo un hermano mayor.",
+      "exampleKo": "나는 형이 한 명 있다.",
+      "context": ""
+    },
+    {
+      "foreign": "hermana",
+      "pronIpa": "/eɾ'mana/",
+      "pronKo": "에르**마**나",
+      "korean": "여자 형제 (언니, 여동생)",
+      "example": "Mi hermana estudia en la universidad.",
+      "exampleKo": "내 여동생은 대학교에 다닌다.",
+      "context": ""
+    },
+    {
+      "foreign": "abuela",
+      "pronIpa": "/a'βwela/",
+      "pronKo": "아**우**엘라",
+      "korean": "할머니",
+      "example": "Mi abuela cocina muy bien.",
+      "exampleKo": "우리 할머니는 요리를 아주 잘하신다.",
+      "context": ""
+    },
+    {
+      "foreign": "abuelo",
+      "pronIpa": "/a'βwelo/",
+      "pronKo": "아**우**엘로",
+      "korean": "할아버지",
+      "example": "Mi abuelo lee el periódico.",
+      "exampleKo": "우리 할아버지는 신문을 읽으신다.",
+      "context": ""
+    },
+    {
+      "foreign": "hijo",
+      "pronIpa": "/'ixo/",
+      "pronKo": "**이**호",
+      "korean": "아들",
+      "example": "Juan es mi hijo.",
+      "exampleKo": "후안은 내 아들이다.",
+      "context": ""
+    },
+    {
+      "foreign": "hija",
+      "pronIpa": "/'ixa/",
+      "pronKo": "**이**하",
+      "korean": "딸",
+      "example": "Ella es mi hija mayor.",
+      "exampleKo": "그녀는 내 첫째 딸이다.",
+      "context": ""
+    },
+    {
+      "foreign": "tía",
+      "pronIpa": "/'tia/",
+      "pronKo": "**띠**아",
+      "korean": "이모, 숙모, 고모",
+      "example": "Mi tía vive en Madrid.",
+      "exampleKo": "우리 이모는 마드리드에 사신다.",
+      "context": ""
+    },
+    {
+      "foreign": "tío",
+      "pronIpa": "/'tio/",
+      "pronKo": "**띠**오",
+      "korean": "삼촌, 이모부, 고모부",
+      "example": "Mi tío es muy divertido.",
+      "exampleKo": "우리 삼촌은 정말 재미있으시다.",
+      "context": ""
+    },
+    {
+      "foreign": "primo",
+      "pronIpa": "/'pɾimo/",
+      "pronKo": "**쁘**리모",
+      "korean": "사촌 (남자)",
+      "example": "Mi primo y yo jugamos juntos.",
+      "exampleKo": "내 사촌과 나는 함께 논다.",
+      "context": ""
+    },
+    {
+      "foreign": "prima",
+      "pronIpa": "/'pɾima/",
+      "pronKo": "**쁘**리마",
+      "korean": "사촌 (여자)",
+      "example": "Ella es mi prima favorita.",
+      "exampleKo": "그녀는 내가 가장 좋아하는 사촌이다.",
+      "context": ""
+    },
+    {
+      "foreign": "familia",
+      "pronIpa": "/fa'milja/",
+      "pronKo": "파**밀**리아",
+      "korean": "가족",
+      "example": "Mi familia es lo más importante.",
+      "exampleKo": "우리 가족은 가장 소중한 존재이다.",
+      "context": ""
+    },
+    {
+      "foreign": "¿Cómo te llamas?",
+      "pronIpa": "/'komo te 'jamas/",
+      "pronKo": "**꼬**모 떼 **야**마스",
+      "korean": "너의 이름은 무엇이니? (가족이나 친한 사람에게)",
+      "example": "",
+      "exampleKo": "",
+      "context": "처음 만난 아이나 아주 가까운 사람의 이름을 물을 때"
+    }
+  ]
+}
