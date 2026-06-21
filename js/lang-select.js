@@ -16,12 +16,15 @@ const $loading = document.getElementById("loading");
 // URL ?force=1 이면 자동 redirect 안 함 (언어 다시 고르고 싶을 때)
 const force = new URLSearchParams(location.search).get("force");
 const last = getLastLang();
-if (!force && last) {
+// 영어는 학습 대상 아님 — 마지막 언어가 en이면 자동 진입 안 함
+if (!force && last && last !== "en") {
   location.replace(`home.html?lang=${encodeURIComponent(last)}`);
 }
 
 function renderLanguages(langs) {
-  $grid.innerHTML = langs.map((l) => {
+  // 영어는 학습 대상이 아니라 레퍼런스 — 첫 선택 화면에서 제외
+  const visible = langs.filter((l) => l.id !== "en");
+  $grid.innerHTML = visible.map((l) => {
     const cls = l.ready ? "lang-card" : "lang-card disabled";
     const href = l.ready ? `home.html?lang=${encodeURIComponent(l.id)}` : "#";
     const tag = l.ready

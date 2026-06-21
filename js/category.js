@@ -120,6 +120,7 @@ function renderList(items) {
         ${it.pronKo ? `<div class="item-pron-ko">${renderPronKo(it.pronKo)}</div>` : ""}
       </div>
       <div class="item-korean">${esc(it.korean)}</div>
+      ${it.english ? `<div class="item-english">${esc(it.english)}</div>` : ""}
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
     </div>
   `).join("");

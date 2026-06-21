@@ -11,7 +11,8 @@
       "korean": "개",
       "example": "Tengo un perro pequeño.",
       "exampleKo": "나는 작은 개를 키워요.",
-      "context": ""
+      "context": "",
+      "english": "dog"
     },
     {
       "foreign": "gato",
@@ -20,7 +21,8 @@
       "korean": "고양이",
       "example": "Mi gato duerme mucho.",
       "exampleKo": "우리 고양이는 잠을 많이 자요.",
-      "context": ""
+      "context": "",
+      "english": "cat"
     },
     {
       "foreign": "vaca",
@@ -29,7 +31,8 @@
       "korean": "소",
       "example": "La vaca da leche.",
       "exampleKo": "소는 우유를 줘요.",
-      "context": ""
+      "context": "",
+      "english": "cow"
     },
     {
       "foreign": "caballo",
@@ -38,7 +41,8 @@
       "korean": "말",
       "example": "El caballo corre rápido.",
       "exampleKo": "말이 빨리 달려요.",
-      "context": ""
+      "context": "",
+      "english": "horse"
     },
     {
       "foreign": "cerdo",
@@ -47,7 +51,8 @@
       "korean": "돼지",
       "example": "El cerdo está en el barro.",
       "exampleKo": "돼지가 진흙 속에 있어요.",
-      "context": ""
+      "context": "",
+      "english": "pig"
     },
     {
       "foreign": "pollo",
@@ -56,7 +61,8 @@
       "korean": "닭",
       "example": "El pollo come granos.",
       "exampleKo": "닭이 곡식을 먹어요.",
-      "context": ""
+      "context": "",
+      "english": "chicken"
     },
     {
       "foreign": "pez",
@@ -65,7 +71,8 @@
       "korean": "물고기",
       "example": "Me gusta nadar como un pez.",
       "exampleKo": "나는 물고기처럼 수영하는 것을 좋아해요.",
-      "context": ""
+      "context": "",
+      "english": "fish"
     },
     {
       "foreign": "león",
@@ -74,7 +81,8 @@
       "korean": "사자",
       "example": "El león es el rey de la selva.",
       "exampleKo": "사자는 정글의 왕이에요.",
-      "context": ""
+      "context": "",
+      "english": "lion"
     },
     {
       "foreign": "tigre",
@@ -83,7 +91,8 @@
       "korean": "호랑이",
       "example": "El tigre tiene rayas.",
       "exampleKo": "호랑이는 줄무늬가 있어요.",
-      "context": ""
+      "context": "",
+      "english": "tiger"
     },
     {
       "foreign": "elefante",
@@ -92,7 +101,8 @@
       "korean": "코끼리",
       "example": "El elefante es muy grande.",
       "exampleKo": "코끼리는 매우 커요.",
-      "context": ""
+      "context": "",
+      "english": "elephant"
     },
     {
       "foreign": "mono",
@@ -101,7 +111,8 @@
       "korean": "원숭이",
       "example": "El mono salta de árbol en árbol.",
       "exampleKo": "원숭이가 나무에서 나무로 뛰어다녀요.",
-      "context": ""
+      "context": "",
+      "english": "monkey"
     },
     {
       "foreign": "jirafa",
@@ -110,7 +121,8 @@
       "korean": "기린",
       "example": "La jirafa tiene un cuello largo.",
       "exampleKo": "기린은 목이 길어요.",
-      "context": ""
+      "context": "",
+      "english": "giraffe"
     },
     {
       "foreign": "oso",
@@ -119,7 +131,8 @@
       "korean": "곰",
       "example": "El oso come miel.",
       "exampleKo": "곰은 꿀을 먹어요.",
-      "context": ""
+      "context": "",
+      "english": "bear"
     },
     {
       "foreign": "conejo",
@@ -128,7 +141,8 @@
       "korean": "토끼",
       "example": "El conejo salta rápido.",
       "exampleKo": "토끼가 빨리 뛰어.",
-      "context": ""
+      "context": "",
+      "english": "rabbit"
     },
     {
       "foreign": "pájaro",
@@ -137,7 +151,8 @@
       "korean": "새",
       "example": "El pájaro canta en la mañana.",
       "exampleKo": "새가 아침에 노래해요.",
-      "context": ""
+      "context": "",
+      "english": "bird"
     },
     {
       "foreign": "serpiente",
@@ -146,7 +161,8 @@
       "korean": "뱀",
       "example": "La serpiente se arrastra.",
       "exampleKo": "뱀이 기어가요.",
-      "context": ""
+      "context": "",
+      "english": "snake"
     }
   ]
 }

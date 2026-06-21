@@ -33,8 +33,9 @@ function esc(s) {
 }
 
 function renderLangSelect() {
-  // 옵션 — 준비 안 된 언어는 disabled
-  $langSelect.innerHTML = _langs.map((l) => {
+  // 영어는 학습 대상이 아니라 레퍼런스로만 — 드롭다운에서 제외
+  const choices = _langs.filter((l) => l.id !== "en");
+  $langSelect.innerHTML = choices.map((l) => {
     const label = `${l.flag} ${l.name}${l.ready ? "" : " (준비 중)"}`;
     const sel = l.id === lang ? " selected" : "";
     const dis = l.ready ? "" : " disabled";

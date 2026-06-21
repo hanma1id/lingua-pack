@@ -11,7 +11,8 @@
       "korean": "두 명 자리 부탁드립니다.",
       "example": "",
       "exampleKo": "",
-      "context": "식당에 도착해서 자리를 요청할 때"
+      "context": "식당에 도착해서 자리를 요청할 때",
+      "english": "A table for two, please."
     },
     {
       "foreign": "¿Qué recomienda?",
@@ -20,7 +21,8 @@
       "korean": "무엇을 추천하시나요?",
       "example": "",
       "exampleKo": "",
-      "context": "메뉴를 고르기 어려울 때 직원에게 추천을 부탁할 때"
+      "context": "메뉴를 고르기 어려울 때 직원에게 추천을 부탁할 때",
+      "english": "What do you recommend?"
     },
     {
       "foreign": "¿Me trae la carta, por favor?",
@@ -29,7 +31,8 @@
       "korean": "메뉴판 좀 가져다주시겠어요?",
       "example": "",
       "exampleKo": "",
-      "context": "자리에 앉아 메뉴판을 요청할 때"
+      "context": "자리에 앉아 메뉴판을 요청할 때",
+      "english": "Could I see the menu, please?"
     },
     {
       "foreign": "Quisiera...",
@@ -38,7 +41,8 @@
       "korean": "~을 원합니다 / ~을 주세요.",
       "example": "",
       "exampleKo": "",
-      "context": "주문을 시작할 때 정중하게 말할 때"
+      "context": "주문을 시작할 때 정중하게 말할 때",
+      "english": "I'd like ..."
     },
     {
       "foreign": "Quiero...",
@@ -47,7 +51,8 @@
       "korean": "~을 원해요 / ~ 주세요.",
       "example": "",
       "exampleKo": "",
-      "context": "주문을 할 때 직접적으로 말할 때"
+      "context": "주문을 할 때 직접적으로 말할 때",
+      "english": "I want ..."
     },
     {
       "foreign": "Soy vegetariano/a.",
@@ -56,7 +61,8 @@
       "korean": "저는 채식주의자입니다.",
       "example": "",
       "exampleKo": "",
-      "context": "음식 재료에 대한 알레르기나 선호도를 말할 때"
+      "context": "음식 재료에 대한 알레르기나 선호도를 말할 때",
+      "english": "I'm a vegetarian."
     },
     {
       "foreign": "¿Tiene opciones sin gluten?",
@@ -65,7 +71,8 @@
       "korean": "글루텐 프리 옵션이 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "특정 식단 제한이 있을 때 메뉴 문의"
+      "context": "특정 식단 제한이 있을 때 메뉴 문의",
+      "english": "Do you have gluten-free options?"
     },
     {
       "foreign": "Muy picante",
@@ -74,7 +81,8 @@
       "korean": "매운",
       "example": "No quiero que esté muy picante.",
       "exampleKo": "너무 맵지 않게 해주세요.",
-      "context": ""
+      "context": "",
+      "english": "Very spicy"
     },
     {
       "foreign": "Poco picante",
@@ -83,7 +91,8 @@
       "korean": "약간 매운",
       "example": "Prefiero poco picante.",
       "exampleKo": "약간 매운 것을 선호해요.",
-      "context": ""
+      "context": "",
+      "english": "Mildly spicy"
     },
     {
       "foreign": "La cuenta, por favor.",
@@ -92,7 +101,8 @@
       "korean": "계산서 부탁드립니다.",
       "example": "",
       "exampleKo": "",
-      "context": "식사를 마치고 계산을 요청할 때"
+      "context": "식사를 마치고 계산을 요청할 때",
+      "english": "The bill, please."
     },
     {
       "foreign": "¿Puedo pagar con tarjeta?",
@@ -101,7 +111,8 @@
       "korean": "카드로 계산할 수 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "결제 수단에 대해 문의할 때"
+      "context": "결제 수단에 대해 문의할 때",
+      "english": "Can I pay by card?"
     },
     {
       "foreign": "Un vaso de agua, por favor.",
@@ -110,7 +121,8 @@
       "korean": "물 한 잔 부탁드립니다.",
       "example": "",
       "exampleKo": "",
-      "context": "음료를 추가로 주문하거나 물을 요청할 때"
+      "context": "음료를 추가로 주문하거나 물을 요청할 때",
+      "english": "A glass of water, please."
     }
   ]
 }

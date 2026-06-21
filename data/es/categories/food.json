@@ -11,7 +11,8 @@
       "korean": "물",
       "example": "Quiero un vaso de agua.",
       "exampleKo": "물 한 잔 주세요.",
-      "context": ""
+      "context": "",
+      "english": "water"
     },
     {
       "foreign": "pan",
@@ -20,7 +21,8 @@
       "korean": "빵",
       "example": "Me gusta el pan tostado.",
       "exampleKo": "나는 토스트를 좋아해.",
-      "context": ""
+      "context": "",
+      "english": "bread"
     },
     {
       "foreign": "manzana",
@@ -29,7 +31,8 @@
       "korean": "사과",
       "example": "Una manzana al día mantiene al doctor en la lejanía.",
       "exampleKo": "하루에 사과 한 개는 의사를 멀리하게 한다.",
-      "context": ""
+      "context": "",
+      "english": "apple"
     },
     {
       "foreign": "leche",
@@ -38,7 +41,8 @@
       "korean": "우유",
       "example": "Prefiero la leche entera.",
       "exampleKo": "나는 일반 우유를 선호해.",
-      "context": ""
+      "context": "",
+      "english": "milk"
     },
     {
       "foreign": "carne",
@@ -47,7 +51,8 @@
       "korean": "고기",
       "example": "Vamos a comer carne a la parrilla.",
       "exampleKo": "우리 구운 고기를 먹으러 가자.",
-      "context": ""
+      "context": "",
+      "english": "meat"
     },
     {
       "foreign": "pollo",
@@ -56,7 +61,8 @@
       "korean": "닭고기",
       "example": "El pollo asado está delicioso.",
       "exampleKo": "구운 닭고기는 맛있어.",
-      "context": ""
+      "context": "",
+      "english": "chicken"
     },
     {
       "foreign": "pescado",
@@ -65,7 +71,8 @@
       "korean": "생선",
       "example": "Hoy comemos pescado fresco.",
       "exampleKo": "오늘은 신선한 생선을 먹자.",
-      "context": ""
+      "context": "",
+      "english": "fish"
     },
     {
       "foreign": "arroz",
@@ -74,7 +81,8 @@
       "korean": "쌀, 밥",
       "example": "Me encanta el arroz con pollo.",
       "exampleKo": "나는 닭고기 볶음밥을 정말 좋아해.",
-      "context": ""
+      "context": "",
+      "english": "rice"
     },
     {
       "foreign": "huevo",
@@ -83,7 +91,8 @@
       "korean": "달걀",
       "example": "Necesito dos huevos para la receta.",
       "exampleKo": "이 레시피에 달걀 두 개가 필요해.",
-      "context": ""
+      "context": "",
+      "english": "egg"
     },
     {
       "foreign": "queso",
@@ -92,7 +101,8 @@
       "korean": "치즈",
       "example": "Ponle un poco de queso.",
       "exampleKo": "치즈를 좀 넣어줘.",
-      "context": ""
+      "context": "",
+      "english": "cheese"
     },
     {
       "foreign": "aceite",
@@ -101,7 +111,8 @@
       "korean": "기름 (식용유)",
       "example": "Usa aceite de oliva para cocinar.",
       "exampleKo": "요리할 때 올리브유를 사용해.",
-      "context": ""
+      "context": "",
+      "english": "oil"
     },
     {
       "foreign": "sal",
@@ -110,7 +121,8 @@
       "korean": "소금",
       "example": "Añade sal al gusto.",
       "exampleKo": "기호에 맞게 소금을 넣어.",
-      "context": ""
+      "context": "",
+      "english": "salt"
     },
     {
       "foreign": "azúcar",
@@ -119,7 +131,8 @@
       "korean": "설탕",
       "example": "No quiero azúcar en mi café.",
       "exampleKo": "나는 커피에 설탕을 넣고 싶지 않아.",
-      "context": ""
+      "context": "",
+      "english": "sugar"
     },
     {
       "foreign": "café",
@@ -128,7 +141,8 @@
       "korean": "커피",
       "example": "¿Quieres un café?",
       "exampleKo": "커피 마실래?",
-      "context": "커피를 권하거나 주문할 때"
+      "context": "커피를 권하거나 주문할 때",
+      "english": "coffee"
     },
     {
       "foreign": "té",
@@ -137,7 +151,8 @@
       "korean": "차",
       "example": "Me gusta el té verde.",
       "exampleKo": "나는 녹차를 좋아해.",
-      "context": ""
+      "context": "",
+      "english": "tea"
     },
     {
       "foreign": "vino",
@@ -146,7 +161,8 @@
       "korean": "와인",
       "example": "Vamos a tomar una copa de vino.",
       "exampleKo": "와인 한 잔 하자.",
-      "context": ""
+      "context": "",
+      "english": "wine"
     },
     {
       "foreign": "cerveza",
@@ -155,7 +171,8 @@
       "korean": "맥주",
       "example": "Una cerveza fría, por favor.",
       "exampleKo": "차가운 맥주 한 잔 주세요.",
-      "context": "식당이나 바에서 맥주를 주문할 때"
+      "context": "식당이나 바에서 맥주를 주문할 때",
+      "english": "beer"
     },
     {
       "foreign": "fruta",
@@ -164,7 +181,8 @@
       "korean": "과일",
       "example": "Me encantan las frutas tropicales.",
       "exampleKo": "나는 열대 과일을 정말 좋아해.",
-      "context": ""
+      "context": "",
+      "english": "fruit"
     }
   ]
 }

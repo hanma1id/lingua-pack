@@ -11,7 +11,8 @@
       "korean": "실례합니다, 역은 어디에 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "모르는 장소의 위치를 물을 때 사용합니다."
+      "context": "모르는 장소의 위치를 물을 때 사용합니다.",
+      "english": "Excuse me, where is the station?"
     },
     {
       "foreign": "¿Dónde está el museo?",
@@ -20,7 +21,8 @@
       "korean": "박물관은 어디에 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "박물관의 위치를 물을 때 사용합니다."
+      "context": "박물관의 위치를 물을 때 사용합니다.",
+      "english": "Where is the museum?"
     },
     {
       "foreign": "¿Dónde están los servicios?",
@@ -29,7 +31,8 @@
       "korean": "화장실은 어디에 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "공공장소에서 화장실 위치를 물을 때 사용합니다."
+      "context": "공공장소에서 화장실 위치를 물을 때 사용합니다.",
+      "english": "Where are the restrooms?"
     },
     {
       "foreign": "A la izquierda",
@@ -37,7 +40,8 @@
       "pronKo": "아 라 이**스**끼에르**다**",
       "korean": "왼쪽으로",
       "example": "Gira a la izquierda.",
-      "exampleKo": "왼쪽으로 도세요."
+      "exampleKo": "왼쪽으로 도세요.",
+      "english": "To the left"
     },
     {
       "foreign": "A la derecha",
@@ -45,7 +49,8 @@
       "pronKo": "아 라 데**레**차",
       "korean": "오른쪽으로",
       "example": "Sigue a la derecha.",
-      "exampleKo": "오른쪽으로 계속 가세요."
+      "exampleKo": "오른쪽으로 계속 가세요.",
+      "english": "To the right"
     },
     {
       "foreign": "Todo recto",
@@ -53,7 +58,8 @@
       "pronKo": "**도**도 **렉**또",
       "korean": "직진",
       "example": "Sigue todo recto.",
-      "exampleKo": "직진하세요."
+      "exampleKo": "직진하세요.",
+      "english": "Straight ahead"
     },
     {
       "foreign": "¿Está lejos?",
@@ -62,7 +68,8 @@
       "korean": "멀리 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "목적지가 얼마나 먼지 물을 때 사용합니다."
+      "context": "목적지가 얼마나 먼지 물을 때 사용합니다.",
+      "english": "Is it far?"
     },
     {
       "foreign": "¿Está cerca?",
@@ -71,7 +78,8 @@
       "korean": "가까이 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "목적지가 가까운지 물을 때 사용합니다."
+      "context": "목적지가 가까운지 물을 때 사용합니다.",
+      "english": "Is it close?"
     },
     {
       "foreign": "¿Cuánto se tarda en llegar?",
@@ -80,7 +88,8 @@
       "korean": "도착하는 데 얼마나 걸리나요?",
       "example": "",
       "exampleKo": "",
-      "context": "목적지까지 가는 데 걸리는 시간을 물을 때 사용합니다."
+      "context": "목적지까지 가는 데 걸리는 시간을 물을 때 사용합니다.",
+      "english": "How long does it take to get there?"
     },
     {
       "foreign": "Perdón, ¿cómo llego a la plaza?",
@@ -89,7 +98,8 @@
       "korean": "실례합니다, 광장까지 어떻게 가나요?",
       "example": "",
       "exampleKo": "",
-      "context": "특정 장소로 가는 방법을 물을 때 사용합니다."
+      "context": "특정 장소로 가는 방법을 물을 때 사용합니다.",
+      "english": "Excuse me, how do I get to the square?"
     }
   ]
 }

@@ -11,7 +11,8 @@
       "korean": "여권",
       "example": "Su pasaporte, por favor.",
       "exampleKo": "여권을 보여주세요.",
-      "context": ""
+      "context": "",
+      "english": "Passport"
     },
     {
       "foreign": "¿Dónde está la puerta de embarque?",
@@ -20,7 +21,8 @@
       "korean": "탑승 게이트는 어디에 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "게이트 위치를 물을 때"
+      "context": "게이트 위치를 물을 때",
+      "english": "Where is the boarding gate?"
     },
     {
       "foreign": "Mi vuelo es el número...",
@@ -29,7 +31,8 @@
       "korean": "제 비행기 편명은 ...번입니다.",
       "example": "",
       "exampleKo": "",
-      "context": "자신의 비행기 편명을 말할 때"
+      "context": "자신의 비행기 편명을 말할 때",
+      "english": "My flight number is ..."
     },
     {
       "foreign": "¿Cuánto tiempo se quedará?",
@@ -38,7 +41,8 @@
       "korean": "얼마나 머무르실 건가요?",
       "example": "",
       "exampleKo": "",
-      "context": "체류 기간을 물을 때"
+      "context": "체류 기간을 물을 때",
+      "english": "How long will you be staying?"
     },
     {
       "foreign": "Me quedaré por...",
@@ -47,7 +51,8 @@
       "korean": "...동안 머무를 것입니다.",
       "example": "",
       "exampleKo": "",
-      "context": "자신의 체류 기간을 말할 때"
+      "context": "자신의 체류 기간을 말할 때",
+      "english": "I'll be staying for ..."
     },
     {
       "foreign": "Tengo que declarar algo.",
@@ -56,7 +61,8 @@
       "korean": "신고할 것이 있습니다.",
       "example": "",
       "exampleKo": "",
-      "context": "세관 신고를 해야 할 때"
+      "context": "세관 신고를 해야 할 때",
+      "english": "I have something to declare."
     },
     {
       "foreign": "Nada que declarar.",
@@ -65,7 +71,8 @@
       "korean": "신고할 것 없습니다.",
       "example": "",
       "exampleKo": "",
-      "context": "세관 신고할 것이 없을 때"
+      "context": "세관 신고할 것이 없을 때",
+      "english": "Nothing to declare."
     },
     {
       "foreign": "Quisiera una manta, por favor.",
@@ -74,7 +81,8 @@
       "korean": "담요 한 장 주시겠어요?",
       "example": "",
       "exampleKo": "",
-      "context": "기내에서 담요를 요청할 때"
+      "context": "기내에서 담요를 요청할 때",
+      "english": "Could I have a blanket, please?"
     },
     {
       "foreign": "Quisiera agua, por favor.",
@@ -83,7 +91,8 @@
       "korean": "물 한 잔 주시겠어요?",
       "example": "",
       "exampleKo": "",
-      "context": "기내에서 물을 요청할 때"
+      "context": "기내에서 물을 요청할 때",
+      "english": "Could I have some water, please?"
     },
     {
       "foreign": "¿Me puede traer una almohada?",
@@ -92,7 +101,8 @@
       "korean": "베개 하나 가져다주시겠어요?",
       "example": "",
       "exampleKo": "",
-      "context": "기내에서 베개를 요청할 때"
+      "context": "기내에서 베개를 요청할 때",
+      "english": "Could you bring me a pillow?"
     },
     {
       "foreign": "Aterrizaje",
@@ -101,7 +111,8 @@
       "korean": "착륙",
       "example": "El aterrizaje fue suave.",
       "exampleKo": "착륙은 부드러웠습니다.",
-      "context": ""
+      "context": "",
+      "english": "Landing"
     },
     {
       "foreign": "Equipaje",
@@ -110,7 +121,8 @@
       "korean": "수하물",
       "example": "¿Dónde está la cinta de equipaje?",
       "exampleKo": "수하물 벨트는 어디에 있나요?",
-      "context": ""
+      "context": "",
+      "english": "Luggage"
     }
   ]
 }

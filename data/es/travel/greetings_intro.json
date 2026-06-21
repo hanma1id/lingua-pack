@@ -11,7 +11,8 @@
       "korean": "안녕",
       "example": "",
       "exampleKo": "",
-      "context": "처음 만났을 때, 또는 친구나 아는 사람에게 인사할 때 사용합니다."
+      "context": "처음 만났을 때, 또는 친구나 아는 사람에게 인사할 때 사용합니다.",
+      "english": "Hello"
     },
     {
       "foreign": "Buenos días",
@@ -20,7 +21,8 @@
       "korean": "좋은 아침이에요",
       "example": "",
       "exampleKo": "",
-      "context": "아침 인사로 사용합니다. 보통 정오까지 사용합니다."
+      "context": "아침 인사로 사용합니다. 보통 정오까지 사용합니다.",
+      "english": "Good morning"
     },
     {
       "foreign": "Buenas tardes",
@@ -29,7 +31,8 @@
       "korean": "좋은 오후예요",
       "example": "",
       "exampleKo": "",
-      "context": "점심 식사 후부터 해 질 녘까지 사용하는 오후 인사입니다."
+      "context": "점심 식사 후부터 해 질 녘까지 사용하는 오후 인사입니다.",
+      "english": "Good afternoon"
     },
     {
       "foreign": "Buenas noches",
@@ -38,7 +41,8 @@
       "korean": "좋은 밤이에요",
       "example": "",
       "exampleKo": "",
-      "context": "저녁 인사 및 잠자리에 들기 전 작별 인사로 사용합니다."
+      "context": "저녁 인사 및 잠자리에 들기 전 작별 인사로 사용합니다.",
+      "english": "Good evening"
     },
     {
       "foreign": "¿Cómo te llamas?",
@@ -47,7 +51,8 @@
       "korean": "이름이 뭐예요?",
       "example": "",
       "exampleKo": "",
-      "context": "상대방의 이름을 물어볼 때 사용합니다."
+      "context": "상대방의 이름을 물어볼 때 사용합니다.",
+      "english": "What's your name?"
     },
     {
       "foreign": "Me llamo [이름]",
@@ -56,7 +61,8 @@
       "korean": "제 이름은 [이름]입니다",
       "example": "",
       "exampleKo": "",
-      "context": "자신의 이름을 소개할 때 사용합니다."
+      "context": "자신의 이름을 소개할 때 사용합니다.",
+      "english": "My name is [name]."
     },
     {
       "foreign": "¿De dónde eres?",
@@ -65,7 +71,8 @@
       "korean": "어디 출신이세요?",
       "example": "",
       "exampleKo": "",
-      "context": "상대방의 국적이나 출신지를 물어볼 때 사용합니다."
+      "context": "상대방의 국적이나 출신지를 물어볼 때 사용합니다.",
+      "english": "Where are you from?"
     },
     {
       "foreign": "Soy de [나라]",
@@ -74,7 +81,8 @@
       "korean": "저는 [나라] 출신입니다",
       "example": "",
       "exampleKo": "",
-      "context": "자신의 국적이나 출신지를 소개할 때 사용합니다."
+      "context": "자신의 국적이나 출신지를 소개할 때 사용합니다.",
+      "english": "I'm from [country]."
     },
     {
       "foreign": "¿A qué te dedicas?",
@@ -83,7 +91,8 @@
       "korean": "무슨 일을 하세요?",
       "example": "",
       "exampleKo": "",
-      "context": "상대방의 직업을 물어볼 때 사용합니다."
+      "context": "상대방의 직업을 물어볼 때 사용합니다.",
+      "english": "What do you do?"
     },
     {
       "foreign": "Soy [직업]",
@@ -92,7 +101,8 @@
       "korean": "저는 [직업]입니다",
       "example": "",
       "exampleKo": "",
-      "context": "자신의 직업을 소개할 때 사용합니다."
+      "context": "자신의 직업을 소개할 때 사용합니다.",
+      "english": "I'm a [occupation]."
     }
   ]
 }

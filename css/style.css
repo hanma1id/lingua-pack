@@ -369,7 +369,25 @@ a { color: var(--accent); text-decoration: none; }
 }
 .item-korean {
   font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+/* 영어 — 보조 레퍼런스, 한국어보다 톤 다운 */
+.item-english {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
   margin-bottom: 6px;
+  font-style: italic;
+}
+.item-english::before {
+  content: "EN ";
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--bg-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-style: normal;
+  letter-spacing: 0.5px;
 }
 .item-context {
   font-size: 0.85rem;
@@ -463,6 +481,24 @@ a { color: var(--accent); text-decoration: none; }
   font-weight: 700;
   text-align: center;
   line-height: 1.4;
+}
+.flash-english {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+  padding: 6px 12px;
+  background: var(--bg-soft);
+  border-radius: 8px;
+}
+.flash-english::before {
+  content: "EN ";
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 4px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  color: var(--accent);
 }
 .flash-context {
   font-size: 0.9rem;

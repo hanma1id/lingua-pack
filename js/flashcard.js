@@ -56,6 +56,7 @@ export function createFlashcard({ container, items, ttsLang = "en-US" }) {
       </div>
       <div class="flash-back">
         <div class="flash-korean">${esc(it.korean)}</div>
+        ${it.english ? `<div class="flash-english">${esc(it.english)}</div>` : ""}
         ${it.context ? `<div class="flash-context">${esc(it.context)}</div>` : ""}
         <button class="flash-tts" type="button" data-action="tts" aria-label="발음 듣기">🔊</button>
       </div>

@@ -11,7 +11,8 @@
       "korean": "안녕",
       "example": "",
       "exampleKo": "",
-      "context": "가장 일반적인 인사말로, 처음 보거나 오랜만에 만난 사람 모두에게 사용합니다."
+      "context": "가장 일반적인 인사말로, 처음 보거나 오랜만에 만난 사람 모두에게 사용합니다.",
+      "english": "Hello"
     },
     {
       "foreign": "Buenos días",
@@ -20,7 +21,8 @@
       "korean": "좋은 아침",
       "example": "",
       "exampleKo": "",
-      "context": "아침 인사로 사용합니다."
+      "context": "아침 인사로 사용합니다.",
+      "english": "Good morning"
     },
     {
       "foreign": "Buenas tardes",
@@ -29,7 +31,8 @@
       "korean": "좋은 오후",
       "example": "",
       "exampleKo": "",
-      "context": "점심 식사 후부터 해가 지기 전까지 사용하는 인사말입니다."
+      "context": "점심 식사 후부터 해가 지기 전까지 사용하는 인사말입니다.",
+      "english": "Good afternoon"
     },
     {
       "foreign": "Buenas noches",
@@ -38,7 +41,8 @@
       "korean": "좋은 밤",
       "example": "",
       "exampleKo": "",
-      "context": "저녁 인사 또는 잠자리에 들기 전 인사로 사용합니다."
+      "context": "저녁 인사 또는 잠자리에 들기 전 인사로 사용합니다.",
+      "english": "Good evening"
     },
     {
       "foreign": "Adiós",
@@ -47,7 +51,8 @@
       "korean": "안녕히 가세요/계세요",
       "example": "",
       "exampleKo": "",
-      "context": "헤어질 때 사용하는 일반적인 인사말입니다."
+      "context": "헤어질 때 사용하는 일반적인 인사말입니다.",
+      "english": "Goodbye"
     },
     {
       "foreign": "Hasta luego",
@@ -56,7 +61,8 @@
       "korean": "다음에 봐요",
       "example": "",
       "exampleKo": "",
-      "context": "가까운 미래에 다시 만날 것을 예상하며 헤어질 때 사용합니다."
+      "context": "가까운 미래에 다시 만날 것을 예상하며 헤어질 때 사용합니다.",
+      "english": "See you later"
     },
     {
       "foreign": "Hasta mañana",
@@ -65,7 +71,8 @@
       "korean": "내일 봐요",
       "example": "",
       "exampleKo": "",
-      "context": "내일 다시 만날 경우 사용하는 인사말입니다."
+      "context": "내일 다시 만날 경우 사용하는 인사말입니다.",
+      "english": "See you tomorrow"
     },
     {
       "foreign": "Gracias",
@@ -74,7 +81,8 @@
       "korean": "감사합니다",
       "example": "",
       "exampleKo": "",
-      "context": "감사를 표현할 때 사용합니다."
+      "context": "감사를 표현할 때 사용합니다.",
+      "english": "Thank you"
     },
     {
       "foreign": "De nada",
@@ -83,7 +91,8 @@
       "korean": "천만에요",
       "example": "",
       "exampleKo": "",
-      "context": "감사하다는 말에 대한 응답으로 사용합니다."
+      "context": "감사하다는 말에 대한 응답으로 사용합니다.",
+      "english": "You're welcome"
     },
     {
       "foreign": "Por favor",
@@ -92,7 +101,8 @@
       "korean": "부탁합니다 / 제발",
       "example": "",
       "exampleKo": "",
-      "context": "무언가를 요청하거나 부탁할 때 사용합니다."
+      "context": "무언가를 요청하거나 부탁할 때 사용합니다.",
+      "english": "Please"
     },
     {
       "foreign": "Perdón",
@@ -101,7 +111,8 @@
       "korean": "미안합니다 / 실례합니다",
       "example": "",
       "exampleKo": "",
-      "context": "가벼운 사과나 양해를 구할 때 사용합니다."
+      "context": "가벼운 사과나 양해를 구할 때 사용합니다.",
+      "english": "Sorry / Excuse me"
     },
     {
       "foreign": "¿Cómo estás?",
@@ -110,7 +121,8 @@
       "korean": "어떻게 지내?",
       "example": "",
       "exampleKo": "",
-      "context": "친한 사이에서 상대방의 안부를 물을 때 사용합니다."
+      "context": "친한 사이에서 상대방의 안부를 물을 때 사용합니다.",
+      "english": "How are you?"
     }
   ]
 }

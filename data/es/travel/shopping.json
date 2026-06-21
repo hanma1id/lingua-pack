@@ -11,7 +11,8 @@
       "korean": "얼마예요?",
       "example": "",
       "exampleKo": "",
-      "context": "가격을 물어볼 때"
+      "context": "가격을 물어볼 때",
+      "english": "How much is it?"
     },
     {
       "foreign": "Es muy caro.",
@@ -20,7 +21,8 @@
       "korean": "너무 비싸요.",
       "example": "",
       "exampleKo": "",
-      "context": "가격이 비싸다고 느낄 때"
+      "context": "가격이 비싸다고 느낄 때",
+      "english": "It's too expensive."
     },
     {
       "foreign": "¿Tiene más barato?",
@@ -29,7 +31,8 @@
       "korean": "더 싼 거 있어요?",
       "example": "",
       "exampleKo": "",
-      "context": "더 저렴한 상품을 찾을 때"
+      "context": "더 저렴한 상품을 찾을 때",
+      "english": "Do you have something cheaper?"
     },
     {
       "foreign": "¿Tiene en otro color?",
@@ -38,7 +41,8 @@
       "korean": "다른 색깔 있어요?",
       "example": "",
       "exampleKo": "",
-      "context": "다른 색상의 제품을 문의할 때"
+      "context": "다른 색상의 제품을 문의할 때",
+      "english": "Do you have it in another color?"
     },
     {
       "foreign": "¿Tiene talla más pequeña?",
@@ -47,7 +51,8 @@
       "korean": "더 작은 사이즈 있어요?",
       "example": "",
       "exampleKo": "",
-      "context": "옷이나 신발의 사이즈를 문의할 때"
+      "context": "옷이나 신발의 사이즈를 문의할 때",
+      "english": "Do you have a smaller size?"
     },
     {
       "foreign": "Quisiera una talla más grande.",
@@ -56,7 +61,8 @@
       "korean": "더 큰 사이즈로 주세요.",
       "example": "",
       "exampleKo": "",
-      "context": "더 큰 사이즈를 원할 때"
+      "context": "더 큰 사이즈를 원할 때",
+      "english": "I'd like a larger size."
     },
     {
       "foreign": "¿Me puede hacer un descuento?",
@@ -65,7 +71,8 @@
       "korean": "할인 좀 해주실 수 있나요?",
       "example": "",
       "exampleKo": "",
-      "context": "할인을 요청할 때"
+      "context": "할인을 요청할 때",
+      "english": "Could you give me a discount?"
     },
     {
       "foreign": "Aceptan tarjeta de crédito.",
@@ -74,7 +81,8 @@
       "korean": "신용카드 받나요?",
       "example": "",
       "exampleKo": "",
-      "context": "결제 수단을 문의할 때"
+      "context": "결제 수단을 문의할 때",
+      "english": "Do you accept credit cards?"
     },
     {
       "foreign": "Pago en efectivo.",
@@ -83,7 +91,8 @@
       "korean": "현금으로 계산할게요.",
       "example": "",
       "exampleKo": "",
-      "context": "현금 결제를 할 때"
+      "context": "현금 결제를 할 때",
+      "english": "I'll pay in cash."
     },
     {
       "foreign": "Me lo llevo.",
@@ -92,7 +101,8 @@
       "korean": "이걸로 살게요.",
       "example": "",
       "exampleKo": "",
-      "context": "구매를 결정했을 때"
+      "context": "구매를 결정했을 때",
+      "english": "I'll take it."
     }
   ]
 }

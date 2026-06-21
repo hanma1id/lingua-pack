@@ -10,7 +10,8 @@
       "pronKo": "**호**호",
       "korean": "빨간색",
       "example": "La manzana es roja.",
-      "exampleKo": "사과는 빨갛다."
+      "exampleKo": "사과는 빨갛다.",
+      "english": "red"
     },
     {
       "foreign": "azul",
@@ -18,7 +19,8 @@
       "pronKo": "**아**술",
       "korean": "파란색",
       "example": "El cielo es azul.",
-      "exampleKo": "하늘은 파랗다."
+      "exampleKo": "하늘은 파랗다.",
+      "english": "blue"
     },
     {
       "foreign": "verde",
@@ -26,7 +28,8 @@
       "pronKo": "**베**르**데**",
       "korean": "초록색",
       "example": "Las hojas son verdes.",
-      "exampleKo": "나뭇잎은 초록색이다."
+      "exampleKo": "나뭇잎은 초록색이다.",
+      "english": "green"
     },
     {
       "foreign": "amarillo",
@@ -34,7 +37,8 @@
       "pronKo": "**아**마**리**요",
       "korean": "노란색",
       "example": "El sol es amarillo.",
-      "exampleKo": "태양은 노랗다."
+      "exampleKo": "태양은 노랗다.",
+      "english": "yellow"
     },
     {
       "foreign": "negro",
@@ -42,7 +46,8 @@
       "pronKo": "**네**그로",
       "korean": "검은색",
       "example": "Mi pelo es negro.",
-      "exampleKo": "내 머리카락은 검은색이다."
+      "exampleKo": "내 머리카락은 검은색이다.",
+      "english": "black"
     },
     {
       "foreign": "blanco",
@@ -50,7 +55,8 @@
       "pronKo": "**블**랑코",
       "korean": "흰색",
       "example": "La nieve es blanca.",
-      "exampleKo": "눈은 하얗다."
+      "exampleKo": "눈은 하얗다.",
+      "english": "white"
     },
     {
       "foreign": "gris",
@@ -58,7 +64,8 @@
       "pronKo": "**그**리스",
       "korean": "회색",
       "example": "El coche es gris.",
-      "exampleKo": "그 차는 회색이다."
+      "exampleKo": "그 차는 회색이다.",
+      "english": "gray"
     },
     {
       "foreign": "marrón",
@@ -66,7 +73,8 @@
       "pronKo": "**마**론",
       "korean": "갈색",
       "example": "El café es marrón.",
-      "exampleKo": "커피는 갈색이다."
+      "exampleKo": "커피는 갈색이다.",
+      "english": "brown"
     },
     {
       "foreign": "naranja",
@@ -74,7 +82,8 @@
       "pronKo": "**나**랑**하**",
       "korean": "주황색",
       "example": "La naranja es naranja.",
-      "exampleKo": "오렌지는 주황색이다."
+      "exampleKo": "오렌지는 주황색이다.",
+      "english": "orange"
     },
     {
       "foreign": "morado",
@@ -82,7 +91,8 @@
       "pronKo": "**모**라**도**",
       "korean": "보라색",
       "example": "La uva es morada.",
-      "exampleKo": "포도는 보라색이다."
+      "exampleKo": "포도는 보라색이다.",
+      "english": "purple"
     },
     {
       "foreign": "rosa",
@@ -90,7 +100,8 @@
       "pronKo": "**로**사",
       "korean": "분홍색",
       "example": "La flor es rosa.",
-      "exampleKo": "꽃은 분홍색이다."
+      "exampleKo": "꽃은 분홍색이다.",
+      "english": "pink"
     },
     {
       "foreign": "dorado",
@@ -98,7 +109,8 @@
       "pronKo": "**도**라**도**",
       "korean": "금색",
       "example": "El anillo es dorado.",
-      "exampleKo": "반지는 금색이다."
+      "exampleKo": "반지는 금색이다.",
+      "english": "gold"
     },
     {
       "foreign": "plateado",
@@ -106,14 +118,16 @@
       "pronKo": "**플라**테**아**도",
       "korean": "은색",
       "example": "El reloj es plateado.",
-      "exampleKo": "시계는 은색이다."
+      "exampleKo": "시계는 은색이다.",
+      "english": "silver"
     },
     {
       "foreign": "¿De qué color es?",
       "pronIpa": "/de ke koˈloɾ es/",
       "pronKo": "¿**데** **케** 코**로**르 **에**스?",
       "korean": "무슨 색이야?",
-      "context": "어떤 사물의 색깔을 물어볼 때"
+      "context": "어떤 사물의 색깔을 물어볼 때",
+      "english": "What color is it?"
     }
   ]
 }

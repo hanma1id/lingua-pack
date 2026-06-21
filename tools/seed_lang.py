@@ -66,11 +66,12 @@ def build_prompt(lang: str, kind: str, item: dict) -> str:
   "items": [
     {{
       "foreign":   "{native}로 된 단어 또는 문장",
-      "pronIpa":   "/IPA/",                          // 슬래시 포함
+      "pronIpa":   "/IPA/",
       "pronKo":    "한글 발음 표기 (강세 ** **)",
-      "korean":    "한국어 뜻",
+      "korean":    "한국어 뜻 (자연스러운 한국어)",
+      "english":   "영어로 같은 의미 (학습자가 영어를 잘하므로 보조 레퍼런스로 표시)",
       "example":   "{native} 짧은 예문 (단어형이면 생략 가능)",
-      "exampleKo": "예문 한국어 번역 (있을 때)",
+      "exampleKo": "예문 한국어 번역",
       "context":   "회화일 때만 — 어떤 상황에서 쓰는지 짧게"
     }}
   ]
@@ -80,8 +81,9 @@ def build_prompt(lang: str, kind: str, item: dict) -> str:
 1. 회화면 example/exampleKo는 비우고 context 채움. 단어면 가능하면 example/exampleKo 추가, context는 비움.
 2. 한글 발음 표기 — {PRON_GUIDE[lang]}
 3. 한국 중·고등학생도 읽을 수 있게 자연스러운 한국어
-4. 단어/문장은 일상에서 가장 자주 쓰는 것 우선, 학술적·고어 금지
-5. items 정확히 {item['count']}개
+4. english는 그 외국어 표현에 대응하는 자연스러운 영어 — 직역 아니라 원어민이 쓸 표현
+5. 단어/문장은 일상에서 가장 자주 쓰는 것 우선, 학술적·고어 금지
+6. items 정확히 {item['count']}개
 
 코드 펜스 없이 JSON만."""
 
