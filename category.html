@@ -18,20 +18,29 @@
   <header class="app-header">
     <div class="header-row">
       <button class="back-btn" type="button"
-              onclick="if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1)history.back();else location.href='home.html?lang='+(new URLSearchParams(location.search).get('lang')||'en');"
+              onclick="var p=new URLSearchParams(location.search);if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1)history.back();else location.href='home.html?lang='+(p.get('lang')||'en')+'&tab=essentials';"
               aria-label="뒤로">←</button>
       <h1 id="pageTitle">카테고리</h1>
       <a class="home-link" href="index.html?force=1" title="언어 바꾸기">🌐</a>
     </div>
-    <div class="view-mode-bar" id="modeBar">
-      <button class="active" data-mode="list">목록</button>
-      <button data-mode="flash">플래시카드</button>
+    <div class="header-controls">
+      <div class="view-mode-bar" id="modeBar">
+        <button class="active" data-mode="list">목록</button>
+        <button data-mode="flash">플래시카드</button>
+      </div>
+      <div class="rate-bar" id="rateBar" title="발음 속도">
+        <span class="rate-label">속도</span>
+        <button data-rate="0.6">0.6x</button>
+        <button data-rate="0.8">0.8x</button>
+        <button class="active" data-rate="1.0">1.0x</button>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <div id="loading" class="loading">불러오는 중…</div>
     <div id="contentArea" class="item-list"></div>
+    <div id="footerArea" class="footer-area"></div>
   </main>
 
   <script type="module" src="js/category.js"></script>

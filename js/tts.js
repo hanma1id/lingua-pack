@@ -50,9 +50,10 @@ function pickVoice(ttsLang) {
 
 /**
  * @param {string} text 발음할 외국어 텍스트
- * @param {string} ttsLang "en-US" 같은 BCP-47 (없으면 영어)
+ * @param {string} ttsLang "en-US" 같은 BCP-47
+ * @param {object} opts { rate?: number, onStart?: fn, onEnd?: fn(ms), onError?: fn }
  */
-export function speak(text, ttsLang = "en-US") {
+export function speak(text, ttsLang = "en-US", opts = {}) {
   if (!("speechSynthesis" in window)) {
     log("speechSynthesis not supported");
     return;
@@ -61,7 +62,7 @@ export function speak(text, ttsLang = "en-US") {
   const synth = window.speechSynthesis;
 
   const voice = pickVoice(ttsLang);
-  log("speak", text, ttsLang, "voice:", voice?.name || "(default)");
+  log("speak", text, ttsLang, "rate:", opts.rate ?? 0.9, "voice:", voice?.name || "(default)");
 
   if (synth.speaking || synth.pending) {
     try { synth.cancel(); } catch (e) { log("cancel err", e); }
@@ -77,18 +78,37 @@ export function speak(text, ttsLang = "en-US") {
   } else {
     u.lang = ttsLang;
   }
-  u.rate = 0.9;
+  u.rate = opts.rate ?? 0.9;
   u.pitch = 1.0;
   u.volume = 1.0;
-  u.onstart = () => log("onstart", text);
-  u.onend   = () => log("onend", text);
-  u.onerror = (e) => log("onerror", text, e.error || e);
+
+  const t0 = performance.now();
+  u.onstart = () => {
+    log("onstart", text);
+    opts.onStart?.();
+  };
+  u.onend = () => {
+    const ms = performance.now() - t0;
+    log("onend", text, Math.round(ms) + "ms");
+    opts.onEnd?.(ms);
+  };
+  u.onerror = (e) => {
+    log("onerror", text, e.error || e);
+    opts.onError?.(e);
+  };
 
   try {
     synth.speak(u);
   } catch (e) {
     log("speak threw", e);
+    opts.onError?.(e);
   }
+}
+
+/** 진행 중인 발화 중단 — 반복 모드 끄기에 사용 */
+export function cancelSpeak() {
+  if (!("speechSynthesis" in window)) return;
+  try { window.speechSynthesis.cancel(); } catch (_) {}
 }
 
 /* iOS/안드로이드 잠금 해제 — 첫 사용자 탭에서 무음 발화 한 번 */

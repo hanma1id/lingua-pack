@@ -7,7 +7,7 @@
  *  CACHE_VERSION을 변경할 때마다 sync_index.py가 자동 갱신
  * ============================================================ */
 
-const CACHE_VERSION = "lingua-pack-v2-2026-06-21";
+const CACHE_VERSION = "lingua-pack-v3-2026-06-21";
 
 const CORE_ASSETS = [
   "./",
@@ -24,6 +24,7 @@ const CORE_ASSETS = [
   "./js/data-loader.js",
   "./js/tts.js",
   "./js/flashcard.js",
+  "./js/practice.js",
   "./js/pron-render.js",
   "./data/languages.json",
   "./icons/icon-192.png",

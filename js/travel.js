@@ -1,16 +1,18 @@
 /* ============================================================
- * travel.js — 여행 회화 상세 (travel.html?lang=en&id=airport)
- * ------------------------------------------------------------
- *  카테고리와 구조 동일 — 데이터 로더와 페이지 제목만 다름
+ * travel.js — 여행 회화 상세
+ * category.js와 구조 동일 — 데이터 로더와 푸터 링크만 다름.
+ * 회화는 문장이 길어 속도/반복/진행바가 특히 유용.
  * ============================================================ */
 
 import {
   loadLanguages, loadTravel,
   registerServiceWorker,
 } from "./data-loader.js";
-import { speak } from "./tts.js";
 import { renderPronKo } from "./pron-render.js";
 import { createFlashcard } from "./flashcard.js";
+import {
+  getRate, setRate, startRepeat, stopRepeat, playOnce,
+} from "./practice.js";
 
 registerServiceWorker();
 
@@ -20,24 +22,85 @@ const id   = params.get("id");
 
 const $title = document.getElementById("pageTitle");
 const $modeBar = document.getElementById("modeBar");
+const $rateBar = document.getElementById("rateBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
+const $footer = document.getElementById("footerArea");
 
 let _mode = "list";
 let _data = null;
 let _ttsLang = "en-US";
+let _activeRepeatId = null;
 
 function esc(s) {
-  return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+
+function syncRateBar() {
+  const r = getRate();
+  $rateBar.querySelectorAll("button").forEach((b) => {
+    b.classList.toggle("active", Math.abs(parseFloat(b.dataset.rate) - r) < 0.01);
+  });
+}
+
+function bindRateBar() {
+  $rateBar.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-rate]");
+    if (!b) return;
+    setRate(parseFloat(b.dataset.rate));
+    syncRateBar();
+  });
+  document.addEventListener("rate-changed", syncRateBar);
+}
+
+function bindItemEvents() {
+  $area.addEventListener("click", (e) => {
+    const playBtn = e.target.closest("[data-action='play']");
+    if (playBtn) {
+      const idx = parseInt(playBtn.dataset.idx, 10);
+      const item = _data.items[idx];
+      const card = playBtn.closest(".item");
+      const progEl = card.querySelector(".item-progress");
+      playOnce({ text: item.foreign, ttsLang: _ttsLang, progressEl: progEl });
+      return;
+    }
+    const repeatBtn = e.target.closest("[data-action='repeat']");
+    if (repeatBtn) {
+      const idx = parseInt(repeatBtn.dataset.idx, 10);
+      const item = _data.items[idx];
+      const card = repeatBtn.closest(".item");
+      const progEl = card.querySelector(".item-progress");
+      if (_activeRepeatId === `r-${idx}`) {
+        stopRepeat();
+        _activeRepeatId = null;
+        $area.querySelectorAll(".repeat-on").forEach((el) => el.classList.remove("repeat-on"));
+        return;
+      }
+      $area.querySelectorAll(".repeat-on").forEach((el) => el.classList.remove("repeat-on"));
+      _activeRepeatId = `r-${idx}`;
+      repeatBtn.classList.add("repeat-on");
+      startRepeat({
+        text: item.foreign,
+        ttsLang: _ttsLang,
+        progressEl: progEl,
+      });
+    }
+  });
 }
 
 function renderList(items) {
-  $area.innerHTML = items.map((it) => `
-    <div class="item">
+  $area.className = "item-list";
+  $area.innerHTML = items.map((it, i) => `
+    <div class="item" data-idx="${i}">
       <div class="item-foreign">
         ${esc(it.foreign)}
-        <button class="item-tts" type="button" data-action="tts" data-text="${esc(it.foreign)}" aria-label="발음 듣기">🔊</button>
+        <span class="item-actions">
+          <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
+          <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
+        </span>
       </div>
+      <div class="item-progress"><div class="fill"></div></div>
       <div class="item-pron">
         ${it.pronIpa ? `<div class="item-pron-ipa">${esc(it.pronIpa)}</div>` : ""}
         ${it.pronKo ? `<div class="item-pron-ko">${renderPronKo(it.pronKo)}</div>` : ""}
@@ -46,22 +109,27 @@ function renderList(items) {
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
     </div>
   `).join("");
+}
 
-  $area.addEventListener("click", (e) => {
-    const btn = e.target.closest("[data-action='tts']");
-    if (btn) speak(btn.dataset.text, _ttsLang);
-  });
+function renderFooter() {
+  $footer.innerHTML = `
+    <a class="footer-back-link" href="home.html?lang=${encodeURIComponent(lang)}&tab=travel">
+      ← 회화 목록으로
+    </a>
+  `;
 }
 
 function render() {
   if (!_data) return;
+  stopRepeat();
+  _activeRepeatId = null;
   if (_mode === "list") {
-    $area.className = "item-list";
     renderList(_data.items);
   } else {
     $area.className = "";
     createFlashcard({ container: $area, items: _data.items, ttsLang: _ttsLang });
   }
+  renderFooter();
 }
 
 function bindModeBar() {
@@ -83,6 +151,9 @@ function bindModeBar() {
   }
   try {
     bindModeBar();
+    bindRateBar();
+    bindItemEvents();
+    syncRateBar();
     const [langs, data] = await Promise.all([loadLanguages(), loadTravel(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";
@@ -96,3 +167,5 @@ function bindModeBar() {
     console.error(err);
   }
 })();
+
+window.addEventListener("beforeunload", () => stopRepeat());

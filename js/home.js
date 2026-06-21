@@ -22,7 +22,9 @@ const $tabBar = document.getElementById("tabBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
 
-let _tab = "essentials";   // "essentials" | "travel"
+// URL ?tab= 으로 돌아올 때 자동 활성 (카테고리/회화 상세에서 "← 목록으로")
+const _urlTab = params.get("tab");
+let _tab = (_urlTab === "essentials" || _urlTab === "travel") ? _urlTab : "essentials";
 let _index = null;
 let _langs = [];
 
@@ -72,8 +74,15 @@ function bindTabs() {
   });
 }
 
+function syncTabUi() {
+  $tabBar.querySelectorAll("button").forEach((b) =>
+    b.classList.toggle("active", b.dataset.tab === _tab)
+  );
+}
+
 (async function main() {
   bindTabs();
+  syncTabUi();
   try {
     const [langs, index] = await Promise.all([loadLanguages(), loadLangIndex(lang)]);
     _langs = langs;
