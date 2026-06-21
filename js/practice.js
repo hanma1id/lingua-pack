@@ -12,12 +12,14 @@
 import { speak, cancelSpeak } from "./tts.js";
 
 const LS_RATE = "lingua-pack-rate";
-const DEFAULT_RATE = 0.9;
+const DEFAULT_RATE = 0.8;
+const MIN_RATE = 0.4;
+const MAX_RATE = 1.0;
 
 export function getRate() {
   try {
     const v = parseFloat(localStorage.getItem(LS_RATE));
-    return Number.isFinite(v) && v > 0.2 && v < 2 ? v : DEFAULT_RATE;
+    return Number.isFinite(v) && v >= MIN_RATE && v <= MAX_RATE ? v : DEFAULT_RATE;
   } catch {
     return DEFAULT_RATE;
   }

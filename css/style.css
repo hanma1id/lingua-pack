@@ -309,6 +309,58 @@ a { color: var(--accent); text-decoration: none; }
   50%      { transform: scale(1.08); }
 }
 
+/* 카드 안 속도 슬라이더 — 전역 동기, 0.4 ~ 1.0 */
+.item-rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+.item-rate .rate-label {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.item-rate input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: var(--bg-soft);
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+}
+.item-rate input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  background: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid var(--bg-card);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.item-rate input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid var(--bg-card);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.item-rate .rate-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 38px;
+  text-align: right;
+}
+
 /* 진행 바 — 발화 시간 / 따라말 대기 */
 .item-progress {
   width: 100%;
@@ -367,10 +419,12 @@ a { color: var(--accent); text-decoration: none; }
   gap: 8px;
   flex-wrap: wrap;
 }
+/* 발음 — 한국어 발음 + IPA 한 줄 */
 .item-pron {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
   margin-bottom: 8px;
 }
 .item-pron-ipa {

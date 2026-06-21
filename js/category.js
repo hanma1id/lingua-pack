@@ -1,10 +1,11 @@
 /* ============================================================
  * category.js — 카테고리 상세 (필수 단어)
  * ------------------------------------------------------------
- *   - 두 보기 모드 — 리스트 / 플래시카드
- *   - 각 카드 — 🔊 단일 재생, 🔁 반복, 속도 따라 진행 바
- *   - 헤더 — 속도 칩 (0.6 / 0.8 / 1.0)
- *   - 하단 — 카테고리 목록으로 돌아가는 버튼
+ *   - 리스트 모드만 (플래시카드 제거)
+ *   - 각 카드 안에 속도 슬라이더 (0.4~1.0) — 전역 동기
+ *   - 한국어 발음 + IPA를 한 줄에
+ *   - 🔊 단일 재생 / 🔁 반복 따라말
+ *   - 페이지 하단 "← 카테고리 목록으로"
  * ============================================================ */
 
 import {
@@ -12,7 +13,6 @@ import {
   registerServiceWorker,
 } from "./data-loader.js";
 import { renderPronKo } from "./pron-render.js";
-import { createFlashcard } from "./flashcard.js";
 import {
   getRate, setRate, startRepeat, stopRepeat, playOnce,
 } from "./practice.js";
@@ -20,33 +20,27 @@ import {
 registerServiceWorker();
 
 const params = new URLSearchParams(location.search);
-const lang = params.get("lang") || "en";
+const lang = params.get("lang") || "es";
 const id   = params.get("id");
 
 const $title = document.getElementById("pageTitle");
-const $modeBar = document.getElementById("modeBar");
-const $rateBar = document.getElementById("rateBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
 const $footer = document.getElementById("footerArea");
 const $backBtn = document.getElementById("backBtn");
 const $langSelect = document.getElementById("langSelect");
 
-let _mode = "list";
 let _data = null;
 let _ttsLang = "en-US";
 let _activeRepeatId = null;
 let _langs = [];
 
-/* ----- 백 버튼 — 무조건 home으로 (필수 단어 탭) ----- */
 $backBtn?.addEventListener("click", () => {
   stopRepeat();
   location.href = `home.html?lang=${encodeURIComponent(lang)}&tab=essentials`;
 });
 
-/* ----- 언어 드롭다운 — 같은 카테고리 id로 다른 언어 이동 ----- */
 function renderLangSelect() {
-  // 영어는 학습 대상이 아닌 레퍼런스 — 제외
   const choices = _langs.filter((l) => l.id !== "en");
   $langSelect.innerHTML = choices.map((l) => {
     const label = `${l.flag} ${l.name}${l.ready ? "" : " (준비 중)"}`;
@@ -58,7 +52,6 @@ function renderLangSelect() {
     const newLang = e.target.value;
     if (newLang === lang) return;
     stopRepeat();
-    // 새 언어에도 같은 id 카테고리가 있는지는 모르니 일단 home으로
     location.href = `home.html?lang=${encodeURIComponent(newLang)}&tab=essentials`;
   });
 }
@@ -68,25 +61,7 @@ function esc(s) {
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
-/* ----- 속도 칩 ----- */
-function syncRateBar() {
-  const r = getRate();
-  $rateBar.querySelectorAll("button").forEach((b) => {
-    b.classList.toggle("active", Math.abs(parseFloat(b.dataset.rate) - r) < 0.01);
-  });
-}
-
-function bindRateBar() {
-  $rateBar.addEventListener("click", (e) => {
-    const b = e.target.closest("button[data-rate]");
-    if (!b) return;
-    setRate(parseFloat(b.dataset.rate));
-    syncRateBar();
-  });
-  document.addEventListener("rate-changed", syncRateBar);
-}
-
-/* ----- 카드 컨트롤 동작 ----- */
+/* ----- 카드 이벤트 ----- */
 function bindItemEvents() {
   $area.addEventListener("click", (e) => {
     const playBtn = e.target.closest("[data-action='play']");
@@ -95,13 +70,7 @@ function bindItemEvents() {
       const item = _data.items[idx];
       const card = playBtn.closest(".item");
       const progEl = card.querySelector(".item-progress");
-      // 같은 항목 반복 중이면 그것만 중단, 아니면 단일 재생
-      if (_activeRepeatId === `r-${idx}`) {
-        // 단일 재생은 반복과 별개로 처리 X — 그냥 다시 발화
-        playOnce({ text: item.foreign, ttsLang: _ttsLang, progressEl: progEl });
-      } else {
-        playOnce({ text: item.foreign, ttsLang: _ttsLang, progressEl: progEl });
-      }
+      playOnce({ text: item.foreign, ttsLang: _ttsLang, progressEl: progEl });
       return;
     }
     const repeatBtn = e.target.closest("[data-action='repeat']");
@@ -110,15 +79,12 @@ function bindItemEvents() {
       const item = _data.items[idx];
       const card = repeatBtn.closest(".item");
       const progEl = card.querySelector(".item-progress");
-      // 이미 이 카드에서 반복 중이면 토글 — 끄기
       if (_activeRepeatId === `r-${idx}`) {
         stopRepeat();
         _activeRepeatId = null;
-        // UI — 이전 활성 버튼 비활성화
         $area.querySelectorAll(".repeat-on").forEach((el) => el.classList.remove("repeat-on"));
         return;
       }
-      // 다른 곳에서 반복 중이면 그쪽 표시 끄고 새 곳 켜기
       $area.querySelectorAll(".repeat-on").forEach((el) => el.classList.remove("repeat-on"));
       _activeRepeatId = `r-${idx}`;
       repeatBtn.classList.add("repeat-on");
@@ -129,10 +95,27 @@ function bindItemEvents() {
       });
     }
   });
+
+  // 카드 안 속도 슬라이더 — 한 곳 움직이면 모두 동기
+  $area.addEventListener("input", (e) => {
+    const sl = e.target.closest("input[data-action='rate-slider']");
+    if (!sl) return;
+    setRate(parseFloat(sl.value));
+  });
+  // 다른 슬라이더도 새 값으로 갱신
+  document.addEventListener("rate-changed", (e) => {
+    const r = e.detail;
+    $area.querySelectorAll("input[data-action='rate-slider']").forEach((sl) => {
+      sl.value = String(r);
+      const lbl = sl.parentElement.querySelector(".rate-value");
+      if (lbl) lbl.textContent = `${r.toFixed(1)}x`;
+    });
+  });
 }
 
 function renderList(items) {
   $area.className = "item-list";
+  const r = getRate();
   $area.innerHTML = items.map((it, i) => `
     <div class="item" data-idx="${i}">
       <div class="item-foreign">
@@ -143,14 +126,22 @@ function renderList(items) {
         </span>
       </div>
       <div class="item-progress"><div class="fill"></div></div>
+      <!-- 한국어 발음 + IPA 한 줄 -->
       <div class="item-pron">
-        ${it.pronIpa ? `<div class="item-pron-ipa">${esc(it.pronIpa)}</div>` : ""}
-        ${it.pronKo ? `<div class="item-pron-ko">${renderPronKo(it.pronKo)}</div>` : ""}
+        ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
+        ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
       </div>
+      <!-- 한국어, 영어 한 줄 -->
       <div class="item-meaning">
         <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
       </div>
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
+      <!-- 속도 슬라이더 — 카드 안 -->
+      <div class="item-rate">
+        <span class="rate-label">속도</span>
+        <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
+        <span class="rate-value">${r.toFixed(1)}x</span>
+      </div>
     </div>
   `).join("");
 }
@@ -167,25 +158,8 @@ function render() {
   if (!_data) return;
   stopRepeat();
   _activeRepeatId = null;
-  if (_mode === "list") {
-    renderList(_data.items);
-  } else {
-    $area.className = "";
-    createFlashcard({ container: $area, items: _data.items, ttsLang: _ttsLang });
-  }
+  renderList(_data.items);
   renderFooter();
-}
-
-function bindModeBar() {
-  $modeBar.addEventListener("click", (e) => {
-    const btn = e.target.closest("button[data-mode]");
-    if (!btn) return;
-    _mode = btn.dataset.mode;
-    $modeBar.querySelectorAll("button").forEach((b) =>
-      b.classList.toggle("active", b === btn)
-    );
-    render();
-  });
 }
 
 (async function main() {
@@ -194,10 +168,7 @@ function bindModeBar() {
     return;
   }
   try {
-    bindModeBar();
-    bindRateBar();
     bindItemEvents();
-    syncRateBar();
     const [langs, data] = await Promise.all([loadLanguages(), loadCategory(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";
@@ -214,5 +185,4 @@ function bindModeBar() {
   }
 })();
 
-// 페이지 떠날 때 반복 중단
 window.addEventListener("beforeunload", () => stopRepeat());

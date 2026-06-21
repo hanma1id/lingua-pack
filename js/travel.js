@@ -1,7 +1,5 @@
 /* ============================================================
- * travel.js — 여행 회화 상세
- * category.js와 구조 동일 — 데이터 로더와 푸터 링크만 다름.
- * 회화는 문장이 길어 속도/반복/진행바가 특히 유용.
+ * travel.js — 여행 회화 상세 (카테고리와 구조 동일)
  * ============================================================ */
 
 import {
@@ -9,7 +7,6 @@ import {
   registerServiceWorker,
 } from "./data-loader.js";
 import { renderPronKo } from "./pron-render.js";
-import { createFlashcard } from "./flashcard.js";
 import {
   getRate, setRate, startRepeat, stopRepeat, playOnce,
 } from "./practice.js";
@@ -17,19 +14,16 @@ import {
 registerServiceWorker();
 
 const params = new URLSearchParams(location.search);
-const lang = params.get("lang") || "en";
+const lang = params.get("lang") || "es";
 const id   = params.get("id");
 
 const $title = document.getElementById("pageTitle");
-const $modeBar = document.getElementById("modeBar");
-const $rateBar = document.getElementById("rateBar");
 const $area = document.getElementById("contentArea");
 const $loading = document.getElementById("loading");
 const $footer = document.getElementById("footerArea");
 const $backBtn = document.getElementById("backBtn");
 const $langSelect = document.getElementById("langSelect");
 
-let _mode = "list";
 let _data = null;
 let _ttsLang = "en-US";
 let _activeRepeatId = null;
@@ -59,23 +53,6 @@ function renderLangSelect() {
 function esc(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-}
-
-function syncRateBar() {
-  const r = getRate();
-  $rateBar.querySelectorAll("button").forEach((b) => {
-    b.classList.toggle("active", Math.abs(parseFloat(b.dataset.rate) - r) < 0.01);
-  });
-}
-
-function bindRateBar() {
-  $rateBar.addEventListener("click", (e) => {
-    const b = e.target.closest("button[data-rate]");
-    if (!b) return;
-    setRate(parseFloat(b.dataset.rate));
-    syncRateBar();
-  });
-  document.addEventListener("rate-changed", syncRateBar);
 }
 
 function bindItemEvents() {
@@ -111,10 +88,25 @@ function bindItemEvents() {
       });
     }
   });
+
+  $area.addEventListener("input", (e) => {
+    const sl = e.target.closest("input[data-action='rate-slider']");
+    if (!sl) return;
+    setRate(parseFloat(sl.value));
+  });
+  document.addEventListener("rate-changed", (e) => {
+    const r = e.detail;
+    $area.querySelectorAll("input[data-action='rate-slider']").forEach((sl) => {
+      sl.value = String(r);
+      const lbl = sl.parentElement.querySelector(".rate-value");
+      if (lbl) lbl.textContent = `${r.toFixed(1)}x`;
+    });
+  });
 }
 
 function renderList(items) {
   $area.className = "item-list";
+  const r = getRate();
   $area.innerHTML = items.map((it, i) => `
     <div class="item" data-idx="${i}">
       <div class="item-foreign">
@@ -126,13 +118,18 @@ function renderList(items) {
       </div>
       <div class="item-progress"><div class="fill"></div></div>
       <div class="item-pron">
-        ${it.pronIpa ? `<div class="item-pron-ipa">${esc(it.pronIpa)}</div>` : ""}
-        ${it.pronKo ? `<div class="item-pron-ko">${renderPronKo(it.pronKo)}</div>` : ""}
+        ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
+        ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
       </div>
       <div class="item-meaning">
         <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
       </div>
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
+      <div class="item-rate">
+        <span class="rate-label">속도</span>
+        <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
+        <span class="rate-value">${r.toFixed(1)}x</span>
+      </div>
     </div>
   `).join("");
 }
@@ -149,25 +146,8 @@ function render() {
   if (!_data) return;
   stopRepeat();
   _activeRepeatId = null;
-  if (_mode === "list") {
-    renderList(_data.items);
-  } else {
-    $area.className = "";
-    createFlashcard({ container: $area, items: _data.items, ttsLang: _ttsLang });
-  }
+  renderList(_data.items);
   renderFooter();
-}
-
-function bindModeBar() {
-  $modeBar.addEventListener("click", (e) => {
-    const btn = e.target.closest("button[data-mode]");
-    if (!btn) return;
-    _mode = btn.dataset.mode;
-    $modeBar.querySelectorAll("button").forEach((b) =>
-      b.classList.toggle("active", b === btn)
-    );
-    render();
-  });
 }
 
 (async function main() {
@@ -176,10 +156,7 @@ function bindModeBar() {
     return;
   }
   try {
-    bindModeBar();
-    bindRateBar();
     bindItemEvents();
-    syncRateBar();
     const [langs, data] = await Promise.all([loadLanguages(), loadTravel(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";
