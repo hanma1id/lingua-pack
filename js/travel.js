@@ -110,10 +110,14 @@ function renderList(items) {
   $area.innerHTML = items.map((it, i) => `
     <div class="item" data-idx="${i}">
       <div class="item-foreign">
-        ${esc(it.foreign)}
+        <span class="item-foreign-text">${esc(it.foreign)}</span>
         <span class="item-actions">
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
+          <span class="item-rate-inline">
+            <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
+            <span class="rate-value">${r.toFixed(1)}x</span>
+          </span>
         </span>
       </div>
       <div class="item-progress"><div class="fill"></div></div>
@@ -125,11 +129,6 @@ function renderList(items) {
         <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
       </div>
       ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
-      <div class="item-rate">
-        <span class="rate-label">속도</span>
-        <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
-        <span class="rate-value">${r.toFixed(1)}x</span>
-      </div>
     </div>
   `).join("");
 }
