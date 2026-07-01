@@ -3,166 +3,41 @@
   "name": "동물",
   "lang": "es",
   "emoji": "🐶",
+  "sections": [
+    { "name": "반려동물",   "emoji": "🐕" },
+    { "name": "가축·농장",   "emoji": "🐄" },
+    { "name": "야생·큰 동물", "emoji": "🦁" },
+    { "name": "새·물고기·곤충", "emoji": "🐦" }
+  ],
   "items": [
-    {
-      "foreign": "perro",
-      "pronIpa": "/ˈpero/",
-      "pronKo": "**페**로",
-      "korean": "개",
-      "example": "Tengo un perro pequeño.",
-      "exampleKo": "나는 작은 개를 키워요.",
-      "context": "",
-      "english": "dog"
-    },
-    {
-      "foreign": "gato",
-      "pronIpa": "/ˈɡato/",
-      "pronKo": "**가**토",
-      "korean": "고양이",
-      "example": "Mi gato duerme mucho.",
-      "exampleKo": "우리 고양이는 잠을 많이 자요.",
-      "context": "",
-      "english": "cat"
-    },
-    {
-      "foreign": "vaca",
-      "pronIpa": "/ˈbaka/",
-      "pronKo": "**바**카",
-      "korean": "소",
-      "example": "La vaca da leche.",
-      "exampleKo": "소는 우유를 줘요.",
-      "context": "",
-      "english": "cow"
-    },
-    {
-      "foreign": "caballo",
-      "pronIpa": "/kaˈβaʎo/",
-      "pronKo": "카**바**요",
-      "korean": "말",
-      "example": "El caballo corre rápido.",
-      "exampleKo": "말이 빨리 달려요.",
-      "context": "",
-      "english": "horse"
-    },
-    {
-      "foreign": "cerdo",
-      "pronIpa": "/ˈθerðo/",
-      "pronKo": "**세르**도",
-      "korean": "돼지",
-      "example": "El cerdo está en el barro.",
-      "exampleKo": "돼지가 진흙 속에 있어요.",
-      "context": "",
-      "english": "pig"
-    },
-    {
-      "foreign": "pollo",
-      "pronIpa": "/ˈpoʎo/",
-      "pronKo": "**포**요",
-      "korean": "닭",
-      "example": "El pollo come granos.",
-      "exampleKo": "닭이 곡식을 먹어요.",
-      "context": "",
-      "english": "chicken"
-    },
-    {
-      "foreign": "pez",
-      "pronIpa": "/peθ/",
-      "pronKo": "페스",
-      "korean": "물고기",
-      "example": "Me gusta nadar como un pez.",
-      "exampleKo": "나는 물고기처럼 수영하는 것을 좋아해요.",
-      "context": "",
-      "english": "fish"
-    },
-    {
-      "foreign": "león",
-      "pronIpa": "/leˈon/",
-      "pronKo": "레**온**",
-      "korean": "사자",
-      "example": "El león es el rey de la selva.",
-      "exampleKo": "사자는 정글의 왕이에요.",
-      "context": "",
-      "english": "lion"
-    },
-    {
-      "foreign": "tigre",
-      "pronIpa": "/ˈtiɣɾe/",
-      "pronKo": "**티**그레",
-      "korean": "호랑이",
-      "example": "El tigre tiene rayas.",
-      "exampleKo": "호랑이는 줄무늬가 있어요.",
-      "context": "",
-      "english": "tiger"
-    },
-    {
-      "foreign": "elefante",
-      "pronIpa": "/eleˈfante/",
-      "pronKo": "엘레**판**테",
-      "korean": "코끼리",
-      "example": "El elefante es muy grande.",
-      "exampleKo": "코끼리는 매우 커요.",
-      "context": "",
-      "english": "elephant"
-    },
-    {
-      "foreign": "mono",
-      "pronIpa": "/ˈmono/",
-      "pronKo": "**모**노",
-      "korean": "원숭이",
-      "example": "El mono salta de árbol en árbol.",
-      "exampleKo": "원숭이가 나무에서 나무로 뛰어다녀요.",
-      "context": "",
-      "english": "monkey"
-    },
-    {
-      "foreign": "jirafa",
-      "pronIpa": "/xiˈɾafa/",
-      "pronKo": "히**라**파",
-      "korean": "기린",
-      "example": "La jirafa tiene un cuello largo.",
-      "exampleKo": "기린은 목이 길어요.",
-      "context": "",
-      "english": "giraffe"
-    },
-    {
-      "foreign": "oso",
-      "pronIpa": "/ˈoso/",
-      "pronKo": "**오**소",
-      "korean": "곰",
-      "example": "El oso come miel.",
-      "exampleKo": "곰은 꿀을 먹어요.",
-      "context": "",
-      "english": "bear"
-    },
-    {
-      "foreign": "conejo",
-      "pronIpa": "/koˈnexo/",
-      "pronKo": "코**네**호",
-      "korean": "토끼",
-      "example": "El conejo salta rápido.",
-      "exampleKo": "토끼가 빨리 뛰어.",
-      "context": "",
-      "english": "rabbit"
-    },
-    {
-      "foreign": "pájaro",
-      "pronIpa": "/ˈpaxaɾo/",
-      "pronKo": "**파**하로",
-      "korean": "새",
-      "example": "El pájaro canta en la mañana.",
-      "exampleKo": "새가 아침에 노래해요.",
-      "context": "",
-      "english": "bird"
-    },
-    {
-      "foreign": "serpiente",
-      "pronIpa": "/serˈpjente/",
-      "pronKo": "세르**피엔**테",
-      "korean": "뱀",
-      "example": "La serpiente se arrastra.",
-      "exampleKo": "뱀이 기어가요.",
-      "context": "",
-      "english": "snake"
-    }
+    { "section": "반려동물", "foreign": "perro",     "pronIpa": "/ˈpero/",       "pronKo": "**뻬**로",       "korean": "개",       "english": "dog" },
+    { "section": "반려동물", "foreign": "gato",      "pronIpa": "/ˈɡato/",       "pronKo": "**가**또",       "korean": "고양이",     "english": "cat" },
+    { "section": "반려동물", "foreign": "conejo",    "pronIpa": "/koˈnexo/",     "pronKo": "꼬**네**호",     "korean": "토끼",      "english": "rabbit" },
+    { "section": "반려동물", "foreign": "hámster",   "pronIpa": "/ˈxamsteɾ/",    "pronKo": "**함**스떼르",    "korean": "햄스터",     "english": "hamster" },
+    { "section": "반려동물", "foreign": "tortuga",   "pronIpa": "/toɾˈtuɣa/",    "pronKo": "또르**뚜**가",   "korean": "거북",      "english": "turtle" },
+
+    { "section": "가축·농장", "foreign": "vaca",     "pronIpa": "/ˈbaka/",       "pronKo": "**바**까",       "korean": "소",       "english": "cow" },
+    { "section": "가축·농장", "foreign": "cerdo",    "pronIpa": "/ˈθeɾdo/",      "pronKo": "**쎄르**도",     "korean": "돼지",      "english": "pig" },
+    { "section": "가축·농장", "foreign": "caballo",  "pronIpa": "/kaˈβaʎo/",     "pronKo": "까**바**요",     "korean": "말",       "english": "horse" },
+    { "section": "가축·농장", "foreign": "oveja",    "pronIpa": "/oˈβexa/",      "pronKo": "오**베**하",     "korean": "양",       "english": "sheep" },
+    { "section": "가축·농장", "foreign": "cabra",    "pronIpa": "/ˈkaβɾa/",      "pronKo": "**까**브라",     "korean": "염소",      "english": "goat" },
+    { "section": "가축·농장", "foreign": "gallina",  "pronIpa": "/ɡaˈʎina/",     "pronKo": "가**이**나",     "korean": "닭 (암탉)",   "english": "hen" },
+
+    { "section": "야생·큰 동물", "foreign": "león",   "pronIpa": "/leˈon/",       "pronKo": "레**온**",       "korean": "사자",      "english": "lion" },
+    { "section": "야생·큰 동물", "foreign": "tigre",  "pronIpa": "/ˈtiɣɾe/",      "pronKo": "**띠**그레",     "korean": "호랑이",     "english": "tiger" },
+    { "section": "야생·큰 동물", "foreign": "elefante","pronIpa": "/eleˈfante/",   "pronKo": "엘레**판**떼",   "korean": "코끼리",     "english": "elephant" },
+    { "section": "야생·큰 동물", "foreign": "jirafa", "pronIpa": "/xiˈɾafa/",     "pronKo": "히**라**파",     "korean": "기린",      "english": "giraffe" },
+    { "section": "야생·큰 동물", "foreign": "mono",   "pronIpa": "/ˈmono/",       "pronKo": "**모**노",       "korean": "원숭이",     "english": "monkey" },
+    { "section": "야생·큰 동물", "foreign": "oso",    "pronIpa": "/ˈoso/",        "pronKo": "**오**소",       "korean": "곰",       "english": "bear" },
+    { "section": "야생·큰 동물", "foreign": "lobo",   "pronIpa": "/ˈloβo/",       "pronKo": "**로**보",       "korean": "늑대",      "english": "wolf" },
+    { "section": "야생·큰 동물", "foreign": "zorro",  "pronIpa": "/ˈθoro/",       "pronKo": "**쏘**로",       "korean": "여우",      "english": "fox" },
+
+    { "section": "새·물고기·곤충", "foreign": "pájaro",   "pronIpa": "/ˈpaxaɾo/",   "pronKo": "**빠**하로",     "korean": "새 (일반)",   "english": "bird" },
+    { "section": "새·물고기·곤충", "foreign": "pato",     "pronIpa": "/ˈpato/",     "pronKo": "**빠**또",       "korean": "오리",      "english": "duck" },
+    { "section": "새·물고기·곤충", "foreign": "águila",   "pronIpa": "/ˈaɣila/",    "pronKo": "**아**길라",     "korean": "독수리",     "english": "eagle" },
+    { "section": "새·물고기·곤충", "foreign": "pez",      "pronIpa": "/peθ/",       "pronKo": "**뻬**쓰",       "korean": "물고기",     "english": "fish" },
+    { "section": "새·물고기·곤충", "foreign": "tiburón",  "pronIpa": "/tiβuˈɾon/",  "pronKo": "띠부**론**",     "korean": "상어",      "english": "shark" },
+    { "section": "새·물고기·곤충", "foreign": "serpiente","pronIpa": "/seɾˈpjente/","pronKo": "쎄르**삐엔**떼", "korean": "뱀",       "english": "snake" },
+    { "section": "새·물고기·곤충", "foreign": "mariposa", "pronIpa": "/maɾiˈposa/", "pronKo": "마리**뽀**사",   "korean": "나비",      "english": "butterfly" }
   ]
 }

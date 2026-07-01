@@ -3,126 +3,39 @@
   "name": "인사",
   "lang": "es",
   "emoji": "👋",
+  "sections": [
+    { "name": "시간대 인사",  "emoji": "🌞" },
+    { "name": "만남·헤어짐",  "emoji": "🤝" },
+    { "name": "감사·사과",   "emoji": "🙏" },
+    { "name": "부탁·응답",   "emoji": "💬" },
+    { "name": "안부",       "emoji": "😊" }
+  ],
   "items": [
-    {
-      "foreign": "Hola",
-      "pronIpa": "/ˈola/",
-      "pronKo": "**오**라",
-      "korean": "안녕",
-      "example": "",
-      "exampleKo": "",
-      "context": "가장 일반적인 인사말로, 처음 보거나 오랜만에 만난 사람 모두에게 사용합니다.",
-      "english": "Hello"
-    },
-    {
-      "foreign": "Buenos días",
-      "pronIpa": "/ˈbwenos ˈdi.as/",
-      "pronKo": "**부**에노스 **디**아스",
-      "korean": "좋은 아침",
-      "example": "",
-      "exampleKo": "",
-      "context": "아침 인사로 사용합니다.",
-      "english": "Good morning"
-    },
-    {
-      "foreign": "Buenas tardes",
-      "pronIpa": "/ˈbwenas ˈtaɾðes/",
-      "pronKo": "**부**에나스 **타**르데스",
-      "korean": "좋은 오후",
-      "example": "",
-      "exampleKo": "",
-      "context": "점심 식사 후부터 해가 지기 전까지 사용하는 인사말입니다.",
-      "english": "Good afternoon"
-    },
-    {
-      "foreign": "Buenas noches",
-      "pronIpa": "/ˈbwenas ˈnotʃes/",
-      "pronKo": "**부**에나스 **노**체스",
-      "korean": "좋은 밤",
-      "example": "",
-      "exampleKo": "",
-      "context": "저녁 인사 또는 잠자리에 들기 전 인사로 사용합니다.",
-      "english": "Good evening"
-    },
-    {
-      "foreign": "Adiós",
-      "pronIpa": "/aˈðjos/",
-      "pronKo": "**아**디오스",
-      "korean": "안녕히 가세요/계세요",
-      "example": "",
-      "exampleKo": "",
-      "context": "헤어질 때 사용하는 일반적인 인사말입니다.",
-      "english": "Goodbye"
-    },
-    {
-      "foreign": "Hasta luego",
-      "pronIpa": "/ˈasta ˈlweɣo/",
-      "pronKo": "**아**스타 **루**에고",
-      "korean": "다음에 봐요",
-      "example": "",
-      "exampleKo": "",
-      "context": "가까운 미래에 다시 만날 것을 예상하며 헤어질 때 사용합니다.",
-      "english": "See you later"
-    },
-    {
-      "foreign": "Hasta mañana",
-      "pronIpa": "/ˈasta maˈɲana/",
-      "pronKo": "**아**스타 마**냐**나",
-      "korean": "내일 봐요",
-      "example": "",
-      "exampleKo": "",
-      "context": "내일 다시 만날 경우 사용하는 인사말입니다.",
-      "english": "See you tomorrow"
-    },
-    {
-      "foreign": "Gracias",
-      "pronIpa": "/ˈɡɾaθjas/",
-      "pronKo": "**그**라시아스",
-      "korean": "감사합니다",
-      "example": "",
-      "exampleKo": "",
-      "context": "감사를 표현할 때 사용합니다.",
-      "english": "Thank you"
-    },
-    {
-      "foreign": "De nada",
-      "pronIpa": "/de ˈnaða/",
-      "pronKo": "데 **나**다",
-      "korean": "천만에요",
-      "example": "",
-      "exampleKo": "",
-      "context": "감사하다는 말에 대한 응답으로 사용합니다.",
-      "english": "You're welcome"
-    },
-    {
-      "foreign": "Por favor",
-      "pronIpa": "/poɾ faˈβoɾ/",
-      "pronKo": "뽀르 파**보**르",
-      "korean": "부탁합니다 / 제발",
-      "example": "",
-      "exampleKo": "",
-      "context": "무언가를 요청하거나 부탁할 때 사용합니다.",
-      "english": "Please"
-    },
-    {
-      "foreign": "Perdón",
-      "pronIpa": "/peɾˈðon/",
-      "pronKo": "뻬르**돈**",
-      "korean": "미안합니다 / 실례합니다",
-      "example": "",
-      "exampleKo": "",
-      "context": "가벼운 사과나 양해를 구할 때 사용합니다.",
-      "english": "Sorry / Excuse me"
-    },
-    {
-      "foreign": "¿Cómo estás?",
-      "pronIpa": "/ˈkomo esˈtas/",
-      "pronKo": "**코**모 에스**따**스",
-      "korean": "어떻게 지내?",
-      "example": "",
-      "exampleKo": "",
-      "context": "친한 사이에서 상대방의 안부를 물을 때 사용합니다.",
-      "english": "How are you?"
-    }
+    { "section": "시간대 인사", "foreign": "Buenos días",   "pronIpa": "/ˈbwenos ˈdias/",    "pronKo": "**부**에노스 **디**아스", "korean": "좋은 아침",   "english": "Good morning" },
+    { "section": "시간대 인사", "foreign": "Buenas tardes", "pronIpa": "/ˈbwenas ˈtaɾdes/", "pronKo": "**부**에나스 **따르**데스", "korean": "좋은 오후",   "english": "Good afternoon" },
+    { "section": "시간대 인사", "foreign": "Buenas noches", "pronIpa": "/ˈbwenas ˈnotʃes/", "pronKo": "**부**에나스 **노**체스",   "korean": "좋은 밤",    "english": "Good evening / night" },
+
+    { "section": "만남·헤어짐", "foreign": "Hola",         "pronIpa": "/ˈola/",           "pronKo": "**올**라",          "korean": "안녕",           "english": "Hello" },
+    { "section": "만남·헤어짐", "foreign": "Adiós",        "pronIpa": "/aˈdjos/",         "pronKo": "아**디**오스",       "korean": "안녕히 가세요",     "english": "Goodbye" },
+    { "section": "만남·헤어짐", "foreign": "Hasta luego",  "pronIpa": "/ˈasta ˈlweɣo/",   "pronKo": "**아**스따 **루**에고", "korean": "다음에 봐요",      "english": "See you later" },
+    { "section": "만남·헤어짐", "foreign": "Hasta mañana", "pronIpa": "/ˈasta maˈɲana/",  "pronKo": "**아**스따 마**냐**나", "korean": "내일 봐요",       "english": "See you tomorrow" },
+    { "section": "만남·헤어짐", "foreign": "Nos vemos",    "pronIpa": "/nos ˈbemos/",     "pronKo": "노스 **베**모스",    "korean": "잘 가, 또 봐",     "english": "See you" },
+
+    { "section": "감사·사과", "foreign": "Gracias",         "pronIpa": "/ˈɡɾaθjas/",       "pronKo": "**그라**씨아스",     "korean": "감사합니다",       "english": "Thank you" },
+    { "section": "감사·사과", "foreign": "Muchas gracias",  "pronIpa": "/ˈmutʃas ˈɡɾaθjas/", "pronKo": "**무**차스 **그라**씨아스", "korean": "정말 감사합니다", "english": "Thank you very much" },
+    { "section": "감사·사과", "foreign": "De nada",         "pronIpa": "/de ˈnaða/",       "pronKo": "데 **나**다",       "korean": "천만에요",        "english": "You're welcome" },
+    { "section": "감사·사과", "foreign": "Perdón",          "pronIpa": "/peɾˈdon/",        "pronKo": "뻬르**돈**",         "korean": "죄송해요, 실례합니다","english": "Excuse me / Sorry" },
+    { "section": "감사·사과", "foreign": "Lo siento",       "pronIpa": "/lo ˈsjento/",     "pronKo": "로 **시엔**또",      "korean": "미안해요",        "english": "I'm sorry" },
+
+    { "section": "부탁·응답", "foreign": "Por favor",       "pronIpa": "/poɾ faˈβoɾ/",     "pronKo": "**뽀**르 파**보**르", "korean": "부탁합니다 / 제발", "english": "Please" },
+    { "section": "부탁·응답", "foreign": "Sí",              "pronIpa": "/si/",             "pronKo": "**씨**",             "korean": "네",             "english": "Yes" },
+    { "section": "부탁·응답", "foreign": "No",              "pronIpa": "/no/",             "pronKo": "**노**",             "korean": "아니요",           "english": "No" },
+    { "section": "부탁·응답", "foreign": "Vale",            "pronIpa": "/ˈbale/",          "pronKo": "**발**레",           "korean": "알겠어요, 좋아요",  "english": "OK / Sure" },
+    { "section": "부탁·응답", "foreign": "Claro",           "pronIpa": "/ˈklaɾo/",         "pronKo": "**끌라**로",         "korean": "물론이죠",        "english": "Of course" },
+
+    { "section": "안부", "foreign": "¿Cómo estás?",         "pronIpa": "/ˈkomo esˈtas/",   "pronKo": "**꼬**모 에스**따**스?", "korean": "어떻게 지내?",   "english": "How are you?" },
+    { "section": "안부", "foreign": "Muy bien",             "pronIpa": "/muj ˈbjen/",      "pronKo": "**무**이 **비엔**",  "korean": "아주 잘 지내요",   "english": "Very well" },
+    { "section": "안부", "foreign": "Bien, gracias",        "pronIpa": "/bjen ˈɡɾaθjas/",  "pronKo": "**비엔**, **그라**씨아스", "korean": "잘 지내요, 감사해요", "english": "Fine, thanks" },
+    { "section": "안부", "foreign": "Más o menos",          "pronIpa": "/mas o ˈmenos/",   "pronKo": "**마**스 오 **메**노스", "korean": "그럭저럭",       "english": "So-so" }
   ]
 }

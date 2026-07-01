@@ -23,19 +23,19 @@
       "id": "family",
       "name": "가족",
       "emoji": "👨‍👩‍👧",
-      "count": 14
+      "count": 24
     },
     {
       "id": "animals",
       "name": "동물",
       "emoji": "🐶",
-      "count": 16
+      "count": 26
     },
     {
       "id": "greetings",
       "name": "인사",
       "emoji": "👋",
-      "count": 12
+      "count": 22
     }
   ],
   "travel": [
