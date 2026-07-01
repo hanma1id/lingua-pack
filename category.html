@@ -17,9 +17,8 @@
 <body>
   <header class="app-header">
     <div class="header-row">
-      <button class="back-btn" id="backBtn" type="button" aria-label="뒤로">←</button>
-      <select id="langSelect" class="lang-select" aria-label="언어 선택"></select>
-      <h1 id="pageTitle" class="page-subtitle">카테고리</h1>
+      <select id="langSelect" class="lang-select lang-flag-only" aria-label="언어 선택"></select>
+      <h1 id="pageTitle" class="page-subtitle page-back" role="button" tabindex="0" title="카테고리 목록으로">카테고리</h1>
       <!-- 원문/뜻 반전 토글 — 카드 헤드 표시를 외국어 ↔ 한국어 전환 -->
       <button id="flipBtn" class="flip-btn" type="button" aria-label="원문/뜻 전환" title="원문 ↔ 뜻">
         <span class="flip-icon">🔀</span>

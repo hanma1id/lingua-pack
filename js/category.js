@@ -40,18 +40,23 @@ let _ttsLang = "en-US";
 let _activeRepeatId = null;
 let _langs = [];
 
-$backBtn?.addEventListener("click", () => {
+function goBackToList() {
   stopRepeat();
   location.href = `home.html?lang=${encodeURIComponent(lang)}&tab=essentials`;
+}
+$title?.addEventListener("click", goBackToList);
+$title?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goBackToList(); }
 });
 
 function renderLangSelect() {
   const choices = _langs.filter((l) => l.id !== "en");
   $langSelect.innerHTML = choices.map((l) => {
-    const label = `${l.flag} ${l.name}${l.ready ? "" : " (준비 중)"}`;
+    const label = l.flag;
     const sel = l.id === lang ? " selected" : "";
     const dis = l.ready ? "" : " disabled";
-    return `<option value="${l.id}"${sel}${dis}>${label}</option>`;
+    const aria = `${l.name}${l.ready ? "" : " (준비 중)"}`;
+    return `<option value="${l.id}" aria-label="${aria}"${sel}${dis}>${label}</option>`;
   }).join("");
   $langSelect.addEventListener("change", (e) => {
     const newLang = e.target.value;
