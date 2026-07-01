@@ -1,37 +1,27 @@
 /* ============================================================
- * tts.js — 다국어 TTS (모바일 견고 버전, lingua-pack)
+ * tts.js — 다국어 TTS (모바일 견고 + 잘못된 언어 방지)
  * ------------------------------------------------------------
- *  vocab-roots에서 검증된 패턴 그대로 + 언어 코드 가변
  *  핵심
  *   - speak()는 반드시 동기 — async/await 끼면 모바일 차단
- *   - voice는 모듈 로드 + onvoiceschanged + 호출 시점에 매번 갱신
- *   - 첫 사용자 탭에서 무음 발화로 잠금 해제
- *   - voice가 해당 언어로 없으면 lang만 지정 (브라우저 fallback)
- *   - 카카오톡 등 인앱 브라우저는 Web Speech API 거의 미지원
+ *   - voice 정확 매칭 안 되면 speak 중단 (한국어로 스페인어 읽는 사고 방지)
+ *   - 매칭 실패 시 화면 하단에 안내 배너 (한 언어당 한 번만)
+ *   - iOS/안드로이드 잠금 해제는 첫 사용자 탭에서 무음 발화
  * ============================================================ */
 
 const DEBUG = true;
 const log = (...a) => DEBUG && console.log("[tts]", ...a);
 
-const _voiceCache = new Map();   // lang prefix → voice
 let _voicesReady = false;
+let _voicesCache = [];
 
 function refreshVoices() {
   if (!("speechSynthesis" in window)) return;
   const voices = window.speechSynthesis.getVoices();
   if (!voices || !voices.length) return;
   _voicesReady = true;
-  _voiceCache.clear();
-  // 가장 먼저 보이는 voice를 그 언어 prefix에 매핑
-  for (const v of voices) {
-    if (!v.lang) continue;
-    const prefix2 = v.lang.slice(0, 2).toLowerCase();
-    if (!_voiceCache.has(prefix2)) _voiceCache.set(prefix2, v);
-    // 정확한 region 매칭 우선 — 예 en-US > en-GB
-    if (/[-_](US|GB|ES|JP|FR|CN|TW|HK)$/i.test(v.lang) && !_voiceCache.has(v.lang)) {
-      _voiceCache.set(v.lang.toLowerCase(), v);
-    }
-  }
+  _voicesCache = voices;
+  log("voices loaded:", voices.length,
+      "langs:", [...new Set(voices.map(v => v.lang))].join(","));
 }
 
 if ("speechSynthesis" in window) {
@@ -39,19 +29,62 @@ if ("speechSynthesis" in window) {
   window.speechSynthesis.onvoiceschanged = refreshVoices;
 }
 
+/**
+ * 언어 정확 매칭 — 한국어(ko) voice가 스페인어(es) 요청에 절대 매칭 안 되게
+ *   1) 완전 매칭 (es-ES)
+ *   2) 같은 primary 언어의 다른 region (es-MX, es-AR 등)
+ *   3) primary만 (es)
+ *   4) 없으면 null — speak 실행 안 함
+ */
 function pickVoice(ttsLang) {
   if (!_voicesReady) refreshVoices();
-  if (!ttsLang) return null;
-  const exact = _voiceCache.get(ttsLang.toLowerCase());
+  if (!_voicesCache.length || !ttsLang) return null;
+
+  const target = ttsLang.toLowerCase().replace("_", "-");
+  const primary = target.split("-")[0];
+
+  const exact = _voicesCache.find(v => v.lang.toLowerCase() === target);
   if (exact) return exact;
-  const prefix2 = ttsLang.slice(0, 2).toLowerCase();
-  return _voiceCache.get(prefix2) || null;
+
+  const sameLang = _voicesCache.find(v => {
+    const l = v.lang.toLowerCase();
+    return l === primary || l.startsWith(primary + "-") || l.startsWith(primary + "_");
+  });
+  return sameLang || null;
+}
+
+/* ----- voice 부재 안내 배너 (한 언어당 한 번만) ----- */
+const _warnedLangs = new Set();
+function warnMissingVoice(ttsLang) {
+  if (_warnedLangs.has(ttsLang)) return;
+  _warnedLangs.add(ttsLang);
+
+  const primary = ttsLang.split("-")[0];
+  const langNameMap = { es: "스페인어", ja: "일본어", fr: "프랑스어", zh: "중국어" };
+  const langName = langNameMap[primary] || ttsLang;
+
+  const banner = document.createElement("div");
+  banner.className = "tts-warn-banner";
+  banner.innerHTML = `
+    <div class="tts-warn-inner">
+      <div class="tts-warn-title">🔇 ${langName} 발음이 이 기기에 설치되어 있지 않아요</div>
+      <div class="tts-warn-body">
+        잘못된 발음(한국어로 읽음) 방지를 위해 재생을 건너뛰었어요.<br>
+        <b>안드로이드</b> — 설정 → 일반 → 텍스트 음성 변환 → Google TTS → 언어 → ${langName} 설치<br>
+        <b>iOS</b> — 설정 → 손쉬운 사용 → 콘텐츠 낭독 → 음성 → ${langName} 다운로드
+      </div>
+      <button class="tts-warn-close" type="button">닫기</button>
+    </div>
+  `;
+  document.body.appendChild(banner);
+  banner.querySelector(".tts-warn-close").addEventListener("click", () => banner.remove());
+  setTimeout(() => banner.classList.add("visible"), 20);
 }
 
 /**
- * @param {string} text 발음할 외국어 텍스트
- * @param {string} ttsLang "en-US" 같은 BCP-47
- * @param {object} opts { rate?: number, onStart?: fn, onEnd?: fn(ms), onError?: fn }
+ * @param {string} text
+ * @param {string} ttsLang  BCP-47 (es-ES, en-US, ja-JP …)
+ * @param {object} opts     { rate?: number, onStart?, onEnd?(ms), onError? }
  */
 export function speak(text, ttsLang = "en-US", opts = {}) {
   if (!("speechSynthesis" in window)) {
@@ -62,7 +95,16 @@ export function speak(text, ttsLang = "en-US", opts = {}) {
   const synth = window.speechSynthesis;
 
   const voice = pickVoice(ttsLang);
-  log("speak", text, ttsLang, "rate:", opts.rate ?? 0.9, "voice:", voice?.name || "(default)");
+
+  // voice가 없으면 잘못된 발음 방지를 위해 중단
+  if (!voice) {
+    log("no voice matching", ttsLang, "— aborting to avoid wrong-language playback");
+    warnMissingVoice(ttsLang);
+    opts.onError?.({ error: "no-voice", lang: ttsLang });
+    return;
+  }
+
+  log("speak", text, ttsLang, "→", voice.name, "(" + voice.lang + ")");
 
   if (synth.speaking || synth.pending) {
     try { synth.cancel(); } catch (e) { log("cancel err", e); }
@@ -72,21 +114,14 @@ export function speak(text, ttsLang = "en-US", opts = {}) {
   }
 
   const u = new SpeechSynthesisUtterance(text);
-  if (voice) {
-    u.voice = voice;
-    u.lang = voice.lang;
-  } else {
-    u.lang = ttsLang;
-  }
+  u.voice = voice;
+  u.lang = voice.lang;
   u.rate = opts.rate ?? 0.9;
   u.pitch = 1.0;
   u.volume = 1.0;
 
   const t0 = performance.now();
-  u.onstart = () => {
-    log("onstart", text);
-    opts.onStart?.();
-  };
+  u.onstart = () => { log("onstart", text); opts.onStart?.(); };
   u.onend = () => {
     const ms = performance.now() - t0;
     log("onend", text, Math.round(ms) + "ms");
@@ -105,13 +140,12 @@ export function speak(text, ttsLang = "en-US", opts = {}) {
   }
 }
 
-/** 진행 중인 발화 중단 — 반복 모드 끄기에 사용 */
 export function cancelSpeak() {
   if (!("speechSynthesis" in window)) return;
   try { window.speechSynthesis.cancel(); } catch (_) {}
 }
 
-/* iOS/안드로이드 잠금 해제 — 첫 사용자 탭에서 무음 발화 한 번 */
+/* iOS 잠금 해제 — 첫 사용자 탭에서 무음 발화 (기존 로직) */
 let _unlocked = false;
 function unlockOnce() {
   if (_unlocked || !("speechSynthesis" in window)) return;
