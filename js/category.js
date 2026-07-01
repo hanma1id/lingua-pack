@@ -30,6 +30,10 @@ const $backBtn = document.getElementById("backBtn");
 const $langSelect = document.getElementById("langSelect");
 const $rateSlider = document.getElementById("rateSlider");
 const $rateValue = document.getElementById("rateValue");
+const $flipBtn = document.getElementById("flipBtn");
+const $flipLabel = document.getElementById("flipLabel");
+
+const LS_FLIP = "lingua-pack-flip";
 
 let _data = null;
 let _ttsLang = "en-US";
@@ -54,6 +58,22 @@ function renderLangSelect() {
     if (newLang === lang) return;
     stopRepeat();
     location.href = `home.html?lang=${encodeURIComponent(newLang)}&tab=essentials`;
+  });
+}
+
+/* ----- 반전 토글 — 카드 헤드 원문/뜻 전환 ----- */
+function applyFlip(flipped) {
+  $area.classList.toggle("flipped", flipped);
+  $flipBtn.classList.toggle("active", flipped);
+  $flipLabel.textContent = flipped ? "뜻" : "원문";
+  try { localStorage.setItem(LS_FLIP, flipped ? "1" : "0"); } catch {}
+}
+function bindFlipBtn() {
+  const saved = (() => { try { return localStorage.getItem(LS_FLIP) === "1"; } catch { return false; } })();
+  applyFlip(saved);
+  $flipBtn.addEventListener("click", () => {
+    const nowFlipped = !$area.classList.contains("flipped");
+    applyFlip(nowFlipped);
   });
 }
 
@@ -127,7 +147,10 @@ function renderList(items) {
     <div class="item" aria-expanded="false" data-idx="${i}">
       <!-- 헤드 — 접혔을 때도 보이는 부분 -->
       <div class="item-head" data-action="toggle" role="button" tabindex="0">
-        <span class="item-foreign-text">${esc(it.foreign)}</span>
+        <span class="item-head-text">
+          <span class="item-foreign-text">${esc(it.foreign)}</span>
+          <span class="item-korean-head">${esc(it.korean)}${it.english ? `<span class="item-english-head">, ${esc(it.english)}</span>` : ""}</span>
+        </span>
         <span class="item-actions">
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
@@ -184,6 +207,7 @@ function render() {
   try {
     bindItemEvents();
     bindHeaderRate();
+    bindFlipBtn();
     const [langs, data] = await Promise.all([loadLanguages(), loadCategory(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";

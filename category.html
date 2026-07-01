@@ -20,7 +20,11 @@
       <button class="back-btn" id="backBtn" type="button" aria-label="뒤로">←</button>
       <select id="langSelect" class="lang-select" aria-label="언어 선택"></select>
       <h1 id="pageTitle" class="page-subtitle">카테고리</h1>
-      <!-- 헤더 속도 슬라이더 — 같은 줄 우측 -->
+      <!-- 원문/뜻 반전 토글 — 카드 헤드 표시를 외국어 ↔ 한국어 전환 -->
+      <button id="flipBtn" class="flip-btn" type="button" aria-label="원문/뜻 전환" title="원문 ↔ 뜻">
+        <span class="flip-icon">🔀</span>
+        <span class="flip-label" id="flipLabel">원문</span>
+      </button>
       <div class="header-rate">
         <span class="rate-label">속도</span>
         <input type="range" id="rateSlider" min="0.4" max="1.0" step="0.1" value="0.8" aria-label="발음 속도" />

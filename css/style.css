@@ -340,13 +340,58 @@ a { color: var(--accent); text-decoration: none; }
   touch-action: manipulation;
 }
 .item-head:hover { background: var(--bg-soft); }
-.item-foreign-text {
+/* 카드 헤드 텍스트 — 외국어 / 한국어 두 span, flipped 상태로 전환 */
+.item-head-text {
   flex: 1;
+  min-width: 0;
   font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--accent);
   line-height: 1.35;
 }
+.item-foreign-text {
+  font-weight: 600;
+  color: var(--accent);
+}
+.item-korean-head {
+  display: none;
+  font-weight: 600;
+  color: var(--ink);
+}
+.item-english-head {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+/* 반전 상태 — 카드 리스트에 .flipped 있으면 헤드 텍스트 전환 */
+.item-list.flipped .item-foreign-text { display: none; }
+.item-list.flipped .item-korean-head { display: inline; }
+
+/* 헤더 반전 토글 버튼 */
+.flip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  min-height: 36px;
+  font-family: inherit;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.flip-btn:hover { background: var(--bg-card); border: 1px solid var(--line); padding: 5px 11px; }
+.flip-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.flip-btn .flip-icon { font-size: 1rem; line-height: 1; }
+.flip-btn .flip-label { line-height: 1; }
 .item-actions {
   display: inline-flex;
   align-items: center;
