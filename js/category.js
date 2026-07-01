@@ -132,7 +132,6 @@ function renderList(items) {
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
         </span>
-        <span class="item-chevron" aria-hidden="true">⌄</span>
       </div>
       <!-- 진행 바 — 접혔을 때도 재생 상태 보임 -->
       <div class="item-progress"><div class="fill"></div></div>
@@ -191,7 +190,9 @@ function render() {
     _data = data;
     _langs = langs;
     renderLangSelect();
-    $title.textContent = data.name || "카테고리";
+    // 제목 앞에 데이터의 emoji 붙임 — 홈 타일과 시각 일관성
+    const emoji = data.emoji ? `<span class="page-emoji" aria-hidden="true">${data.emoji}</span> ` : "";
+    $title.innerHTML = `${emoji}${esc(data.name || "카테고리")}`;
     document.title = `${data.name} — ${langMeta?.name || lang}`;
     $loading.style.display = "none";
     render();

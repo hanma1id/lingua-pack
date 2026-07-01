@@ -121,7 +121,6 @@ function renderList(items) {
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
         </span>
-        <span class="item-chevron" aria-hidden="true">⌄</span>
       </div>
       <div class="item-progress"><div class="fill"></div></div>
       <div class="item-body">
@@ -177,7 +176,8 @@ function render() {
     _data = data;
     _langs = langs;
     renderLangSelect();
-    $title.textContent = data.name || "여행 회화";
+    const emoji = data.emoji ? `<span class="page-emoji" aria-hidden="true">${data.emoji}</span> ` : "";
+    $title.innerHTML = `${emoji}${esc(data.name || "여행 회화")}`;
     document.title = `${data.name} — ${langMeta?.name || lang}`;
     $loading.style.display = "none";
     render();
