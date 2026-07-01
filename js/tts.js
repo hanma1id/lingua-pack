@@ -31,24 +31,26 @@ if ("speechSynthesis" in window) {
 
 /**
  * 언어 정확 매칭 — 한국어(ko) voice가 스페인어(es) 요청에 절대 매칭 안 되게
+ *   voice.lang 정규화 필수 — 안드로이드는 es_ES, 표준은 es-ES
  *   1) 완전 매칭 (es-ES)
  *   2) 같은 primary 언어의 다른 region (es-MX, es-AR 등)
- *   3) primary만 (es)
- *   4) 없으면 null — speak 실행 안 함
+ *   3) 없으면 null — speak 실행 안 함
  */
+function normLang(s) { return (s || "").toLowerCase().replace(/_/g, "-"); }
+
 function pickVoice(ttsLang) {
   if (!_voicesReady) refreshVoices();
   if (!_voicesCache.length || !ttsLang) return null;
 
-  const target = ttsLang.toLowerCase().replace("_", "-");
+  const target = normLang(ttsLang);
   const primary = target.split("-")[0];
 
-  const exact = _voicesCache.find(v => v.lang.toLowerCase() === target);
+  const exact = _voicesCache.find(v => normLang(v.lang) === target);
   if (exact) return exact;
 
   const sameLang = _voicesCache.find(v => {
-    const l = v.lang.toLowerCase();
-    return l === primary || l.startsWith(primary + "-") || l.startsWith(primary + "_");
+    const l = normLang(v.lang);
+    return l === primary || l.startsWith(primary + "-");
   });
   return sameLang || null;
 }

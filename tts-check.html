@@ -37,6 +37,10 @@ function setStatus(html) { status.innerHTML = html; }
 log('UserAgent: ' + navigator.userAgent);
 log('');
 
+// voice.lang 정규화 — 안드로이드는 es_ES, 표준은 es-ES
+function normLang(s) { return (s || '').toLowerCase().replace(/_/g, '-'); }
+function primaryOf(s) { return normLang(s).split('-')[0]; }
+
 function check() {
   out.textContent = '';
   if (!('speechSynthesis' in window)) {
@@ -52,9 +56,10 @@ function check() {
     speechSynthesis.onvoiceschanged = () => log('[이벤트] voice 목록 갱신됨 (' + speechSynthesis.getVoices().length + '개) — 다시 1) 눌러보세요');
     return;
   }
-  const es = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('es'));
-  const ko = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('ko'));
-  const en = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+  // primary 언어 코드로 정확히 필터 (kok가 ko로 오검출 안 되게)
+  const es = voices.filter(v => primaryOf(v.lang) === 'es');
+  const ko = voices.filter(v => primaryOf(v.lang) === 'ko');
+  const en = voices.filter(v => primaryOf(v.lang) === 'en');
 
   log('');
   log('🇪🇸 스페인어 voice: ' + es.length + '개');
@@ -83,10 +88,10 @@ function check() {
 function testSpeak(lang) {
   const text = lang.startsWith('es') ? 'Hola, buenos días' : (lang.startsWith('ko') ? '안녕하세요' : 'Hello');
   const voices = speechSynthesis.getVoices();
-  const target = lang.split('-')[0].toLowerCase();
-  const voice = voices.find(v => v.lang.toLowerCase() === lang.toLowerCase())
-             || voices.find(v => v.lang.toLowerCase().startsWith(target + '-'))
-             || voices.find(v => v.lang.toLowerCase() === target);
+  const target = normLang(lang);       // "es-es"
+  const primary = target.split('-')[0]; // "es"
+  const voice = voices.find(v => normLang(v.lang) === target)
+             || voices.find(v => primaryOf(v.lang) === primary);
   log('');
   log('▶ 재생 시도: "' + text + '" (' + lang + ')');
   if (!voice) {
