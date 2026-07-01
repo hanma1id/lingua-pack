@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TTS 언어팩 확인</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 16px; max-width: 640px; margin: 0 auto; background: #fff; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.15rem; margin: 0 0 8px; }
+    .lead { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+    button { font-size: 1rem; padding: 14px 22px; border-radius: 10px; border: none; background: #4a6fa5; color: #fff; cursor: pointer; min-height: 50px; margin: 6px 4px 6px 0; }
+    button.test { background: #fff; color: #4a6fa5; border: 1px solid #4a6fa5; }
+    pre { background: #f4f7f5; padding: 12px; border-radius: 8px; white-space: pre-wrap; word-break: break-all; font-size: 0.85rem; line-height: 1.5; max-height: 60vh; overflow-y: auto; }
+    .box { background: #ffe8e0; border-left: 4px solid #c85a3a; padding: 12px 14px; border-radius: 8px; margin: 12px 0; font-size: 0.9rem; }
+    .box.ok { background: #dcf3e0; border-left-color: #3a8a5c; }
+  </style>
+</head>
+<body>
+  <h1>🔊 TTS 언어팩 확인 (스페인어)</h1>
+  <div class="lead">이 기기가 브라우저 TTS로 어떤 언어를 재생할 수 있는지 확인합니다.</div>
+
+  <button onclick="check()">1) voice 목록 확인</button>
+  <button class="test" onclick="testSpeak('es-ES')">2) 스페인어 'Hola' 재생</button>
+  <button class="test" onclick="testSpeak('ko-KR')">3) 한국어 '안녕' 재생 (참고)</button>
+
+  <div id="status"></div>
+
+  <h2 style="font-size: 1rem; margin-top: 20px;">상세 로그</h2>
+  <pre id="out">버튼을 눌러 시작하세요…</pre>
+
+<script>
+const out = document.getElementById('out');
+const status = document.getElementById('status');
+function log(s) { out.textContent += s + '\n'; out.scrollTop = out.scrollHeight; }
+function setStatus(html) { status.innerHTML = html; }
+
+log('UserAgent: ' + navigator.userAgent);
+log('');
+
+function check() {
+  out.textContent = '';
+  if (!('speechSynthesis' in window)) {
+    log('❌ speechSynthesis 미지원 (이 브라우저는 TTS 안 됨)');
+    setStatus('<div class="box">❌ TTS 자체를 지원 안 하는 브라우저입니다.</div>');
+    return;
+  }
+  const voices = speechSynthesis.getVoices();
+  log('전체 voice: ' + voices.length + '개');
+  if (voices.length === 0) {
+    log('⚠ 아직 voice 목록이 비어 있음 — 잠시 후 다시 눌러보세요.');
+    setStatus('<div class="box">아직 voice 로딩 중. 3초 후 다시 눌러주세요.</div>');
+    speechSynthesis.onvoiceschanged = () => log('[이벤트] voice 목록 갱신됨 (' + speechSynthesis.getVoices().length + '개) — 다시 1) 눌러보세요');
+    return;
+  }
+  const es = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('es'));
+  const ko = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('ko'));
+  const en = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+
+  log('');
+  log('🇪🇸 스페인어 voice: ' + es.length + '개');
+  es.forEach(v => log('  · ' + v.name + ' (' + v.lang + ')' + (v.localService ? ' [로컬]' : ' [네트워크]')));
+  log('');
+  log('🇰🇷 한국어 voice: ' + ko.length + '개');
+  ko.forEach(v => log('  · ' + v.name + ' (' + v.lang + ')'));
+  log('');
+  log('🇺🇸 영어 voice: ' + en.length + '개');
+  en.forEach(v => log('  · ' + v.name + ' (' + v.lang + ')'));
+
+  if (es.length > 0) {
+    setStatus('<div class="box ok">✅ 스페인어 voice ' + es.length + '개 설치돼 있음. 2) 버튼 눌러 실제 재생 테스트.</div>');
+  } else {
+    setStatus('<div class="box">❌ 스페인어 voice가 <b>이 브라우저에서 안 보임</b>.<br><br>' +
+      '<b>설치 방법 (삼성 갤럭시)</b><br>' +
+      '① 설정 → 일반<br>' +
+      '② 아래로 스크롤 → <b>텍스트 음성 변환 출력</b> (또는 TTS 출력)<br>' +
+      '③ 기본 엔진: <b>Google 텍스트 음성 변환</b> 선택<br>' +
+      '④ 그 엔진 옆 ⚙️ → <b>언어 설치</b> → Español 다운로드<br>' +
+      '⑤ Chrome 완전히 종료 후 다시 열기<br><br>' +
+      '💡 방금 삼성 언어팩 설치하신 건 삼성 앱용이라 별개예요.</div>');
+  }
+}
+
+function testSpeak(lang) {
+  const text = lang.startsWith('es') ? 'Hola, buenos días' : (lang.startsWith('ko') ? '안녕하세요' : 'Hello');
+  const voices = speechSynthesis.getVoices();
+  const target = lang.split('-')[0].toLowerCase();
+  const voice = voices.find(v => v.lang.toLowerCase() === lang.toLowerCase())
+             || voices.find(v => v.lang.toLowerCase().startsWith(target + '-'))
+             || voices.find(v => v.lang.toLowerCase() === target);
+  log('');
+  log('▶ 재생 시도: "' + text + '" (' + lang + ')');
+  if (!voice) {
+    log('  ❌ 매칭되는 voice 없음 — 재생 안 함 (한국어로 잘못 읽는 사고 방지)');
+    return;
+  }
+  log('  선택된 voice: ' + voice.name + ' (' + voice.lang + ')');
+  if (speechSynthesis.speaking) speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = voice;
+  u.lang = voice.lang;
+  u.rate = 0.9;
+  u.onstart = () => log('  ✅ 재생 시작 — 발음 어떤지 확인해 주세요');
+  u.onend = () => log('  ⏹ 재생 완료');
+  u.onerror = e => log('  ❌ 오류: ' + (e.error || e));
+  speechSynthesis.speak(u);
+}
+
+if ('speechSynthesis' in window) {
+  speechSynthesis.getVoices();
+  speechSynthesis.onvoiceschanged = () => log('[알림] voice 목록 갱신 (' + speechSynthesis.getVoices().length + '개)');
+}
+</script>
+</body>
+</html>
