@@ -1,0 +1,40 @@
+{
+  "id": "body",
+  "name": "신체 부위",
+  "lang": "es",
+  "emoji": "🧑",
+  "sections": [
+    { "name": "얼굴·머리",  "emoji": "😀" },
+    { "name": "상체·팔",   "emoji": "💪" },
+    { "name": "하체·다리",  "emoji": "🦵" },
+    { "name": "몸통·내부",  "emoji": "❤️" }
+  ],
+  "items": [
+    { "section": "얼굴·머리", "foreign": "cara",     "pronIpa": "/ˈkaɾa/",     "pronKo": "**까**라",     "korean": "얼굴",   "english": "face" },
+    { "section": "얼굴·머리", "foreign": "cabeza",   "pronIpa": "/kaˈβeθa/",   "pronKo": "까**베**싸",   "korean": "머리",   "english": "head" },
+    { "section": "얼굴·머리", "foreign": "pelo",     "pronIpa": "/ˈpelo/",     "pronKo": "**뻴**로",     "korean": "머리카락", "english": "hair" },
+    { "section": "얼굴·머리", "foreign": "ojo",      "pronIpa": "/ˈoxo/",      "pronKo": "**오**호",     "korean": "눈",    "english": "eye" },
+    { "section": "얼굴·머리", "foreign": "nariz",    "pronIpa": "/naˈɾiθ/",    "pronKo": "나**리**쓰",   "korean": "코",    "english": "nose" },
+    { "section": "얼굴·머리", "foreign": "boca",     "pronIpa": "/ˈboka/",     "pronKo": "**보**까",     "korean": "입",    "english": "mouth" },
+    { "section": "얼굴·머리", "foreign": "oreja",    "pronIpa": "/oˈɾexa/",    "pronKo": "오**레**하",   "korean": "귀",    "english": "ear" },
+    { "section": "얼굴·머리", "foreign": "diente",   "pronIpa": "/ˈdjente/",   "pronKo": "**디엔**떼",   "korean": "이빨",   "english": "tooth" },
+
+    { "section": "상체·팔", "foreign": "cuello",  "pronIpa": "/ˈkweʎo/",  "pronKo": "**꾸에**요",   "korean": "목",    "english": "neck" },
+    { "section": "상체·팔", "foreign": "hombro",  "pronIpa": "/ˈombɾo/",  "pronKo": "**옴**브로",   "korean": "어깨",   "english": "shoulder" },
+    { "section": "상체·팔", "foreign": "brazo",   "pronIpa": "/ˈbɾaθo/",  "pronKo": "**브라**쏘",   "korean": "팔",    "english": "arm" },
+    { "section": "상체·팔", "foreign": "codo",    "pronIpa": "/ˈkoðo/",   "pronKo": "**꼬**도",     "korean": "팔꿈치",  "english": "elbow" },
+    { "section": "상체·팔", "foreign": "mano",    "pronIpa": "/ˈmano/",   "pronKo": "**마**노",     "korean": "손",    "english": "hand" },
+    { "section": "상체·팔", "foreign": "dedo",    "pronIpa": "/ˈdeðo/",   "pronKo": "**데**도",     "korean": "손가락",  "english": "finger" },
+
+    { "section": "하체·다리", "foreign": "pierna",  "pronIpa": "/ˈpjeɾna/", "pronKo": "**삐에르**나", "korean": "다리",     "english": "leg" },
+    { "section": "하체·다리", "foreign": "rodilla", "pronIpa": "/roˈðiʎa/", "pronKo": "로**디**야",   "korean": "무릎",     "english": "knee" },
+    { "section": "하체·다리", "foreign": "tobillo", "pronIpa": "/toˈβiʎo/", "pronKo": "또**비**요",   "korean": "발목",     "english": "ankle" },
+    { "section": "하체·다리", "foreign": "pie",     "pronIpa": "/pje/",     "pronKo": "**삐에**",     "korean": "발",      "english": "foot" },
+
+    { "section": "몸통·내부", "foreign": "pecho",     "pronIpa": "/ˈpetʃo/",     "pronKo": "**뻬**초",     "korean": "가슴",   "english": "chest" },
+    { "section": "몸통·내부", "foreign": "espalda",   "pronIpa": "/esˈpalda/",   "pronKo": "에스**빨**다", "korean": "등",    "english": "back" },
+    { "section": "몸통·내부", "foreign": "estómago",  "pronIpa": "/esˈtomaɣo/",  "pronKo": "에스**또**마고","korean": "배, 위",  "english": "stomach" },
+    { "section": "몸통·내부", "foreign": "corazón",   "pronIpa": "/koɾaˈθon/",   "pronKo": "꼬라**쏜**",   "korean": "심장",   "english": "heart" },
+    { "section": "몸통·내부", "foreign": "hueso",     "pronIpa": "/ˈweso/",      "pronKo": "**웨**소",     "korean": "뼈",    "english": "bone" }
+  ]
+}

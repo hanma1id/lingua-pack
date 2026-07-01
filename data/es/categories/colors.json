@@ -3,131 +3,29 @@
   "name": "색깔",
   "lang": "es",
   "emoji": "🎨",
+  "sections": [
+    { "name": "기본 색",     "emoji": "🎨" },
+    { "name": "밝기·표현",   "emoji": "✨" }
+  ],
   "items": [
-    {
-      "foreign": "rojo",
-      "pronIpa": "/ˈroxo/",
-      "pronKo": "**호**호",
-      "korean": "빨간색",
-      "example": "La manzana es roja.",
-      "exampleKo": "사과는 빨갛다.",
-      "english": "red"
-    },
-    {
-      "foreign": "azul",
-      "pronIpa": "/aˈθul/",
-      "pronKo": "**아**술",
-      "korean": "파란색",
-      "example": "El cielo es azul.",
-      "exampleKo": "하늘은 파랗다.",
-      "english": "blue"
-    },
-    {
-      "foreign": "verde",
-      "pronIpa": "/ˈberðe/",
-      "pronKo": "**베**르**데**",
-      "korean": "초록색",
-      "example": "Las hojas son verdes.",
-      "exampleKo": "나뭇잎은 초록색이다.",
-      "english": "green"
-    },
-    {
-      "foreign": "amarillo",
-      "pronIpa": "/amaˈɾiʎo/",
-      "pronKo": "**아**마**리**요",
-      "korean": "노란색",
-      "example": "El sol es amarillo.",
-      "exampleKo": "태양은 노랗다.",
-      "english": "yellow"
-    },
-    {
-      "foreign": "negro",
-      "pronIpa": "/ˈneɣɾo/",
-      "pronKo": "**네**그로",
-      "korean": "검은색",
-      "example": "Mi pelo es negro.",
-      "exampleKo": "내 머리카락은 검은색이다.",
-      "english": "black"
-    },
-    {
-      "foreign": "blanco",
-      "pronIpa": "/ˈblaŋko/",
-      "pronKo": "**블**랑코",
-      "korean": "흰색",
-      "example": "La nieve es blanca.",
-      "exampleKo": "눈은 하얗다.",
-      "english": "white"
-    },
-    {
-      "foreign": "gris",
-      "pronIpa": "/ɡɾis/",
-      "pronKo": "**그**리스",
-      "korean": "회색",
-      "example": "El coche es gris.",
-      "exampleKo": "그 차는 회색이다.",
-      "english": "gray"
-    },
-    {
-      "foreign": "marrón",
-      "pronIpa": "/maˈron/",
-      "pronKo": "**마**론",
-      "korean": "갈색",
-      "example": "El café es marrón.",
-      "exampleKo": "커피는 갈색이다.",
-      "english": "brown"
-    },
-    {
-      "foreign": "naranja",
-      "pronIpa": "/naˈɾaŋxa/",
-      "pronKo": "**나**랑**하**",
-      "korean": "주황색",
-      "example": "La naranja es naranja.",
-      "exampleKo": "오렌지는 주황색이다.",
-      "english": "orange"
-    },
-    {
-      "foreign": "morado",
-      "pronIpa": "/moˈɾaðo/",
-      "pronKo": "**모**라**도**",
-      "korean": "보라색",
-      "example": "La uva es morada.",
-      "exampleKo": "포도는 보라색이다.",
-      "english": "purple"
-    },
-    {
-      "foreign": "rosa",
-      "pronIpa": "/ˈrosa/",
-      "pronKo": "**로**사",
-      "korean": "분홍색",
-      "example": "La flor es rosa.",
-      "exampleKo": "꽃은 분홍색이다.",
-      "english": "pink"
-    },
-    {
-      "foreign": "dorado",
-      "pronIpa": "/doˈɾaðo/",
-      "pronKo": "**도**라**도**",
-      "korean": "금색",
-      "example": "El anillo es dorado.",
-      "exampleKo": "반지는 금색이다.",
-      "english": "gold"
-    },
-    {
-      "foreign": "plateado",
-      "pronIpa": "/plateˈaðo/",
-      "pronKo": "**플라**테**아**도",
-      "korean": "은색",
-      "example": "El reloj es plateado.",
-      "exampleKo": "시계는 은색이다.",
-      "english": "silver"
-    },
-    {
-      "foreign": "¿De qué color es?",
-      "pronIpa": "/de ke koˈloɾ es/",
-      "pronKo": "¿**데** **케** 코**로**르 **에**스?",
-      "korean": "무슨 색이야?",
-      "context": "어떤 사물의 색깔을 물어볼 때",
-      "english": "What color is it?"
-    }
+    { "section": "기본 색", "foreign": "rojo",     "pronIpa": "/ˈroxo/",     "pronKo": "**로**호",     "korean": "빨간색",   "english": "red" },
+    { "section": "기본 색", "foreign": "azul",     "pronIpa": "/aˈθul/",     "pronKo": "아**쑬**",     "korean": "파란색",   "english": "blue" },
+    { "section": "기본 색", "foreign": "verde",    "pronIpa": "/ˈbeɾde/",    "pronKo": "**베르**데",   "korean": "초록색",   "english": "green" },
+    { "section": "기본 색", "foreign": "amarillo", "pronIpa": "/amaˈɾiʎo/",  "pronKo": "아마**리**요", "korean": "노란색",   "english": "yellow" },
+    { "section": "기본 색", "foreign": "negro",    "pronIpa": "/ˈneɣɾo/",    "pronKo": "**네**그로",   "korean": "검정색",   "english": "black" },
+    { "section": "기본 색", "foreign": "blanco",   "pronIpa": "/ˈblaŋko/",   "pronKo": "**블랑**꼬",   "korean": "흰색",    "english": "white" },
+    { "section": "기본 색", "foreign": "naranja",  "pronIpa": "/naˈɾanxa/",  "pronKo": "나**란**하",   "korean": "주황색",   "english": "orange" },
+    { "section": "기본 색", "foreign": "morado",   "pronIpa": "/moˈɾaðo/",   "pronKo": "모**라**도",   "korean": "보라색",   "english": "purple" },
+    { "section": "기본 색", "foreign": "rosa",     "pronIpa": "/ˈrosa/",     "pronKo": "**로**사",     "korean": "분홍색",   "english": "pink" },
+    { "section": "기본 색", "foreign": "gris",     "pronIpa": "/ɡɾis/",      "pronKo": "**그리**스",   "korean": "회색",    "english": "gray" },
+    { "section": "기본 색", "foreign": "marrón",   "pronIpa": "/maˈron/",    "pronKo": "마**론**",     "korean": "갈색",    "english": "brown" },
+
+    { "section": "밝기·표현", "foreign": "claro",       "pronIpa": "/ˈklaɾo/",       "pronKo": "**끌라**로",       "korean": "밝은",           "english": "light" },
+    { "section": "밝기·표현", "foreign": "oscuro",      "pronIpa": "/osˈkuɾo/",      "pronKo": "오스**꾸**로",     "korean": "어두운",          "english": "dark" },
+    { "section": "밝기·표현", "foreign": "brillante",   "pronIpa": "/bɾiˈʎante/",    "pronKo": "브리**얀**떼",     "korean": "밝은, 반짝이는",   "english": "bright / shiny" },
+    { "section": "밝기·표현", "foreign": "colorido",    "pronIpa": "/koloˈɾiðo/",    "pronKo": "꼴로**리**도",     "korean": "다채로운",         "english": "colorful" },
+    { "section": "밝기·표현", "foreign": "dorado",      "pronIpa": "/doˈɾaðo/",      "pronKo": "도**라**도",       "korean": "금색",           "english": "gold" },
+    { "section": "밝기·표현", "foreign": "plateado",    "pronIpa": "/plateˈaðo/",    "pronKo": "쁠라떼**아**도",   "korean": "은색",           "english": "silver" },
+    { "section": "밝기·표현", "foreign": "transparente","pronIpa": "/tɾanspaˈɾente/","pronKo": "뜨란스빠**렌**떼", "korean": "투명한",          "english": "transparent" }
   ]
 }

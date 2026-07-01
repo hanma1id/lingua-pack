@@ -1,188 +1,44 @@
 {
   "id": "numbers",
-  "name": "숫자 1-20",
+  "name": "숫자",
   "lang": "es",
   "emoji": "🔢",
+  "sections": [
+    { "name": "1 ~ 10",       "emoji": "1️⃣" },
+    { "name": "11 ~ 20",      "emoji": "🔟" },
+    { "name": "큰 수 (30, 100, 1000)", "emoji": "💯" }
+  ],
   "items": [
-    {
-      "foreign": "uno",
-      "pronIpa": "/ˈu.no/",
-      "pronKo": "**우**노",
-      "korean": "하나",
-      "example": "Tengo uno.",
-      "exampleKo": "나는 하나가 있어.",
-      "english": "one"
-    },
-    {
-      "foreign": "dos",
-      "pronIpa": "/dos/",
-      "pronKo": "**도**스",
-      "korean": "둘",
-      "example": "Dos perros.",
-      "exampleKo": "강아지 두 마리.",
-      "english": "two"
-    },
-    {
-      "foreign": "tres",
-      "pronIpa": "/tɾes/",
-      "pronKo": "**트**레스",
-      "korean": "셋",
-      "example": "Tres libros.",
-      "exampleKo": "책 세 권.",
-      "english": "three"
-    },
-    {
-      "foreign": "cuatro",
-      "pronIpa": "/ˈkwa.tɾo/",
-      "pronKo": "**쿠**아트로",
-      "korean": "넷",
-      "example": "Cuatro sillas.",
-      "exampleKo": "의자 네 개.",
-      "english": "four"
-    },
-    {
-      "foreign": "cinco",
-      "pronIpa": "/ˈθiŋ.ko/",
-      "pronKo": "**씽**코",
-      "korean": "다섯",
-      "example": "Cinco dedos.",
-      "exampleKo": "손가락 다섯 개.",
-      "english": "five"
-    },
-    {
-      "foreign": "seis",
-      "pronIpa": "/seis/",
-      "pronKo": "**세**이스",
-      "korean": "여섯",
-      "example": "Seis manzanas.",
-      "exampleKo": "사과 여섯 개.",
-      "english": "six"
-    },
-    {
-      "foreign": "siete",
-      "pronIpa": "/ˈsje.te/",
-      "pronKo": "**시에**테",
-      "korean": "일곱",
-      "example": "Siete días.",
-      "exampleKo": "칠 일.",
-      "english": "seven"
-    },
-    {
-      "foreign": "ocho",
-      "pronIpa": "/ˈo.tʃo/",
-      "pronKo": "**오**초",
-      "korean": "여덟",
-      "example": "Ocho horas.",
-      "exampleKo": "여덟 시간.",
-      "english": "eight"
-    },
-    {
-      "foreign": "nueve",
-      "pronIpa": "/ˈnwe.βe/",
-      "pronKo": "**누에**베",
-      "korean": "아홉",
-      "example": "Nueve pisos.",
-      "exampleKo": "아홉 층.",
-      "english": "nine"
-    },
-    {
-      "foreign": "diez",
-      "pronIpa": "/djeθ/",
-      "pronKo": "**디에**스",
-      "korean": "열",
-      "example": "Diez minutos.",
-      "exampleKo": "십 분.",
-      "english": "ten"
-    },
-    {
-      "foreign": "once",
-      "pronIpa": "/ˈon.θe/",
-      "pronKo": "**온**세",
-      "korean": "열하나",
-      "example": "Once años.",
-      "exampleKo": "열한 살.",
-      "english": "eleven"
-    },
-    {
-      "foreign": "doce",
-      "pronIpa": "/ˈdo.θe/",
-      "pronKo": "**도**세",
-      "korean": "열둘",
-      "example": "Doce meses.",
-      "exampleKo": "열두 달.",
-      "english": "twelve"
-    },
-    {
-      "foreign": "trece",
-      "pronIpa": "/ˈtɾe.θe/",
-      "pronKo": "**트레**세",
-      "korean": "열셋",
-      "example": "Trece personas.",
-      "exampleKo": "열세 명.",
-      "english": "thirteen"
-    },
-    {
-      "foreign": "catorce",
-      "pronIpa": "/kaˈtoɾ.θe/",
-      "pronKo": "**카토**르세",
-      "korean": "열넷",
-      "example": "Catorce euros.",
-      "exampleKo": "십사 유로.",
-      "english": "fourteen"
-    },
-    {
-      "foreign": "quince",
-      "pronIpa": "/ˈkin.θe/",
-      "pronKo": "**낀**세",
-      "korean": "열다섯",
-      "example": "Quince días.",
-      "exampleKo": "열닷새.",
-      "english": "fifteen"
-    },
-    {
-      "foreign": "dieciséis",
-      "pronIpa": "/dje.siˈseis/",
-      "pronKo": "**디에**시**세**이스",
-      "korean": "열여섯",
-      "example": "Dieciséis años.",
-      "exampleKo": "열여섯 살.",
-      "english": "sixteen"
-    },
-    {
-      "foreign": "diecisiete",
-      "pronIpa": "/dje.siˈsje.te/",
-      "pronKo": "**디에**시**시에**테",
-      "korean": "열일곱",
-      "example": "Diecisiete grados.",
-      "exampleKo": "섭씨 십칠도.",
-      "english": "seventeen"
-    },
-    {
-      "foreign": "dieciocho",
-      "pronIpa": "/dje.θiˈo.tʃo/",
-      "pronKo": "**디에**치**오**초",
-      "korean": "열여덟",
-      "example": "Dieciocho kilómetros.",
-      "exampleKo": "십팔 킬로미터.",
-      "english": "eighteen"
-    },
-    {
-      "foreign": "diecinueve",
-      "pronIpa": "/dje.θiˈnwe.βe/",
-      "pronKo": "**디에**치**누에**베",
-      "korean": "열아홉",
-      "example": "Diecinueve años.",
-      "exampleKo": "열아홉 살.",
-      "english": "nineteen"
-    },
-    {
-      "foreign": "veinte",
-      "pronIpa": "/ˈβein.te/",
-      "pronKo": "**베인**테",
-      "korean": "스물",
-      "example": "Veinte personas.",
-      "exampleKo": "스무 명.",
-      "english": "twenty"
-    }
+    { "section": "1 ~ 10", "foreign": "uno",     "pronIpa": "/ˈuno/",     "pronKo": "**우**노",    "korean": "1, 하나",   "english": "one" },
+    { "section": "1 ~ 10", "foreign": "dos",     "pronIpa": "/dos/",      "pronKo": "**도**스",    "korean": "2, 둘",    "english": "two" },
+    { "section": "1 ~ 10", "foreign": "tres",    "pronIpa": "/tɾes/",     "pronKo": "**뜨레**스",  "korean": "3, 셋",    "english": "three" },
+    { "section": "1 ~ 10", "foreign": "cuatro",  "pronIpa": "/ˈkwatɾo/",  "pronKo": "**꾸아**뜨로","korean": "4, 넷",    "english": "four" },
+    { "section": "1 ~ 10", "foreign": "cinco",   "pronIpa": "/ˈθiŋko/",   "pronKo": "**씽**꼬",    "korean": "5, 다섯",   "english": "five" },
+    { "section": "1 ~ 10", "foreign": "seis",    "pronIpa": "/ˈseis/",    "pronKo": "**세이**스",  "korean": "6, 여섯",   "english": "six" },
+    { "section": "1 ~ 10", "foreign": "siete",   "pronIpa": "/ˈsjete/",   "pronKo": "**시에**떼",  "korean": "7, 일곱",   "english": "seven" },
+    { "section": "1 ~ 10", "foreign": "ocho",    "pronIpa": "/ˈotʃo/",    "pronKo": "**오**초",    "korean": "8, 여덟",   "english": "eight" },
+    { "section": "1 ~ 10", "foreign": "nueve",   "pronIpa": "/ˈnweβe/",   "pronKo": "**누에**베",  "korean": "9, 아홉",   "english": "nine" },
+    { "section": "1 ~ 10", "foreign": "diez",    "pronIpa": "/djeθ/",     "pronKo": "**디에**쓰",  "korean": "10, 열",    "english": "ten" },
+
+    { "section": "11 ~ 20", "foreign": "once",       "pronIpa": "/ˈonθe/",         "pronKo": "**온**쎄",         "korean": "11, 열하나", "english": "eleven" },
+    { "section": "11 ~ 20", "foreign": "doce",       "pronIpa": "/ˈdoθe/",         "pronKo": "**도**쎄",         "korean": "12, 열둘",  "english": "twelve" },
+    { "section": "11 ~ 20", "foreign": "trece",      "pronIpa": "/ˈtɾeθe/",        "pronKo": "**뜨레**쎄",       "korean": "13, 열셋",  "english": "thirteen" },
+    { "section": "11 ~ 20", "foreign": "catorce",    "pronIpa": "/kaˈtoɾθe/",      "pronKo": "까**또르**쎄",     "korean": "14, 열넷",  "english": "fourteen" },
+    { "section": "11 ~ 20", "foreign": "quince",     "pronIpa": "/ˈkinθe/",        "pronKo": "**낀**쎄",         "korean": "15, 열다섯", "english": "fifteen" },
+    { "section": "11 ~ 20", "foreign": "dieciséis",  "pronIpa": "/djeθiˈseis/",    "pronKo": "디에씨**세이**스", "korean": "16, 열여섯", "english": "sixteen" },
+    { "section": "11 ~ 20", "foreign": "diecisiete", "pronIpa": "/djeθiˈsjete/",   "pronKo": "디에씨**시에**떼", "korean": "17, 열일곱", "english": "seventeen" },
+    { "section": "11 ~ 20", "foreign": "dieciocho",  "pronIpa": "/djeˈθjotʃo/",    "pronKo": "디에**시오**초",   "korean": "18, 열여덟", "english": "eighteen" },
+    { "section": "11 ~ 20", "foreign": "diecinueve", "pronIpa": "/djeθiˈnweβe/",   "pronKo": "디에씨**누에**베", "korean": "19, 열아홉", "english": "nineteen" },
+    { "section": "11 ~ 20", "foreign": "veinte",     "pronIpa": "/ˈbejnte/",       "pronKo": "**베인**떼",       "korean": "20, 스물",  "english": "twenty" },
+
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "treinta",   "pronIpa": "/ˈtɾejnta/",   "pronKo": "**뜨레인**따", "korean": "30",     "english": "thirty" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "cuarenta",  "pronIpa": "/kwaˈɾenta/",  "pronKo": "꾸아**렌**따", "korean": "40",     "english": "forty" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "cincuenta", "pronIpa": "/θiŋˈkwenta/", "pronKo": "씽**꾸엔**따", "korean": "50",     "english": "fifty" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "sesenta",   "pronIpa": "/seˈsenta/",   "pronKo": "쎄**센**따",   "korean": "60",     "english": "sixty" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "setenta",   "pronIpa": "/seˈtenta/",   "pronKo": "쎄**뗀**따",   "korean": "70",     "english": "seventy" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "ochenta",   "pronIpa": "/oˈtʃenta/",   "pronKo": "오**첸**따",   "korean": "80",     "english": "eighty" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "noventa",   "pronIpa": "/noˈβenta/",   "pronKo": "노**벤**따",   "korean": "90",     "english": "ninety" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "cien",      "pronIpa": "/θjen/",       "pronKo": "**씨엔**",     "korean": "100, 백",  "english": "one hundred" },
+    { "section": "큰 수 (30, 100, 1000)", "foreign": "mil",       "pronIpa": "/mil/",        "pronKo": "**밀**",       "korean": "1000, 천", "english": "one thousand" }
   ]
 }

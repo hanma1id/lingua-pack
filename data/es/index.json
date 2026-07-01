@@ -3,15 +3,15 @@
   "categories": [
     {
       "id": "numbers",
-      "name": "숫자 1-20",
+      "name": "숫자",
       "emoji": "🔢",
-      "count": 20
+      "count": 29
     },
     {
       "id": "colors",
       "name": "색깔",
       "emoji": "🎨",
-      "count": 14
+      "count": 18
     },
     {
       "id": "food",
@@ -36,6 +36,24 @@
       "name": "인사",
       "emoji": "👋",
       "count": 22
+    },
+    {
+      "id": "body",
+      "name": "신체 부위",
+      "emoji": "🧑",
+      "count": 23
+    },
+    {
+      "id": "clothes",
+      "name": "옷·소지품",
+      "emoji": "👕",
+      "count": 24
+    },
+    {
+      "id": "days_months",
+      "name": "요일·달·계절",
+      "emoji": "📅",
+      "count": 28
     }
   ],
   "travel": [

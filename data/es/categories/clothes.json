@@ -1,0 +1,41 @@
+{
+  "id": "clothes",
+  "name": "옷·소지품",
+  "lang": "es",
+  "emoji": "👕",
+  "sections": [
+    { "name": "상의",         "emoji": "👕" },
+    { "name": "하의·원피스",   "emoji": "👖" },
+    { "name": "신발·모자",     "emoji": "👟" },
+    { "name": "액세서리·소지품", "emoji": "🎒" }
+  ],
+  "items": [
+    { "section": "상의", "foreign": "camiseta", "pronIpa": "/kamiˈseta/", "pronKo": "까미**세**따", "korean": "티셔츠",     "english": "T-shirt" },
+    { "section": "상의", "foreign": "camisa",   "pronIpa": "/kaˈmisa/",   "pronKo": "까**미**사",   "korean": "셔츠 (와이셔츠)","english": "shirt" },
+    { "section": "상의", "foreign": "jersey",   "pronIpa": "/xeɾˈsej/",   "pronKo": "헤르**세이**", "korean": "스웨터",     "english": "sweater" },
+    { "section": "상의", "foreign": "sudadera", "pronIpa": "/suðaˈðeɾa/", "pronKo": "수다**데**라", "korean": "후드티, 트레이닝복","english": "hoodie" },
+    { "section": "상의", "foreign": "abrigo",   "pronIpa": "/aˈβɾiɣo/",   "pronKo": "아**브리**고", "korean": "외투, 코트",   "english": "coat" },
+    { "section": "상의", "foreign": "chaqueta", "pronIpa": "/tʃaˈketa/",  "pronKo": "차**께**따",   "korean": "재킷",       "english": "jacket" },
+
+    { "section": "하의·원피스", "foreign": "pantalón", "pronIpa": "/pantaˈlon/", "pronKo": "빤딸**론**",   "korean": "바지",   "english": "pants" },
+    { "section": "하의·원피스", "foreign": "vaqueros", "pronIpa": "/baˈkeɾos/",  "pronKo": "바**께**로스", "korean": "청바지",  "english": "jeans" },
+    { "section": "하의·원피스", "foreign": "shorts",   "pronIpa": "/ˈʃoɾts/",    "pronKo": "**쇼르**츠",   "korean": "반바지",  "english": "shorts" },
+    { "section": "하의·원피스", "foreign": "falda",    "pronIpa": "/ˈfalda/",    "pronKo": "**팔**다",     "korean": "치마",   "english": "skirt" },
+    { "section": "하의·원피스", "foreign": "vestido",  "pronIpa": "/besˈtiðo/",  "pronKo": "베스**띠**도", "korean": "원피스",  "english": "dress" },
+
+    { "section": "신발·모자", "foreign": "zapato",    "pronIpa": "/θaˈpato/",     "pronKo": "싸**빠**또",   "korean": "구두, 신발",   "english": "shoe" },
+    { "section": "신발·모자", "foreign": "zapatilla", "pronIpa": "/θapaˈtiʎa/",   "pronKo": "싸빠**띠**야", "korean": "운동화",     "english": "sneaker" },
+    { "section": "신발·모자", "foreign": "bota",      "pronIpa": "/ˈbota/",       "pronKo": "**보**따",     "korean": "부츠, 장화",   "english": "boot" },
+    { "section": "신발·모자", "foreign": "sombrero",  "pronIpa": "/somˈbɾeɾo/",   "pronKo": "쏨**브레**로", "korean": "모자 (챙 있는)", "english": "hat" },
+    { "section": "신발·모자", "foreign": "gorra",     "pronIpa": "/ˈɡora/",       "pronKo": "**고**라",     "korean": "야구모자",     "english": "cap" },
+
+    { "section": "액세서리·소지품", "foreign": "calcetín", "pronIpa": "/kalθeˈtin/", "pronKo": "깔쎄**띤**",     "korean": "양말",      "english": "sock" },
+    { "section": "액세서리·소지품", "foreign": "cinturón", "pronIpa": "/θintuˈɾon/", "pronKo": "씬뚜**론**",      "korean": "허리띠",     "english": "belt" },
+    { "section": "액세서리·소지품", "foreign": "guantes",  "pronIpa": "/ˈɡwantes/",  "pronKo": "**구안**떼스",    "korean": "장갑",      "english": "gloves" },
+    { "section": "액세서리·소지품", "foreign": "bufanda",  "pronIpa": "/buˈfanda/",  "pronKo": "부**판**다",      "korean": "목도리",     "english": "scarf" },
+    { "section": "액세서리·소지품", "foreign": "gafas",    "pronIpa": "/ˈɡafas/",    "pronKo": "**가**파스",      "korean": "안경",      "english": "glasses" },
+    { "section": "액세서리·소지품", "foreign": "reloj",    "pronIpa": "/reˈlox/",    "pronKo": "레**로**흐",      "korean": "시계 (손목시계)", "english": "watch" },
+    { "section": "액세서리·소지품", "foreign": "bolso",    "pronIpa": "/ˈbolso/",    "pronKo": "**볼**소",        "korean": "가방, 핸드백",   "english": "bag" },
+    { "section": "액세서리·소지품", "foreign": "mochila",  "pronIpa": "/moˈtʃila/",  "pronKo": "모**칠**라",      "korean": "배낭, 책가방",   "english": "backpack" }
+  ]
+}

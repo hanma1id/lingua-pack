@@ -1,0 +1,45 @@
+{
+  "id": "days_months",
+  "name": "요일·달·계절",
+  "lang": "es",
+  "emoji": "📅",
+  "sections": [
+    { "name": "요일",       "emoji": "🗓️" },
+    { "name": "달",         "emoji": "🌙" },
+    { "name": "계절",       "emoji": "🍂" },
+    { "name": "오늘·내일",   "emoji": "⏰" }
+  ],
+  "items": [
+    { "section": "요일", "foreign": "lunes",     "pronIpa": "/ˈlunes/",     "pronKo": "**루**네스",     "korean": "월요일", "english": "Monday" },
+    { "section": "요일", "foreign": "martes",    "pronIpa": "/ˈmaɾtes/",    "pronKo": "**마르**떼스",   "korean": "화요일", "english": "Tuesday" },
+    { "section": "요일", "foreign": "miércoles", "pronIpa": "/ˈmjeɾkoles/", "pronKo": "**미에르**꼴레스","korean": "수요일", "english": "Wednesday" },
+    { "section": "요일", "foreign": "jueves",    "pronIpa": "/ˈxweβes/",    "pronKo": "**후에**베스",   "korean": "목요일", "english": "Thursday" },
+    { "section": "요일", "foreign": "viernes",   "pronIpa": "/ˈbjeɾnes/",   "pronKo": "**비에르**네스", "korean": "금요일", "english": "Friday" },
+    { "section": "요일", "foreign": "sábado",    "pronIpa": "/ˈsaβaðo/",    "pronKo": "**사**바도",     "korean": "토요일", "english": "Saturday" },
+    { "section": "요일", "foreign": "domingo",   "pronIpa": "/doˈmiŋɡo/",   "pronKo": "도**밍**고",     "korean": "일요일", "english": "Sunday" },
+
+    { "section": "달", "foreign": "enero",       "pronIpa": "/eˈneɾo/",        "pronKo": "에**네**로",        "korean": "1월",   "english": "January" },
+    { "section": "달", "foreign": "febrero",     "pronIpa": "/feˈβɾeɾo/",      "pronKo": "페**브레**로",       "korean": "2월",   "english": "February" },
+    { "section": "달", "foreign": "marzo",       "pronIpa": "/ˈmaɾθo/",        "pronKo": "**마르**쏘",        "korean": "3월",   "english": "March" },
+    { "section": "달", "foreign": "abril",       "pronIpa": "/aˈβɾil/",        "pronKo": "아**브릴**",        "korean": "4월",   "english": "April" },
+    { "section": "달", "foreign": "mayo",        "pronIpa": "/ˈmajo/",         "pronKo": "**마**요",          "korean": "5월",   "english": "May" },
+    { "section": "달", "foreign": "junio",       "pronIpa": "/ˈxunjo/",        "pronKo": "**후**니오",        "korean": "6월",   "english": "June" },
+    { "section": "달", "foreign": "julio",       "pronIpa": "/ˈxuljo/",        "pronKo": "**훌**리오",        "korean": "7월",   "english": "July" },
+    { "section": "달", "foreign": "agosto",      "pronIpa": "/aˈɣosto/",       "pronKo": "아**고**스또",      "korean": "8월",   "english": "August" },
+    { "section": "달", "foreign": "septiembre",  "pronIpa": "/sepˈtjembɾe/",   "pronKo": "셉**띠엠**브레",    "korean": "9월",   "english": "September" },
+    { "section": "달", "foreign": "octubre",     "pronIpa": "/okˈtuβɾe/",      "pronKo": "옥**뚜**브레",      "korean": "10월",  "english": "October" },
+    { "section": "달", "foreign": "noviembre",   "pronIpa": "/noˈβjembɾe/",    "pronKo": "노**비엠**브레",    "korean": "11월",  "english": "November" },
+    { "section": "달", "foreign": "diciembre",   "pronIpa": "/diˈθjembɾe/",    "pronKo": "디**씨엠**브레",    "korean": "12월",  "english": "December" },
+
+    { "section": "계절", "foreign": "primavera", "pronIpa": "/pɾimaˈβeɾa/", "pronKo": "쁘리마**베**라", "korean": "봄",   "english": "spring" },
+    { "section": "계절", "foreign": "verano",    "pronIpa": "/beˈɾano/",    "pronKo": "베**라**노",    "korean": "여름",  "english": "summer" },
+    { "section": "계절", "foreign": "otoño",     "pronIpa": "/oˈtoɲo/",     "pronKo": "오**또**뇨",    "korean": "가을",  "english": "autumn" },
+    { "section": "계절", "foreign": "invierno",  "pronIpa": "/imˈbjeɾno/",  "pronKo": "임**비에르**노","korean": "겨울",  "english": "winter" },
+
+    { "section": "오늘·내일", "foreign": "hoy",       "pronIpa": "/oj/",             "pronKo": "**오이**",           "korean": "오늘",    "english": "today" },
+    { "section": "오늘·내일", "foreign": "mañana",    "pronIpa": "/maˈɲana/",        "pronKo": "마**냐**나",         "korean": "내일, 아침", "english": "tomorrow / morning" },
+    { "section": "오늘·내일", "foreign": "ayer",      "pronIpa": "/aˈjeɾ/",          "pronKo": "아**예르**",         "korean": "어제",    "english": "yesterday" },
+    { "section": "오늘·내일", "foreign": "anteayer",  "pronIpa": "/ˌanteaˈjeɾ/",     "pronKo": "안떼아**예르**",     "korean": "그제",    "english": "the day before yesterday" },
+    { "section": "오늘·내일", "foreign": "pasado mañana", "pronIpa": "/paˈsaðo maˈɲana/", "pronKo": "빠**사**도 마**냐**나", "korean": "모레", "english": "the day after tomorrow" }
+  ]
+}
