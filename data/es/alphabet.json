@@ -1,0 +1,38 @@
+{
+  "id": "alphabet",
+  "name": "알파벳",
+  "lang": "es",
+  "emoji": "🔤",
+  "sections": [
+    { "name": "알파벳 (27자)", "emoji": "🔤" }
+  ],
+  "letters": [
+    { "section": "알파벳 (27자)", "char": "A", "name": "a",         "pronKo": "**아**" },
+    { "section": "알파벳 (27자)", "char": "B", "name": "be",        "pronKo": "**베**" },
+    { "section": "알파벳 (27자)", "char": "C", "name": "ce",        "pronKo": "**쎄**" },
+    { "section": "알파벳 (27자)", "char": "D", "name": "de",        "pronKo": "**데**" },
+    { "section": "알파벳 (27자)", "char": "E", "name": "e",         "pronKo": "**에**" },
+    { "section": "알파벳 (27자)", "char": "F", "name": "efe",       "pronKo": "**에**페" },
+    { "section": "알파벳 (27자)", "char": "G", "name": "ge",        "pronKo": "**헤**" },
+    { "section": "알파벳 (27자)", "char": "H", "name": "hache",     "pronKo": "**아**체 (묵음)" },
+    { "section": "알파벳 (27자)", "char": "I", "name": "i",         "pronKo": "**이**" },
+    { "section": "알파벳 (27자)", "char": "J", "name": "jota",      "pronKo": "**호**타" },
+    { "section": "알파벳 (27자)", "char": "K", "name": "ka",        "pronKo": "**까**" },
+    { "section": "알파벳 (27자)", "char": "L", "name": "ele",       "pronKo": "**엘**레" },
+    { "section": "알파벳 (27자)", "char": "M", "name": "eme",       "pronKo": "**에**메" },
+    { "section": "알파벳 (27자)", "char": "N", "name": "ene",       "pronKo": "**에**네" },
+    { "section": "알파벳 (27자)", "char": "Ñ", "name": "eñe",       "pronKo": "**에**녜" },
+    { "section": "알파벳 (27자)", "char": "O", "name": "o",         "pronKo": "**오**" },
+    { "section": "알파벳 (27자)", "char": "P", "name": "pe",        "pronKo": "**뻬**" },
+    { "section": "알파벳 (27자)", "char": "Q", "name": "cu",        "pronKo": "**꾸**" },
+    { "section": "알파벳 (27자)", "char": "R", "name": "erre",      "pronKo": "**에**레" },
+    { "section": "알파벳 (27자)", "char": "S", "name": "ese",       "pronKo": "**에**세" },
+    { "section": "알파벳 (27자)", "char": "T", "name": "te",        "pronKo": "**떼**" },
+    { "section": "알파벳 (27자)", "char": "U", "name": "u",         "pronKo": "**우**" },
+    { "section": "알파벳 (27자)", "char": "V", "name": "uve",       "pronKo": "**우**베" },
+    { "section": "알파벳 (27자)", "char": "W", "name": "uve doble", "pronKo": "**우**베 **도**블레" },
+    { "section": "알파벳 (27자)", "char": "X", "name": "equis",     "pronKo": "**에**끼스" },
+    { "section": "알파벳 (27자)", "char": "Y", "name": "ye",        "pronKo": "**예**" },
+    { "section": "알파벳 (27자)", "char": "Z", "name": "zeta",      "pronKo": "**쎄**따" }
+  ]
+}

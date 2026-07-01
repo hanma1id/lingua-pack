@@ -22,6 +22,7 @@ export const loadLanguages = () => _fetchJson("./data/languages.json");
 export const loadLangIndex = (lang) => _fetchJson(`./data/${lang}/index.json`);
 export const loadCategory  = (lang, id) => _fetchJson(`./data/${lang}/categories/${id}.json`);
 export const loadTravel    = (lang, id) => _fetchJson(`./data/${lang}/travel/${id}.json`);
+export const loadAlphabet  = (lang)     => _fetchJson(`./data/${lang}/alphabet.json`);
 
 export function getLastLang() {
   try { return localStorage.getItem(LS_LAST_LANG); } catch { return null; }
