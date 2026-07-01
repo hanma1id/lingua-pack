@@ -11,35 +11,35 @@
     { "name": "곤충·기타", "emoji": "🐛" }
   ],
   "items": [
-    { "section": "반려동물", "foreign": "犬 (いぬ)",   "pronIpa": "/inɯ/",    "pronKo": "**이**누",     "korean": "개",       "english": "dog" },
-    { "section": "반려동물", "foreign": "猫 (ねこ)",   "pronIpa": "/neko/",   "pronKo": "**네**꼬",     "korean": "고양이",   "english": "cat" },
+    { "section": "반려동물", "foreign": "いぬ",   "pronIpa": "/inɯ/",    "pronKo": "**이**누",     "korean": "개",       "english": "dog" },
+    { "section": "반려동물", "foreign": "ねこ",   "pronIpa": "/neko/",   "pronKo": "**네**꼬",     "korean": "고양이",   "english": "cat" },
     { "section": "반려동물", "foreign": "うさぎ",       "pronIpa": "/ɯsaɡi/",  "pronKo": "우**사**기",   "korean": "토끼",     "english": "rabbit" },
     { "section": "반려동물", "foreign": "ハムスター",   "pronIpa": "/hamɯsɯtaː/","pronKo": "하무스**타**-","korean": "햄스터",  "english": "hamster" },
-    { "section": "반려동물", "foreign": "金魚 (きんぎょ)","pronIpa": "/kiɴɡʲo/", "pronKo": "**킹**교",     "korean": "금붕어",   "english": "goldfish" },
+    { "section": "반려동물", "foreign": "きんぎょ","pronIpa": "/kiɴɡʲo/", "pronKo": "**킹**교",     "korean": "금붕어",   "english": "goldfish" },
 
-    { "section": "농장 동물", "foreign": "牛 (うし)",     "pronIpa": "/ɯɕi/",    "pronKo": "**우**시",    "korean": "소",     "english": "cow" },
-    { "section": "농장 동물", "foreign": "豚 (ぶた)",     "pronIpa": "/bɯta/",   "pronKo": "**부**타",    "korean": "돼지",    "english": "pig" },
-    { "section": "농장 동물", "foreign": "馬 (うま)",     "pronIpa": "/ɯma/",    "pronKo": "**우**마",    "korean": "말",     "english": "horse" },
-    { "section": "농장 동물", "foreign": "羊 (ひつじ)",   "pronIpa": "/hitsɯdʑi/","pronKo": "히**츠**지",  "korean": "양",     "english": "sheep" },
-    { "section": "농장 동물", "foreign": "鶏 (にわとり)", "pronIpa": "/niwatoɾi/","pronKo": "니와**토**리","korean": "닭",     "english": "chicken" },
+    { "section": "농장 동물", "foreign": "うし",     "pronIpa": "/ɯɕi/",    "pronKo": "**우**시",    "korean": "소",     "english": "cow" },
+    { "section": "농장 동물", "foreign": "ぶた",     "pronIpa": "/bɯta/",   "pronKo": "**부**타",    "korean": "돼지",    "english": "pig" },
+    { "section": "농장 동물", "foreign": "うま",     "pronIpa": "/ɯma/",    "pronKo": "**우**마",    "korean": "말",     "english": "horse" },
+    { "section": "농장 동물", "foreign": "ひつじ",   "pronIpa": "/hitsɯdʑi/","pronKo": "히**츠**지",  "korean": "양",     "english": "sheep" },
+    { "section": "농장 동물", "foreign": "にわとり", "pronIpa": "/niwatoɾi/","pronKo": "니와**토**리","korean": "닭",     "english": "chicken" },
     { "section": "농장 동물", "foreign": "ヤギ",           "pronIpa": "/jaɡi/",   "pronKo": "**야**기",    "korean": "염소",    "english": "goat" },
 
     { "section": "야생 동물", "foreign": "ライオン",   "pronIpa": "/ɾaioɴ/",   "pronKo": "**라**이옹",  "korean": "사자",    "english": "lion" },
-    { "section": "야생 동물", "foreign": "虎 (とら)",  "pronIpa": "/toɾa/",    "pronKo": "**토**라",    "korean": "호랑이",  "english": "tiger" },
-    { "section": "야생 동물", "foreign": "象 (ぞう)",  "pronIpa": "/zoː/",     "pronKo": "**조**-",     "korean": "코끼리",  "english": "elephant" },
+    { "section": "야생 동물", "foreign": "とら",  "pronIpa": "/toɾa/",    "pronKo": "**토**라",    "korean": "호랑이",  "english": "tiger" },
+    { "section": "야생 동물", "foreign": "ぞう",  "pronIpa": "/zoː/",     "pronKo": "**조**-",     "korean": "코끼리",  "english": "elephant" },
     { "section": "야생 동물", "foreign": "キリン",     "pronIpa": "/kiɾiɴ/",   "pronKo": "**키**링",    "korean": "기린",    "english": "giraffe" },
-    { "section": "야생 동물", "foreign": "熊 (くま)",  "pronIpa": "/kɯma/",    "pronKo": "**쿠**마",    "korean": "곰",     "english": "bear" },
+    { "section": "야생 동물", "foreign": "くま",  "pronIpa": "/kɯma/",    "pronKo": "**쿠**마",    "korean": "곰",     "english": "bear" },
     { "section": "야생 동물", "foreign": "サル",       "pronIpa": "/saɾɯ/",    "pronKo": "**사**루",    "korean": "원숭이",  "english": "monkey" },
 
-    { "section": "새·바다", "foreign": "鳥 (とり)",   "pronIpa": "/toɾi/",     "pronKo": "**토**리",    "korean": "새",     "english": "bird" },
-    { "section": "새·바다", "foreign": "鴨 (かも)",   "pronIpa": "/kamo/",     "pronKo": "**카**모",    "korean": "오리",    "english": "duck" },
-    { "section": "새·바다", "foreign": "魚 (さかな)", "pronIpa": "/sakana/",   "pronKo": "사**카**나",  "korean": "물고기",  "english": "fish" },
+    { "section": "새·바다", "foreign": "とり",   "pronIpa": "/toɾi/",     "pronKo": "**토**리",    "korean": "새",     "english": "bird" },
+    { "section": "새·바다", "foreign": "かも",   "pronIpa": "/kamo/",     "pronKo": "**카**모",    "korean": "오리",    "english": "duck" },
+    { "section": "새·바다", "foreign": "さかな", "pronIpa": "/sakana/",   "pronKo": "사**카**나",  "korean": "물고기",  "english": "fish" },
     { "section": "새·바다", "foreign": "イルカ",       "pronIpa": "/iɾɯka/",    "pronKo": "이**루**까",  "korean": "돌고래",  "english": "dolphin" },
-    { "section": "새·바다", "foreign": "亀 (かめ)",   "pronIpa": "/kame/",     "pronKo": "**카**메",    "korean": "거북",    "english": "turtle" },
+    { "section": "새·바다", "foreign": "かめ",   "pronIpa": "/kame/",     "pronKo": "**카**메",    "korean": "거북",    "english": "turtle" },
 
-    { "section": "곤충·기타", "foreign": "蝶 (ちょう)","pronIpa": "/tɕoː/",    "pronKo": "**쵸**-",    "korean": "나비",    "english": "butterfly" },
-    { "section": "곤충·기타", "foreign": "蜂 (はち)",  "pronIpa": "/hatɕi/",   "pronKo": "**하**치",   "korean": "벌",     "english": "bee" },
-    { "section": "곤충·기타", "foreign": "蟻 (あり)",  "pronIpa": "/aɾi/",     "pronKo": "**아**리",   "korean": "개미",    "english": "ant" },
-    { "section": "곤충·기타", "foreign": "蛇 (へび)",  "pronIpa": "/hebi/",    "pronKo": "**헤**비",   "korean": "뱀",     "english": "snake" }
+    { "section": "곤충·기타", "foreign": "ちょう","pronIpa": "/tɕoː/",    "pronKo": "**쵸**-",    "korean": "나비",    "english": "butterfly" },
+    { "section": "곤충·기타", "foreign": "はち",  "pronIpa": "/hatɕi/",   "pronKo": "**하**치",   "korean": "벌",     "english": "bee" },
+    { "section": "곤충·기타", "foreign": "あり",  "pronIpa": "/aɾi/",     "pronKo": "**아**리",   "korean": "개미",    "english": "ant" },
+    { "section": "곤충·기타", "foreign": "へび",  "pronIpa": "/hebi/",    "pronKo": "**헤**비",   "korean": "뱀",     "english": "snake" }
   ]
 }
