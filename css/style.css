@@ -169,6 +169,7 @@ a { color: var(--accent); text-decoration: none; }
   gap: 6px;
   flex: 0 1 auto;
   min-width: 0;
+  margin-right: auto;
   transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
   box-shadow: 0 2px 8px rgba(74,111,165,0.08);
 }
