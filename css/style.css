@@ -139,6 +139,30 @@ a { color: var(--accent); text-decoration: none; }
 }
 .lang-select:hover { background-color: var(--bg-soft); }
 
+/* 국기만 표시 — 카테고리/여행 상세 헤더 */
+.lang-select.lang-flag-only {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 4px 26px 4px 10px;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+}
+.lang-select.lang-flag-only:focus { box-shadow: none; border: none; }
+.lang-select.lang-flag-only:hover { background-color: var(--bg-soft); }
+
+/* 페이지 제목 — 클릭 시 목록 화면으로 (뒤로가기 역할) */
+.page-subtitle.page-back {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+.page-subtitle.page-back:hover,
+.page-subtitle.page-back:focus-visible { color: var(--accent); outline: none; }
+
 .container {
   max-width: 720px;
   margin: 0 auto;
