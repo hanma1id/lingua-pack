@@ -130,9 +130,18 @@ function bindItemEvents() {
   });
 }
 
-function renderList(items) {
-  $area.className = "item-list";
-  $area.innerHTML = items.map((it, i) => `
+function groupBySection(items) {
+  const groups = new Map();
+  items.forEach((it, i) => {
+    const key = it.section || "";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({ ...it, _idx: i });
+  });
+  return [...groups.entries()];
+}
+
+function renderCardHtml(it, i) {
+  return `
     <div class="item" aria-expanded="false" data-idx="${i}">
       <div class="item-head" data-action="toggle" role="button" tabindex="0">
         <span class="item-head-text">
@@ -156,7 +165,22 @@ function renderList(items) {
         ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
       </div>
     </div>
-  `).join("");
+  `;
+}
+
+function renderList(items) {
+  $area.className = "item-list";
+  const groups = groupBySection(items);
+  if (groups.length === 1 && groups[0][0] === "") {
+    $area.innerHTML = items.map((it, i) => renderCardHtml(it, i)).join("");
+  } else {
+    $area.innerHTML = groups.map(([sectionName, groupItems]) => `
+      ${sectionName ? `<h2 class="section-header">${esc(sectionName)}</h2>` : ""}
+      <div class="section-group">
+        ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
+      </div>
+    `).join("");
+  }
 
   $area.querySelectorAll(".item-head").forEach((h) => {
     h.addEventListener("keydown", (e) => {

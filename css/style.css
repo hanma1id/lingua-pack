@@ -503,12 +503,33 @@ a { color: var(--accent); text-decoration: none; }
 .footer-back-link:hover { background: var(--accent); color: #fff; }
 
 /* 카드 그리드 — 넓은 화면 여러 열, 좁으면 자동 한 열
-   vocab-roots 패턴 참고 (minmax + auto-fill) */
+   섹션 그룹핑 시엔 grid 대신 flex column, 각 section-group 안이 grid */
 .item-list {
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: start;
+}
+/* 섹션 그룹핑 사용 시 — item-list가 flat 그리드가 아니라 세로 흐름 */
+.item-list:has(.section-group) {
+  display: block;
+}
+.section-header {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin: 20px 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--accent-soft);
+  letter-spacing: 0.5px;
+}
+.section-header:first-child { margin-top: 0; }
+.section-group {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
+  margin-bottom: 24px;
 }
 .item {
   background: var(--bg-card);

@@ -141,11 +141,20 @@ function bindItemEvents() {
   });
 }
 
-function renderList(items) {
-  $area.className = "item-list";
-  $area.innerHTML = items.map((it, i) => `
+// items에 section 필드 있으면 그룹핑, 없으면 그대로 한 그룹
+function groupBySection(items) {
+  const groups = new Map();
+  items.forEach((it, i) => {
+    const key = it.section || "";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({ ...it, _idx: i });
+  });
+  return [...groups.entries()];  // [[sectionName, items], ...]
+}
+
+function renderCardHtml(it, i) {
+  return `
     <div class="item" aria-expanded="false" data-idx="${i}">
-      <!-- 헤드 — 접혔을 때도 보이는 부분 -->
       <div class="item-head" data-action="toggle" role="button" tabindex="0">
         <span class="item-head-text">
           <span class="item-foreign-text">${esc(it.foreign)}</span>
@@ -156,9 +165,7 @@ function renderList(items) {
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
         </span>
       </div>
-      <!-- 진행 바 — 접혔을 때도 재생 상태 보임 -->
       <div class="item-progress"><div class="fill"></div></div>
-      <!-- 본문 — 펼침 상태에서만 -->
       <div class="item-body">
         <div class="item-pron">
           ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
@@ -170,9 +177,24 @@ function renderList(items) {
         ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
       </div>
     </div>
-  `).join("");
+  `;
+}
 
-  // 키보드 접근성 — Enter/Space로 토글
+function renderList(items) {
+  $area.className = "item-list";
+  const groups = groupBySection(items);
+  // 섹션 하나뿐이면 그룹 헤더 없이 카드만 (기존 flat 데이터 호환)
+  if (groups.length === 1 && groups[0][0] === "") {
+    $area.innerHTML = items.map((it, i) => renderCardHtml(it, i)).join("");
+  } else {
+    $area.innerHTML = groups.map(([sectionName, groupItems]) => `
+      ${sectionName ? `<h2 class="section-header">${esc(sectionName)}</h2>` : ""}
+      <div class="section-group">
+        ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
+      </div>
+    `).join("");
+  }
+
   $area.querySelectorAll(".item-head").forEach((h) => {
     h.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
