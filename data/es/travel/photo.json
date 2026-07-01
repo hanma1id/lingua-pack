@@ -1,0 +1,25 @@
+{
+  "id": "photo",
+  "name": "사진 부탁",
+  "lang": "es",
+  "emoji": "📸",
+  "sections": [
+    { "name": "찍어달라",   "emoji": "📸" },
+    { "name": "찍어주기",   "emoji": "🤳" },
+    { "name": "SNS·공유",  "emoji": "📱" }
+  ],
+  "items": [
+    { "section": "찍어달라", "foreign": "¿Puede sacarnos una foto?",         "pronIpa": "/ˈpweðe saˈkaɾnos ˈuna ˈfoto/",     "pronKo": "**뿌에**데 사**까르**노스 **우**나 **포**또?", "korean": "저희 사진 찍어 주실 수 있나요?", "english": "Can you take a photo of us?", "context": "" },
+    { "section": "찍어달라", "foreign": "¿Puede sacarme una foto, por favor?","pronIpa": "/ˈpweðe saˈkaɾme ˈuna ˈfoto poɾ faˈβoɾ/","pronKo": "**뿌에**데 사**까르**메 **우**나 **포**또, 뽀르 파**보르**?", "korean": "제 사진 좀 찍어 주시겠어요?",  "english": "Can you take a photo of me?", "context": "" },
+    { "section": "찍어달라", "foreign": "Con el monumento detrás.",           "pronIpa": "/kon el monuˈmento deˈtɾas/",       "pronKo": "꼰 엘 모누**멘**또 데**뜨라**스",              "korean": "기념물 배경으로요.",           "english": "With the monument in the background.", "context": "" },
+    { "section": "찍어달라", "foreign": "Una vertical, por favor.",           "pronIpa": "/ˈuna beɾtiˈkal poɾ faˈβoɾ/",       "pronKo": "**우**나 베르띠**깔**, 뽀르 파**보르**",     "korean": "세로로 찍어 주세요.",           "english": "Vertical, please.", "context": "" },
+    { "section": "찍어달라", "foreign": "Otra más, por favor.",               "pronIpa": "/ˈotɾa mas poɾ faˈβoɾ/",             "pronKo": "**오**뜨라 **마**스, 뽀르 파**보르**",         "korean": "한 장 더 찍어 주세요.",         "english": "One more, please.", "context": "" },
+
+    { "section": "찍어주기", "foreign": "¡Sonrían!",                          "pronIpa": "/sonˈriːan/",                        "pronKo": "손**리**안!",                                  "korean": "웃어요!",                     "english": "Smile!", "context": "" },
+    { "section": "찍어주기", "foreign": "Uno, dos, tres.",                    "pronIpa": "/ˈuno dos tɾes/",                    "pronKo": "**우**노, **도**스, **뜨레**스",              "korean": "하나, 둘, 셋.",                "english": "One, two, three.", "context": "" },
+    { "section": "찍어주기", "foreign": "¿Le gusta la foto?",                 "pronIpa": "/le ˈɡusta la ˈfoto/",                "pronKo": "레 **구**스따 라 **포**또?",                  "korean": "사진 마음에 드세요?",           "english": "Do you like the photo?", "context": "" },
+
+    { "section": "SNS·공유", "foreign": "¿Me la manda por whatsapp?",         "pronIpa": "/me la ˈmanda poɾ ˈwatsap/",          "pronKo": "메 라 **만**다 뽀르 **왓**삽?",              "korean": "왓츠앱으로 보내 주실 수 있나요?", "english": "Can you send it to me on WhatsApp?", "context": "" },
+    { "section": "SNS·공유", "foreign": "¿Cuál es tu Instagram?",              "pronIpa": "/kwal es tu insˈtaɣɾam/",             "pronKo": "**꾸알** 에스 뚜 인스**따**그람?",            "korean": "인스타그램 뭐예요?",           "english": "What's your Instagram?", "context": "" }
+  ]
+}

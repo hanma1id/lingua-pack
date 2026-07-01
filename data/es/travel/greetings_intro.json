@@ -3,106 +3,37 @@
   "name": "인사·자기소개",
   "lang": "es",
   "emoji": "👋",
+  "sections": [
+    { "name": "안부·인사",   "emoji": "😊" },
+    { "name": "이름·국적",   "emoji": "🗺️" },
+    { "name": "직업·나이",   "emoji": "💼" },
+    { "name": "취미·언어",   "emoji": "🎨" },
+    { "name": "헤어질 때",   "emoji": "👋" }
+  ],
   "items": [
-    {
-      "foreign": "Hola",
-      "pronIpa": "/ˈola/",
-      "pronKo": "**오**라",
-      "korean": "안녕",
-      "example": "",
-      "exampleKo": "",
-      "context": "처음 만났을 때, 또는 친구나 아는 사람에게 인사할 때 사용합니다.",
-      "english": "Hello"
-    },
-    {
-      "foreign": "Buenos días",
-      "pronIpa": "/ˈbwenoz ˈdi.as/",
-      "pronKo": "**부**에노스 **디**아스",
-      "korean": "좋은 아침이에요",
-      "example": "",
-      "exampleKo": "",
-      "context": "아침 인사로 사용합니다. 보통 정오까지 사용합니다.",
-      "english": "Good morning"
-    },
-    {
-      "foreign": "Buenas tardes",
-      "pronIpa": "/ˈbwenaθ ˈtaɾðes/",
-      "pronKo": "**부**에나스 **따르**데스",
-      "korean": "좋은 오후예요",
-      "example": "",
-      "exampleKo": "",
-      "context": "점심 식사 후부터 해 질 녘까지 사용하는 오후 인사입니다.",
-      "english": "Good afternoon"
-    },
-    {
-      "foreign": "Buenas noches",
-      "pronIpa": "/ˈbwenaθ ˈno.tʃes/",
-      "pronKo": "**부**에나스 **노**체스",
-      "korean": "좋은 밤이에요",
-      "example": "",
-      "exampleKo": "",
-      "context": "저녁 인사 및 잠자리에 들기 전 작별 인사로 사용합니다.",
-      "english": "Good evening"
-    },
-    {
-      "foreign": "¿Cómo te llamas?",
-      "pronIpa": "/ˈkomo te ˈjamas/",
-      "pronKo": "**꼬**모 떼 **야**마스",
-      "korean": "이름이 뭐예요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "상대방의 이름을 물어볼 때 사용합니다.",
-      "english": "What's your name?"
-    },
-    {
-      "foreign": "Me llamo [이름]",
-      "pronIpa": "/me ˈʝamo [이름]/",
-      "pronKo": "메 **야**모 [이름]",
-      "korean": "제 이름은 [이름]입니다",
-      "example": "",
-      "exampleKo": "",
-      "context": "자신의 이름을 소개할 때 사용합니다.",
-      "english": "My name is [name]."
-    },
-    {
-      "foreign": "¿De dónde eres?",
-      "pronIpa": "/de ˈdonde ˈeɾes/",
-      "pronKo": "데 **돈**데 **에**레스",
-      "korean": "어디 출신이세요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "상대방의 국적이나 출신지를 물어볼 때 사용합니다.",
-      "english": "Where are you from?"
-    },
-    {
-      "foreign": "Soy de [나라]",
-      "pronIpa": "/soj de [나라]/",
-      "pronKo": "쏘이 데 [나라]",
-      "korean": "저는 [나라] 출신입니다",
-      "example": "",
-      "exampleKo": "",
-      "context": "자신의 국적이나 출신지를 소개할 때 사용합니다.",
-      "english": "I'm from [country]."
-    },
-    {
-      "foreign": "¿A qué te dedicas?",
-      "pronIpa": "/a ke te deˈðikas/",
-      "pronKo": "아 **께** 떼 데**디**까스",
-      "korean": "무슨 일을 하세요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "상대방의 직업을 물어볼 때 사용합니다.",
-      "english": "What do you do?"
-    },
-    {
-      "foreign": "Soy [직업]",
-      "pronIpa": "/soj [직업]/",
-      "pronKo": "쏘이 [직업]",
-      "korean": "저는 [직업]입니다",
-      "example": "",
-      "exampleKo": "",
-      "context": "자신의 직업을 소개할 때 사용합니다.",
-      "english": "I'm a [occupation]."
-    }
+    { "section": "안부·인사", "foreign": "¡Hola! ¿Cómo estás?",       "pronIpa": "/ˈola ˈkomo esˈtas/",       "pronKo": "**올**라! **꼬**모 에스**따**스?",    "korean": "안녕! 어떻게 지내?",       "english": "Hi! How are you?", "context": "친한 사이" },
+    { "section": "안부·인사", "foreign": "Mucho gusto.",              "pronIpa": "/ˈmutʃo ˈɡusto/",           "pronKo": "**무**초 **구**스또",              "korean": "만나서 반가워요.",         "english": "Nice to meet you.", "context": "첫 만남" },
+    { "section": "안부·인사", "foreign": "Encantado de conocerte.",   "pronIpa": "/eŋkanˈtaðo de konoˈθeɾte/","pronKo": "엥깐**따**도 데 꼬노**쎄르**떼",   "korean": "만나서 정말 반가워요.",     "english": "Delighted to meet you.", "context": "정중한 표현" },
+    { "section": "안부·인사", "foreign": "Estoy bien, ¿y tú?",         "pronIpa": "/esˈtoj ˈbjen i tu/",       "pronKo": "에스**또**이 **비엔**, 이 **뚜**?", "korean": "잘 지내요, 당신은요?",       "english": "I'm fine, and you?", "context": "" },
+
+    { "section": "이름·국적", "foreign": "Me llamo [이름].",           "pronIpa": "/me ˈʎamo/",                "pronKo": "메 **야**모 [이름]",              "korean": "제 이름은 [이름]이에요.",   "english": "My name is [name].", "context": "" },
+    { "section": "이름·국적", "foreign": "¿Cómo te llamas?",           "pronIpa": "/ˈkomo te ˈʎamas/",         "pronKo": "**꼬**모 떼 **야**마스?",         "korean": "이름이 뭐예요?",            "english": "What's your name?", "context": "친근한 표현" },
+    { "section": "이름·국적", "foreign": "Soy de Corea del Sur.",       "pronIpa": "/soj de koˈɾea del suɾ/",   "pronKo": "**소**이 데 꼬**레**아 델 **수르**","korean": "저는 한국 사람이에요.",     "english": "I'm from South Korea.", "context": "" },
+    { "section": "이름·국적", "foreign": "¿De dónde eres?",             "pronIpa": "/de ˈdonde ˈeɾes/",         "pronKo": "데 **돈**데 **에**레스?",         "korean": "어디에서 왔어요?",          "english": "Where are you from?", "context": "" },
+    { "section": "이름·국적", "foreign": "Vivo en Seúl.",                "pronIpa": "/ˈbiβo en seˈul/",          "pronKo": "**비**보 엔 세**울**",             "korean": "서울에 살아요.",           "english": "I live in Seoul.", "context": "" },
+
+    { "section": "직업·나이", "foreign": "Soy estudiante.",             "pronIpa": "/soj estuˈðjante/",         "pronKo": "**소**이 에스뚜**디안**떼",       "korean": "저는 학생이에요.",           "english": "I'm a student.", "context": "" },
+    { "section": "직업·나이", "foreign": "Trabajo en una empresa.",      "pronIpa": "/tɾaˈβaxo en ˈuna emˈpɾesa/","pronKo": "뜨라**바**호 엔 **우**나 엠**쁘레**사","korean": "회사에서 일해요.",       "english": "I work at a company.", "context": "" },
+    { "section": "직업·나이", "foreign": "¿A qué te dedicas?",           "pronIpa": "/a ke te deˈðikas/",        "pronKo": "아 께 떼 데**디**까스?",           "korean": "무슨 일 하세요?",           "english": "What do you do?", "context": "" },
+    { "section": "직업·나이", "foreign": "Tengo veinticinco años.",       "pronIpa": "/ˈteŋɡo bejntiˈθiŋko ˈaɲos/","pronKo": "**뗑**고 베인띠**씽**꼬 **아**뇨스", "korean": "25살이에요.",             "english": "I'm 25 years old.", "context": "" },
+
+    { "section": "취미·언어", "foreign": "Me gusta viajar.",             "pronIpa": "/me ˈɡusta bjaˈxaɾ/",       "pronKo": "메 **구**스따 비아**하르**",       "korean": "여행을 좋아해요.",           "english": "I like to travel.", "context": "" },
+    { "section": "취미·언어", "foreign": "¿Cuáles son tus aficiones?",    "pronIpa": "/ˈkwales son tus afiˈθjones/","pronKo": "**꾸알**레스 손 뚜스 아피**시오**네스?", "korean": "취미가 뭐예요?",       "english": "What are your hobbies?", "context": "" },
+    { "section": "취미·언어", "foreign": "Estoy aprendiendo español.",    "pronIpa": "/esˈtoj apɾenˈdjendo espaˈɲol/","pronKo": "에스**또**이 아쁘렌**디엔**도 에스빠**뇰**","korean": "스페인어를 배우고 있어요.", "english": "I'm learning Spanish.", "context": "" },
+    { "section": "취미·언어", "foreign": "Hablo un poco de español.",     "pronIpa": "/ˈaβlo un ˈpoko de espaˈɲol/", "pronKo": "**아**블로 운 **뽀**꼬 데 에스빠**뇰**", "korean": "스페인어 조금 해요.",     "english": "I speak a little Spanish.", "context": "" },
+
+    { "section": "헤어질 때", "foreign": "Hasta luego, ¡cuídate!",       "pronIpa": "/ˈasta ˈlweɣo ˈkwiðate/",   "pronKo": "**아**스따 **루에**고, **꾸이**다떼!","korean": "잘 가요, 건강히!",          "english": "See you later, take care!", "context": "" },
+    { "section": "헤어질 때", "foreign": "Nos vemos pronto.",             "pronIpa": "/nos ˈbemos ˈpɾonto/",      "pronKo": "노스 **베**모스 **쁘론**또",      "korean": "곧 봐요.",                "english": "See you soon.", "context": "" },
+    { "section": "헤어질 때", "foreign": "Que tengas un buen día.",       "pronIpa": "/ke ˈteŋɡas un ˈbwen ˈdia/","pronKo": "께 **뗑**가스 운 **부엔** **디**아","korean": "좋은 하루 보내세요.",      "english": "Have a good day.", "context": "" }
   ]
 }

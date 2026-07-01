@@ -1,0 +1,41 @@
+{
+  "id": "time_expressions",
+  "name": "시간·빈도",
+  "lang": "es",
+  "emoji": "⏰",
+  "sections": [
+    { "name": "시간 단위",   "emoji": "🕐" },
+    { "name": "하루의 때",   "emoji": "🌅" },
+    { "name": "시점 표현",   "emoji": "↔️" },
+    { "name": "빈도",       "emoji": "🔁" }
+  ],
+  "items": [
+    { "section": "시간 단위", "foreign": "hora",       "pronIpa": "/ˈoɾa/",       "pronKo": "**오**라",       "korean": "시간, 시",  "english": "hour" },
+    { "section": "시간 단위", "foreign": "minuto",     "pronIpa": "/miˈnuto/",    "pronKo": "미**누**또",     "korean": "분",       "english": "minute" },
+    { "section": "시간 단위", "foreign": "segundo",    "pronIpa": "/seˈɣundo/",   "pronKo": "쎄**군**도",     "korean": "초",       "english": "second" },
+    { "section": "시간 단위", "foreign": "día",        "pronIpa": "/ˈdia/",       "pronKo": "**디**아",       "korean": "날, 하루",   "english": "day" },
+    { "section": "시간 단위", "foreign": "semana",     "pronIpa": "/seˈmana/",    "pronKo": "쎄**마**나",     "korean": "주",       "english": "week" },
+    { "section": "시간 단위", "foreign": "mes",        "pronIpa": "/mes/",        "pronKo": "**메**스",       "korean": "달, 월",    "english": "month" },
+    { "section": "시간 단위", "foreign": "año",        "pronIpa": "/ˈaɲo/",       "pronKo": "**아**뇨",       "korean": "년, 해",    "english": "year" },
+
+    { "section": "하루의 때", "foreign": "mañana",     "pronIpa": "/maˈɲana/",    "pronKo": "마**냐**나",    "korean": "아침",     "english": "morning" },
+    { "section": "하루의 때", "foreign": "tarde",      "pronIpa": "/ˈtaɾde/",     "pronKo": "**따르**데",    "korean": "오후",     "english": "afternoon" },
+    { "section": "하루의 때", "foreign": "noche",      "pronIpa": "/ˈnotʃe/",     "pronKo": "**노**체",      "korean": "밤",       "english": "night" },
+    { "section": "하루의 때", "foreign": "mediodía",   "pronIpa": "/meðjoˈðia/",  "pronKo": "메디오**디**아","korean": "정오, 낮 12시","english": "noon" },
+    { "section": "하루의 때", "foreign": "medianoche", "pronIpa": "/meðjaˈnotʃe/","pronKo": "메디아**노**체","korean": "자정, 밤 12시","english": "midnight" },
+
+    { "section": "시점 표현", "foreign": "ahora",   "pronIpa": "/aˈoɾa/",    "pronKo": "아**오**라",   "korean": "지금",   "english": "now" },
+    { "section": "시점 표현", "foreign": "antes",   "pronIpa": "/ˈantes/",   "pronKo": "**안**떼스",   "korean": "이전에",  "english": "before" },
+    { "section": "시점 표현", "foreign": "después", "pronIpa": "/desˈpwes/", "pronKo": "데스**뿌에**스","korean": "이후에",  "english": "after" },
+    { "section": "시점 표현", "foreign": "pronto",  "pronIpa": "/ˈpɾonto/",  "pronKo": "**쁘론**또",   "korean": "곧",     "english": "soon" },
+    { "section": "시점 표현", "foreign": "tarde",   "pronIpa": "/ˈtaɾde/",   "pronKo": "**따르**데",   "korean": "늦게",    "english": "late" },
+    { "section": "시점 표현", "foreign": "temprano","pronIpa": "/temˈpɾano/","pronKo": "뗌**쁘라**노", "korean": "일찍",    "english": "early" },
+    { "section": "시점 표현", "foreign": "ya",      "pronIpa": "/ja/",       "pronKo": "**야**",       "korean": "이미, 벌써",  "english": "already" },
+
+    { "section": "빈도", "foreign": "siempre",      "pronIpa": "/ˈsjempɾe/",     "pronKo": "**시엠**쁘레",     "korean": "항상",   "english": "always" },
+    { "section": "빈도", "foreign": "a menudo",     "pronIpa": "/a meˈnuðo/",    "pronKo": "아 메**누**도",    "korean": "자주",    "english": "often" },
+    { "section": "빈도", "foreign": "a veces",      "pronIpa": "/a ˈbeθes/",     "pronKo": "아 **베**쎄스",    "korean": "가끔",    "english": "sometimes" },
+    { "section": "빈도", "foreign": "casi nunca",   "pronIpa": "/ˈkasi ˈnuŋka/", "pronKo": "**까**시 **눈**까","korean": "거의 안",   "english": "rarely" },
+    { "section": "빈도", "foreign": "nunca",        "pronIpa": "/ˈnuŋka/",       "pronKo": "**눈**까",         "korean": "절대 안",   "english": "never" }
+  ]
+}

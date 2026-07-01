@@ -1,0 +1,31 @@
+{
+  "id": "transport",
+  "name": "대중교통",
+  "lang": "es",
+  "emoji": "🚇",
+  "sections": [
+    { "name": "표 사기",     "emoji": "🎫" },
+    { "name": "지하철·버스",  "emoji": "🚌" },
+    { "name": "기차",        "emoji": "🚆" },
+    { "name": "문제·안내",   "emoji": "⚠️" }
+  ],
+  "items": [
+    { "section": "표 사기", "foreign": "Un billete a Madrid, por favor.", "pronIpa": "/un biˈʎete a maˈðɾið poɾ faˈβoɾ/",  "pronKo": "운 비**예**떼 아 마**드리드**, 뽀르 파**보르**",   "korean": "마드리드행 표 한 장 주세요.",     "english": "A ticket to Madrid, please.", "context": "" },
+    { "section": "표 사기", "foreign": "¿Ida y vuelta o solo ida?",       "pronIpa": "/ˈiða i ˈβwelta o ˈsolo ˈiða/",     "pronKo": "**이**다 이 **부엘**따 오 **솔**로 **이**다?",     "korean": "왕복이요, 편도요?",              "english": "Round trip or one way?", "context": "직원 질문" },
+    { "section": "표 사기", "foreign": "Ida y vuelta, por favor.",         "pronIpa": "/ˈiða i ˈβwelta poɾ faˈβoɾ/",       "pronKo": "**이**다 이 **부엘**따, 뽀르 파**보르**",         "korean": "왕복이요.",                    "english": "Round trip, please.", "context": "" },
+    { "section": "표 사기", "foreign": "¿Cuánto vale el billete?",         "pronIpa": "/ˈkwanto ˈβale el biˈʎete/",         "pronKo": "**꾸안**또 **발**레 엘 비**예**떼?",              "korean": "표 얼마예요?",                 "english": "How much is the ticket?", "context": "" },
+
+    { "section": "지하철·버스", "foreign": "¿Este autobús va al centro?", "pronIpa": "/ˈeste autoˈβus βa al ˈθentɾo/",     "pronKo": "**에**스떼 아우또**부**스 바 알 **쎈**뜨로?",     "korean": "이 버스 시내로 가나요?",         "english": "Does this bus go downtown?", "context": "" },
+    { "section": "지하철·버스", "foreign": "¿Qué línea de metro tomo?",    "pronIpa": "/ke ˈlinea de ˈmetɾo ˈtomo/",         "pronKo": "께 **리**네아 데 **메**뜨로 **또**모?",           "korean": "어느 지하철 노선 타요?",         "english": "Which metro line do I take?", "context": "" },
+    { "section": "지하철·버스", "foreign": "¿Hay que cambiar de tren?",   "pronIpa": "/aj ke kamˈbjaɾ de tɾen/",           "pronKo": "**아**이 께 깜**비아르** 데 **뜨렌**?",           "korean": "환승해야 하나요?",              "english": "Do I need to change trains?", "context": "" },
+    { "section": "지하철·버스", "foreign": "¿Cuál es la próxima parada?", "pronIpa": "/kwal es la ˈpɾoksima paˈɾaða/",      "pronKo": "**꾸알** 에스 라 **쁘록**시마 빠**라**다?",       "korean": "다음 정류장은 어디예요?",        "english": "What's the next stop?", "context": "" },
+
+    { "section": "기차", "foreign": "¿A qué hora sale el tren?",         "pronIpa": "/a ke ˈoɾa ˈsale el tɾen/",           "pronKo": "아 께 **오**라 **살**레 엘 **뜨렌**?",           "korean": "기차 몇 시에 출발해요?",         "english": "What time does the train leave?", "context": "" },
+    { "section": "기차", "foreign": "¿De qué andén sale?",                "pronIpa": "/de ke anˈden ˈsale/",               "pronKo": "데 께 안**덴** **살**레?",                        "korean": "몇 번 승강장에서 출발해요?",     "english": "Which platform does it leave from?", "context": "" },
+    { "section": "기차", "foreign": "¿Este asiento está libre?",           "pronIpa": "/ˈeste aˈsjento esˈta ˈliβɾe/",     "pronKo": "**에**스떼 아**시엔**또 에스**따** **리**브레?",  "korean": "이 자리 비었어요?",             "english": "Is this seat free?", "context": "기차 안" },
+
+    { "section": "문제·안내", "foreign": "He perdido el tren.",           "pronIpa": "/e peɾˈðiðo el tɾen/",              "pronKo": "에 뻬르**디**도 엘 **뜨렌**",                    "korean": "기차를 놓쳤어요.",               "english": "I missed the train.", "context": "" },
+    { "section": "문제·안내", "foreign": "¿Este es el tren correcto?",   "pronIpa": "/ˈeste es el tɾen koˈrekto/",       "pronKo": "**에**스떼 에스 엘 **뜨렌** 꼬**렉**또?",         "korean": "이 기차 맞나요?",              "english": "Is this the right train?", "context": "" },
+    { "section": "문제·안내", "foreign": "Se me pasó la parada.",         "pronIpa": "/se me paˈso la paˈɾaða/",           "pronKo": "세 메 빠**소** 라 빠**라**다",                   "korean": "정류장을 지나쳤어요.",           "english": "I missed my stop.", "context": "" }
+  ]
+}

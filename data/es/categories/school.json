@@ -1,0 +1,43 @@
+{
+  "id": "school",
+  "name": "학교·문구",
+  "lang": "es",
+  "emoji": "🎒",
+  "sections": [
+    { "name": "학교·사람",  "emoji": "🏫" },
+    { "name": "과목",       "emoji": "📚" },
+    { "name": "문구·필기",  "emoji": "✏️" },
+    { "name": "수업·과제",  "emoji": "📝" }
+  ],
+  "items": [
+    { "section": "학교·사람", "foreign": "colegio",    "pronIpa": "/koˈlexjo/",     "pronKo": "꼴**레**히오",     "korean": "초·중학교", "english": "school" },
+    { "section": "학교·사람", "foreign": "instituto",  "pronIpa": "/instiˈtuto/",   "pronKo": "인스띠**뚜**또",   "korean": "고등학교",  "english": "high school" },
+    { "section": "학교·사람", "foreign": "universidad","pronIpa": "/uniβeɾsiˈðað/", "pronKo": "우니베르시**다드**","korean": "대학교",   "english": "university" },
+    { "section": "학교·사람", "foreign": "profesor",   "pronIpa": "/pɾofeˈsoɾ/",    "pronKo": "쁘로페**소르**",   "korean": "선생님 (남)","english": "teacher (m)" },
+    { "section": "학교·사람", "foreign": "profesora",  "pronIpa": "/pɾofeˈsoɾa/",   "pronKo": "쁘로페**소**라",   "korean": "선생님 (여)","english": "teacher (f)" },
+    { "section": "학교·사람", "foreign": "estudiante", "pronIpa": "/estuˈðjante/",  "pronKo": "에스뚜**디안**떼", "korean": "학생",     "english": "student" },
+    { "section": "학교·사람", "foreign": "clase",      "pronIpa": "/ˈklase/",       "pronKo": "**끌라**세",       "korean": "반, 수업",   "english": "class" },
+
+    { "section": "과목", "foreign": "matemáticas", "pronIpa": "/mateˈmatikas/", "pronKo": "마떼**마**띠까스", "korean": "수학",   "english": "math" },
+    { "section": "과목", "foreign": "historia",    "pronIpa": "/isˈtoɾja/",     "pronKo": "이스**또**리아",   "korean": "역사",   "english": "history" },
+    { "section": "과목", "foreign": "ciencias",    "pronIpa": "/ˈθjenθjas/",    "pronKo": "**씨엔**씨아스",   "korean": "과학",   "english": "science" },
+    { "section": "과목", "foreign": "español",     "pronIpa": "/espaˈɲol/",     "pronKo": "에스빠**뇰**",     "korean": "스페인어", "english": "Spanish" },
+    { "section": "과목", "foreign": "inglés",      "pronIpa": "/iŋˈɡles/",      "pronKo": "잉**글레**스",     "korean": "영어",   "english": "English" },
+    { "section": "과목", "foreign": "música",      "pronIpa": "/ˈmusika/",      "pronKo": "**무**시까",       "korean": "음악",   "english": "music" },
+    { "section": "과목", "foreign": "arte",        "pronIpa": "/ˈaɾte/",        "pronKo": "**아르**떼",       "korean": "미술",   "english": "art" },
+
+    { "section": "문구·필기", "foreign": "libro",     "pronIpa": "/ˈliβɾo/",     "pronKo": "**리**브로",   "korean": "책",       "english": "book" },
+    { "section": "문구·필기", "foreign": "cuaderno",  "pronIpa": "/kwaˈðeɾno/",  "pronKo": "꾸아**데르**노","korean": "공책, 노트",  "english": "notebook" },
+    { "section": "문구·필기", "foreign": "bolígrafo", "pronIpa": "/boˈliɣɾafo/", "pronKo": "볼**리**그라포","korean": "볼펜",      "english": "pen" },
+    { "section": "문구·필기", "foreign": "lápiz",     "pronIpa": "/ˈlapiθ/",     "pronKo": "**라**삐쓰",   "korean": "연필",      "english": "pencil" },
+    { "section": "문구·필기", "foreign": "goma",      "pronIpa": "/ˈɡoma/",      "pronKo": "**고**마",     "korean": "지우개",     "english": "eraser" },
+    { "section": "문구·필기", "foreign": "tijeras",   "pronIpa": "/tiˈxeɾas/",   "pronKo": "띠**헤**라스", "korean": "가위",      "english": "scissors" },
+    { "section": "문구·필기", "foreign": "regla",     "pronIpa": "/ˈreɣla/",     "pronKo": "**레**글라",   "korean": "자",       "english": "ruler" },
+
+    { "section": "수업·과제", "foreign": "examen",       "pronIpa": "/ekˈsamen/",       "pronKo": "엑**사**멘",         "korean": "시험",     "english": "exam" },
+    { "section": "수업·과제", "foreign": "tarea",        "pronIpa": "/taˈɾea/",         "pronKo": "따**레**아",         "korean": "숙제, 과제", "english": "homework" },
+    { "section": "수업·과제", "foreign": "pregunta",     "pronIpa": "/pɾeˈɣunta/",      "pronKo": "쁘레**군**따",       "korean": "질문",     "english": "question" },
+    { "section": "수업·과제", "foreign": "respuesta",    "pronIpa": "/resˈpwesta/",     "pronKo": "레스**뿌에**스따",   "korean": "답",       "english": "answer" },
+    { "section": "수업·과제", "foreign": "pizarra",      "pronIpa": "/piˈθara/",        "pronKo": "삐**싸**라",         "korean": "칠판",     "english": "blackboard" }
+  ]
+}

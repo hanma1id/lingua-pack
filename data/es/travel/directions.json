@@ -3,103 +3,32 @@
   "name": "길찾기",
   "lang": "es",
   "emoji": "🗺️",
+  "sections": [
+    { "name": "장소 묻기",   "emoji": "📍" },
+    { "name": "방향 안내",   "emoji": "↔️" },
+    { "name": "거리·시간",   "emoji": "⏱️" },
+    { "name": "교통·수단",   "emoji": "🚇" }
+  ],
   "items": [
-    {
-      "foreign": "Disculpe, ¿dónde está la estación?",
-      "pronIpa": "/diˈkulpe | ˈdonde esˈta la estaˈθjon/",
-      "pronKo": "**디**스꿀**뻬**, **돈**데 에스**따** 라 에스따**씨온**?",
-      "korean": "실례합니다, 역은 어디에 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "모르는 장소의 위치를 물을 때 사용합니다.",
-      "english": "Excuse me, where is the station?"
-    },
-    {
-      "foreign": "¿Dónde está el museo?",
-      "pronIpa": "/ˈdonde esˈta el muˈseo/",
-      "pronKo": "**돈**데 에스**따** 엘 무**세**오?",
-      "korean": "박물관은 어디에 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "박물관의 위치를 물을 때 사용합니다.",
-      "english": "Where is the museum?"
-    },
-    {
-      "foreign": "¿Dónde están los servicios?",
-      "pronIpa": "/ˈdonde esˈtan los serˈβiθjos/",
-      "pronKo": "**돈**데 에스**딴** 로스 세르**비**시오스?",
-      "korean": "화장실은 어디에 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "공공장소에서 화장실 위치를 물을 때 사용합니다.",
-      "english": "Where are the restrooms?"
-    },
-    {
-      "foreign": "A la izquierda",
-      "pronIpa": "/a la iθˈkjeɾða/",
-      "pronKo": "아 라 이**스**끼에르**다**",
-      "korean": "왼쪽으로",
-      "example": "Gira a la izquierda.",
-      "exampleKo": "왼쪽으로 도세요.",
-      "english": "To the left"
-    },
-    {
-      "foreign": "A la derecha",
-      "pronIpa": "/a la deˈɾeʧa/",
-      "pronKo": "아 라 데**레**차",
-      "korean": "오른쪽으로",
-      "example": "Sigue a la derecha.",
-      "exampleKo": "오른쪽으로 계속 가세요.",
-      "english": "To the right"
-    },
-    {
-      "foreign": "Todo recto",
-      "pronIpa": "/ˈtodo ˈrekto/",
-      "pronKo": "**도**도 **렉**또",
-      "korean": "직진",
-      "example": "Sigue todo recto.",
-      "exampleKo": "직진하세요.",
-      "english": "Straight ahead"
-    },
-    {
-      "foreign": "¿Está lejos?",
-      "pronIpa": "/esˈta ˈlexos/",
-      "pronKo": "에스**따** **레**호스?",
-      "korean": "멀리 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "목적지가 얼마나 먼지 물을 때 사용합니다.",
-      "english": "Is it far?"
-    },
-    {
-      "foreign": "¿Está cerca?",
-      "pronIpa": "/esˈta ˈθeɾka/",
-      "pronKo": "에스**따** **세**르까?",
-      "korean": "가까이 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "목적지가 가까운지 물을 때 사용합니다.",
-      "english": "Is it close?"
-    },
-    {
-      "foreign": "¿Cuánto se tarda en llegar?",
-      "pronIpa": "/ˈkwanto se ˈtaɾða en jeˈɣaɾ/",
-      "pronKo": "**꽌**또 세 **따르**다 엔 예**가르**?",
-      "korean": "도착하는 데 얼마나 걸리나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "목적지까지 가는 데 걸리는 시간을 물을 때 사용합니다.",
-      "english": "How long does it take to get there?"
-    },
-    {
-      "foreign": "Perdón, ¿cómo llego a la plaza?",
-      "pronIpa": "/peɾˈdon | ˈkomo ˈʝeɣo a la ˈplaθa/",
-      "pronKo": "뻬르**돈**, **꼬**모 **예**고 아 라 **쁠라**싸?",
-      "korean": "실례합니다, 광장까지 어떻게 가나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "특정 장소로 가는 방법을 물을 때 사용합니다.",
-      "english": "Excuse me, how do I get to the square?"
-    }
+    { "section": "장소 묻기", "foreign": "Perdona, ¿dónde está el metro?",  "pronIpa": "/peɾˈðona ˈdonde esˈta el ˈmetɾo/",   "pronKo": "뻬르**도**나, **돈**데 에스**따** 엘 **메**뜨로?",     "korean": "실례합니다, 지하철역 어디예요?", "english": "Excuse me, where is the metro?", "context": "" },
+    { "section": "장소 묻기", "foreign": "¿Dónde está el museo?",             "pronIpa": "/ˈdonde esˈta el muˈseo/",             "pronKo": "**돈**데 에스**따** 엘 무**세**오?",                "korean": "박물관 어디예요?",           "english": "Where is the museum?", "context": "" },
+    { "section": "장소 묻기", "foreign": "¿Dónde están los baños?",           "pronIpa": "/ˈdonde esˈtan los ˈbaɲos/",           "pronKo": "**돈**데 에스**딴** 로스 **바**뇨스?",              "korean": "화장실 어디예요?",           "english": "Where are the restrooms?", "context": "" },
+    { "section": "장소 묻기", "foreign": "Estoy perdido.",                    "pronIpa": "/esˈtoj peɾˈðiðo/",                    "pronKo": "에스**또**이 뻬르**디**도",                          "korean": "길을 잃었어요.",             "english": "I'm lost.", "context": "" },
+    { "section": "장소 묻기", "foreign": "¿Puede indicarme en el mapa?",      "pronIpa": "/ˈpweðe indiˈkaɾme en el ˈmapa/",       "pronKo": "**뿌에**데 인디**까르**메 엔 엘 **마**빠?",           "korean": "지도에서 알려 주실 수 있나요?", "english": "Can you show me on the map?", "context": "" },
+
+    { "section": "방향 안내", "foreign": "Todo recto.",                     "pronIpa": "/ˈtoðo ˈrekto/",                       "pronKo": "**또**도 **렉**또",                                 "korean": "직진하세요.",                "english": "Straight ahead.", "context": "" },
+    { "section": "방향 안내", "foreign": "Gira a la izquierda.",             "pronIpa": "/ˈxiɾa a la iθˈkjeɾða/",              "pronKo": "**히**라 아 라 이스**끼에르**다",                   "korean": "왼쪽으로 도세요.",           "english": "Turn left.", "context": "" },
+    { "section": "방향 안내", "foreign": "Gira a la derecha.",               "pronIpa": "/ˈxiɾa a la deˈɾetʃa/",                "pronKo": "**히**라 아 라 데**레**차",                          "korean": "오른쪽으로 도세요.",         "english": "Turn right.", "context": "" },
+    { "section": "방향 안내", "foreign": "Está al final de la calle.",       "pronIpa": "/esˈta al fiˈnal de la ˈkaʎe/",        "pronKo": "에스**따** 알 피**날** 데 라 **까**예",              "korean": "이 길 끝에 있어요.",         "english": "It's at the end of the street.", "context": "" },
+    { "section": "방향 안내", "foreign": "Cruza la calle.",                  "pronIpa": "/ˈkɾuθa la ˈkaʎe/",                    "pronKo": "**끄루**싸 라 **까**예",                            "korean": "길을 건너세요.",             "english": "Cross the street.", "context": "" },
+
+    { "section": "거리·시간", "foreign": "¿Está lejos?",                    "pronIpa": "/esˈta ˈlexos/",                      "pronKo": "에스**따** **레**호스?",                            "korean": "멀어요?",                    "english": "Is it far?", "context": "" },
+    { "section": "거리·시간", "foreign": "¿Está cerca?",                    "pronIpa": "/esˈta ˈθeɾka/",                      "pronKo": "에스**따** **쎄르**까?",                            "korean": "가까워요?",                  "english": "Is it close?", "context": "" },
+    { "section": "거리·시간", "foreign": "¿Cuánto se tarda en llegar?",     "pronIpa": "/ˈkwanto se ˈtaɾða en ʎeˈɣaɾ/",       "pronKo": "**꾸안**또 세 **따르**다 엔 예**가르**?",           "korean": "도착하는 데 얼마나 걸려요?", "english": "How long does it take?", "context": "" },
+    { "section": "거리·시간", "foreign": "A cinco minutos a pie.",           "pronIpa": "/a ˈθiŋko miˈnutos a pje/",           "pronKo": "아 **씽**꼬 미**누**또스 아 **삐에**",              "korean": "걸어서 5분이에요.",           "english": "5 minutes on foot.", "context": "답변" },
+
+    { "section": "교통·수단", "foreign": "¿Qué autobús debo tomar?",         "pronIpa": "/ke autoˈβus ˈdeβo toˈmaɾ/",           "pronKo": "께 아우또**부**스 **데**보 또**마르**?",           "korean": "어떤 버스를 타야 해요?",     "english": "Which bus should I take?", "context": "" },
+    { "section": "교통·수단", "foreign": "¿A qué parada bajo?",              "pronIpa": "/a ke paˈɾaða ˈβaxo/",                 "pronKo": "아 께 빠**라**다 **바**호?",                        "korean": "어느 정류장에서 내려요?",    "english": "Which stop do I get off at?", "context": "" },
+    { "section": "교통·수단", "foreign": "¿Hay un metro cerca?",             "pronIpa": "/aj un ˈmetɾo ˈθeɾka/",                "pronKo": "**아**이 운 **메**뜨로 **쎄르**까?",                "korean": "가까운 지하철역 있나요?",     "english": "Is there a metro nearby?", "context": "" }
   ]
 }

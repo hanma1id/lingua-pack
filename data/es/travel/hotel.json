@@ -1,0 +1,33 @@
+{
+  "id": "hotel",
+  "name": "호텔",
+  "lang": "es",
+  "emoji": "🏨",
+  "sections": [
+    { "name": "체크인",     "emoji": "🔑" },
+    { "name": "객실 요청",   "emoji": "🛏️" },
+    { "name": "부탁·문의",   "emoji": "💬" },
+    { "name": "체크아웃",   "emoji": "🚪" }
+  ],
+  "items": [
+    { "section": "체크인", "foreign": "Tengo una reserva a nombre de Kim.", "pronIpa": "/ˈteŋɡo ˈuna reˈseɾβa a ˈnombɾe de kim/", "pronKo": "**뗑**고 **우**나 레**세르**바 아 **놈**브레 데 **낌**", "korean": "김 이름으로 예약했어요.",   "english": "I have a reservation under Kim.", "context": "" },
+    { "section": "체크인", "foreign": "¿Tienen habitaciones disponibles?",  "pronIpa": "/ˈtjenen aβitaˈθjones dispoˈniβles/",     "pronKo": "**띠에**넨 아비따**시오**네스 디스뽀**니**블레스?",   "korean": "빈 방 있나요?",              "english": "Do you have rooms available?", "context": "" },
+    { "section": "체크인", "foreign": "Para tres noches, por favor.",       "pronIpa": "/ˈpaɾa tɾes ˈnotʃes poɾ faˈβoɾ/",         "pronKo": "**빠**라 **뜨레**스 **노**체스, 뽀르 파**보르**",      "korean": "3박 부탁드려요.",             "english": "For three nights, please.", "context": "" },
+    { "section": "체크인", "foreign": "¿A qué hora es el desayuno?",         "pronIpa": "/a ke ˈoɾa es el desaˈjuno/",             "pronKo": "아 께 **오**라 에스 엘 데사**유**노?",                   "korean": "아침 식사는 몇 시예요?",       "english": "What time is breakfast?", "context": "" },
+
+    { "section": "객실 요청", "foreign": "Una habitación doble, por favor.",  "pronIpa": "/ˈuna aβitaˈθjon ˈdoβle poɾ faˈβoɾ/",     "pronKo": "**우**나 아비따**시온** **도**블레, 뽀르 파**보르**",    "korean": "더블룸으로 부탁해요.",         "english": "A double room, please.", "context": "" },
+    { "section": "객실 요청", "foreign": "Una habitación individual.",         "pronIpa": "/ˈuna aβitaˈθjon indiβiˈðwal/",           "pronKo": "**우**나 아비따**시온** 인디비**두알**",                 "korean": "1인실이요.",                  "english": "A single room.", "context": "" },
+    { "section": "객실 요청", "foreign": "¿Tiene wifi la habitación?",         "pronIpa": "/ˈtjene ˈwifi la aβitaˈθjon/",             "pronKo": "**띠에**네 **위**피 라 아비따**시온**?",                "korean": "방에 와이파이 있나요?",        "english": "Does the room have Wi-Fi?", "context": "" },
+    { "section": "객실 요청", "foreign": "¿Con vistas al mar?",                "pronIpa": "/kon ˈbistas al maɾ/",                    "pronKo": "꼰 **비**스따스 알 **마르**?",                          "korean": "바다 전망 있어요?",           "english": "With a sea view?", "context": "" },
+
+    { "section": "부탁·문의", "foreign": "El aire acondicionado no funciona.", "pronIpa": "/el ˈaiɾe akondiθjoˈnaðo no funˈθjona/",  "pronKo": "엘 **아이**레 아꼰디시오**나**도 노 푼**시오**나",       "korean": "에어컨이 안 돼요.",            "english": "The AC isn't working.", "context": "" },
+    { "section": "부탁·문의", "foreign": "No hay agua caliente.",              "pronIpa": "/no aj ˈaɣwa kaˈljente/",                 "pronKo": "노 **아**이 **아**과 깔**리엔**떼",                     "korean": "온수가 안 나와요.",           "english": "There's no hot water.", "context": "" },
+    { "section": "부탁·문의", "foreign": "¿Podría traer más toallas?",         "pronIpa": "/poˈðɾia tɾaˈeɾ mas toˈaʎas/",            "pronKo": "뽀**드리**아 뜨라**에르** 마스 또**아**야스?",           "korean": "수건 더 주실 수 있나요?",      "english": "Could you bring more towels?", "context": "" },
+    { "section": "부탁·문의", "foreign": "¿Me puede llamar un taxi?",           "pronIpa": "/me ˈpweðe ʎaˈmaɾ un ˈtaksi/",             "pronKo": "메 **뿌에**데 야**마르** 운 **딱**시?",                  "korean": "택시 불러 주실 수 있나요?",    "english": "Can you call me a taxi?", "context": "" },
+    { "section": "부탁·문의", "foreign": "¿Cuál es la contraseña del wifi?",   "pronIpa": "/kwal es la kontɾaˈseɲa del ˈwifi/",       "pronKo": "**꾸알** 에스 라 꼰뜨라**세**냐 델 **위**피?",           "korean": "와이파이 비밀번호가 뭐예요?",   "english": "What's the Wi-Fi password?", "context": "" },
+
+    { "section": "체크아웃", "foreign": "Quiero hacer el check-out.",         "pronIpa": "/ˈkjeɾo aˈθeɾ el tʃeˈkaut/",              "pronKo": "**끼에**로 아**쎄르** 엘 체**까**웃",                    "korean": "체크아웃 할게요.",             "english": "I'd like to check out.", "context": "" },
+    { "section": "체크아웃", "foreign": "¿Puedo dejar la maleta aquí?",       "pronIpa": "/ˈpweðo deˈxaɾ la maˈleta aˈki/",         "pronKo": "**뿌에**도 데**하르** 라 마**레**따 아**끼**?",           "korean": "짐 여기 맡길 수 있나요?",       "english": "Can I leave my luggage here?", "context": "" },
+    { "section": "체크아웃", "foreign": "La habitación estaba muy bien.",     "pronIpa": "/la aβitaˈθjon esˈtaβa muj ˈbjen/",       "pronKo": "라 아비따**시온** 에스**따**바 **무**이 **비엔**",       "korean": "방 정말 좋았어요.",           "english": "The room was very nice.", "context": "" }
+  ]
+}

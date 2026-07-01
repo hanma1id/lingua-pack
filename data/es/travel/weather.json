@@ -1,0 +1,34 @@
+{
+  "id": "weather",
+  "name": "날씨·컨디션",
+  "lang": "es",
+  "emoji": "⛅",
+  "sections": [
+    { "name": "오늘 날씨",   "emoji": "☀️" },
+    { "name": "덥고 추움",   "emoji": "🥵" },
+    { "name": "비·눈",       "emoji": "🌧️" },
+    { "name": "몸 상태",     "emoji": "😷" }
+  ],
+  "items": [
+    { "section": "오늘 날씨", "foreign": "¿Qué tiempo hace hoy?",          "pronIpa": "/ke ˈtjempo ˈaθe oj/",                  "pronKo": "께 **띠엠**뽀 **아**쎄 **오이**?",           "korean": "오늘 날씨 어때요?",         "english": "How's the weather today?", "context": "" },
+    { "section": "오늘 날씨", "foreign": "Hace buen tiempo.",              "pronIpa": "/ˈaθe bwen ˈtjempo/",                   "pronKo": "**아**쎄 **부엔** **띠엠**뽀",              "korean": "날씨가 좋아요.",             "english": "The weather is nice.", "context": "" },
+    { "section": "오늘 날씨", "foreign": "Hace mal tiempo.",                "pronIpa": "/ˈaθe mal ˈtjempo/",                   "pronKo": "**아**쎄 **말** **띠엠**뽀",                "korean": "날씨가 안 좋아요.",         "english": "The weather is bad.", "context": "" },
+    { "section": "오늘 날씨", "foreign": "Está nublado.",                    "pronIpa": "/esˈta nuˈβlaðo/",                     "pronKo": "에스**따** 누**블라**도",                    "korean": "구름 껴 있어요.",             "english": "It's cloudy.", "context": "" },
+    { "section": "오늘 날씨", "foreign": "Hace sol.",                        "pronIpa": "/ˈaθe sol/",                           "pronKo": "**아**쎄 **솔**",                             "korean": "햇볕이 나요.",                "english": "It's sunny.", "context": "" },
+
+    { "section": "덥고 추움", "foreign": "Hace mucho calor.",                "pronIpa": "/ˈaθe ˈmutʃo kaˈloɾ/",                  "pronKo": "**아**쎄 **무**초 깔**로르**",              "korean": "너무 더워요.",              "english": "It's very hot.", "context": "" },
+    { "section": "덥고 추움", "foreign": "Hace mucho frío.",                 "pronIpa": "/ˈaθe ˈmutʃo ˈfɾio/",                   "pronKo": "**아**쎄 **무**초 **프리**오",              "korean": "너무 추워요.",              "english": "It's very cold.", "context": "" },
+    { "section": "덥고 추움", "foreign": "Tengo calor.",                      "pronIpa": "/ˈteŋɡo kaˈloɾ/",                      "pronKo": "**뗑**고 깔**로르**",                         "korean": "저 더워요.",                 "english": "I'm hot.", "context": "" },
+    { "section": "덥고 추움", "foreign": "Tengo frío.",                       "pronIpa": "/ˈteŋɡo ˈfɾio/",                        "pronKo": "**뗑**고 **프리**오",                          "korean": "저 추워요.",                 "english": "I'm cold.", "context": "" },
+
+    { "section": "비·눈", "foreign": "Está lloviendo.",                    "pronIpa": "/esˈta ʎoˈβjendo/",                      "pronKo": "에스**따** 요**비엔**도",                    "korean": "비 오고 있어요.",            "english": "It's raining.", "context": "" },
+    { "section": "비·눈", "foreign": "¿Va a llover mañana?",                 "pronIpa": "/ba a ʎoˈβeɾ maˈɲana/",                 "pronKo": "**바** 아 요**베르** 마**냐**나?",          "korean": "내일 비 와요?",              "english": "Will it rain tomorrow?", "context": "" },
+    { "section": "비·눈", "foreign": "Necesito un paraguas.",                "pronIpa": "/neθeˈsito un paˈɾaɣwas/",              "pronKo": "네쎄**시**또 운 빠**라**과스",                "korean": "우산 필요해요.",             "english": "I need an umbrella.", "context": "" },
+    { "section": "비·눈", "foreign": "Está nevando.",                        "pronIpa": "/esˈta neˈβando/",                       "pronKo": "에스**따** 네**반**도",                        "korean": "눈 오고 있어요.",            "english": "It's snowing.", "context": "" },
+
+    { "section": "몸 상태", "foreign": "Estoy cansado.",                    "pronIpa": "/esˈtoj kanˈsaðo/",                     "pronKo": "에스**또**이 깐**사**도",                      "korean": "피곤해요.",                 "english": "I'm tired.", "context": "" },
+    { "section": "몸 상태", "foreign": "Tengo hambre.",                     "pronIpa": "/ˈteŋɡo ˈambɾe/",                       "pronKo": "**뗑**고 **암**브레",                          "korean": "배고파요.",                  "english": "I'm hungry.", "context": "" },
+    { "section": "몸 상태", "foreign": "Tengo sed.",                         "pronIpa": "/ˈteŋɡo seð/",                           "pronKo": "**뗑**고 **세드**",                            "korean": "목말라요.",                  "english": "I'm thirsty.", "context": "" },
+    { "section": "몸 상태", "foreign": "Necesito descansar.",                "pronIpa": "/neθeˈsito deskanˈsaɾ/",                 "pronKo": "네쎄**시**또 데스깐**사르**",                  "korean": "좀 쉬어야 해요.",            "english": "I need to rest.", "context": "" }
+  ]
+}

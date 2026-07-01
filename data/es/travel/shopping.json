@@ -3,106 +3,33 @@
   "name": "쇼핑·가격",
   "lang": "es",
   "emoji": "🛍️",
+  "sections": [
+    { "name": "가게에서",   "emoji": "🏪" },
+    { "name": "가격 문의",  "emoji": "💰" },
+    { "name": "사이즈·색",  "emoji": "📏" },
+    { "name": "결제·환불",  "emoji": "💳" }
+  ],
   "items": [
-    {
-      "foreign": "¿Cuánto cuesta?",
-      "pronIpa": "/ˈkwanto ˈkwesta/",
-      "pronKo": "**ꀦ**안토 **퀘**스타",
-      "korean": "얼마예요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "가격을 물어볼 때",
-      "english": "How much is it?"
-    },
-    {
-      "foreign": "Es muy caro.",
-      "pronIpa": "/es ˈmwi ˈkaɾo/",
-      "pronKo": "에스 **무이** **까**로",
-      "korean": "너무 비싸요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "가격이 비싸다고 느낄 때",
-      "english": "It's too expensive."
-    },
-    {
-      "foreign": "¿Tiene más barato?",
-      "pronIpa": "/ˈtje.ne mas baˈɾato/",
-      "pronKo": "**띠에**네 **마스** **바**라토",
-      "korean": "더 싼 거 있어요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "더 저렴한 상품을 찾을 때",
-      "english": "Do you have something cheaper?"
-    },
-    {
-      "foreign": "¿Tiene en otro color?",
-      "pronIpa": "/ˈtje.ne en ˈotɾo koˈloɾ/",
-      "pronKo": "**띠에**네 엔 **오**트로 **콜**로르",
-      "korean": "다른 색깔 있어요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "다른 색상의 제품을 문의할 때",
-      "english": "Do you have it in another color?"
-    },
-    {
-      "foreign": "¿Tiene talla más pequeña?",
-      "pronIpa": "/ˈtje.ne ˈta.ʎa mas peˈke.ɲa/",
-      "pronKo": "**띠에**네 **따**야 **마스** **뻬**께냐",
-      "korean": "더 작은 사이즈 있어요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "옷이나 신발의 사이즈를 문의할 때",
-      "english": "Do you have a smaller size?"
-    },
-    {
-      "foreign": "Quisiera una talla más grande.",
-      "pronIpa": "/kiˈsje.ɾa ˈu.na ˈta.ʎa mas ˈgɾan.de/",
-      "pronKo": "끼**시에**라 **우**나 **따**야 **마스** **그란**데",
-      "korean": "더 큰 사이즈로 주세요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "더 큰 사이즈를 원할 때",
-      "english": "I'd like a larger size."
-    },
-    {
-      "foreign": "¿Me puede hacer un descuento?",
-      "pronIpa": "/me ˈpwe.ðe aˈθeɾ un desˈkwento/",
-      "pronKo": "메 **뿌에**데 아**쎄르** 운 데스**껜**토",
-      "korean": "할인 좀 해주실 수 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "할인을 요청할 때",
-      "english": "Could you give me a discount?"
-    },
-    {
-      "foreign": "Aceptan tarjeta de crédito.",
-      "pronIpa": "/aˈθep.tan taɾˈxe.ta ðe ˈkɾe.ðito/",
-      "pronKo": "아**셉**탄 따르**헤**따 데 **크레**디또",
-      "korean": "신용카드 받나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "결제 수단을 문의할 때",
-      "english": "Do you accept credit cards?"
-    },
-    {
-      "foreign": "Pago en efectivo.",
-      "pronIpa": "/ˈpa.ɣo en efeˈkti.βo/",
-      "pronKo": "**빠**고 엔 에페**띁**보",
-      "korean": "현금으로 계산할게요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "현금 결제를 할 때",
-      "english": "I'll pay in cash."
-    },
-    {
-      "foreign": "Me lo llevo.",
-      "pronIpa": "/me lo ˈʎe.βo/",
-      "pronKo": "메 로 **이예**보",
-      "korean": "이걸로 살게요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "구매를 결정했을 때",
-      "english": "I'll take it."
-    }
+    { "section": "가게에서", "foreign": "Solo estoy mirando, gracias.",     "pronIpa": "/ˈsolo esˈtoj miˈɾando ˈɡɾaθjas/",    "pronKo": "**솔**로 에스**또**이 미**란**도, **그라**씨아스",  "korean": "그냥 구경 중이에요, 감사해요.", "english": "Just looking, thanks.", "context": "" },
+    { "section": "가게에서", "foreign": "¿Me puede ayudar?",                 "pronIpa": "/me ˈpweðe ajuˈðaɾ/",                 "pronKo": "메 **뿌에**데 아유**다르**?",                       "korean": "도와주실 수 있나요?",          "english": "Can you help me?", "context": "" },
+    { "section": "가게에서", "foreign": "¿Dónde está la caja?",              "pronIpa": "/ˈdonde esˈta la ˈkaxa/",              "pronKo": "**돈**데 에스**따** 라 **까**하?",                  "korean": "계산대 어디예요?",             "english": "Where is the checkout?", "context": "" },
+    { "section": "가게에서", "foreign": "¿A qué hora cierran?",              "pronIpa": "/a ke ˈoɾa ˈθjeran/",                  "pronKo": "아 께 **오**라 **씨에**란?",                        "korean": "몇 시에 문 닫아요?",           "english": "What time do you close?", "context": "" },
+
+    { "section": "가격 문의", "foreign": "¿Cuánto cuesta?",                  "pronIpa": "/ˈkwanto ˈkwesta/",                    "pronKo": "**꾸안**또 **꾸에**스따?",                            "korean": "얼마예요?",                  "english": "How much is it?", "context": "" },
+    { "section": "가격 문의", "foreign": "Es muy caro.",                     "pronIpa": "/es muj ˈkaɾo/",                       "pronKo": "에스 **무**이 **까**로",                             "korean": "너무 비싸요.",                "english": "It's too expensive.", "context": "" },
+    { "section": "가격 문의", "foreign": "¿Tiene algo más barato?",          "pronIpa": "/ˈtjene ˈalɣo mas baˈɾato/",           "pronKo": "**띠에**네 **알**고 마스 바**라**또?",                "korean": "더 싼 거 있나요?",             "english": "Do you have anything cheaper?", "context": "" },
+    { "section": "가격 문의", "foreign": "¿Me hace un descuento?",           "pronIpa": "/me ˈaθe un desˈkwento/",              "pronKo": "메 **아**쎄 운 데스**꾸엔**또?",                     "korean": "할인해 주실 수 있나요?",       "english": "Can you give me a discount?", "context": "" },
+
+    { "section": "사이즈·색", "foreign": "¿Puedo probarlo?",                 "pronIpa": "/ˈpweðo pɾoˈβaɾlo/",                   "pronKo": "**뿌에**도 쁘로**바르**로?",                         "korean": "입어볼 수 있나요?",            "english": "Can I try it on?", "context": "옷·신발" },
+    { "section": "사이즈·색", "foreign": "¿Dónde está el probador?",         "pronIpa": "/ˈdonde esˈta el pɾoβaˈðoɾ/",          "pronKo": "**돈**데 에스**따** 엘 쁘로바**도르**?",              "korean": "탈의실 어디예요?",             "english": "Where is the fitting room?", "context": "" },
+    { "section": "사이즈·색", "foreign": "¿Tiene una talla más grande?",     "pronIpa": "/ˈtjene ˈuna ˈtaʎa mas ˈɡɾande/",      "pronKo": "**띠에**네 **우**나 **따**야 마스 **그란**데?",       "korean": "더 큰 사이즈 있나요?",          "english": "Do you have a larger size?", "context": "" },
+    { "section": "사이즈·색", "foreign": "¿Tiene una talla más pequeña?",    "pronIpa": "/ˈtjene ˈuna ˈtaʎa mas peˈkeɲa/",      "pronKo": "**띠에**네 **우**나 **따**야 마스 뻬**께**냐?",       "korean": "더 작은 사이즈 있나요?",        "english": "Do you have a smaller size?", "context": "" },
+    { "section": "사이즈·색", "foreign": "¿En otro color?",                  "pronIpa": "/en ˈotɾo koˈloɾ/",                    "pronKo": "엔 **오**뜨로 꼴**로르**?",                          "korean": "다른 색으로요?",               "english": "In another color?", "context": "" },
+
+    { "section": "결제·환불", "foreign": "Me lo llevo.",                      "pronIpa": "/me lo ˈʎeβo/",                        "pronKo": "메 로 **예**보",                                     "korean": "이거로 살게요.",               "english": "I'll take it.", "context": "" },
+    { "section": "결제·환불", "foreign": "¿Aceptan tarjeta?",                 "pronIpa": "/aθepˈtan taɾˈxeta/",                  "pronKo": "아쎕**딴** 따르**헤**따?",                            "korean": "카드 받나요?",                "english": "Do you accept cards?", "context": "" },
+    { "section": "결제·환불", "foreign": "Voy a pagar en efectivo.",          "pronIpa": "/boj a paˈɣaɾ en efekˈtiβo/",           "pronKo": "**보**이 아 빠**가르** 엔 에펙**띠**보",              "korean": "현금으로 계산할게요.",         "english": "I'll pay in cash.", "context": "" },
+    { "section": "결제·환불", "foreign": "¿Puedo devolver esto?",             "pronIpa": "/ˈpweðo deβolˈβeɾ ˈesto/",              "pronKo": "**뿌에**도 데볼**베르** **에**스또?",                 "korean": "이거 환불할 수 있나요?",       "english": "Can I return this?", "context": "" },
+    { "section": "결제·환불", "foreign": "¿Me da un recibo?",                 "pronIpa": "/me da un reˈθiβo/",                    "pronKo": "메 **다** 운 레**씨**보?",                            "korean": "영수증 주세요.",              "english": "Can I have a receipt?", "context": "" }
   ]
 }

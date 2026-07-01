@@ -1,0 +1,39 @@
+{
+  "id": "jobs",
+  "name": "직업",
+  "lang": "es",
+  "emoji": "💼",
+  "sections": [
+    { "name": "서비스·상점",  "emoji": "🛎️" },
+    { "name": "전문직",       "emoji": "🩺" },
+    { "name": "창작·미디어",   "emoji": "🎨" },
+    { "name": "공공·기타",     "emoji": "🚒" }
+  ],
+  "items": [
+    { "section": "서비스·상점", "foreign": "profesor",    "pronIpa": "/pɾofeˈsoɾ/",    "pronKo": "쁘로페**소르**",   "korean": "선생님",    "english": "teacher" },
+    { "section": "서비스·상점", "foreign": "camarero",    "pronIpa": "/kamaˈɾeɾo/",    "pronKo": "까마**레**로",     "korean": "웨이터",    "english": "waiter" },
+    { "section": "서비스·상점", "foreign": "cocinero",    "pronIpa": "/koθiˈneɾo/",    "pronKo": "꼬씨**네**로",     "korean": "요리사",    "english": "cook / chef" },
+    { "section": "서비스·상점", "foreign": "dependiente", "pronIpa": "/depenˈdjente/", "pronKo": "데뻰**디엔**떼",   "korean": "점원",     "english": "shop clerk" },
+    { "section": "서비스·상점", "foreign": "taxista",     "pronIpa": "/takˈsista/",    "pronKo": "딱**시**스따",     "korean": "택시 기사",  "english": "taxi driver" },
+    { "section": "서비스·상점", "foreign": "peluquero",   "pronIpa": "/peluˈkeɾo/",    "pronKo": "뻴루**께**로",     "korean": "미용사",    "english": "hairdresser" },
+
+    { "section": "전문직", "foreign": "médico",     "pronIpa": "/ˈmediko/",       "pronKo": "**메**디꼬",     "korean": "의사",   "english": "doctor" },
+    { "section": "전문직", "foreign": "enfermero",  "pronIpa": "/enfeɾˈmeɾo/",    "pronKo": "엔페르**메**로", "korean": "간호사",  "english": "nurse" },
+    { "section": "전문직", "foreign": "dentista",   "pronIpa": "/denˈtista/",     "pronKo": "덴**띠**스따",   "korean": "치과의사", "english": "dentist" },
+    { "section": "전문직", "foreign": "abogado",    "pronIpa": "/aβoˈɣaðo/",      "pronKo": "아보**가**도",   "korean": "변호사",  "english": "lawyer" },
+    { "section": "전문직", "foreign": "ingeniero",  "pronIpa": "/inxeˈnjeɾo/",    "pronKo": "인헤**니에**로", "korean": "엔지니어", "english": "engineer" },
+    { "section": "전문직", "foreign": "arquitecto", "pronIpa": "/aɾkiˈtekto/",    "pronKo": "아르끼**떽**또", "korean": "건축가",  "english": "architect" },
+
+    { "section": "창작·미디어", "foreign": "artista",    "pronIpa": "/aɾˈtista/",     "pronKo": "아르**띠**스따",   "korean": "예술가",   "english": "artist" },
+    { "section": "창작·미디어", "foreign": "músico",     "pronIpa": "/ˈmusiko/",      "pronKo": "**무**시꼬",       "korean": "음악가",   "english": "musician" },
+    { "section": "창작·미디어", "foreign": "escritor",   "pronIpa": "/eskɾiˈtoɾ/",    "pronKo": "에스끄리**또르**", "korean": "작가",     "english": "writer" },
+    { "section": "창작·미디어", "foreign": "periodista", "pronIpa": "/peɾjoˈðista/",  "pronKo": "뻬리오**디**스따", "korean": "기자",     "english": "journalist" },
+    { "section": "창작·미디어", "foreign": "fotógrafo",  "pronIpa": "/foˈtoɣɾafo/",   "pronKo": "포**또**그라포",   "korean": "사진작가",  "english": "photographer" },
+    { "section": "창작·미디어", "foreign": "actor",      "pronIpa": "/akˈtoɾ/",       "pronKo": "악**또르**",       "korean": "배우",     "english": "actor" },
+
+    { "section": "공공·기타", "foreign": "policía",     "pronIpa": "/poliˈθia/",     "pronKo": "뽈리**씨**아",   "korean": "경찰",    "english": "police officer" },
+    { "section": "공공·기타", "foreign": "bombero",     "pronIpa": "/bomˈbeɾo/",     "pronKo": "봄**베**로",     "korean": "소방관",   "english": "firefighter" },
+    { "section": "공공·기타", "foreign": "agricultor",  "pronIpa": "/aɣɾikulˈtoɾ/",  "pronKo": "아그리꿀**또르**","korean": "농부",    "english": "farmer" },
+    { "section": "공공·기타", "foreign": "estudiante",  "pronIpa": "/estuˈðjante/",  "pronKo": "에스뚜**디안**떼","korean": "학생",    "english": "student" }
+  ]
+}

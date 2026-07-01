@@ -1,0 +1,43 @@
+{
+  "id": "home",
+  "name": "집·방·가구",
+  "lang": "es",
+  "emoji": "🏠",
+  "sections": [
+    { "name": "방·공간",   "emoji": "🛋️" },
+    { "name": "가구",      "emoji": "🪑" },
+    { "name": "주방·욕실", "emoji": "🍳" },
+    { "name": "물건·전자", "emoji": "📺" }
+  ],
+  "items": [
+    { "section": "방·공간", "foreign": "casa",       "pronIpa": "/ˈkasa/",       "pronKo": "**까**사",       "korean": "집",       "english": "house" },
+    { "section": "방·공간", "foreign": "sala",       "pronIpa": "/ˈsala/",       "pronKo": "**살**라",       "korean": "거실",      "english": "living room" },
+    { "section": "방·공간", "foreign": "dormitorio", "pronIpa": "/doɾmiˈtoɾjo/", "pronKo": "도르미**또**리오","korean": "침실",      "english": "bedroom" },
+    { "section": "방·공간", "foreign": "cocina",     "pronIpa": "/koˈθina/",     "pronKo": "꼬**씨**나",     "korean": "부엌",      "english": "kitchen" },
+    { "section": "방·공간", "foreign": "baño",       "pronIpa": "/ˈbaɲo/",       "pronKo": "**바**뇨",       "korean": "화장실, 욕실", "english": "bathroom" },
+    { "section": "방·공간", "foreign": "comedor",    "pronIpa": "/komeˈðoɾ/",    "pronKo": "꼬메**도르**",   "korean": "식당방",     "english": "dining room" },
+    { "section": "방·공간", "foreign": "jardín",     "pronIpa": "/xaɾˈðin/",     "pronKo": "하르**딘**",     "korean": "정원",      "english": "garden" },
+
+    { "section": "가구", "foreign": "mesa",       "pronIpa": "/ˈmesa/",       "pronKo": "**메**사",       "korean": "탁자, 책상",   "english": "table" },
+    { "section": "가구", "foreign": "silla",      "pronIpa": "/ˈsiʎa/",       "pronKo": "**시**야",       "korean": "의자",        "english": "chair" },
+    { "section": "가구", "foreign": "cama",       "pronIpa": "/ˈkama/",       "pronKo": "**까**마",       "korean": "침대",        "english": "bed" },
+    { "section": "가구", "foreign": "sofá",       "pronIpa": "/soˈfa/",       "pronKo": "쏘**파**",       "korean": "소파",        "english": "sofa" },
+    { "section": "가구", "foreign": "armario",    "pronIpa": "/aɾˈmaɾjo/",    "pronKo": "아르**마**리오", "korean": "옷장",        "english": "wardrobe" },
+    { "section": "가구", "foreign": "estantería", "pronIpa": "/estanteˈɾia/", "pronKo": "에스딴떼**리**아","korean": "책장",        "english": "bookshelf" },
+
+    { "section": "주방·욕실", "foreign": "nevera",     "pronIpa": "/neˈβeɾa/",   "pronKo": "네**베**라",   "korean": "냉장고",    "english": "fridge" },
+    { "section": "주방·욕실", "foreign": "microondas", "pronIpa": "/mikɾoˈondas/","pronKo": "미끄로**온**다스","korean": "전자레인지","english": "microwave" },
+    { "section": "주방·욕실", "foreign": "horno",      "pronIpa": "/ˈoɾno/",     "pronKo": "**오르**노",   "korean": "오븐",     "english": "oven" },
+    { "section": "주방·욕실", "foreign": "ducha",      "pronIpa": "/ˈdutʃa/",    "pronKo": "**두**차",     "korean": "샤워기",    "english": "shower" },
+    { "section": "주방·욕실", "foreign": "lavabo",     "pronIpa": "/laˈβaβo/",   "pronKo": "라**바**보",   "korean": "세면대",    "english": "sink" },
+    { "section": "주방·욕실", "foreign": "espejo",     "pronIpa": "/esˈpexo/",   "pronKo": "에스**뻬**호", "korean": "거울",     "english": "mirror" },
+
+    { "section": "물건·전자", "foreign": "lámpara",    "pronIpa": "/ˈlampaɾa/",     "pronKo": "**람**빠라",     "korean": "전등",         "english": "lamp" },
+    { "section": "물건·전자", "foreign": "televisión", "pronIpa": "/teleβiˈsjon/",  "pronKo": "뗄레비**시온**", "korean": "텔레비전",     "english": "television" },
+    { "section": "물건·전자", "foreign": "ordenador",  "pronIpa": "/oɾðenaˈðoɾ/",   "pronKo": "오르데나**도르**","korean": "컴퓨터",       "english": "computer" },
+    { "section": "물건·전자", "foreign": "teléfono",   "pronIpa": "/teˈlefono/",    "pronKo": "뗄**레**포노",   "korean": "전화, 휴대폰",   "english": "phone" },
+    { "section": "물건·전자", "foreign": "ventana",    "pronIpa": "/benˈtana/",     "pronKo": "벤**따**나",     "korean": "창문",         "english": "window" },
+    { "section": "물건·전자", "foreign": "puerta",     "pronIpa": "/ˈpweɾta/",      "pronKo": "**뿌에르**따",   "korean": "문",          "english": "door" },
+    { "section": "물건·전자", "foreign": "llave",      "pronIpa": "/ˈʎaβe/",        "pronKo": "**야**베",       "korean": "열쇠",         "english": "key" }
+  ]
+}

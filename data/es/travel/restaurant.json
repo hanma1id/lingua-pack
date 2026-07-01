@@ -3,126 +3,36 @@
   "name": "음식점 주문",
   "lang": "es",
   "emoji": "🍽️",
+  "sections": [
+    { "name": "자리·예약",   "emoji": "🪑" },
+    { "name": "메뉴 문의",   "emoji": "📋" },
+    { "name": "주문하기",    "emoji": "🍴" },
+    { "name": "식사 중 요청", "emoji": "🥤" },
+    { "name": "계산",       "emoji": "💳" }
+  ],
   "items": [
-    {
-      "foreign": "Una mesa para dos, por favor.",
-      "pronIpa": "/úna ˈmesa paɾa ðos poɾ faˈβoɾ/",
-      "pronKo": "우**나** **메**사 **빠**라 **도**스, 뽀르 파**보**르.",
-      "korean": "두 명 자리 부탁드립니다.",
-      "example": "",
-      "exampleKo": "",
-      "context": "식당에 도착해서 자리를 요청할 때",
-      "english": "A table for two, please."
-    },
-    {
-      "foreign": "¿Qué recomienda?",
-      "pronIpa": "/ke remkoˈmjenda/",
-      "pronKo": "**께** **레**콤**멘**다?",
-      "korean": "무엇을 추천하시나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "메뉴를 고르기 어려울 때 직원에게 추천을 부탁할 때",
-      "english": "What do you recommend?"
-    },
-    {
-      "foreign": "¿Me trae la carta, por favor?",
-      "pronIpa": "/me ˈtɾaɪ̯ɣa la ˈkaɾta poɾ faˈβoɾ/",
-      "pronKo": "**메** **뜨**라**에** 라 **까**르따, 뽀르 파**보**르?",
-      "korean": "메뉴판 좀 가져다주시겠어요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "자리에 앉아 메뉴판을 요청할 때",
-      "english": "Could I see the menu, please?"
-    },
-    {
-      "foreign": "Quisiera...",
-      "pronIpa": "/kiˈsjeɾa/",
-      "pronKo": "끼**시**에라...",
-      "korean": "~을 원합니다 / ~을 주세요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "주문을 시작할 때 정중하게 말할 때",
-      "english": "I'd like ..."
-    },
-    {
-      "foreign": "Quiero...",
-      "pronIpa": "/ˈkjeɾo/",
-      "pronKo": "**끼**에로...",
-      "korean": "~을 원해요 / ~ 주세요.",
-      "example": "",
-      "exampleKo": "",
-      "context": "주문을 할 때 직접적으로 말할 때",
-      "english": "I want ..."
-    },
-    {
-      "foreign": "Soy vegetariano/a.",
-      "pronIpa": "/soɪ̯ βexeˈtaɾjano/a/",
-      "pronKo": "쏘이 **베**헤따리**아**노/아.",
-      "korean": "저는 채식주의자입니다.",
-      "example": "",
-      "exampleKo": "",
-      "context": "음식 재료에 대한 알레르기나 선호도를 말할 때",
-      "english": "I'm a vegetarian."
-    },
-    {
-      "foreign": "¿Tiene opciones sin gluten?",
-      "pronIpa": "/ˈtjeːne opˈθjonɛs sin ˈɣluten/",
-      "pronKo": "**띠**에네 **옵**시**오**네스 **씬** **글**루텐?",
-      "korean": "글루텐 프리 옵션이 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "특정 식단 제한이 있을 때 메뉴 문의",
-      "english": "Do you have gluten-free options?"
-    },
-    {
-      "foreign": "Muy picante",
-      "pronIpa": "/ˈmuj piˈkante/",
-      "pronKo": "**무이** **삐**깐떼",
-      "korean": "매운",
-      "example": "No quiero que esté muy picante.",
-      "exampleKo": "너무 맵지 않게 해주세요.",
-      "context": "",
-      "english": "Very spicy"
-    },
-    {
-      "foreign": "Poco picante",
-      "pronIpa": "/ˈpoko piˈkante/",
-      "pronKo": "**뽀**꼬 **삐**깐떼",
-      "korean": "약간 매운",
-      "example": "Prefiero poco picante.",
-      "exampleKo": "약간 매운 것을 선호해요.",
-      "context": "",
-      "english": "Mildly spicy"
-    },
-    {
-      "foreign": "La cuenta, por favor.",
-      "pronIpa": "/la ˈkwenta poɾ faˈβoɾ/",
-      "pronKo": "라 **껜**따, 뽀르 파**보**르.",
-      "korean": "계산서 부탁드립니다.",
-      "example": "",
-      "exampleKo": "",
-      "context": "식사를 마치고 계산을 요청할 때",
-      "english": "The bill, please."
-    },
-    {
-      "foreign": "¿Puedo pagar con tarjeta?",
-      "pronIpa": "/ˈpweðo paˈɣaɾ kon taɾˈxeta/",
-      "pronKo": "**뻬****우**도 파**가**르 **꼰** 따르**헤**따?",
-      "korean": "카드로 계산할 수 있나요?",
-      "example": "",
-      "exampleKo": "",
-      "context": "결제 수단에 대해 문의할 때",
-      "english": "Can I pay by card?"
-    },
-    {
-      "foreign": "Un vaso de agua, por favor.",
-      "pronIpa": "/un ˈβaso ðe ˈaɣwa poɾ faˈβoɾ/",
-      "pronKo": "운 **바**소 데 **아**구아, 뽀르 파**보**르.",
-      "korean": "물 한 잔 부탁드립니다.",
-      "example": "",
-      "exampleKo": "",
-      "context": "음료를 추가로 주문하거나 물을 요청할 때",
-      "english": "A glass of water, please."
-    }
+    { "section": "자리·예약", "foreign": "Una mesa para dos, por favor.", "pronIpa": "/ˈuna ˈmesa ˈpaɾa dos poɾ faˈβoɾ/", "pronKo": "**우**나 **메**사 **빠**라 **도**스, 뽀르 파**보르**", "korean": "두 명 자리 부탁드려요.",     "english": "A table for two, please.", "context": "" },
+    { "section": "자리·예약", "foreign": "¿Tienen mesa libre?",           "pronIpa": "/ˈtjenen ˈmesa ˈliβɾe/",           "pronKo": "**띠에**넨 **메**사 **리**브레?",                  "korean": "빈자리 있나요?",             "english": "Do you have a free table?", "context": "" },
+    { "section": "자리·예약", "foreign": "Tengo una reserva.",             "pronIpa": "/ˈteŋɡo ˈuna reˈseɾβa/",            "pronKo": "**뗑**고 **우**나 레**세르**바",                    "korean": "예약했어요.",               "english": "I have a reservation.", "context": "" },
+
+    { "section": "메뉴 문의", "foreign": "¿Me trae la carta, por favor?",  "pronIpa": "/me ˈtɾae la ˈkaɾta poɾ faˈβoɾ/",  "pronKo": "메 **뜨라**에 라 **까르**따, 뽀르 파**보르**?", "korean": "메뉴판 좀 주시겠어요?",      "english": "Can I see the menu?", "context": "" },
+    { "section": "메뉴 문의", "foreign": "¿Qué recomienda?",                "pronIpa": "/ke rekoˈmjenda/",                  "pronKo": "**께** 레꼬**미엔**다?",                       "korean": "무엇을 추천하시나요?",       "english": "What do you recommend?", "context": "" },
+    { "section": "메뉴 문의", "foreign": "¿Qué es esto?",                   "pronIpa": "/ke es ˈesto/",                     "pronKo": "**께** 에스 **에**스또?",                       "korean": "이건 뭐예요?",              "english": "What is this?", "context": "메뉴 가리키며" },
+    { "section": "메뉴 문의", "foreign": "¿Tiene menú del día?",             "pronIpa": "/ˈtjene meˈnu del ˈdia/",            "pronKo": "**띠에**네 메**누** 델 **디**아?",              "korean": "오늘의 메뉴 있나요?",        "english": "Do you have a daily menu?", "context": "" },
+
+    { "section": "주문하기", "foreign": "Quisiera esto, por favor.",       "pronIpa": "/kiˈsjeɾa ˈesto poɾ faˈβoɾ/",       "pronKo": "끼**시에**라 **에**스또, 뽀르 파**보르**",    "korean": "이걸로 주세요.",             "english": "I'd like this, please.", "context": "가리키며" },
+    { "section": "주문하기", "foreign": "Para mí, la paella.",              "pronIpa": "/ˈpaɾa mi la paˈeʎa/",              "pronKo": "**빠**라 **미**, 라 빠**에**야",            "korean": "저는 파에야로 할게요.",       "english": "I'll have the paella.", "context": "" },
+    { "section": "주문하기", "foreign": "Sin cebolla, por favor.",           "pronIpa": "/sin θeˈβoʎa poɾ faˈβoɾ/",          "pronKo": "**신** 쎄**보**야, 뽀르 파**보르**",         "korean": "양파 빼주세요.",            "english": "No onion, please.", "context": "" },
+    { "section": "주문하기", "foreign": "Soy vegetariano.",                  "pronIpa": "/soj bexetaˈɾjano/",                "pronKo": "**소**이 베헤따**리아**노",                 "korean": "저는 채식주의자예요.",       "english": "I'm vegetarian.", "context": "" },
+
+    { "section": "식사 중 요청", "foreign": "Un vaso de agua, por favor.",  "pronIpa": "/un ˈbaso de ˈaɣwa poɾ faˈβoɾ/",   "pronKo": "운 **바**소 데 **아**과, 뽀르 파**보르**",    "korean": "물 한 잔 주세요.",           "english": "A glass of water, please.", "context": "" },
+    { "section": "식사 중 요청", "foreign": "¿Puede traer más pan?",         "pronIpa": "/ˈpweðe tɾaˈeɾ mas pan/",           "pronKo": "**뿌에**데 뜨라**에르** **마**스 **빤**?",   "korean": "빵 더 주실 수 있나요?",      "english": "Can you bring more bread?", "context": "" },
+    { "section": "식사 중 요청", "foreign": "Está muy rico.",                "pronIpa": "/esˈta muj ˈriko/",                 "pronKo": "에스**따** **무**이 **리**꼬",              "korean": "정말 맛있어요.",            "english": "It's very tasty.", "context": "" },
+    { "section": "식사 중 요청", "foreign": "Está demasiado picante.",       "pronIpa": "/esˈta demaˈsjaðo piˈkante/",       "pronKo": "에스**따** 데마**시아**도 삐**깐**떼",       "korean": "너무 매워요.",              "english": "It's too spicy.", "context": "" },
+
+    { "section": "계산", "foreign": "La cuenta, por favor.",                "pronIpa": "/la ˈkwenta poɾ faˈβoɾ/",           "pronKo": "라 **꾸엔**따, 뽀르 파**보르**",             "korean": "계산서 주세요.",            "english": "The bill, please.", "context": "" },
+    { "section": "계산", "foreign": "¿Puedo pagar con tarjeta?",             "pronIpa": "/ˈpweðo paˈɣaɾ kon taɾˈxeta/",      "pronKo": "**뿌에**도 빠**가르** 꼰 따르**헤**따?",     "korean": "카드로 계산할 수 있나요?",   "english": "Can I pay by card?", "context": "" },
+    { "section": "계산", "foreign": "Paguemos por separado.",                "pronIpa": "/paˈɣemos poɾ sepaˈɾaðo/",          "pronKo": "빠**게**모스 뽀르 세빠**라**도",              "korean": "따로 계산할게요.",          "english": "Let's pay separately.", "context": "" },
+    { "section": "계산", "foreign": "Está muy bueno, gracias.",              "pronIpa": "/esˈta muj ˈbweno ˈɡɾaθjas/",       "pronKo": "에스**따** **무**이 **부에**노, **그라**씨아스","korean": "정말 잘 먹었어요, 감사해요.","english": "It was great, thank you.", "context": "나갈 때" }
   ]
 }

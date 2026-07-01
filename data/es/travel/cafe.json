@@ -1,0 +1,28 @@
+{
+  "id": "cafe",
+  "name": "카페",
+  "lang": "es",
+  "emoji": "☕",
+  "sections": [
+    { "name": "주문",       "emoji": "☕" },
+    { "name": "옵션·요청",   "emoji": "🥛" },
+    { "name": "먹고 마시기",  "emoji": "🍰" }
+  ],
+  "items": [
+    { "section": "주문", "foreign": "Un café con leche, por favor.",   "pronIpa": "/un kaˈfe kon ˈletʃe poɾ faˈβoɾ/",  "pronKo": "운 까**페** 꼰 **레**체, 뽀르 파**보르**",     "korean": "카페라떼 하나 주세요.",         "english": "A café con leche, please.", "context": "" },
+    { "section": "주문", "foreign": "Un espresso, por favor.",         "pronIpa": "/un esˈpɾeso poɾ faˈβoɾ/",         "pronKo": "운 에스**쁘레**소, 뽀르 파**보르**",         "korean": "에스프레소 하나요.",             "english": "An espresso, please.", "context": "" },
+    { "section": "주문", "foreign": "Un té con hielo.",                 "pronIpa": "/un te kon ˈjelo/",                 "pronKo": "운 **떼** 꼰 **이엘**로",                    "korean": "아이스티요.",                   "english": "An iced tea.", "context": "" },
+    { "section": "주문", "foreign": "Un americano grande.",             "pronIpa": "/un ameɾiˈkano ˈɡɾande/",           "pronKo": "운 아메리**까**노 **그란**데",              "korean": "아메리카노 큰 사이즈요.",        "english": "A large americano.", "context": "" },
+    { "section": "주문", "foreign": "Para llevar, por favor.",           "pronIpa": "/ˈpaɾa ʎeˈβaɾ poɾ faˈβoɾ/",         "pronKo": "**빠**라 예**바르**, 뽀르 파**보르**",         "korean": "가져갈게요 (테이크아웃).",       "english": "To go, please.", "context": "" },
+    { "section": "주문", "foreign": "Para tomar aquí.",                  "pronIpa": "/ˈpaɾa toˈmaɾ aˈki/",               "pronKo": "**빠**라 또**마르** 아**끼**",              "korean": "여기서 마실게요.",              "english": "For here.", "context": "" },
+
+    { "section": "옵션·요청", "foreign": "Con leche de avena.",           "pronIpa": "/kon ˈletʃe de aˈβena/",            "pronKo": "꼰 **레**체 데 아**베**나",                 "korean": "귀리 우유로요.",                "english": "With oat milk.", "context": "" },
+    { "section": "옵션·요청", "foreign": "Sin azúcar.",                    "pronIpa": "/sin aˈθukaɾ/",                     "pronKo": "**신** 아**쑤**까르",                       "korean": "설탕 없이요.",                  "english": "Without sugar.", "context": "" },
+    { "section": "옵션·요청", "foreign": "¿Tienen wifi?",                  "pronIpa": "/ˈtjenen ˈwifi/",                   "pronKo": "**띠에**넨 **위**피?",                       "korean": "와이파이 있어요?",              "english": "Do you have Wi-Fi?", "context": "" },
+    { "section": "옵션·요청", "foreign": "¿Puedo cargar el móvil aquí?",  "pronIpa": "/ˈpweðo kaɾˈɣaɾ el ˈmoβil aˈki/",   "pronKo": "**뿌에**도 까르**가르** 엘 **모**빌 아**끼**?", "korean": "여기서 휴대폰 충전할 수 있나요?", "english": "Can I charge my phone here?", "context": "" },
+
+    { "section": "먹고 마시기", "foreign": "¿Qué pasteles tienen?",        "pronIpa": "/ke pasˈteles ˈtjenen/",            "pronKo": "**께** 빠스**뗄**레스 **띠에**넨?",           "korean": "케이크 뭐 있어요?",             "english": "What cakes do you have?", "context": "" },
+    { "section": "먹고 마시기", "foreign": "Un croissant, por favor.",       "pronIpa": "/un kɾwaˈsan poɾ faˈβoɾ/",           "pronKo": "운 끄루아**산**, 뽀르 파**보르**",           "korean": "크루아상 하나요.",              "english": "A croissant, please.", "context": "" },
+    { "section": "먹고 마시기", "foreign": "¿Está muy caliente?",            "pronIpa": "/esˈta muj kaˈljente/",              "pronKo": "에스**따** **무**이 깔**리엔**떼?",           "korean": "많이 뜨거워요?",               "english": "Is it very hot?", "context": "" }
+  ]
+}

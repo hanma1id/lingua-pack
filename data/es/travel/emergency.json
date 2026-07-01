@@ -1,0 +1,33 @@
+{
+  "id": "emergency",
+  "name": "응급·병원",
+  "lang": "es",
+  "emoji": "🚑",
+  "sections": [
+    { "name": "위급 상황",   "emoji": "🚨" },
+    { "name": "몸이 아플 때", "emoji": "🤒" },
+    { "name": "약국·병원",   "emoji": "💊" },
+    { "name": "도난·분실",   "emoji": "🚔" }
+  ],
+  "items": [
+    { "section": "위급 상황", "foreign": "¡Ayuda!",                       "pronIpa": "/aˈjuða/",                       "pronKo": "아**유**다!",                          "korean": "도와주세요!",                    "english": "Help!", "context": "" },
+    { "section": "위급 상황", "foreign": "Es una emergencia.",            "pronIpa": "/es ˈuna emeɾˈxenθja/",           "pronKo": "에스 **우**나 에메르**헨**시아",         "korean": "응급 상황이에요.",               "english": "It's an emergency.", "context": "" },
+    { "section": "위급 상황", "foreign": "Llame a una ambulancia.",       "pronIpa": "/ˈʎame a ˈuna ambuˈlanθja/",      "pronKo": "**야**메 아 **우**나 암부**란**시아",    "korean": "구급차 불러 주세요.",             "english": "Call an ambulance.", "context": "" },
+    { "section": "위급 상황", "foreign": "Llame a la policía.",           "pronIpa": "/ˈʎame a la poliˈθia/",           "pronKo": "**야**메 아 라 뽈리**씨**아",           "korean": "경찰 불러 주세요.",              "english": "Call the police.", "context": "" },
+
+    { "section": "몸이 아플 때", "foreign": "No me siento bien.",          "pronIpa": "/no me ˈsjento ˈβjen/",          "pronKo": "노 메 **시엔**또 **비엔**",             "korean": "몸이 안 좋아요.",               "english": "I don't feel well.", "context": "" },
+    { "section": "몸이 아플 때", "foreign": "Me duele la cabeza.",         "pronIpa": "/me ˈdwele la kaˈβeθa/",         "pronKo": "메 **두엘**레 라 까**베**싸",           "korean": "머리가 아파요.",                "english": "I have a headache.", "context": "" },
+    { "section": "몸이 아플 때", "foreign": "Me duele el estómago.",       "pronIpa": "/me ˈdwele el esˈtomaɣo/",       "pronKo": "메 **두엘**레 엘 에스**또**마고",        "korean": "배가 아파요.",                  "english": "I have a stomachache.", "context": "" },
+    { "section": "몸이 아플 때", "foreign": "Tengo fiebre.",                "pronIpa": "/ˈteŋɡo ˈfjeβɾe/",                "pronKo": "**뗑**고 **피에**브레",                 "korean": "열이 나요.",                    "english": "I have a fever.", "context": "" },
+    { "section": "몸이 아플 때", "foreign": "Soy alérgico a...",             "pronIpa": "/soj aˈleɾxiko a/",               "pronKo": "**소**이 알**레르**히꼬 아...",         "korean": "저는 ...에 알레르기가 있어요.",  "english": "I'm allergic to...", "context": "" },
+
+    { "section": "약국·병원", "foreign": "¿Dónde hay una farmacia?",       "pronIpa": "/ˈdonde aj ˈuna faɾˈmaθja/",      "pronKo": "**돈**데 **아**이 **우**나 파르**마**시아?", "korean": "약국이 어디 있어요?",         "english": "Where is a pharmacy?", "context": "" },
+    { "section": "약국·병원", "foreign": "Necesito un médico.",             "pronIpa": "/neθeˈsito un ˈmediko/",           "pronKo": "네쎄**시**또 운 **메**디꼬",            "korean": "의사가 필요해요.",              "english": "I need a doctor.", "context": "" },
+    { "section": "약국·병원", "foreign": "¿Hay un hospital cerca?",         "pronIpa": "/aj un ospiˈtal ˈθeɾka/",           "pronKo": "**아**이 운 오스삐**딸** **쎄르**까?",   "korean": "근처에 병원 있어요?",           "english": "Is there a hospital nearby?", "context": "" },
+    { "section": "약국·병원", "foreign": "¿Tiene algo para el dolor?",       "pronIpa": "/ˈtjene ˈalɣo ˈpaɾa el doˈloɾ/",    "pronKo": "**띠에**네 **알**고 **빠**라 엘 도**로르**?", "korean": "진통제 있나요?",              "english": "Do you have something for pain?", "context": "약국" },
+
+    { "section": "도난·분실", "foreign": "Me han robado el bolso.",         "pronIpa": "/me an roˈβaðo el ˈbolso/",         "pronKo": "메 안 로**바**도 엘 **볼**소",         "korean": "가방을 도둑맞았어요.",           "english": "My bag has been stolen.", "context": "" },
+    { "section": "도난·분실", "foreign": "He perdido el pasaporte.",         "pronIpa": "/e peɾˈðiðo el pasaˈpoɾte/",         "pronKo": "에 뻬르**디**도 엘 빠사**뽀르**떼",     "korean": "여권을 잃어버렸어요.",           "english": "I've lost my passport.", "context": "" },
+    { "section": "도난·분실", "foreign": "¿Dónde está la comisaría?",       "pronIpa": "/ˈdonde esˈta la komisaˈɾia/",        "pronKo": "**돈**데 에스**따** 라 꼬미사**리**아?", "korean": "경찰서 어디예요?",              "english": "Where is the police station?", "context": "" }
+  ]
+}

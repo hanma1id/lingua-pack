@@ -54,6 +54,42 @@
       "name": "요일·달·계절",
       "emoji": "📅",
       "count": 28
+    },
+    {
+      "id": "emotions",
+      "name": "감정·성격",
+      "emoji": "😊",
+      "count": 23
+    },
+    {
+      "id": "hobbies",
+      "name": "취미·운동",
+      "emoji": "⚽",
+      "count": 20
+    },
+    {
+      "id": "home",
+      "name": "집·방·가구",
+      "emoji": "🏠",
+      "count": 26
+    },
+    {
+      "id": "jobs",
+      "name": "직업",
+      "emoji": "💼",
+      "count": 22
+    },
+    {
+      "id": "school",
+      "name": "학교·문구",
+      "emoji": "🎒",
+      "count": 26
+    },
+    {
+      "id": "time_expressions",
+      "name": "시간·빈도",
+      "emoji": "⏰",
+      "count": 24
     }
   ],
   "travel": [
@@ -61,31 +97,85 @@
       "id": "airport",
       "name": "공항·기내",
       "emoji": "✈️",
-      "count": 12
+      "count": 17
     },
     {
       "id": "greetings_intro",
       "name": "인사·자기소개",
       "emoji": "👋",
-      "count": 10
+      "count": 20
     },
     {
       "id": "restaurant",
       "name": "음식점 주문",
       "emoji": "🍽️",
-      "count": 12
+      "count": 19
     },
     {
       "id": "directions",
       "name": "길찾기",
       "emoji": "🗺️",
-      "count": 10
+      "count": 17
     },
     {
       "id": "shopping",
       "name": "쇼핑·가격",
       "emoji": "🛍️",
+      "count": 18
+    },
+    {
+      "id": "cafe",
+      "name": "카페",
+      "emoji": "☕",
+      "count": 13
+    },
+    {
+      "id": "emergency",
+      "name": "응급·병원",
+      "emoji": "🚑",
+      "count": 16
+    },
+    {
+      "id": "hotel",
+      "name": "호텔",
+      "emoji": "🏨",
+      "count": 16
+    },
+    {
+      "id": "taxi",
+      "name": "택시",
+      "emoji": "🚕",
+      "count": 12
+    },
+    {
+      "id": "transport",
+      "name": "대중교통",
+      "emoji": "🚇",
+      "count": 14
+    },
+    {
+      "id": "money",
+      "name": "환전·ATM",
+      "emoji": "💱",
       "count": 10
+    },
+    {
+      "id": "photo",
+      "name": "사진 부탁",
+      "emoji": "📸",
+      "count": 10
+    },
+    {
+      "id": "ticket",
+      "name": "관광·티켓",
+      "emoji": "🎫",
+      "count": 12
+    },
+    {
+      "id": "weather",
+      "name": "날씨·컨디션",
+      "emoji": "⛅",
+      "count": 17
     }
   ]
 }

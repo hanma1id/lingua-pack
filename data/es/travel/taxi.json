@@ -1,0 +1,27 @@
+{
+  "id": "taxi",
+  "name": "택시",
+  "lang": "es",
+  "emoji": "🚕",
+  "sections": [
+    { "name": "타기·목적지",  "emoji": "🚕" },
+    { "name": "이동 중",     "emoji": "🛣️" },
+    { "name": "요금·내리기",  "emoji": "💵" }
+  ],
+  "items": [
+    { "section": "타기·목적지", "foreign": "¿Está libre?",                          "pronIpa": "/esˈta ˈliβɾe/",                       "pronKo": "에스**따** **리**브레?",                              "korean": "지금 (탈 수) 있어요?",       "english": "Are you available?", "context": "" },
+    { "section": "타기·목적지", "foreign": "A este hotel, por favor.",              "pronIpa": "/a ˈeste oˈtel poɾ faˈβoɾ/",           "pronKo": "아 **에**스떼 오**뗄**, 뽀르 파**보르**",           "korean": "이 호텔로 가주세요.",           "english": "To this hotel, please.", "context": "주소 보여주며" },
+    { "section": "타기·목적지", "foreign": "Al aeropuerto, por favor.",             "pronIpa": "/al aeɾoˈpweɾto poɾ faˈβoɾ/",           "pronKo": "알 아에로**뿌에르**또, 뽀르 파**보르**",             "korean": "공항으로요.",                  "english": "To the airport, please.", "context": "" },
+    { "section": "타기·목적지", "foreign": "¿Cuánto costará?",                       "pronIpa": "/ˈkwanto kostaˈɾa/",                    "pronKo": "**꾸안**또 꼬스따**라**?",                          "korean": "얼마 나올까요?",               "english": "How much will it cost?", "context": "출발 전" },
+
+    { "section": "이동 중", "foreign": "¿Cuánto tarda?",                             "pronIpa": "/ˈkwanto ˈtaɾða/",                     "pronKo": "**꾸안**또 **따르**다?",                            "korean": "얼마나 걸려요?",               "english": "How long will it take?", "context": "" },
+    { "section": "이동 중", "foreign": "Tengo prisa.",                                "pronIpa": "/ˈteŋɡo ˈpɾisa/",                       "pronKo": "**뗑**고 **쁘리**사",                              "korean": "저 급해요.",                   "english": "I'm in a hurry.", "context": "" },
+    { "section": "이동 중", "foreign": "Más despacio, por favor.",                    "pronIpa": "/mas desˈpaθjo poɾ faˈβoɾ/",           "pronKo": "**마**스 데스**빠**시오, 뽀르 파**보르**",           "korean": "좀 천천히 가주세요.",           "english": "Slower, please.", "context": "너무 빠를 때" },
+    { "section": "이동 중", "foreign": "¿Puede poner el aire?",                       "pronIpa": "/ˈpweðe poˈneɾ el ˈaiɾe/",              "pronKo": "**뿌에**데 뽀**네르** 엘 **아이**레?",                "korean": "에어컨 좀 켜주실 수 있나요?",   "english": "Can you turn on the AC?", "context": "" },
+
+    { "section": "요금·내리기", "foreign": "Aquí está bien, gracias.",                "pronIpa": "/aˈki esˈta ˈbjen ˈɡɾaθjas/",           "pronKo": "아**끼** 에스**따** **비엔**, **그라**씨아스",         "korean": "여기 세워 주세요, 감사해요.",   "english": "Here is fine, thanks.", "context": "" },
+    { "section": "요금·내리기", "foreign": "¿Cuánto es?",                              "pronIpa": "/ˈkwanto es/",                          "pronKo": "**꾸안**또 에스?",                                   "korean": "얼마예요?",                    "english": "How much is it?", "context": "" },
+    { "section": "요금·내리기", "foreign": "¿Puede darme un recibo?",                  "pronIpa": "/ˈpweðe ˈdaɾme un reˈθiβo/",             "pronKo": "**뿌에**데 **다르**메 운 레**씨**보?",                 "korean": "영수증 받을 수 있나요?",       "english": "Can I have a receipt?", "context": "" },
+    { "section": "요금·내리기", "foreign": "Quédese con el cambio.",                    "pronIpa": "/ˈkeðese kon el ˈkambjo/",              "pronKo": "**께**데세 꼰 엘 **깜**비오",                        "korean": "잔돈은 가지세요 (팁).",          "english": "Keep the change.", "context": "" }
+  ]
+}

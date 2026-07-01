@@ -1,0 +1,25 @@
+{
+  "id": "money",
+  "name": "환전·ATM",
+  "lang": "es",
+  "emoji": "💱",
+  "sections": [
+    { "name": "환전",       "emoji": "💱" },
+    { "name": "ATM·인출",    "emoji": "🏧" },
+    { "name": "결제·문제",   "emoji": "💳" }
+  ],
+  "items": [
+    { "section": "환전", "foreign": "¿Dónde puedo cambiar dinero?",      "pronIpa": "/ˈdonde ˈpweðo kamˈbjaɾ diˈneɾo/",   "pronKo": "**돈**데 **뿌에**도 깜**비아르** 디**네**로?",  "korean": "환전 어디서 할 수 있어요?",   "english": "Where can I exchange money?", "context": "" },
+    { "section": "환전", "foreign": "Quiero cambiar dólares a euros.",   "pronIpa": "/ˈkjeɾo kamˈbjaɾ ˈdolaɾes a ˈewɾos/", "pronKo": "**끼에**로 깜**비아르** **돌**라레스 아 **에우**로스", "korean": "달러를 유로로 바꾸고 싶어요.", "english": "I want to change dollars to euros.", "context": "" },
+    { "section": "환전", "foreign": "¿Cuál es el cambio?",                "pronIpa": "/kwal es el ˈkambjo/",                "pronKo": "**꾸알** 에스 엘 **깜**비오?",                 "korean": "환율이 어떻게 되나요?",       "english": "What's the exchange rate?", "context": "" },
+    { "section": "환전", "foreign": "¿Cobran comisión?",                   "pronIpa": "/ˈkoβɾan komiˈsjon/",                 "pronKo": "**꼬**브란 꼬미**시온**?",                    "korean": "수수료 있어요?",              "english": "Do you charge a fee?", "context": "" },
+
+    { "section": "ATM·인출", "foreign": "¿Hay un cajero cerca?",           "pronIpa": "/aj un kaˈxeɾo ˈθeɾka/",              "pronKo": "**아**이 운 까**헤**로 **쎄르**까?",         "korean": "근처에 ATM 있어요?",          "english": "Is there an ATM nearby?", "context": "" },
+    { "section": "ATM·인출", "foreign": "El cajero no me da el dinero.",    "pronIpa": "/el kaˈxeɾo no me da el diˈneɾo/",    "pronKo": "엘 까**헤**로 노 메 다 엘 디**네**로",       "korean": "ATM에서 돈이 안 나와요.",     "english": "The ATM isn't giving me money.", "context": "" },
+    { "section": "ATM·인출", "foreign": "La tarjeta no funciona.",          "pronIpa": "/la taɾˈxeta no funˈθjona/",           "pronKo": "라 따르**헤**따 노 푼**시오**나",             "korean": "카드가 안 돼요.",             "english": "My card isn't working.", "context": "" },
+
+    { "section": "결제·문제", "foreign": "¿Puedo pagar con dólares?",       "pronIpa": "/ˈpweðo paˈɣaɾ kon ˈdolaɾes/",        "pronKo": "**뿌에**도 빠**가르** 꼰 **돌**라레스?",     "korean": "달러로 계산해도 되나요?",     "english": "Can I pay with dollars?", "context": "" },
+    { "section": "결제·문제", "foreign": "¿Tienen cambio de 50?",             "pronIpa": "/ˈtjenen ˈkambjo de θiŋˈkwenta/",      "pronKo": "**띠에**넨 **깜**비오 데 씽**꾸엔**따?",     "korean": "50 잔돈 있어요?",            "english": "Do you have change for 50?", "context": "" },
+    { "section": "결제·문제", "foreign": "Creo que me han cobrado de más.",   "pronIpa": "/ˈkɾeo ke me an koˈβɾaðo de mas/",     "pronKo": "**끄레**오 께 메 안 꼬**브라**도 데 **마**스", "korean": "돈을 더 청구한 것 같아요.",     "english": "I think you overcharged me.", "context": "" }
+  ]
+}

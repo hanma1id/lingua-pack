@@ -1,0 +1,40 @@
+{
+  "id": "emotions",
+  "name": "감정·성격",
+  "lang": "es",
+  "emoji": "😊",
+  "sections": [
+    { "name": "좋은 감정",   "emoji": "😊" },
+    { "name": "나쁜 감정",   "emoji": "😢" },
+    { "name": "성격",       "emoji": "🙂" },
+    { "name": "몸 상태",     "emoji": "😴" }
+  ],
+  "items": [
+    { "section": "좋은 감정", "foreign": "feliz",     "pronIpa": "/feˈliθ/",     "pronKo": "펠**리**쓰",     "korean": "행복한",   "english": "happy" },
+    { "section": "좋은 감정", "foreign": "contento",  "pronIpa": "/konˈtento/",  "pronKo": "꼰**뗀**또",     "korean": "만족한",   "english": "content" },
+    { "section": "좋은 감정", "foreign": "alegre",    "pronIpa": "/aˈleɣɾe/",    "pronKo": "알**레**그레",   "korean": "기쁜, 즐거운","english": "cheerful" },
+    { "section": "좋은 감정", "foreign": "tranquilo", "pronIpa": "/tɾaŋˈkilo/",  "pronKo": "뜨랑**낄**로",   "korean": "차분한, 편안한","english": "calm" },
+    { "section": "좋은 감정", "foreign": "orgulloso", "pronIpa": "/oɾɣuˈʎoso/",  "pronKo": "오르구**요**소", "korean": "자랑스러운", "english": "proud" },
+    { "section": "좋은 감정", "foreign": "enamorado", "pronIpa": "/enamoˈɾaðo/", "pronKo": "에나모**라**도", "korean": "사랑에 빠진", "english": "in love" },
+
+    { "section": "나쁜 감정", "foreign": "triste",     "pronIpa": "/ˈtɾiste/",     "pronKo": "**뜨리**스떼",     "korean": "슬픈",     "english": "sad" },
+    { "section": "나쁜 감정", "foreign": "enfadado",   "pronIpa": "/enfaˈðaðo/",   "pronKo": "엔파**다**도",     "korean": "화난",     "english": "angry" },
+    { "section": "나쁜 감정", "foreign": "aburrido",   "pronIpa": "/aβuˈriðo/",    "pronKo": "아부**리**도",     "korean": "지루한",    "english": "bored" },
+    { "section": "나쁜 감정", "foreign": "nervioso",   "pronIpa": "/neɾˈβjoso/",   "pronKo": "네르**비오**소",   "korean": "긴장한",    "english": "nervous" },
+    { "section": "나쁜 감정", "foreign": "asustado",   "pronIpa": "/asusˈtaðo/",   "pronKo": "아수스**따**도",   "korean": "무서운, 놀란","english": "scared" },
+    { "section": "나쁜 감정", "foreign": "preocupado", "pronIpa": "/pɾeokuˈpaðo/", "pronKo": "쁘레오꾸**빠**도", "korean": "걱정하는",   "english": "worried" },
+
+    { "section": "성격", "foreign": "amable",      "pronIpa": "/aˈmaβle/",      "pronKo": "아**마**블레",     "korean": "친절한",   "english": "kind" },
+    { "section": "성격", "foreign": "simpático",   "pronIpa": "/simˈpatiko/",   "pronKo": "심**빠**띠꼬",     "korean": "다정한",   "english": "nice" },
+    { "section": "성격", "foreign": "tímido",      "pronIpa": "/ˈtimido/",      "pronKo": "**띠**미도",       "korean": "부끄러운",   "english": "shy" },
+    { "section": "성격", "foreign": "valiente",    "pronIpa": "/baˈljente/",    "pronKo": "발**리엔**떼",     "korean": "용감한",    "english": "brave" },
+    { "section": "성격", "foreign": "inteligente", "pronIpa": "/inteliˈxente/", "pronKo": "인뗄리**헨**떼",   "korean": "똑똑한",    "english": "smart" },
+    { "section": "성격", "foreign": "divertido",   "pronIpa": "/diβeɾˈtiðo/",   "pronKo": "디베르**띠**도",   "korean": "재미있는",   "english": "fun" },
+
+    { "section": "몸 상태", "foreign": "cansado",   "pronIpa": "/kanˈsaðo/",     "pronKo": "깐**사**도",    "korean": "피곤한",    "english": "tired" },
+    { "section": "몸 상태", "foreign": "hambriento","pronIpa": "/amˈbɾjento/",   "pronKo": "암**브리엔**또", "korean": "배고픈",    "english": "hungry" },
+    { "section": "몸 상태", "foreign": "sediento",  "pronIpa": "/seˈðjento/",    "pronKo": "쎄**디엔**또",  "korean": "목마른",    "english": "thirsty" },
+    { "section": "몸 상태", "foreign": "enfermo",   "pronIpa": "/enˈfeɾmo/",     "pronKo": "엔**페르**모",  "korean": "아픈",     "english": "sick" },
+    { "section": "몸 상태", "foreign": "ocupado",   "pronIpa": "/okuˈpaðo/",     "pronKo": "오꾸**빠**도",  "korean": "바쁜",     "english": "busy" }
+  ]
+}

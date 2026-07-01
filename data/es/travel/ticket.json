@@ -1,0 +1,27 @@
+{
+  "id": "ticket",
+  "name": "관광·티켓",
+  "lang": "es",
+  "emoji": "🎫",
+  "sections": [
+    { "name": "입장·표",     "emoji": "🎟️" },
+    { "name": "시간·투어",   "emoji": "🕐" },
+    { "name": "안내 문의",   "emoji": "ℹ️" }
+  ],
+  "items": [
+    { "section": "입장·표", "foreign": "Dos entradas, por favor.",           "pronIpa": "/dos enˈtɾaðas poɾ faˈβoɾ/",          "pronKo": "**도**스 엔**뜨라**다스, 뽀르 파**보르**",     "korean": "입장권 2장이요.",              "english": "Two tickets, please.", "context": "" },
+    { "section": "입장·표", "foreign": "¿Cuánto vale la entrada?",           "pronIpa": "/ˈkwanto ˈβale la enˈtɾaða/",         "pronKo": "**꾸안**또 **발**레 라 엔**뜨라**다?",         "korean": "입장료 얼마예요?",             "english": "How much is admission?", "context": "" },
+    { "section": "입장·표", "foreign": "¿Hay descuento para estudiantes?",   "pronIpa": "/aj desˈkwento ˈpaɾa estuˈðjantes/", "pronKo": "**아**이 데스**꾸엔**또 **빠**라 에스뚜**디안**떼스?", "korean": "학생 할인 있어요?",        "english": "Is there a student discount?", "context": "" },
+    { "section": "입장·표", "foreign": "Una entrada para niño.",              "pronIpa": "/ˈuna enˈtɾaða ˈpaɾa ˈniɲo/",         "pronKo": "**우**나 엔**뜨라**다 **빠**라 **니**뇨",     "korean": "어린이 표 하나요.",             "english": "One child ticket.", "context": "" },
+
+    { "section": "시간·투어", "foreign": "¿A qué hora abre?",                 "pronIpa": "/a ke ˈoɾa ˈaβɾe/",                   "pronKo": "아 께 **오**라 **아**브레?",                  "korean": "몇 시에 열어요?",              "english": "What time does it open?", "context": "" },
+    { "section": "시간·투어", "foreign": "¿A qué hora cierra?",               "pronIpa": "/a ke ˈoɾa ˈθjera/",                  "pronKo": "아 께 **오**라 **씨에**라?",                  "korean": "몇 시에 닫아요?",              "english": "What time does it close?", "context": "" },
+    { "section": "시간·투어", "foreign": "¿Cuánto dura la visita?",           "pronIpa": "/ˈkwanto ˈduɾa la biˈsita/",           "pronKo": "**꾸안**또 **두**라 라 비**시**따?",         "korean": "관람 얼마나 걸려요?",          "english": "How long is the visit?", "context": "" },
+    { "section": "시간·투어", "foreign": "¿Hay visitas guiadas?",              "pronIpa": "/aj biˈsitas ɡiˈaðas/",                "pronKo": "**아**이 비**시**따스 기**아**다스?",         "korean": "가이드 투어 있나요?",          "english": "Are there guided tours?", "context": "" },
+    { "section": "시간·투어", "foreign": "¿En qué idiomas hay audioguía?",    "pronIpa": "/en ke iˈðjomas aj auðjoˈɣia/",        "pronKo": "엔 께 이**디오**마스 **아**이 아우디오**기**아?", "korean": "오디오 가이드 어느 언어예요?", "english": "Which languages is the audio guide in?", "context": "" },
+
+    { "section": "안내 문의", "foreign": "¿Se puede sacar fotos?",             "pronIpa": "/se ˈpweðe saˈkaɾ ˈfotos/",           "pronKo": "세 **뿌에**데 사**까르** **포**또스?",        "korean": "사진 찍어도 되나요?",          "english": "Can I take photos?", "context": "" },
+    { "section": "안내 문의", "foreign": "¿Dónde está el baño?",              "pronIpa": "/ˈdonde esˈta el ˈbaɲo/",             "pronKo": "**돈**데 에스**따** 엘 **바**뇨?",           "korean": "화장실 어디예요?",             "english": "Where is the restroom?", "context": "" },
+    { "section": "안내 문의", "foreign": "¿Tienen un mapa del museo?",         "pronIpa": "/ˈtjenen un ˈmapa del muˈseo/",         "pronKo": "**띠에**넨 운 **마**빠 델 무**세**오?",      "korean": "박물관 지도 있나요?",          "english": "Do you have a museum map?", "context": "" }
+  ]
+}

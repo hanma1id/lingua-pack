@@ -1,0 +1,37 @@
+{
+  "id": "hobbies",
+  "name": "취미·운동",
+  "lang": "es",
+  "emoji": "⚽",
+  "sections": [
+    { "name": "구기·운동",   "emoji": "⚽" },
+    { "name": "몸 움직이기",  "emoji": "🏃" },
+    { "name": "음악·예술",   "emoji": "🎨" },
+    { "name": "실내·미디어",  "emoji": "📖" }
+  ],
+  "items": [
+    { "section": "구기·운동", "foreign": "fútbol",     "pronIpa": "/ˈfutβol/",     "pronKo": "**풋**볼",       "korean": "축구",      "english": "soccer" },
+    { "section": "구기·운동", "foreign": "baloncesto", "pronIpa": "/balonˈθesto/", "pronKo": "발론**쎄**스또", "korean": "농구",      "english": "basketball" },
+    { "section": "구기·운동", "foreign": "béisbol",    "pronIpa": "/ˈbejsβol/",    "pronKo": "**베이**스볼",   "korean": "야구",      "english": "baseball" },
+    { "section": "구기·운동", "foreign": "tenis",      "pronIpa": "/ˈtenis/",      "pronKo": "**떼**니스",     "korean": "테니스",     "english": "tennis" },
+    { "section": "구기·운동", "foreign": "voleibol",   "pronIpa": "/boˈlejβol/",   "pronKo": "볼**레이**볼",   "korean": "배구",      "english": "volleyball" },
+
+    { "section": "몸 움직이기", "foreign": "correr",     "pronIpa": "/koˈreɾ/",     "pronKo": "꼬**레르**",     "korean": "달리기",   "english": "running" },
+    { "section": "몸 움직이기", "foreign": "nadar",      "pronIpa": "/naˈðaɾ/",     "pronKo": "나**다르**",     "korean": "수영",     "english": "swimming" },
+    { "section": "몸 움직이기", "foreign": "montar en bici","pronIpa": "/monˈtaɾ en ˈbiθi/","pronKo": "몬**따르** 엔 **비**씨","korean": "자전거 타기","english": "cycling" },
+    { "section": "몸 움직이기", "foreign": "yoga",       "pronIpa": "/ˈjoɣa/",      "pronKo": "**요**가",       "korean": "요가",     "english": "yoga" },
+    { "section": "몸 움직이기", "foreign": "senderismo", "pronIpa": "/senderˈismo/","pronKo": "센데**리**스모", "korean": "등산·트레킹","english": "hiking" },
+
+    { "section": "음악·예술", "foreign": "cantar",  "pronIpa": "/kanˈtaɾ/",   "pronKo": "깐**따르**",   "korean": "노래하기",  "english": "singing" },
+    { "section": "음악·예술", "foreign": "bailar",  "pronIpa": "/bajˈlaɾ/",   "pronKo": "바이**라르**", "korean": "춤추기",   "english": "dancing" },
+    { "section": "음악·예술", "foreign": "dibujar", "pronIpa": "/diβuˈxaɾ/",  "pronKo": "디부**하르**", "korean": "그림 그리기", "english": "drawing" },
+    { "section": "음악·예술", "foreign": "pintar",  "pronIpa": "/pinˈtaɾ/",   "pronKo": "삔**따르**",   "korean": "채색·그림",  "english": "painting" },
+    { "section": "음악·예술", "foreign": "guitarra","pronIpa": "/ɡiˈtara/",   "pronKo": "기**따**라",   "korean": "기타",     "english": "guitar" },
+
+    { "section": "실내·미디어", "foreign": "leer",       "pronIpa": "/leˈeɾ/",           "pronKo": "레**에르**",       "korean": "책 읽기",     "english": "reading" },
+    { "section": "실내·미디어", "foreign": "cocinar",    "pronIpa": "/koθiˈnaɾ/",        "pronKo": "꼬씨**나르**",     "korean": "요리하기",     "english": "cooking" },
+    { "section": "실내·미디어", "foreign": "viajar",     "pronIpa": "/bjaˈxaɾ/",         "pronKo": "비아**하르**",     "korean": "여행하기",     "english": "traveling" },
+    { "section": "실내·미디어", "foreign": "videojuego", "pronIpa": "/biðeoˈxweɣo/",     "pronKo": "비데오**후에**고", "korean": "비디오게임",   "english": "video game" },
+    { "section": "실내·미디어", "foreign": "película",   "pronIpa": "/peˈlikula/",       "pronKo": "뻴**리**꿀라",     "korean": "영화",       "english": "movie" }
+  ]
+}
