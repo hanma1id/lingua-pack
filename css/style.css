@@ -155,6 +155,19 @@ a { color: var(--accent); text-decoration: none; }
 .lang-select.lang-flag-only:hover { background-color: var(--bg-soft); }
 
 /* 페이지 제목 — 클릭 시 목록 화면으로 (뒤로가기 역할) */
+/* 헤더 좌/우 그룹 — 원문·속도가 확실히 오른쪽에 붙게 그룹핑 */
+.header-row {
+  justify-content: space-between;
+}
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.header-right { margin-left: auto; }
+
 .page-subtitle.page-back {
   cursor: pointer;
   user-select: none;
@@ -169,7 +182,6 @@ a { color: var(--accent); text-decoration: none; }
   gap: 6px;
   flex: 0 1 auto;
   min-width: 0;
-  margin-right: auto;
   transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
   box-shadow: 0 2px 8px rgba(74,111,165,0.08);
 }
