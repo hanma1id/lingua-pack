@@ -1,0 +1,37 @@
+{
+  "id": "greetings_intro",
+  "name": "인사·자기소개",
+  "lang": "ja",
+  "emoji": "👋",
+  "sections": [
+    { "name": "인사",       "emoji": "👋" },
+    { "name": "자기소개",   "emoji": "🙋" },
+    { "name": "나이·국적",  "emoji": "🎂" },
+    { "name": "마무리",     "emoji": "🙏" }
+  ],
+  "items": [
+    { "section": "인사", "foreign": "こんにちは。",            "pronIpa": "/koɲɲitɕiwa/",       "pronKo": "**콘**니치와",           "korean": "안녕하세요.",         "english": "Hello.", "context": "" },
+    { "section": "인사", "foreign": "はじめまして。",          "pronIpa": "/hadʑimemaɕite/",    "pronKo": "하지**메**마시떼",       "korean": "처음 뵙겠습니다.",     "english": "Nice to meet you.", "context": "" },
+    { "section": "인사", "foreign": "お元気ですか？",          "pronIpa": "/oɡeɴki desɯ ka/",   "pronKo": "오**겡**끼데스까?",     "korean": "잘 지내세요?",         "english": "How are you?", "context": "" },
+    { "section": "인사", "foreign": "元気です。",              "pronIpa": "/ɡeɴki desɯ/",       "pronKo": "**겡**끼데스",           "korean": "잘 지내요.",         "english": "I'm good.", "context": "" },
+    { "section": "인사", "foreign": "会えて嬉しいです。",       "pronIpa": "/aete ɯɾeɕiː desɯ/", "pronKo": "**아**에떼 우**레**시-데스","korean": "만나서 반가워요.",   "english": "Nice to meet you.", "context": "" },
+
+    { "section": "자기소개", "foreign": "私の名前は윤하です。",     "pronIpa": "/wataɕi no namae wa jɯɴha desɯ/", "pronKo": "와**따**시노 나**마**에와 **윤**하데스",  "korean": "제 이름은 윤하예요.",      "english": "My name is Yunha.", "context": "본인 이름 대입" },
+    { "section": "자기소개", "foreign": "お名前は？",             "pronIpa": "/onamae wa/",                     "pronKo": "오**나**마에와?",                       "korean": "이름이 뭐예요?",           "english": "What's your name?", "context": "" },
+    { "section": "자기소개", "foreign": "小学生です。",           "pronIpa": "/ɕoːɡakɯseː desɯ/",               "pronKo": "쇼-가꾸**세**-데스",                     "korean": "초등학생이에요.",           "english": "I'm an elementary student.", "context": "" },
+    { "section": "자기소개", "foreign": "よろしくお願いします。", "pronIpa": "/joɾoɕikɯ oneɡaiɕimasɯ/",          "pronKo": "요**로**시꾸 오**네**가이시마스",         "korean": "잘 부탁드려요.",           "english": "Nice to meet you.", "context": "" },
+
+    { "section": "나이·국적", "foreign": "何歳ですか？",         "pronIpa": "/naɴsai desɯ ka/",     "pronKo": "**난**사이데스까?",     "korean": "몇 살이에요?",       "english": "How old are you?", "context": "" },
+    { "section": "나이·국적", "foreign": "十歳です。",           "pronIpa": "/dʑɯssai desɯ/",       "pronKo": "**쥿**사이데스",         "korean": "10살이에요.",       "english": "I'm ten." , "context": "" },
+    { "section": "나이·국적", "foreign": "韓国から来ました。",   "pronIpa": "/kaɴkokɯ kaɾa kimaɕita/","pronKo": "**캉**꼬꾸까라 **키**마시따","korean": "한국에서 왔어요.", "english": "I'm from Korea.", "context": "" },
+    { "section": "나이·국적", "foreign": "ソウルに住んでいます。","pronIpa": "/soːɾɯ ni sɯɴde imasɯ/","pronKo": "**소**-루니 슨데이마스",  "korean": "서울에 살아요.",     "english": "I live in Seoul.", "context": "" },
+    { "section": "나이·국적", "foreign": "旅行で来ました。",     "pronIpa": "/ɾʲokoː de kimaɕita/", "pronKo": "**료**꼬-데 **키**마시따", "korean": "여행하러 왔어요.",  "english": "I'm here on vacation.", "context": "" },
+
+    { "section": "마무리", "foreign": "ありがとうございます。",     "pronIpa": "/aɾiɡatoː ɡozaimasɯ/","pronKo": "아리**가**또- 고**자**이마스","korean": "감사합니다.",          "english": "Thank you.", "context": "" },
+    { "section": "마무리", "foreign": "またお会いしましょう。",    "pronIpa": "/mata oai ɕimaɕoː/",  "pronKo": "**마**따 오**아**이 시**마**쇼-","korean": "또 만나요.",       "english": "See you again.", "context": "" },
+    { "section": "마무리", "foreign": "さようなら。",              "pronIpa": "/sajoːnaɾa/",         "pronKo": "사요-**나**라",                "korean": "안녕히 가세요.",        "english": "Goodbye.", "context": "" },
+    { "section": "마무리", "foreign": "気をつけてください。",      "pronIpa": "/ki o tsɯkete kɯdasai/","pronKo": "**키**오 츠**께**떼 쿠**다**사이","korean": "조심히 가세요.",   "english": "Take care.", "context": "" },
+    { "section": "마무리", "foreign": "楽しかったです。",          "pronIpa": "/tanoɕikatta desɯ/",  "pronKo": "타**노**시깟따데스",           "korean": "즐거웠어요.",           "english": "It was fun.", "context": "" },
+    { "section": "마무리", "foreign": "お世話になりました。",     "pronIpa": "/oseːwa ni naɾimaɕita/","pronKo": "오**세**-와니 나**리**마시따","korean": "신세 많이 졌어요.",   "english": "Thank you for everything.", "context": "" }
+  ]
+}

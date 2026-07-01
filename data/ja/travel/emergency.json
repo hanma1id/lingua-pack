@@ -1,0 +1,33 @@
+{
+  "id": "emergency",
+  "name": "응급·병원",
+  "lang": "ja",
+  "emoji": "🚑",
+  "sections": [
+    { "name": "긴급 호출",  "emoji": "🚨" },
+    { "name": "증상",       "emoji": "🤒" },
+    { "name": "병원·약국",  "emoji": "💊" },
+    { "name": "분실·도난",  "emoji": "🚔" }
+  ],
+  "items": [
+    { "section": "긴급 호출", "foreign": "助けてください！",         "pronIpa": "/tasɯkete kɯdasai/",         "pronKo": "타**스**께떼 쿠**다**사이!",    "korean": "도와주세요!",         "english": "Help me!", "context": "" },
+    { "section": "긴급 호출", "foreign": "救急車を呼んでください。",  "pronIpa": "/kʲɯːkʲɯːɕa o joɴde kɯdasai/","pronKo": "**큐**-큐-샤오 **욘**데 쿠**다**사이","korean": "구급차 불러 주세요.","english": "Call an ambulance.", "context": "" },
+    { "section": "긴급 호출", "foreign": "警察を呼んでください。",   "pronIpa": "/keːsatsɯ o joɴde kɯdasai/", "pronKo": "**케**-사츠오 **욘**데 쿠**다**사이","korean": "경찰 불러 주세요.",  "english": "Call the police.", "context": "" },
+    { "section": "긴급 호출", "foreign": "急いでください！",         "pronIpa": "/isoide kɯdasai/",           "pronKo": "이**소**이데 쿠**다**사이!",     "korean": "빨리 와 주세요!",     "english": "Please hurry!", "context": "" },
+
+    { "section": "증상", "foreign": "頭が痛いです。",          "pronIpa": "/atama ɡa itai desɯ/",         "pronKo": "아**타**마가 이**타**이데스",   "korean": "머리가 아파요.",      "english": "My head hurts.", "context": "" },
+    { "section": "증상", "foreign": "お腹が痛いです。",         "pronIpa": "/onaka ɡa itai desɯ/",        "pronKo": "오**나**까가 이**타**이데스",   "korean": "배가 아파요.",       "english": "My stomach hurts.", "context": "" },
+    { "section": "증상", "foreign": "熱があります。",           "pronIpa": "/netsɯ ɡa aɾimasɯ/",           "pronKo": "**네**츠가 **아**리마스",       "korean": "열이 나요.",         "english": "I have a fever.", "context": "" },
+    { "section": "증상", "foreign": "気持ち悪いです。",        "pronIpa": "/kimotɕiwaɾɯi desɯ/",           "pronKo": "키**모**치와루이데스",           "korean": "속이 안 좋아요.",    "english": "I feel sick.", "context": "" },
+    { "section": "증상", "foreign": "アレルギーがあります。",   "pronIpa": "/aɾeɾɡiː ɡa aɾimasɯ/",         "pronKo": "아**레**루기-가 **아**리마스",  "korean": "알러지 있어요.",     "english": "I have an allergy.", "context": "" },
+
+    { "section": "병원·약국", "foreign": "病院はどこですか？",   "pronIpa": "/bʲoːiɴ wa doko desɯ ka/",   "pronKo": "**뵤**-잉와 **도**꼬데스까?",   "korean": "병원 어디예요?",     "english": "Where is the hospital?", "context": "" },
+    { "section": "병원·약국", "foreign": "薬局を探しています。","pronIpa": "/jakkʲokɯ o saɡaɕite imasɯ/","pronKo": "**약**꾜꾸오 사**가**시떼이마스","korean": "약국 찾고 있어요.",  "english": "I'm looking for a pharmacy.", "context": "" },
+    { "section": "병원·약국", "foreign": "薬をください。",       "pronIpa": "/kɯsɯɾi o kɯdasai/",           "pronKo": "쿠**스**리오 쿠**다**사이",     "korean": "약 주세요.",         "english": "Medicine, please.", "context": "" },
+    { "section": "병원·약국", "foreign": "処方箋が必要です。",   "pronIpa": "/ɕohoːseɴ ɡa hitsɯjoː desɯ/",  "pronKo": "쇼**호**-셍가 히**츠**요-데스","korean": "처방전이 필요해요.",  "english": "I need a prescription.", "context": "" },
+
+    { "section": "분실·도난", "foreign": "財布をなくしました。","pronIpa": "/saifɯ o nakɯɕimaɕita/",       "pronKo": "**사**이후오 나**꾸**시마시따","korean": "지갑을 잃어버렸어요.","english": "I lost my wallet.", "context": "" },
+    { "section": "분실·도난", "foreign": "パスポートがありません。","pronIpa": "/pasɯpoːto ɡa aɾimaseɴ/",   "pronKo": "파스**포**-또가 **아**리마셍",  "korean": "여권이 없어졌어요.",  "english": "My passport is gone.", "context": "" },
+    { "section": "분실·도난", "foreign": "泥棒！",             "pronIpa": "/doɾoboː/",                   "pronKo": "**도**로보-!",                  "korean": "도둑이야!",          "english": "Thief!", "context": "" }
+  ]
+}

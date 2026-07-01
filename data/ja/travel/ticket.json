@@ -1,0 +1,27 @@
+{
+  "id": "ticket",
+  "name": "관광·티켓",
+  "lang": "ja",
+  "emoji": "🎫",
+  "sections": [
+    { "name": "매표",      "emoji": "🎟️" },
+    { "name": "입장·안내",  "emoji": "🚪" },
+    { "name": "관광지 문의", "emoji": "🗺️" }
+  ],
+  "items": [
+    { "section": "매표", "foreign": "大人二枚ください。",           "pronIpa": "/otona nimai kɯdasai/",         "pronKo": "오**또**나 니**마**이 쿠**다**사이",  "korean": "어른 두 장 주세요.",     "english": "Two adult tickets, please.", "context": "" },
+    { "section": "매표", "foreign": "子供料金はいくらですか？",       "pronIpa": "/kodomo ɾʲoːkiɴ wa ikɯɾa desɯ ka/","pronKo": "코**도**모 **료**-낑와 **이**꾸라데스까?","korean": "어린이 요금 얼마예요?","english": "How much for children?", "context": "" },
+    { "section": "매표", "foreign": "学生割引はありますか？",         "pronIpa": "/ɡakɯseː waɾibiki wa aɾimasɯ ka/","pronKo": "가꾸**세**- 와**리**비끼와 **아**리마스까?","korean": "학생 할인 있어요?","english": "Is there a student discount?", "context": "" },
+    { "section": "매표", "foreign": "オンラインで買えますか？",       "pronIpa": "/oɴɾaiɴ de kaemasɯ ka/",         "pronKo": "**온**라인데 카**에**마스까?",         "korean": "온라인으로 살 수 있어요?","english": "Can I buy online?", "context": "" },
+
+    { "section": "입장·안내", "foreign": "何時までですか？",         "pronIpa": "/naɴdʑi made desɯ ka/",         "pronKo": "**난**지마데데스까?",                   "korean": "몇 시까지예요?",       "english": "Until what time?", "context": "" },
+    { "section": "입장·안내", "foreign": "写真を撮ってもいいですか？","pronIpa": "/ɕaɕiɴ o totte mo iː desɯ ka/","pronKo": "샤**싱**오 **톳**떼모 **이**-데스까?","korean": "사진 찍어도 돼요?",   "english": "Can I take pictures?", "context": "" },
+    { "section": "입장·안내", "foreign": "音声ガイドはありますか？",  "pronIpa": "/oɴseː ɡaido wa aɾimasɯ ka/",  "pronKo": "**온**세- **가**이도와 **아**리마스까?","korean": "오디오 가이드 있어요?","english": "Is there an audio guide?", "context": "" },
+
+    { "section": "관광지 문의", "foreign": "パンフレットをください。","pronIpa": "/paɴɸɯɾetto o kɯdasai/",       "pronKo": "**팜**후렛또오 쿠**다**사이",         "korean": "브로슈어 주세요.",     "english": "A brochure, please.", "context": "" },
+    { "section": "관광지 문의", "foreign": "おすすめの場所は？",       "pronIpa": "/osɯsɯme no baɕo wa/",        "pronKo": "오**스**스메노 **바**쇼와?",          "korean": "추천 장소 있어요?",     "english": "Any recommended places?", "context": "" },
+    { "section": "관광지 문의", "foreign": "近くに何がありますか？",   "pronIpa": "/tɕikakɯ ni nani ɡa aɾimasɯ ka/","pronKo": "치**카**꾸니 **나**니가 **아**리마스까?","korean": "근처에 뭐가 있어요?","english": "What's nearby?", "context": "" },
+    { "section": "관광지 문의", "foreign": "地図をください。",         "pronIpa": "/tɕizɯ o kɯdasai/",             "pronKo": "치**즈**오 쿠**다**사이",              "korean": "지도 주세요.",         "english": "A map, please.", "context": "" },
+    { "section": "관광지 문의", "foreign": "ツアーはありますか？",     "pronIpa": "/tsɯaː wa aɾimasɯ ka/",         "pronKo": "**츠**아-와 **아**리마스까?",         "korean": "투어 있어요?",         "english": "Are there tours?", "context": "" }
+  ]
+}

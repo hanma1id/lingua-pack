@@ -1,0 +1,29 @@
+{
+  "id": "transport",
+  "name": "대중교통",
+  "lang": "ja",
+  "emoji": "🚇",
+  "sections": [
+    { "name": "매표",     "emoji": "🎟️" },
+    { "name": "노선·안내", "emoji": "🗺️" },
+    { "name": "탑승·하차", "emoji": "🚉" }
+  ],
+  "items": [
+    { "section": "매표", "foreign": "切符はどこで買えますか？",    "pronIpa": "/kippɯ wa doko de kaemasɯ ka/",  "pronKo": "**킵**뿌와 **도**꼬데 카**에**마스까?","korean": "표 어디서 사요?",  "english": "Where can I buy a ticket?", "context": "" },
+    { "section": "매표", "foreign": "大人一枚ください。",         "pronIpa": "/otona itɕimai kɯdasai/",        "pronKo": "오**또**나 이치**마**이 쿠**다**사이","korean": "어른 한 장 주세요.","english": "One adult ticket, please.", "context": "" },
+    { "section": "매표", "foreign": "子供二枚。",                "pronIpa": "/kodomo nimai/",                 "pronKo": "코**도**모 니**마**이",                "korean": "아이 두 장.",     "english": "Two child tickets.", "context": "" },
+    { "section": "매표", "foreign": "一日乗車券はありますか？",   "pronIpa": "/itɕinitɕi dʑoːɕakeɴ wa aɾimasɯ ka/","pronKo": "이치**니**치 죠-샤껭와 **아**리마스까?","korean": "일일 승차권 있어요?","english": "Do you have a day pass?", "context": "" },
+
+    { "section": "노선·안내", "foreign": "新宿までどう行きますか？","pronIpa": "/ɕiɴdʑɯkɯ made doː ikimasɯ ka/","pronKo": "**신**쥬꾸마데 **도**- 이**끼**마스까?","korean": "신주쿠까지 어떻게 가요?","english": "How do I get to Shinjuku?", "context": "" },
+    { "section": "노선·안내", "foreign": "どの線に乗ればいいですか？","pronIpa": "/dono seɴ ni noɾeba iː desɯ ka/","pronKo": "**도**노 셍니 노**레**바 **이**-데스까?","korean": "어느 노선을 타면 돼요?","english": "Which line should I take?", "context": "" },
+    { "section": "노선·안내", "foreign": "次の駅は？",              "pronIpa": "/tsɯɡi no eki wa/",             "pronKo": "츠**기**노 **에**끼와?",              "korean": "다음 역은요?",     "english": "What's the next station?", "context": "" },
+    { "section": "노선·안내", "foreign": "乗り換えが必要ですか？",   "pronIpa": "/noɾikae ɡa hitsɯjoː desɯ ka/",  "pronKo": "노리**카**에가 히**츠**요-데스까?",   "korean": "환승해야 해요?",   "english": "Do I need to transfer?", "context": "" },
+    { "section": "노선·안내", "foreign": "何時までですか？",       "pronIpa": "/naɴdʑi made desɯ ka/",         "pronKo": "**난**지마데데스까?",                  "korean": "몇 시까지예요?",   "english": "Until what time?", "context": "" },
+
+    { "section": "탑승·하차", "foreign": "この電車は東京行きですか？","pronIpa": "/kono deɴɕa wa toːkʲoːiki desɯ ka/","pronKo": "**코**노 **덴**샤와 **토**-쿄-이끼데스까?","korean": "이 전철 도쿄행이에요?","english": "Is this train to Tokyo?", "context": "" },
+    { "section": "탑승·하차", "foreign": "ここは何駅ですか？",       "pronIpa": "/koko wa naɴeki desɯ ka/",     "pronKo": "**코**꼬와 **난**에끼데스까?",         "korean": "여기 무슨 역이에요?","english": "What station is this?", "context": "" },
+    { "section": "탑승·하차", "foreign": "降ります！",              "pronIpa": "/oɾimasɯ/",                    "pronKo": "오**리**마스!",                        "korean": "내려요!",         "english": "Getting off!", "context": "" },
+    { "section": "탑승·하차", "foreign": "終電は何時ですか？",      "pronIpa": "/ɕɯːdeɴ wa naɴdʑi desɯ ka/",   "pronKo": "**슈**-덴와 **난**지데스까?",         "korean": "막차 몇 시예요?", "english": "What time is the last train?", "context": "" },
+    { "section": "탑승·하차", "foreign": "遅れています。",          "pronIpa": "/okɯɾete imasɯ/",              "pronKo": "오**꾸**레떼이마스",                   "korean": "늦어지고 있어요.","english": "It's delayed.", "context": "" }
+  ]
+}

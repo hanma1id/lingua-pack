@@ -1,0 +1,39 @@
+{
+  "id": "greetings",
+  "name": "인사",
+  "lang": "ja",
+  "emoji": "👋",
+  "sections": [
+    { "name": "만날 때",   "emoji": "👋" },
+    { "name": "헤어질 때", "emoji": "👋" },
+    { "name": "감사·사과", "emoji": "🙏" },
+    { "name": "안부",      "emoji": "😊" }
+  ],
+  "items": [
+    { "section": "만날 때", "foreign": "こんにちは。",       "pronIpa": "/koɲɲitɕiwa/",      "pronKo": "**콘**니치와",       "korean": "안녕하세요. (낮)",    "english": "Hello." },
+    { "section": "만날 때", "foreign": "おはようございます。","pronIpa": "/ohajoː ɡozaimasɯ/", "pronKo": "오**하**요- 고**자**이마스", "korean": "안녕하세요. (아침)", "english": "Good morning." },
+    { "section": "만날 때", "foreign": "こんばんは。",       "pronIpa": "/koɴbaɴwa/",        "pronKo": "**콤**방와",         "korean": "안녕하세요. (저녁)", "english": "Good evening." },
+    { "section": "만날 때", "foreign": "はじめまして。",     "pronIpa": "/hadʑimemaɕite/",   "pronKo": "하지**메**마시떼",   "korean": "처음 뵙겠습니다.",   "english": "Nice to meet you." },
+    { "section": "만날 때", "foreign": "よろしくお願いします。","pronIpa": "/joɾoɕikɯ oneɡaiɕimasɯ/", "pronKo": "요**로**시꾸 오**네**가이시마스", "korean": "잘 부탁드립니다.", "english": "Nice to meet you." },
+    { "section": "만날 때", "foreign": "お久しぶりです。",   "pronIpa": "/ohisaɕibɯɾi desɯ/","pronKo": "오히사시**부**리데스", "korean": "오랜만이에요.",     "english": "Long time no see." },
+
+    { "section": "헤어질 때", "foreign": "さようなら。",        "pronIpa": "/sajoːnaɾa/",       "pronKo": "사요-**나**라",      "korean": "안녕히 가세요.",   "english": "Goodbye." },
+    { "section": "헤어질 때", "foreign": "またね。",            "pronIpa": "/mata ne/",         "pronKo": "**마**따네",         "korean": "또 봐요.",         "english": "See you." },
+    { "section": "헤어질 때", "foreign": "また明日。",          "pronIpa": "/mata aɕita/",      "pronKo": "**마**따 아시따",    "korean": "내일 봐요.",       "english": "See you tomorrow." },
+    { "section": "헤어질 때", "foreign": "おやすみなさい。",    "pronIpa": "/ojasɯminasai/",    "pronKo": "오야스미**나**사이", "korean": "잘 자요.",         "english": "Good night." },
+    { "section": "헤어질 때", "foreign": "気をつけて。",        "pronIpa": "/ki o tsɯkete/",    "pronKo": "**키**오 츠**께**떼", "korean": "조심히 가세요.",    "english": "Take care." },
+
+    { "section": "감사·사과", "foreign": "ありがとうございます。","pronIpa": "/aɾiɡatoː ɡozaimasɯ/", "pronKo": "아리**가**또- 고**자**이마스", "korean": "감사합니다.",    "english": "Thank you." },
+    { "section": "감사·사과", "foreign": "ありがとう。",          "pronIpa": "/aɾiɡatoː/",           "pronKo": "아리**가**또-",     "korean": "고마워요.",          "english": "Thanks." },
+    { "section": "감사·사과", "foreign": "どういたしまして。",    "pronIpa": "/doː itaɕimaɕite/",    "pronKo": "**도**- 이따시**마**시떼","korean": "천만에요.",       "english": "You're welcome." },
+    { "section": "감사·사과", "foreign": "すみません。",          "pronIpa": "/sɯmimaseɴ/",          "pronKo": "스미**마**셍",       "korean": "미안해요/저기요.",   "english": "Sorry / Excuse me." },
+    { "section": "감사·사과", "foreign": "ごめんなさい。",        "pronIpa": "/ɡomeɴnasai/",         "pronKo": "고**멘**나사이",     "korean": "죄송해요.",         "english": "I'm sorry." },
+    { "section": "감사·사과", "foreign": "大丈夫です。",          "pronIpa": "/daidʑoːbɯ desɯ/",     "pronKo": "다이**죠**-부데스",  "korean": "괜찮아요.",         "english": "It's okay." },
+
+    { "section": "안부", "foreign": "お元気ですか？",  "pronIpa": "/oɡeɴki desɯ ka/",       "pronKo": "오**겡**끼 데스까?",     "korean": "잘 지내세요?",     "english": "How are you?" },
+    { "section": "안부", "foreign": "元気です。",      "pronIpa": "/ɡeɴki desɯ/",           "pronKo": "**겡**끼데스",           "korean": "잘 지내요.",       "english": "I'm good." },
+    { "section": "안부", "foreign": "まあまあです。",  "pronIpa": "/maːmaː desɯ/",          "pronKo": "**마**-마-데스",         "korean": "그저 그래요.",     "english": "So-so." },
+    { "section": "안부", "foreign": "疲れています。",  "pronIpa": "/tsɯkaɾete imasɯ/",      "pronKo": "츠**까**레떼 이마스",    "korean": "피곤해요.",         "english": "I'm tired." },
+    { "section": "안부", "foreign": "元気でしたか？",  "pronIpa": "/ɡeɴki deɕita ka/",      "pronKo": "**겡**끼데시따까?",     "korean": "잘 지냈어요?",     "english": "How have you been?" }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "photo",
+  "name": "사진 부탁",
+  "lang": "ja",
+  "emoji": "📸",
+  "sections": [
+    { "name": "부탁하기", "emoji": "🙋" },
+    { "name": "찍는 순간", "emoji": "📸" },
+    { "name": "확인·감사", "emoji": "💬" }
+  ],
+  "items": [
+    { "section": "부탁하기", "foreign": "写真を撮ってもらえますか？","pronIpa": "/ɕaɕiɴ o totte moɾaemasɯ ka/","pronKo": "샤**싱**오 **톳**떼 모**라**에마스까?","korean": "사진 좀 찍어 주실래요?","english": "Could you take a picture?", "context": "" },
+    { "section": "부탁하기", "foreign": "このボタンを押してください。","pronIpa": "/kono botaɴ o oɕite kɯdasai/","pronKo": "**코**노 **보**땅오 오**시**떼 쿠**다**사이","korean": "이 버튼 누르시면 돼요.","english": "Press this button.", "context": "" },
+    { "section": "부탁하기", "foreign": "背景も入れてください。",     "pronIpa": "/haikeː mo iɾete kɯdasai/",   "pronKo": "**하**이께-모 이**레**떼 쿠**다**사이","korean": "배경도 넣어 주세요.","english": "Include the background, please.", "context": "" },
+    { "section": "부탁하기", "foreign": "縦で撮ってください。",       "pronIpa": "/tate de totte kɯdasai/",     "pronKo": "**타**떼데 **톳**떼 쿠**다**사이","korean": "세로로 찍어 주세요.","english": "Vertically, please.", "context": "" },
+
+    { "section": "찍는 순간", "foreign": "はい、チーズ！",           "pronIpa": "/hai tɕiːzɯ/",                "pronKo": "**하**이, **치**-즈!",            "korean": "김치!",             "english": "Say cheese!", "context": "" },
+    { "section": "찍는 순간", "foreign": "もう一枚お願いします。",    "pronIpa": "/moː itɕimai oneɡaiɕimasɯ/", "pronKo": "**모**- 이치**마**이 오**네**가이시마스","korean": "한 장 더 부탁해요.","english": "One more, please.", "context": "" },
+    { "section": "찍는 순간", "foreign": "動かないでください。",      "pronIpa": "/ɯɡokanai de kɯdasai/",      "pronKo": "우**고**까나이데 쿠**다**사이",   "korean": "움직이지 마세요.",     "english": "Don't move.", "context": "" },
+
+    { "section": "확인·감사", "foreign": "見せてください。",        "pronIpa": "/misete kɯdasai/",             "pronKo": "미**세**떼 쿠**다**사이",         "korean": "보여주세요.",         "english": "Show me, please.", "context": "" },
+    { "section": "확인·감사", "foreign": "きれいに撮れました。",      "pronIpa": "/kiɾei ni toɾemaɕita/",      "pronKo": "**키**레이니 토**레**마시따",    "korean": "예쁘게 나왔어요.",     "english": "It came out well.", "context": "" },
+    { "section": "확인·감사", "foreign": "ありがとうございます！",    "pronIpa": "/aɾiɡatoː ɡozaimasɯ/",       "pronKo": "아리**가**또- 고**자**이마스",   "korean": "감사합니다!",         "english": "Thank you!", "context": "" }
+  ]
+}

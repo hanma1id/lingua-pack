@@ -1,0 +1,41 @@
+{
+  "id": "clothes",
+  "name": "옷·소지품",
+  "lang": "ja",
+  "emoji": "👕",
+  "sections": [
+    { "name": "옷",         "emoji": "👕" },
+    { "name": "신발·모자",  "emoji": "👟" },
+    { "name": "소지품",     "emoji": "🎒" },
+    { "name": "표현",       "emoji": "💬" }
+  ],
+  "items": [
+    { "section": "옷", "foreign": "シャツ",          "pronIpa": "/ɕatsɯ/",       "pronKo": "**샤**츠",     "korean": "셔츠",    "english": "shirt" },
+    { "section": "옷", "foreign": "Tシャツ",         "pronIpa": "/tiːɕatsɯ/",    "pronKo": "**티**-샤츠",  "korean": "티셔츠",  "english": "T-shirt" },
+    { "section": "옷", "foreign": "ズボン",          "pronIpa": "/zɯboɴ/",       "pronKo": "즈**봉**",     "korean": "바지",    "english": "pants" },
+    { "section": "옷", "foreign": "スカート",        "pronIpa": "/sɯkaːto/",     "pronKo": "스**카**-또", "korean": "치마",    "english": "skirt" },
+    { "section": "옷", "foreign": "ワンピース",      "pronIpa": "/waɴpiːsɯ/",    "pronKo": "왕**피**-스", "korean": "원피스",  "english": "dress" },
+    { "section": "옷", "foreign": "セーター",        "pronIpa": "/seːtaː/",      "pronKo": "**세**-타-",  "korean": "스웨터",  "english": "sweater" },
+    { "section": "옷", "foreign": "コート",          "pronIpa": "/koːto/",       "pronKo": "**코**-또",   "korean": "코트",    "english": "coat" },
+    { "section": "옷", "foreign": "パジャマ",        "pronIpa": "/padʑama/",     "pronKo": "파**쟈**마",  "korean": "잠옷",    "english": "pajamas" },
+
+    { "section": "신발·모자", "foreign": "靴 (くつ)",     "pronIpa": "/kɯtsɯ/",   "pronKo": "**쿠**츠",    "korean": "신발",   "english": "shoes" },
+    { "section": "신발·모자", "foreign": "運動靴 (うんどうぐつ)","pronIpa": "/ɯɴdoːɡɯtsɯ/","pronKo": "운도-**구**츠","korean": "운동화","english": "sneakers" },
+    { "section": "신발·모자", "foreign": "靴下 (くつした)","pronIpa": "/kɯtsɯɕita/","pronKo": "쿠츠**시**따","korean": "양말","english": "socks" },
+    { "section": "신발·모자", "foreign": "帽子 (ぼうし)",  "pronIpa": "/boːɕi/",   "pronKo": "**보**-시",   "korean": "모자",   "english": "hat" },
+
+    { "section": "소지품", "foreign": "かばん",           "pronIpa": "/kabaɴ/",    "pronKo": "카**방**",    "korean": "가방",   "english": "bag" },
+    { "section": "소지품", "foreign": "リュック",         "pronIpa": "/ɾʲɯkkɯ/",   "pronKo": "**륙**꾸",    "korean": "백팩",   "english": "backpack" },
+    { "section": "소지품", "foreign": "財布 (さいふ)",     "pronIpa": "/saifɯ/",    "pronKo": "**사**이후",  "korean": "지갑",   "english": "wallet" },
+    { "section": "소지품", "foreign": "傘 (かさ)",         "pronIpa": "/kasa/",     "pronKo": "**카**사",    "korean": "우산",   "english": "umbrella" },
+    { "section": "소지품", "foreign": "時計 (とけい)",     "pronIpa": "/tokei/",    "pronKo": "토**케**이",  "korean": "시계",   "english": "watch" },
+    { "section": "소지품", "foreign": "眼鏡 (めがね)",     "pronIpa": "/meɡane/",   "pronKo": "메**가**네",  "korean": "안경",   "english": "glasses" },
+    { "section": "소지품", "foreign": "スマホ",           "pronIpa": "/sɯmaho/",   "pronKo": "스**마**호",  "korean": "휴대폰", "english": "smartphone" },
+
+    { "section": "표현", "foreign": "赤いシャツを着ています。",   "pronIpa": "/akai ɕatsɯ o kite imasɯ/", "pronKo": "**아**까이 **샤**츠오 **키**떼이마스",   "korean": "빨간 셔츠 입고 있어요.",   "english": "I'm wearing a red shirt." },
+    { "section": "표현", "foreign": "この靴、いいですね。",       "pronIpa": "/kono kɯtsɯ iː desɯ ne/",   "pronKo": "**코**노 **쿠**츠 **이**-데스네",       "korean": "이 신발 좋네요.",         "english": "These shoes are nice." },
+    { "section": "표현", "foreign": "帽子を忘れました。",         "pronIpa": "/boːɕi o wasɯɾemaɕita/",    "pronKo": "**보**-시오 와스**레**마시따",           "korean": "모자를 잊었어요.",        "english": "I forgot my hat." },
+    { "section": "표현", "foreign": "サイズは何ですか？",         "pronIpa": "/saizɯ wa naɴ desɯ ka/",    "pronKo": "**사**이즈와 **난**데스까?",             "korean": "사이즈가 뭐예요?",       "english": "What size is it?" },
+    { "section": "표현", "foreign": "傘が必要です。",             "pronIpa": "/kasa ɡa hitsɯjoː desɯ/",   "pronKo": "**카**사가 히**츠**요-데스",           "korean": "우산이 필요해요.",       "english": "I need an umbrella." }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cafe",
+  "name": "카페",
+  "lang": "ja",
+  "emoji": "☕",
+  "sections": [
+    { "name": "주문",   "emoji": "☕" },
+    { "name": "옵션",   "emoji": "🥛" },
+    { "name": "자리·기타","emoji": "🪑" }
+  ],
+  "items": [
+    { "section": "주문", "foreign": "コーヒーをください。",       "pronIpa": "/koːhiː o kɯdasai/",             "pronKo": "**코**-히-오 쿠**다**사이",         "korean": "커피 주세요.",         "english": "A coffee, please.", "context": "" },
+    { "section": "주문", "foreign": "アイスカフェラテを一つ。",   "pronIpa": "/aisɯ kafeɾate o hitotsɯ/",      "pronKo": "**아**이스 카페**라**떼오 히**또**츠","korean": "아이스 카페라떼 하나요.","english": "One iced latte.", "context": "" },
+    { "section": "주문", "foreign": "ホットで。",                "pronIpa": "/hotto de/",                     "pronKo": "**홋**또데",                        "korean": "따뜻한 걸로.",         "english": "Hot, please.", "context": "" },
+    { "section": "주문", "foreign": "ミルクティーはありますか？","pronIpa": "/miɾɯkɯtiː wa aɾimasɯ ka/",      "pronKo": "미**루**꾸티-와 **아**리마스까?",   "korean": "밀크티 있어요?",       "english": "Do you have milk tea?", "context": "" },
+
+    { "section": "옵션", "foreign": "サイズはMで。",             "pronIpa": "/saizɯ wa emɯ de/",              "pronKo": "**사**이즈와 **에**무데",           "korean": "사이즈는 M으로.",     "english": "Size M, please.", "context": "" },
+    { "section": "옵션", "foreign": "砂糖なしでお願いします。",    "pronIpa": "/satoː naɕi de oneɡaiɕimasɯ/",  "pronKo": "사**또**-나시데 오**네**가이시마스","korean": "설탕 빼주세요.",       "english": "No sugar, please.", "context": "" },
+    { "section": "옵션", "foreign": "豆乳に変えてください。",     "pronIpa": "/toːɲɯː ni kaete kɯdasai/",      "pronKo": "**토**-뉴-니 카**에**떼 쿠**다**사이","korean": "두유로 바꿔주세요.",   "english": "Change to soy milk.", "context": "" },
+    { "section": "옵션", "foreign": "テイクアウトで。",           "pronIpa": "/teikɯaɯto de/",                 "pronKo": "**테**이꾸아우또데",                "korean": "테이크아웃으로.",     "english": "To go.", "context": "" },
+
+    { "section": "자리·기타", "foreign": "店内で。",             "pronIpa": "/teɴnai de/",                    "pronKo": "**텐**나이데",                       "korean": "가게에서 먹을게요.",   "english": "For here.", "context": "" },
+    { "section": "자리·기타", "foreign": "席はどこですか？",     "pronIpa": "/seki wa doko desɯ ka/",         "pronKo": "**세**끼와 **도**꼬데스까?",         "korean": "자리 어디예요?",       "english": "Where should I sit?", "context": "" },
+    { "section": "자리·기타", "foreign": "Wi-Fiはありますか？",    "pronIpa": "/waiɸai wa aɾimasɯ ka/",         "pronKo": "**와**이화이와 **아**리마스까?",     "korean": "와이파이 있어요?",     "english": "Do you have Wi-Fi?", "context": "" },
+    { "section": "자리·기타", "foreign": "コンセントを使えますか？","pronIpa": "/koɴseɴto o tsɯkaemasɯ ka/",   "pronKo": "**콘**센또오 츠**까**에마스까?",    "korean": "콘센트 써도 돼요?",   "english": "Can I use an outlet?", "context": "" },
+    { "section": "자리·기타", "foreign": "ケーキも一つください。","pronIpa": "/keːki mo hitotsɯ kɯdasai/",     "pronKo": "**케**-끼모 히**또**츠 쿠**다**사이","korean": "케이크도 하나 주세요.","english": "A cake too, please.", "context": "" }
+  ]
+}

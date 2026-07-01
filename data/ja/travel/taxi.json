@@ -1,0 +1,27 @@
+{
+  "id": "taxi",
+  "name": "택시",
+  "lang": "ja",
+  "emoji": "🚕",
+  "sections": [
+    { "name": "탑승",   "emoji": "🚕" },
+    { "name": "이동",   "emoji": "🛣️" },
+    { "name": "결제·하차","emoji": "💳" }
+  ],
+  "items": [
+    { "section": "탑승", "foreign": "タクシーをお願いします。",    "pronIpa": "/takɯɕiː o oneɡaiɕimasɯ/",      "pronKo": "타꾸**시**-오 오**네**가이시마스",     "korean": "택시 부탁해요.",     "english": "Taxi, please.", "context": "" },
+    { "section": "탑승", "foreign": "この住所までお願いします。",  "pronIpa": "/kono dʑɯːɕo made oneɡaiɕimasɯ/","pronKo": "**코**노 **쥬**-쇼마데 오**네**가이시마스","korean": "이 주소까지 부탁해요.","english": "To this address, please.", "context": "주소 보여주며" },
+    { "section": "탑승", "foreign": "駅までお願いします。",         "pronIpa": "/eki made oneɡaiɕimasɯ/",       "pronKo": "**에**끼마데 오**네**가이시마스",       "korean": "역까지 부탁해요.",   "english": "To the station, please.", "context": "" },
+    { "section": "탑승", "foreign": "空港までお願いします。",       "pronIpa": "/kɯːkoː made oneɡaiɕimasɯ/",   "pronKo": "**쿠**-꼬-마데 오**네**가이시마스",   "korean": "공항까지 부탁해요.","english": "To the airport, please.", "context": "" },
+
+    { "section": "이동", "foreign": "急いでください。",           "pronIpa": "/isoide kɯdasai/",              "pronKo": "이**소**이데 쿠**다**사이",            "korean": "빨리 가주세요.",   "english": "Hurry, please.", "context": "" },
+    { "section": "이동", "foreign": "ゆっくり走ってください。",     "pronIpa": "/jɯkkɯɾi haɕitte kɯdasai/",     "pronKo": "**육**꾸리 하**싯**떼 쿠**다**사이",   "korean": "천천히 가주세요.", "english": "Drive slowly, please.", "context": "" },
+    { "section": "이동", "foreign": "エアコンをつけてください。",   "pronIpa": "/eakoɴ o tsɯkete kɯdasai/",     "pronKo": "**에**아콩오 츠**께**떼 쿠**다**사이", "korean": "에어컨 켜 주세요.","english": "Please turn on the AC.", "context": "" },
+    { "section": "이동", "foreign": "どのくらいかかりますか？",     "pronIpa": "/dono kɯɾai kakaɾimasɯ ka/",    "pronKo": "**도**노꾸라이 카**까**리마스까?",     "korean": "얼마나 걸려요?",   "english": "How long does it take?", "context": "" },
+
+    { "section": "결제·하차", "foreign": "ここで止めてください。",  "pronIpa": "/koko de tomete kɯdasai/",     "pronKo": "**코**꼬데 토**메**떼 쿠**다**사이",   "korean": "여기서 세워주세요.","english": "Stop here, please.", "context": "" },
+    { "section": "결제·하차", "foreign": "いくらですか？",         "pronIpa": "/ikɯɾa desɯ ka/",              "pronKo": "**이**꾸라데스까?",                     "korean": "얼마예요?",       "english": "How much?", "context": "" },
+    { "section": "결제·하차", "foreign": "カードで払えますか？",   "pronIpa": "/kaːdo de haɾaemasɯ ka/",      "pronKo": "**카**-도데 하**라**에마스까?",         "korean": "카드로 낼 수 있어요?","english": "Can I pay by card?", "context": "" },
+    { "section": "결제·하차", "foreign": "レシートをください。",   "pronIpa": "/ɾeɕiːto o kɯdasai/",          "pronKo": "레**시**-또오 쿠**다**사이",             "korean": "영수증 주세요.",   "english": "Receipt, please.", "context": "" }
+  ]
+}

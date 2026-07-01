@@ -1,0 +1,36 @@
+{
+  "id": "restaurant",
+  "name": "음식점 주문",
+  "lang": "ja",
+  "emoji": "🍽️",
+  "sections": [
+    { "name": "입장·주문 시작", "emoji": "🚪" },
+    { "name": "주문",           "emoji": "📝" },
+    { "name": "요청·수정",      "emoji": "🙋" },
+    { "name": "계산",           "emoji": "💳" }
+  ],
+  "items": [
+    { "section": "입장·주문 시작", "foreign": "二人です。",         "pronIpa": "/ɸɯtaɾi desɯ/",         "pronKo": "후따**리**데스",       "korean": "두 명이에요.",           "english": "Two people.", "context": "" },
+    { "section": "입장·주문 시작", "foreign": "予約しています。",   "pronIpa": "/jojakɯ ɕite imasɯ/",  "pronKo": "요**야**꾸 시떼이마스","korean": "예약했어요.",           "english": "I have a reservation.", "context": "" },
+    { "section": "입장·주문 시작", "foreign": "メニューをください。","pronIpa": "/menʲɯː o kɯdasai/",   "pronKo": "**메**뉴-오 쿠**다**사이","korean": "메뉴판 주세요.",     "english": "Menu, please.", "context": "" },
+    { "section": "입장·주문 시작", "foreign": "英語のメニューはありますか？","pronIpa": "/eːɡo no menʲɯː wa aɾimasɯ ka/","pronKo": "**에**-고노 **메**뉴-와 **아**리마스까?","korean": "영어 메뉴 있어요?","english": "Do you have an English menu?", "context": "" },
+
+    { "section": "주문", "foreign": "これをください。",          "pronIpa": "/koɾe o kɯdasai/",     "pronKo": "**코**레오 쿠**다**사이", "korean": "이걸로 주세요.",       "english": "This one, please.", "context": "메뉴 가리키며" },
+    { "section": "주문", "foreign": "おすすめは何ですか？",       "pronIpa": "/osɯsɯme wa naɴ desɯ ka/","pronKo": "오**스**스메와 **난**데스까?","korean": "추천은 뭐예요?",     "english": "What do you recommend?", "context": "" },
+    { "section": "주문", "foreign": "ラーメンを一つ。",          "pronIpa": "/ɾaːmeɴ o hitotsɯ/",    "pronKo": "**라**-멩오 히**또**츠",  "korean": "라멘 하나요.",         "english": "One ramen.", "context": "" },
+    { "section": "주문", "foreign": "同じものを。",              "pronIpa": "/onadʑi mono o/",       "pronKo": "오**나**지 **모**노오",   "korean": "같은 걸로.",           "english": "The same, please.", "context": "" },
+    { "section": "주문", "foreign": "セットにします。",          "pronIpa": "/setto ni ɕimasɯ/",    "pronKo": "**셋**또니 시**마**스",   "korean": "세트로 할게요.",       "english": "I'll take the set.", "context": "" },
+
+    { "section": "요청·수정", "foreign": "辛くしないでください。","pronIpa": "/kaɾakɯ ɕinaide kɯdasai/","pronKo": "카**라**꾸 시**나**이데 쿠**다**사이","korean": "맵지 않게 해주세요.","english": "Not spicy, please.", "context": "" },
+    { "section": "요청·수정", "foreign": "アレルギーがあります。","pronIpa": "/aɾeɾɡiː ɡa aɾimasɯ/",  "pronKo": "아**레**루기-가 **아**리마스","korean": "알러지 있어요.",  "english": "I have an allergy.", "context": "" },
+    { "section": "요청·수정", "foreign": "お水をください。",      "pronIpa": "/omidzɯ o kɯdasai/",    "pronKo": "오**미**즈오 쿠**다**사이","korean": "물 주세요.",           "english": "Water, please.", "context": "" },
+    { "section": "요청·수정", "foreign": "少し待ってください。",   "pronIpa": "/sɯkoɕi matte kɯdasai/","pronKo": "스**꼬**시 **맛**떼 쿠**다**사이","korean": "잠시만 기다려주세요.","english": "Please wait a moment.", "context": "" },
+    { "section": "요청·수정", "foreign": "お箸をお願いします。",   "pronIpa": "/ohaɕi o oneɡaiɕimasɯ/","pronKo": "오**하**시오 오**네**가이시마스","korean": "젓가락 부탁해요.","english": "Chopsticks, please.", "context": "" },
+
+    { "section": "계산", "foreign": "お会計をお願いします。", "pronIpa": "/okaikeː o oneɡaiɕimasɯ/",       "pronKo": "오카이**케**-오 오**네**가이시마스","korean": "계산 부탁드려요.",     "english": "Check, please.", "context": "" },
+    { "section": "계산", "foreign": "カードで払えますか？",   "pronIpa": "/kaːdo de haɾaemasɯ ka/",       "pronKo": "**카**-도데 하**라**에마스까?",     "korean": "카드로 낼 수 있어요?", "english": "Can I pay by card?", "context": "" },
+    { "section": "계산", "foreign": "別々で。",             "pronIpa": "/betsɯbetsɯ de/",              "pronKo": "베츠**베**츠데",                   "korean": "따로따로요.",           "english": "Separate, please.", "context": "" },
+    { "section": "계산", "foreign": "ごちそうさまでした。",   "pronIpa": "/ɡotɕisoːsama deɕita/",         "pronKo": "고치**소**-사마데시따",             "korean": "잘 먹었습니다.",       "english": "Thanks for the meal.", "context": "" },
+    { "section": "계산", "foreign": "美味しかったです。",     "pronIpa": "/oiɕikatta desɯ/",              "pronKo": "오**이**시깟따데스",                "korean": "맛있었어요.",           "english": "It was delicious.", "context": "" }
+  ]
+}

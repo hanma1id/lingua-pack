@@ -1,0 +1,35 @@
+{
+  "id": "hobbies",
+  "name": "취미·운동",
+  "lang": "ja",
+  "emoji": "⚽",
+  "sections": [
+    { "name": "운동",   "emoji": "⚽" },
+    { "name": "취미",   "emoji": "🎨" },
+    { "name": "표현",   "emoji": "💬" }
+  ],
+  "items": [
+    { "section": "운동", "foreign": "サッカー",         "pronIpa": "/sakkaː/",     "pronKo": "**삭**까-",    "korean": "축구",      "english": "soccer" },
+    { "section": "운동", "foreign": "野球 (やきゅう)",   "pronIpa": "/jakʲɯː/",     "pronKo": "야**큐**-",    "korean": "야구",       "english": "baseball" },
+    { "section": "운동", "foreign": "バスケットボール", "pronIpa": "/basɯkettobɔːɾɯ/","pronKo": "바스껟또**보**-루","korean": "농구",      "english": "basketball" },
+    { "section": "운동", "foreign": "テニス",           "pronIpa": "/tenisɯ/",     "pronKo": "**테**니스",    "korean": "테니스",     "english": "tennis" },
+    { "section": "운동", "foreign": "水泳 (すいえい)",   "pronIpa": "/sɯieː/",      "pronKo": "스**이**에-",  "korean": "수영",       "english": "swimming" },
+    { "section": "운동", "foreign": "ランニング",       "pronIpa": "/ɾaɴniŋɡɯ/",    "pronKo": "**란**닝구",    "korean": "달리기",     "english": "running" },
+    { "section": "운동", "foreign": "自転車 (じてんしゃ)","pronIpa": "/dʑiteɴɕa/","pronKo": "지**텐**샤",     "korean": "자전거",     "english": "cycling" },
+
+    { "section": "취미", "foreign": "音楽 (おんがく)",  "pronIpa": "/oɴɡakɯ/",     "pronKo": "**옹**가꾸",    "korean": "음악",       "english": "music" },
+    { "section": "취미", "foreign": "映画 (えいが)",    "pronIpa": "/eːɡa/",       "pronKo": "**에**-가",     "korean": "영화",       "english": "movie" },
+    { "section": "취미", "foreign": "読書 (どくしょ)",  "pronIpa": "/dokɯɕo/",     "pronKo": "도꾸**쇼**",    "korean": "독서",       "english": "reading" },
+    { "section": "취미", "foreign": "絵 (え)",          "pronIpa": "/e/",          "pronKo": "**에**",        "korean": "그림",       "english": "drawing" },
+    { "section": "취미", "foreign": "料理 (りょうり)",  "pronIpa": "/ɾʲoːɾi/",     "pronKo": "**료**-리",     "korean": "요리",       "english": "cooking" },
+    { "section": "취미", "foreign": "写真 (しゃしん)",  "pronIpa": "/ɕaɕiɴ/",      "pronKo": "샤**싱**",      "korean": "사진",       "english": "photography" },
+    { "section": "취미", "foreign": "ゲーム",           "pronIpa": "/ɡeːmɯ/",      "pronKo": "**게**-무",     "korean": "게임",       "english": "game" },
+
+    { "section": "표현", "foreign": "趣味は何ですか？",       "pronIpa": "/ɕɯmi wa naɴ desɯ ka/",     "pronKo": "**슈**미와 **난**데스까?",    "korean": "취미가 뭐예요?",     "english": "What's your hobby?" },
+    { "section": "표현", "foreign": "音楽が好きです。",       "pronIpa": "/oɴɡakɯ ɡa sɯki desɯ/",     "pronKo": "**옹**가꾸가 **스**끼데스",    "korean": "음악 좋아해요.",     "english": "I like music." },
+    { "section": "표현", "foreign": "サッカーをします。",     "pronIpa": "/sakkaː o ɕimasɯ/",         "pronKo": "**삭**까-오 시마스",           "korean": "축구를 해요.",       "english": "I play soccer." },
+    { "section": "표현", "foreign": "毎日ピアノを弾きます。", "pronIpa": "/mainitɕi piano o hikimasɯ/","pronKo": "마이**니**치 **피**아노오 히**끼**마스","korean": "매일 피아노 쳐요.", "english": "I play piano every day." },
+    { "section": "표현", "foreign": "映画を見に行きます。",   "pronIpa": "/eːɡa o mi ni ikimasɯ/",    "pronKo": "**에**-가오 **미**니 이**끼**마스","korean": "영화 보러 가요.",    "english": "I'm going to see a movie." },
+    { "section": "표현", "foreign": "得意なスポーツは？",      "pronIpa": "/tokɯi na sɯpoːtsɯ wa/",    "pronKo": "토**꾸**이나 스**포**-츠와?",  "korean": "잘하는 운동은?",     "english": "What sport are you good at?" }
+  ]
+}

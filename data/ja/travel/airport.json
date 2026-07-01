@@ -1,0 +1,34 @@
+{
+  "id": "airport",
+  "name": "공항·기내",
+  "lang": "ja",
+  "emoji": "✈️",
+  "sections": [
+    { "name": "체크인", "emoji": "🎫" },
+    { "name": "보안·출국", "emoji": "🛂" },
+    { "name": "기내",     "emoji": "🛫" },
+    { "name": "짐·문의",  "emoji": "🧳" }
+  ],
+  "items": [
+    { "section": "체크인", "foreign": "パスポートをお願いします。", "pronIpa": "/pasɯpoːto o oneɡaiɕimasɯ/", "pronKo": "파스**포**-또오 오**네**가이시마스",     "korean": "여권 부탁드려요.",       "english": "Passport, please.", "context": "" },
+    { "section": "체크인", "foreign": "窓側の席がいいです。",     "pronIpa": "/madoɡawa no seki ɡa iː desɯ/", "pronKo": "**마**도가와노 **세**끼가 **이**-데스",    "korean": "창가 자리 좋아요.",     "english": "I'd like a window seat.", "context": "" },
+    { "section": "체크인", "foreign": "通路側でお願いします。",   "pronIpa": "/tsɯːɾoɡawa de oneɡaiɕimasɯ/","pronKo": "츠-로**가**와데 오**네**가이시마스",       "korean": "통로 자리로 부탁해요.",   "english": "Aisle seat, please.", "context": "" },
+    { "section": "체크인", "foreign": "何時に搭乗ですか？",       "pronIpa": "/naɴdʑi ni toːdʑoː desɯ ka/", "pronKo": "**난**지니 **토**-죠-데스까?",             "korean": "몇 시에 탑승이에요?",    "english": "What time is boarding?", "context": "" },
+
+    { "section": "보안·출국", "foreign": "搭乗券を見せてください。","pronIpa": "/toːdʑoːkeɴ o misete kɯdasai/", "pronKo": "**토**-죠-껭오 미**세**떼 쿠**다**사이",  "korean": "탑승권 보여주세요.",     "english": "Show me your boarding pass.", "context": "직원이 요청" },
+    { "section": "보안·출국", "foreign": "液体は持っていません。",  "pronIpa": "/ekitai wa motte imaseɴ/",       "pronKo": "에**끼**따이와 **못**떼 이마셍",           "korean": "액체는 안 가지고 있어요.","english": "I don't have any liquids.", "context": "" },
+    { "section": "보안·출국", "foreign": "ノートパソコンを出します。","pronIpa": "/noːtopasokoɴ o daɕimasɯ/",  "pronKo": "**노**-또파소콩오 다**시**마스",           "korean": "노트북 꺼낼게요.",       "english": "I'll take out my laptop.", "context": "" },
+    { "section": "보안·출국", "foreign": "搭乗口はどこですか？",    "pronIpa": "/toːdʑoːɡɯtɕi wa doko desɯ ka/","pronKo": "**토**-죠-구치와 **도**꼬데스까?",         "korean": "탑승구 어디예요?",       "english": "Where's the boarding gate?", "context": "" },
+
+    { "section": "기내", "foreign": "水をください。",           "pronIpa": "/midzɯ o kɯdasai/",             "pronKo": "**미**즈오 쿠**다**사이",                  "korean": "물 주세요.",           "english": "Water, please.", "context": "승무원에게" },
+    { "section": "기내", "foreign": "毛布をお願いします。",     "pronIpa": "/moːɸɯ o oneɡaiɕimasɯ/",        "pronKo": "**모**-후오 오**네**가이시마스",           "korean": "담요 부탁드려요.",     "english": "A blanket, please.", "context": "" },
+    { "section": "기내", "foreign": "気分が悪いです。",         "pronIpa": "/kibɯɴ ɡa waɾɯi desɯ/",         "pronKo": "키**붕**가 와**루**이데스",                "korean": "속이 안 좋아요.",     "english": "I feel sick.", "context": "" },
+    { "section": "기내", "foreign": "食事は要りません。",       "pronIpa": "/ɕokɯdʑi wa iɾimaseɴ/",         "pronKo": "쇼꾸**지**와 이**리**마셍",                "korean": "식사 안 할게요.",     "english": "No meal, thanks.", "context": "" },
+
+    { "section": "짐·문의", "foreign": "荷物がまだ来ていません。","pronIpa": "/nimotsɯ ɡa mada kite imaseɴ/", "pronKo": "니**모**츠가 **마**다 **키**떼 이마셍",     "korean": "짐이 아직 안 왔어요.",  "english": "My luggage hasn't arrived.", "context": "수하물 카운터" },
+    { "section": "짐·문의", "foreign": "スーツケースが壊れています。","pronIpa": "/sɯːtsɯkeːsɯ ɡa kowaɾete imasɯ/","pronKo": "스-츠**케**-스가 코**와**레떼이마스",     "korean": "캐리어가 부서졌어요.",   "english": "My suitcase is broken.", "context": "" },
+    { "section": "짐·문의", "foreign": "税関はどこですか？",      "pronIpa": "/zeːkaɴ wa doko desɯ ka/",       "pronKo": "**제**-깡와 **도**꼬데스까?",              "korean": "세관 어디예요?",       "english": "Where's customs?", "context": "" },
+    { "section": "짐·문의", "foreign": "両替所はどこですか？",    "pronIpa": "/ɾʲoːɡaedʑo wa doko desɯ ka/",   "pronKo": "료-**가**에죠와 **도**꼬데스까?",          "korean": "환전소 어디예요?",     "english": "Where's the currency exchange?", "context": "" },
+    { "section": "짐·문의", "foreign": "タクシー乗り場はどこですか？","pronIpa": "/takɯɕiː noɾiba wa doko desɯ ka/","pronKo": "타꾸**시**-노리바와 **도**꼬데스까?",     "korean": "택시 승강장 어디예요?", "english": "Where's the taxi stand?", "context": "" }
+  ]
+}

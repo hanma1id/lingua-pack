@@ -1,0 +1,33 @@
+{
+  "id": "colors",
+  "name": "색깔",
+  "lang": "ja",
+  "emoji": "🎨",
+  "sections": [
+    { "name": "기본 색",   "emoji": "🎨" },
+    { "name": "밝은 색",   "emoji": "🌈" },
+    { "name": "질문·표현", "emoji": "❓" }
+  ],
+  "items": [
+    { "section": "기본 색", "foreign": "赤 (あか)",     "pronIpa": "/aka/",       "pronKo": "**아**까",      "korean": "빨강",   "english": "red" },
+    { "section": "기본 색", "foreign": "青 (あお)",     "pronIpa": "/ao/",        "pronKo": "**아오**",      "korean": "파랑",   "english": "blue" },
+    { "section": "기본 색", "foreign": "黄色 (きいろ)", "pronIpa": "/kiːɾo/",     "pronKo": "**키**-로",     "korean": "노랑",   "english": "yellow" },
+    { "section": "기본 색", "foreign": "緑 (みどり)",   "pronIpa": "/midoɾi/",    "pronKo": "미**도**리",    "korean": "초록",   "english": "green" },
+    { "section": "기본 색", "foreign": "黒 (くろ)",     "pronIpa": "/kɯɾo/",      "pronKo": "**쿠**로",      "korean": "검정",   "english": "black" },
+    { "section": "기본 색", "foreign": "白 (しろ)",     "pronIpa": "/ɕiɾo/",      "pronKo": "**시**로",      "korean": "하양",   "english": "white" },
+
+    { "section": "밝은 색", "foreign": "オレンジ",       "pronIpa": "/oɾeɴdʑi/",   "pronKo": "오**렌**지",    "korean": "주황",   "english": "orange" },
+    { "section": "밝은 색", "foreign": "紫 (むらさき)",  "pronIpa": "/mɯɾasaki/",  "pronKo": "무라**사**끼",  "korean": "보라",   "english": "purple" },
+    { "section": "밝은 색", "foreign": "ピンク",         "pronIpa": "/piɴkɯ/",     "pronKo": "**핑**꾸",      "korean": "분홍",   "english": "pink" },
+    { "section": "밝은 색", "foreign": "茶色 (ちゃいろ)","pronIpa": "/tɕaiɾo/",    "pronKo": "**챠**이로",    "korean": "갈색",   "english": "brown" },
+    { "section": "밝은 색", "foreign": "灰色 (はいいろ)","pronIpa": "/haiiɾo/",    "pronKo": "**하**이이로",  "korean": "회색",   "english": "gray" },
+    { "section": "밝은 색", "foreign": "金色 (きんいろ)","pronIpa": "/kiɴiɾo/",    "pronKo": "**킹**이로",    "korean": "금색",   "english": "gold" },
+    { "section": "밝은 색", "foreign": "銀色 (ぎんいろ)","pronIpa": "/ɡiɴiɾo/",    "pronKo": "**깅**이로",    "korean": "은색",   "english": "silver" },
+
+    { "section": "질문·표현", "foreign": "何色ですか？",           "pronIpa": "/naniiɾo desɯ ka/",  "pronKo": "**나니**이로 데스까?",    "korean": "무슨 색이에요?",    "english": "What color is it?" },
+    { "section": "질문·표현", "foreign": "赤が好きです。",         "pronIpa": "/aka ɡa sɯki desɯ/", "pronKo": "**아**까가 **스**끼데스",   "korean": "빨강 좋아해요.",    "english": "I like red." },
+    { "section": "질문·표현", "foreign": "青いです。",             "pronIpa": "/aoi desɯ/",         "pronKo": "**아**오이데스",           "korean": "파래요.",         "english": "It's blue." },
+    { "section": "질문·표현", "foreign": "白い犬です。",           "pronIpa": "/ɕiɾoi inɯ desɯ/",   "pronKo": "**시**로이 **이**누데스",   "korean": "하얀 강아지예요.", "english": "It's a white dog." },
+    { "section": "질문·표현", "foreign": "この色、きれいですね。", "pronIpa": "/kono iɾo kiɾei desɯ ne/", "pronKo": "**코**노 이로 **키**레이데스네", "korean": "이 색 예쁘네요.", "english": "This color is pretty." }
+  ]
+}

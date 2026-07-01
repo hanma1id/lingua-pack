@@ -1,0 +1,41 @@
+{
+  "id": "time_expressions",
+  "name": "시간·빈도",
+  "lang": "ja",
+  "emoji": "⏰",
+  "sections": [
+    { "name": "시각",   "emoji": "🕐" },
+    { "name": "하루",   "emoji": "🌅" },
+    { "name": "빈도",   "emoji": "🔁" },
+    { "name": "질문",   "emoji": "❓" }
+  ],
+  "items": [
+    { "section": "시각", "foreign": "一時 (いちじ)",     "pronIpa": "/itɕidʑi/",   "pronKo": "이치**지**",  "korean": "1시",    "english": "one o'clock" },
+    { "section": "시각", "foreign": "二時 (にじ)",       "pronIpa": "/nidʑi/",     "pronKo": "니**지**",    "korean": "2시",    "english": "two o'clock" },
+    { "section": "시각", "foreign": "三時 (さんじ)",     "pronIpa": "/saɴdʑi/",    "pronKo": "산**지**",    "korean": "3시",    "english": "three o'clock" },
+    { "section": "시각", "foreign": "四時 (よじ)",       "pronIpa": "/jodʑi/",     "pronKo": "요**지**",    "korean": "4시",    "english": "four o'clock" },
+    { "section": "시각", "foreign": "五時 (ごじ)",       "pronIpa": "/ɡodʑi/",     "pronKo": "고**지**",    "korean": "5시",    "english": "five o'clock" },
+    { "section": "시각", "foreign": "十分 (じゅっぷん)", "pronIpa": "/dʑɯppɯɴ/",   "pronKo": "**쥽**뿡",     "korean": "10분",   "english": "ten minutes" },
+    { "section": "시각", "foreign": "三十分 (さんじゅっぷん)","pronIpa": "/saɴdʑɯppɯɴ/","pronKo": "산**쥽**뿡","korean": "30분", "english": "thirty minutes" },
+    { "section": "시각", "foreign": "半 (はん)",         "pronIpa": "/haɴ/",       "pronKo": "**항**",       "korean": "반",    "english": "half past" },
+
+    { "section": "하루", "foreign": "朝 (あさ)",           "pronIpa": "/asa/",       "pronKo": "**아**사",    "korean": "아침",   "english": "morning" },
+    { "section": "하루", "foreign": "昼 (ひる)",           "pronIpa": "/hiɾɯ/",      "pronKo": "**히**루",    "korean": "낮",    "english": "noon" },
+    { "section": "하루", "foreign": "夕方 (ゆうがた)",     "pronIpa": "/jɯːɡata/",   "pronKo": "유-**가**따",  "korean": "저녁",   "english": "evening" },
+    { "section": "하루", "foreign": "夜 (よる)",           "pronIpa": "/joɾɯ/",      "pronKo": "**요**루",    "korean": "밤",    "english": "night" },
+    { "section": "하루", "foreign": "今日 (きょう)",       "pronIpa": "/kʲoː/",      "pronKo": "**쿄**-",      "korean": "오늘",   "english": "today" },
+    { "section": "하루", "foreign": "明日 (あした)",       "pronIpa": "/aɕita/",     "pronKo": "아**시**따",  "korean": "내일",   "english": "tomorrow" },
+    { "section": "하루", "foreign": "昨日 (きのう)",       "pronIpa": "/kinoː/",     "pronKo": "**키**노-",   "korean": "어제",   "english": "yesterday" },
+    { "section": "하루", "foreign": "今 (いま)",           "pronIpa": "/ima/",       "pronKo": "**이**마",    "korean": "지금",   "english": "now" },
+
+    { "section": "빈도", "foreign": "いつも",             "pronIpa": "/itsɯmo/",    "pronKo": "**이**츠모",   "korean": "항상",    "english": "always" },
+    { "section": "빈도", "foreign": "よく",               "pronIpa": "/jokɯ/",      "pronKo": "**요**꾸",     "korean": "자주",    "english": "often" },
+    { "section": "빈도", "foreign": "時々 (ときどき)",    "pronIpa": "/tokidoki/",  "pronKo": "토끼**도**끼","korean": "가끔",    "english": "sometimes" },
+    { "section": "빈도", "foreign": "たまに",             "pronIpa": "/tamani/",    "pronKo": "타**마**니",   "korean": "이따금",  "english": "occasionally" },
+    { "section": "빈도", "foreign": "全然 (ぜんぜん)",    "pronIpa": "/zeɴzeɴ/",    "pronKo": "**젠**젱",     "korean": "전혀",    "english": "never" },
+    { "section": "빈도", "foreign": "毎日 (まいにち)",    "pronIpa": "/mainitɕi/",  "pronKo": "마이**니**치","korean": "매일",    "english": "every day" },
+
+    { "section": "질문", "foreign": "今何時ですか？",     "pronIpa": "/ima naɴdʑi desɯ ka/",   "pronKo": "**이**마 **난**지데스까?",     "korean": "지금 몇 시예요?",  "english": "What time is it?" },
+    { "section": "질문", "foreign": "何時に会いますか？", "pronIpa": "/naɴdʑi ni aimasɯ ka/",  "pronKo": "**난**지니 아이마스까?",       "korean": "몇 시에 만나요?",  "english": "What time do we meet?" }
+  ]
+}

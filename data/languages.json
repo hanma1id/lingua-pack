@@ -21,7 +21,7 @@
     "native": "日本語",
     "flag": "🇯🇵",
     "ttsLang": "ja-JP",
-    "ready": false
+    "ready": true
   },
   {
     "id": "fr",

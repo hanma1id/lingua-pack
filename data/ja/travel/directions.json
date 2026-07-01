@@ -1,0 +1,31 @@
+{
+  "id": "directions",
+  "name": "길찾기",
+  "lang": "ja",
+  "emoji": "🗺️",
+  "sections": [
+    { "name": "질문",   "emoji": "❓" },
+    { "name": "방향",   "emoji": "↔️" },
+    { "name": "거리·상황","emoji": "📏" }
+  ],
+  "items": [
+    { "section": "질문", "foreign": "すみません。",              "pronIpa": "/sɯmimaseɴ/",             "pronKo": "스미**마**셍",              "korean": "저기요.",           "english": "Excuse me.", "context": "말 걸 때" },
+    { "section": "질문", "foreign": "駅はどこですか？",         "pronIpa": "/eki wa doko desɯ ka/",   "pronKo": "**에**끼와 **도**꼬데스까?", "korean": "역 어디예요?",       "english": "Where's the station?", "context": "" },
+    { "section": "질문", "foreign": "ここはどこですか？",       "pronIpa": "/koko wa doko desɯ ka/",  "pronKo": "**코**꼬와 **도**꼬데스까?", "korean": "여기 어디예요?",     "english": "Where am I?", "context": "" },
+    { "section": "질문", "foreign": "地図で見せてください。",    "pronIpa": "/tɕizɯ de misete kɯdasai/","pronKo": "치**즈**데 미**세**떼 쿠**다**사이","korean": "지도로 보여주세요.","english": "Show me on the map.", "context": "" },
+    { "section": "질문", "foreign": "行き方を教えてください。", "pronIpa": "/ikikata o oɕiete kɯdasai/","pronKo": "이**끼**까따오 오**시**에떼 쿠**다**사이","korean": "가는 법 알려주세요.","english": "Please tell me how to get there.", "context": "" },
+
+    { "section": "방향", "foreign": "まっすぐ行ってください。",  "pronIpa": "/massɯɡɯ itte kɯdasai/",  "pronKo": "**맛**스구 **잇**떼 쿠**다**사이","korean": "직진해 주세요.",    "english": "Go straight.", "context": "" },
+    { "section": "방향", "foreign": "右に曲がってください。",    "pronIpa": "/miɡi ni maɡatte kɯdasai/","pronKo": "**미**기니 마**갓**떼 쿠**다**사이","korean": "오른쪽으로 도세요.","english": "Turn right.", "context": "" },
+    { "section": "방향", "foreign": "左に曲がってください。",    "pronIpa": "/hidaɾi ni maɡatte kɯdasai/","pronKo": "히**다**리니 마**갓**떼 쿠**다**사이","korean": "왼쪽으로 도세요.","english": "Turn left.", "context": "" },
+    { "section": "방향", "foreign": "その角を右に。",           "pronIpa": "/sono kado o miɡi ni/",   "pronKo": "**소**노 카도오 **미**기니",  "korean": "그 모퉁이 오른쪽으로.","english": "Right at that corner.", "context": "" },
+    { "section": "방향", "foreign": "信号を渡ってください。",    "pronIpa": "/ɕiɴɡoː o watatte kɯdasai/","pronKo": "**싱**고-오 와**땃**떼 쿠**다**사이","korean": "신호등 건너세요.","english": "Cross at the light.", "context": "" },
+
+    { "section": "거리·상황", "foreign": "遠いですか？",         "pronIpa": "/toːi desɯ ka/",           "pronKo": "**토**-이데스까?",           "korean": "멀어요?",           "english": "Is it far?", "context": "" },
+    { "section": "거리·상황", "foreign": "近いです。",           "pronIpa": "/tɕikai desɯ/",            "pronKo": "치**카**이데스",             "korean": "가까워요.",         "english": "It's close.", "context": "" },
+    { "section": "거리·상황", "foreign": "歩いて十分です。",     "pronIpa": "/aɾɯite dʑɯppɯɴ desɯ/",    "pronKo": "아**루**이떼 **쥽**뿡데스",  "korean": "걸어서 10분이에요.","english": "10 minutes on foot.", "context": "" },
+    { "section": "거리·상황", "foreign": "地下鉄が便利です。",   "pronIpa": "/tɕikatetsɯ ɡa beɴɾi desɯ/","pronKo": "치까**테**츠가 **벤**리데스","korean": "지하철이 편해요.", "english": "The subway is convenient.", "context": "" },
+    { "section": "거리·상황", "foreign": "道に迷いました。",     "pronIpa": "/mitɕi ni majoimaɕita/",   "pronKo": "**미**치니 마**요**이마시따", "korean": "길을 잃었어요.",     "english": "I'm lost.", "context": "" },
+    { "section": "거리·상황", "foreign": "もう一度言ってください。","pronIpa": "/moː itɕido itte kɯdasai/","pronKo": "**모**- 이치도 **잇**떼 쿠**다**사이","korean": "다시 말씀해 주세요.","english": "Please say it again.", "context": "" }
+  ]
+}

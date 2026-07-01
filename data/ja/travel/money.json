@@ -1,0 +1,23 @@
+{
+  "id": "money",
+  "name": "환전·ATM",
+  "lang": "ja",
+  "emoji": "💱",
+  "sections": [
+    { "name": "환전",  "emoji": "💱" },
+    { "name": "ATM·결제","emoji": "🏧" }
+  ],
+  "items": [
+    { "section": "환전", "foreign": "両替したいです。",         "pronIpa": "/ɾʲoːɡae ɕitai desɯ/",         "pronKo": "료-**가**에 시**따**이데스",       "korean": "환전하고 싶어요.",     "english": "I'd like to exchange money.", "context": "" },
+    { "section": "환전", "foreign": "円に両替してください。",   "pronIpa": "/eɴ ni ɾʲoːɡae ɕite kɯdasai/", "pronKo": "**엔**니 료-**가**에 시**떼** 쿠**다**사이","korean": "엔화로 환전해 주세요.","english": "Exchange to yen, please.", "context": "" },
+    { "section": "환전", "foreign": "レートはいくらですか？",   "pronIpa": "/ɾeːto wa ikɯɾa desɯ ka/",      "pronKo": "**레**-또와 **이**꾸라데스까?",     "korean": "환율이 얼마예요?",     "english": "What's the rate?", "context": "" },
+    { "section": "환전", "foreign": "手数料はいくらですか？",   "pronIpa": "/tesɯːɾʲoː wa ikɯɾa desɯ ka/", "pronKo": "테**스**-료-와 **이**꾸라데스까?","korean": "수수료 얼마예요?",     "english": "What's the commission?", "context": "" },
+    { "section": "환전", "foreign": "細かいお金でお願いします。","pronIpa": "/komakai okane de oneɡaiɕimasɯ/","pronKo": "코**마**까이 오**카**네데 오**네**가이시마스","korean": "잔돈으로 부탁해요.","english": "In small bills, please.", "context": "" },
+
+    { "section": "ATM·결제", "foreign": "ATMはどこですか？",       "pronIpa": "/eːtiːemɯ wa doko desɯ ka/", "pronKo": "**에**-티-에무와 **도**꼬데스까?","korean": "ATM 어디예요?",       "english": "Where's an ATM?", "context": "" },
+    { "section": "ATM·결제", "foreign": "このカードは使えますか？","pronIpa": "/kono kaːdo wa tsɯkaemasɯ ka/","pronKo": "**코**노 **카**-도와 츠**까**에마스까?","korean": "이 카드 쓸 수 있어요?","english": "Can I use this card?", "context": "" },
+    { "section": "ATM·결제", "foreign": "現金しか使えません。",    "pronIpa": "/ɡeɴkiɴ ɕika tsɯkaemaseɴ/",   "pronKo": "**겡**낑시까 츠**까**에마셍",    "korean": "현금만 돼요.",         "english": "Cash only.", "context": "가게 안내" },
+    { "section": "ATM·결제", "foreign": "分割払いできますか？",     "pronIpa": "/bɯɴkatsɯbaɾai dekimasɯ ka/", "pronKo": "붕**카**츠바라이 데**끼**마스까?","korean": "할부 돼요?",           "english": "Can I pay in installments?", "context": "" },
+    { "section": "ATM·결제", "foreign": "領収書ください。",         "pronIpa": "/ɾʲoːɕɯːɕo kɯdasai/",         "pronKo": "**료**-슈-쇼 쿠**다**사이",     "korean": "영수증 주세요.",       "english": "Receipt, please.", "context": "" }
+  ]
+}

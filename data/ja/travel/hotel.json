@@ -1,0 +1,33 @@
+{
+  "id": "hotel",
+  "name": "호텔",
+  "lang": "ja",
+  "emoji": "🏨",
+  "sections": [
+    { "name": "체크인",   "emoji": "🎫" },
+    { "name": "방 요청",  "emoji": "🛏️" },
+    { "name": "서비스",   "emoji": "🛎️" },
+    { "name": "체크아웃", "emoji": "🧳" }
+  ],
+  "items": [
+    { "section": "체크인", "foreign": "チェックインお願いします。",  "pronIpa": "/tɕekkɯiɴ oneɡaiɕimasɯ/",       "pronKo": "**첵**꾸잉 오**네**가이시마스",      "korean": "체크인 부탁드려요.",     "english": "Check-in, please.", "context": "" },
+    { "section": "체크인", "foreign": "予約しています。",           "pronIpa": "/jojakɯ ɕite imasɯ/",           "pronKo": "요**야**꾸 시떼이마스",              "korean": "예약했어요.",           "english": "I have a reservation.", "context": "" },
+    { "section": "체크인", "foreign": "名前はキムです。",           "pronIpa": "/namae wa kimɯ desɯ/",          "pronKo": "나**마**에와 **키**무데스",          "korean": "이름은 김이에요.",        "english": "My name is Kim.", "context": "" },
+    { "section": "체크인", "foreign": "パスポートです。",          "pronIpa": "/pasɯpoːto desɯ/",              "pronKo": "파스**포**-또데스",                  "korean": "여권이에요.",           "english": "Here's my passport.", "context": "" },
+
+    { "section": "방 요청", "foreign": "静かな部屋がいいです。",     "pronIpa": "/ɕizɯka na heja ɡa iː desɯ/",   "pronKo": "시**즈**까나 **헤**야가 **이**-데스","korean": "조용한 방 좋아요.",     "english": "I'd like a quiet room.", "context": "" },
+    { "section": "방 요청", "foreign": "高い階でお願いします。",    "pronIpa": "/takai kai de oneɡaiɕimasɯ/",   "pronKo": "타**카**이 카이데 오**네**가이시마스","korean": "높은 층으로 부탁해요.","english": "A higher floor, please.", "context": "" },
+    { "section": "방 요청", "foreign": "禁煙室でお願いします。",   "pronIpa": "/kiɴeɴɕitsɯ de oneɡaiɕimasɯ/",  "pronKo": "키**넨**시츠데 오**네**가이시마스",  "korean": "금연실로 부탁해요.",     "english": "Non-smoking, please.", "context": "" },
+    { "section": "방 요청", "foreign": "眺めがいい部屋はありますか？","pronIpa": "/naɡame ɡa iː heja wa aɾimasɯ ka/","pronKo": "나**가**메가 **이**- **헤**야와 **아**리마스까?","korean": "전망 좋은 방 있어요?","english": "Any room with a view?", "context": "" },
+
+    { "section": "서비스", "foreign": "Wi-Fiのパスワードは？",     "pronIpa": "/waiɸai no pasɯwaːdo wa/",      "pronKo": "**와**이화이노 파스**와**-도와?",  "korean": "와이파이 비밀번호는요?","english": "What's the Wi-Fi password?", "context": "" },
+    { "section": "서비스", "foreign": "タオルをもう一枚ください。","pronIpa": "/taoɾɯ o moː itɕimai kɯdasai/", "pronKo": "**타**오루오 **모**- 이치**마**이 쿠**다**사이","korean": "수건 한 장 더 주세요.","english": "One more towel, please.", "context": "" },
+    { "section": "서비스", "foreign": "エアコンが壊れています。",  "pronIpa": "/eakoɴ ɡa kowaɾete imasɯ/",     "pronKo": "**에**아콩가 코**와**레떼이마스",   "korean": "에어컨이 고장 났어요.", "english": "The AC is broken.", "context": "" },
+    { "section": "서비스", "foreign": "朝食は何時からですか？",   "pronIpa": "/tɕoːɕokɯ wa naɴdʑi kaɾa desɯ ka/","pronKo": "**쵸**-쇼꾸와 **난**지까라데스까?","korean": "조식 몇 시부터예요?", "english": "What time does breakfast start?", "context": "" },
+
+    { "section": "체크아웃", "foreign": "チェックアウトお願いします。","pronIpa": "/tɕekkɯaɯto oneɡaiɕimasɯ/",   "pronKo": "**첵**꾸아우또 오**네**가이시마스",  "korean": "체크아웃 부탁해요.",    "english": "Check-out, please.", "context": "" },
+    { "section": "체크아웃", "foreign": "荷物を預けられますか？",   "pronIpa": "/nimotsɯ o azɯkeɾaɾemasɯ ka/", "pronKo": "니**모**츠오 아**즈**께라레마스까?","korean": "짐 맡길 수 있어요?",   "english": "Can I leave my luggage?", "context": "" },
+    { "section": "체크아웃", "foreign": "タクシーを呼んでください。","pronIpa": "/takɯɕiː o joɴde kɯdasai/",    "pronKo": "타꾸**시**-오 **욘**데 쿠**다**사이","korean": "택시 불러 주세요.",    "english": "Please call a taxi.", "context": "" },
+    { "section": "체크아웃", "foreign": "ありがとうございました。",  "pronIpa": "/aɾiɡatoː ɡozaimaɕita/",      "pronKo": "아리**가**또- 고**자**이마시따",     "korean": "감사합니다.",           "english": "Thank you.", "context": "" }
+  ]
+}

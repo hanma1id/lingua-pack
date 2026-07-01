@@ -1,0 +1,35 @@
+{
+  "id": "shopping",
+  "name": "쇼핑·가격",
+  "lang": "ja",
+  "emoji": "🛍️",
+  "sections": [
+    { "name": "구경·문의", "emoji": "👀" },
+    { "name": "가격",     "emoji": "💴" },
+    { "name": "사이즈·색", "emoji": "📏" },
+    { "name": "결제·마무리","emoji": "💳" }
+  ],
+  "items": [
+    { "section": "구경·문의", "foreign": "見ているだけです。",     "pronIpa": "/mite iɾɯ dake desɯ/",       "pronKo": "**미**떼이루 **다**께데스",  "korean": "구경 중이에요.",       "english": "Just looking.", "context": "" },
+    { "section": "구경·문의", "foreign": "これは何ですか？",       "pronIpa": "/koɾe wa naɴ desɯ ka/",      "pronKo": "**코**레와 **난**데스까?",   "korean": "이건 뭐예요?",         "english": "What is this?", "context": "" },
+    { "section": "구경·문의", "foreign": "触ってもいいですか？",    "pronIpa": "/sawattemo iː desɯ ka/",     "pronKo": "사**왓**떼모 **이**-데스까?", "korean": "만져봐도 돼요?",     "english": "Can I touch it?", "context": "" },
+    { "section": "구경·문의", "foreign": "他の色はありますか？",    "pronIpa": "/hoka no iɾo wa aɾimasɯ ka/","pronKo": "**호**까노 이로와 **아**리마스까?","korean": "다른 색 있어요?", "english": "Do you have other colors?", "context": "" },
+
+    { "section": "가격", "foreign": "いくらですか？",           "pronIpa": "/ikɯɾa desɯ ka/",        "pronKo": "**이**꾸라데스까?",       "korean": "얼마예요?",           "english": "How much is it?", "context": "" },
+    { "section": "가격", "foreign": "高いです。",              "pronIpa": "/takai desɯ/",            "pronKo": "타**카**이데스",           "korean": "비싸요.",             "english": "It's expensive.", "context": "" },
+    { "section": "가격", "foreign": "安いですね。",            "pronIpa": "/jasɯi desɯ ne/",         "pronKo": "야**스**이데스네",        "korean": "싸네요.",             "english": "That's cheap.", "context": "" },
+    { "section": "가격", "foreign": "少し安くしてください。",   "pronIpa": "/sɯkoɕi jasɯkɯ ɕite kɯdasai/","pronKo": "스**꼬**시 야**스**꾸 시**떼** 쿠**다**사이","korean": "조금 깎아 주세요.","english": "Can you make it cheaper?", "context": "시장 등" },
+    { "section": "가격", "foreign": "全部でいくらですか？",     "pronIpa": "/zeɴbɯ de ikɯɾa desɯ ka/","pronKo": "**젠**부데 **이**꾸라데스까?","korean": "다 해서 얼마예요?", "english": "How much altogether?", "context": "" },
+
+    { "section": "사이즈·색", "foreign": "サイズを見せてください。","pronIpa": "/saizɯ o misete kɯdasai/", "pronKo": "**사**이즈오 미**세**떼 쿠**다**사이","korean": "사이즈 보여주세요.","english": "Show me the size.", "context": "" },
+    { "section": "사이즈·색", "foreign": "試着できますか？",       "pronIpa": "/ɕitɕakɯ dekimasɯ ka/",    "pronKo": "시**챠**꾸 데**끼**마스까?", "korean": "입어봐도 돼요?",     "english": "Can I try it on?", "context": "" },
+    { "section": "사이즈·색", "foreign": "少し大きいです。",       "pronIpa": "/sɯkoɕi oːkiː desɯ/",      "pronKo": "스**꼬**시 **오**-끼-데스",  "korean": "조금 커요.",         "english": "A bit too big.", "context": "" },
+    { "section": "사이즈·색", "foreign": "小さいサイズはありますか？","pronIpa": "/tɕiːsai saizɯ wa aɾimasɯ ka/","pronKo": "**치**-사이 **사**이즈와 **아**리마스까?","korean": "작은 사이즈 있어요?","english": "Do you have a smaller size?", "context": "" },
+
+    { "section": "결제·마무리", "foreign": "これをください。",       "pronIpa": "/koɾe o kɯdasai/",         "pronKo": "**코**레오 쿠**다**사이",    "korean": "이걸 주세요.",         "english": "I'll take this.", "context": "" },
+    { "section": "결제·마무리", "foreign": "カードで払えますか？",   "pronIpa": "/kaːdo de haɾaemasɯ ka/",  "pronKo": "**카**-도데 하**라**에마스까?","korean": "카드로 낼 수 있어요?","english": "Can I pay by card?", "context": "" },
+    { "section": "결제·마무리", "foreign": "袋をください。",         "pronIpa": "/ɸɯkɯɾo o kɯdasai/",       "pronKo": "후**꾸**로오 쿠**다**사이",   "korean": "봉투 주세요.",         "english": "A bag, please.", "context": "" },
+    { "section": "결제·마무리", "foreign": "レシートをください。",   "pronIpa": "/ɾeɕiːto o kɯdasai/",      "pronKo": "레**시**-또오 쿠**다**사이",  "korean": "영수증 주세요.",       "english": "Receipt, please.", "context": "" },
+    { "section": "결제·마무리", "foreign": "ありがとうございました。","pronIpa": "/aɾiɡatoː ɡozaimaɕita/",  "pronKo": "아리**가**또- 고**자**이마시따","korean": "감사합니다.",       "english": "Thank you very much.", "context": "" }
+  ]
+}

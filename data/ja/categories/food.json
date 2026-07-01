@@ -1,0 +1,54 @@
+{
+  "id": "food",
+  "name": "음식",
+  "lang": "ja",
+  "emoji": "🍎",
+  "sections": [
+    { "name": "과일",       "emoji": "🍎" },
+    { "name": "채소",       "emoji": "🥕" },
+    { "name": "고기·생선",  "emoji": "🍖" },
+    { "name": "빵·밥·국수", "emoji": "🍞" },
+    { "name": "음료",       "emoji": "🥤" },
+    { "name": "간식",       "emoji": "🍪" }
+  ],
+  "items": [
+    { "section": "과일", "foreign": "りんご",       "pronIpa": "/ɾiŋɡo/",      "pronKo": "**링**고",     "korean": "사과",   "english": "apple" },
+    { "section": "과일", "foreign": "バナナ",       "pronIpa": "/banana/",     "pronKo": "바**나**나",   "korean": "바나나", "english": "banana" },
+    { "section": "과일", "foreign": "オレンジ",     "pronIpa": "/oɾeɴdʑi/",    "pronKo": "오**렌**지",   "korean": "오렌지", "english": "orange" },
+    { "section": "과일", "foreign": "ぶどう",       "pronIpa": "/bɯdoː/",      "pronKo": "부**도**-",    "korean": "포도",   "english": "grape" },
+    { "section": "과일", "foreign": "いちご",       "pronIpa": "/itɕiɡo/",     "pronKo": "이**치**고",   "korean": "딸기",   "english": "strawberry" },
+    { "section": "과일", "foreign": "すいか",       "pronIpa": "/sɯika/",      "pronKo": "스**이**까",   "korean": "수박",   "english": "watermelon" },
+    { "section": "과일", "foreign": "梨 (なし)",    "pronIpa": "/naɕi/",       "pronKo": "**나**시",     "korean": "배",     "english": "pear" },
+
+    { "section": "채소", "foreign": "にんじん",     "pronIpa": "/niɲdʑiɴ/",    "pronKo": "닌**징**",     "korean": "당근",     "english": "carrot" },
+    { "section": "채소", "foreign": "トマト",       "pronIpa": "/tomato/",     "pronKo": "**토**마또",   "korean": "토마토",   "english": "tomato" },
+    { "section": "채소", "foreign": "たまねぎ",     "pronIpa": "/tamaneɡi/",   "pronKo": "타마**네**기", "korean": "양파",     "english": "onion" },
+    { "section": "채소", "foreign": "じゃがいも",   "pronIpa": "/dʑaɡaimo/",   "pronKo": "쟈가**이**모", "korean": "감자",     "english": "potato" },
+    { "section": "채소", "foreign": "きゅうり",     "pronIpa": "/kʲɯːɾi/",     "pronKo": "**큐**-리",    "korean": "오이",     "english": "cucumber" },
+
+    { "section": "고기·생선", "foreign": "肉 (にく)",       "pronIpa": "/nikɯ/",     "pronKo": "**니**꾸",    "korean": "고기",        "english": "meat" },
+    { "section": "고기·생선", "foreign": "鶏肉 (とりにく)", "pronIpa": "/toɾinikɯ/", "pronKo": "토리**니**꾸","korean": "닭고기",       "english": "chicken" },
+    { "section": "고기·생선", "foreign": "牛肉 (ぎゅうにく)","pronIpa": "/ɡʲɯːnikɯ/","pronKo": "규-**니**꾸", "korean": "소고기",       "english": "beef" },
+    { "section": "고기·생선", "foreign": "豚肉 (ぶたにく)", "pronIpa": "/bɯtanikɯ/", "pronKo": "부타**니**꾸","korean": "돼지고기",     "english": "pork" },
+    { "section": "고기·생선", "foreign": "魚 (さかな)",     "pronIpa": "/sakana/",   "pronKo": "사**까**나",  "korean": "생선",         "english": "fish" },
+    { "section": "고기·생선", "foreign": "卵 (たまご)",     "pronIpa": "/tamaɡo/",   "pronKo": "타**마**고",  "korean": "달걀",         "english": "egg" },
+
+    { "section": "빵·밥·국수", "foreign": "パン",         "pronIpa": "/paɴ/",       "pronKo": "**팡**",       "korean": "빵",     "english": "bread" },
+    { "section": "빵·밥·국수", "foreign": "ご飯 (ごはん)","pronIpa": "/ɡohaɴ/",     "pronKo": "고**항**",     "korean": "밥",     "english": "rice" },
+    { "section": "빵·밥·국수", "foreign": "麺 (めん)",   "pronIpa": "/meɴ/",       "pronKo": "**멩**",       "korean": "면",     "english": "noodles" },
+    { "section": "빵·밥·국수", "foreign": "ラーメン",    "pronIpa": "/ɾaːmeɴ/",    "pronKo": "**라**-멩",    "korean": "라멘",   "english": "ramen" },
+    { "section": "빵·밥·국수", "foreign": "寿司 (すし)", "pronIpa": "/sɯɕi/",      "pronKo": "**스**시",     "korean": "초밥",   "english": "sushi" },
+
+    { "section": "음료", "foreign": "水 (みず)",      "pronIpa": "/midzɯ/",   "pronKo": "**미**즈",     "korean": "물",     "english": "water" },
+    { "section": "음료", "foreign": "牛乳 (ぎゅうにゅう)","pronIpa": "/ɡʲɯːɲɯː/", "pronKo": "**규**-뉴-",  "korean": "우유",   "english": "milk" },
+    { "section": "음료", "foreign": "ジュース",       "pronIpa": "/dʑɯːsɯ/",  "pronKo": "**쥬**-스",    "korean": "주스",    "english": "juice" },
+    { "section": "음료", "foreign": "お茶 (おちゃ)",  "pronIpa": "/otɕa/",    "pronKo": "오**차**",     "korean": "차",      "english": "tea" },
+    { "section": "음료", "foreign": "コーヒー",       "pronIpa": "/koːhiː/",  "pronKo": "**코**-히-",   "korean": "커피",    "english": "coffee" },
+
+    { "section": "간식", "foreign": "お菓子 (おかし)","pronIpa": "/okaɕi/",     "pronKo": "오**카**시",   "korean": "과자",        "english": "sweets" },
+    { "section": "간식", "foreign": "チョコレート",   "pronIpa": "/tɕokoɾeːto/","pronKo": "쵸꼬**레**-또","korean": "초콜릿",       "english": "chocolate" },
+    { "section": "간식", "foreign": "アイスクリーム", "pronIpa": "/aisɯkɯɾiːmɯ/","pronKo": "아이스**크**리-무","korean": "아이스크림",  "english": "ice cream" },
+    { "section": "간식", "foreign": "ケーキ",         "pronIpa": "/keːki/",     "pronKo": "**케**-끼",    "korean": "케이크",       "english": "cake" },
+    { "section": "간식", "foreign": "クッキー",       "pronIpa": "/kɯkkiː/",    "pronKo": "**쿡**끼-",    "korean": "쿠키",         "english": "cookie" }
+  ]
+}
