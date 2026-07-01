@@ -407,9 +407,13 @@ a { color: var(--accent); text-decoration: none; }
 }
 .footer-back-link:hover { background: var(--accent); color: #fff; }
 
+/* 카드 그리드 — 넓은 화면 여러 열, 좁으면 자동 한 열
+   vocab-roots 패턴 참고 (minmax + auto-fill) */
 .item-list {
   display: grid;
-  gap: 10px;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
 }
 .item {
   background: var(--bg-card);
