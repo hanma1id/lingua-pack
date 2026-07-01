@@ -141,15 +141,32 @@ function bindItemEvents() {
   });
 }
 
-// items에 section 필드 있으면 그룹핑, 없으면 그대로 한 그룹
-function groupBySection(items) {
+// sections 메타(이모지·순서 명시) + items 그룹핑
+function groupBySection(items, sectionsMeta) {
   const groups = new Map();
   items.forEach((it, i) => {
     const key = it.section || "";
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push({ ...it, _idx: i });
   });
-  return [...groups.entries()];  // [[sectionName, items], ...]
+  // sections 메타가 있으면 그 순서·이모지 사용
+  if (Array.isArray(sectionsMeta) && sectionsMeta.length) {
+    const meta = new Map(sectionsMeta.map((s) => [s.name, s]));
+    // meta 순서대로, 그 뒤 meta에 없는 그룹 붙임
+    const seen = new Set();
+    const ordered = [];
+    for (const s of sectionsMeta) {
+      if (groups.has(s.name)) {
+        ordered.push([s.name, groups.get(s.name), s.emoji || ""]);
+        seen.add(s.name);
+      }
+    }
+    for (const [name, list] of groups) {
+      if (!seen.has(name)) ordered.push([name, list, ""]);
+    }
+    return ordered;
+  }
+  return [...groups.entries()].map(([n, l]) => [n, l, ""]);
 }
 
 function renderCardHtml(it, i) {
@@ -182,16 +199,23 @@ function renderCardHtml(it, i) {
 
 function renderList(items) {
   $area.className = "item-list";
-  const groups = groupBySection(items);
-  // 섹션 하나뿐이면 그룹 헤더 없이 카드만 (기존 flat 데이터 호환)
+  const groups = groupBySection(items, _data.sections);
   if (groups.length === 1 && groups[0][0] === "") {
     $area.innerHTML = items.map((it, i) => renderCardHtml(it, i)).join("");
   } else {
-    $area.innerHTML = groups.map(([sectionName, groupItems]) => `
-      ${sectionName ? `<h2 class="section-header">${esc(sectionName)}</h2>` : ""}
-      <div class="section-group">
-        ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
-      </div>
+    // 섹션마다 다른 색상 (파스텔 팔레트 8종 순환)
+    $area.innerHTML = groups.map(([sectionName, groupItems, emoji], gIdx) => `
+      <section class="section-box" data-color="${gIdx % 8}">
+        ${sectionName ? `
+          <h2 class="section-header">
+            ${emoji ? `<span class="section-emoji">${emoji}</span>` : ""}
+            <span>${esc(sectionName)}</span>
+          </h2>
+        ` : ""}
+        <div class="section-group">
+          ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
+        </div>
+      </section>
     `).join("");
   }
 

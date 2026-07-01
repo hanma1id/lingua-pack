@@ -510,27 +510,46 @@ a { color: var(--accent); text-decoration: none; }
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: start;
 }
-/* 섹션 그룹핑 사용 시 — item-list가 flat 그리드가 아니라 세로 흐름 */
-.item-list:has(.section-group) {
+/* 섹션 그룹핑 사용 시 — item-list는 세로 흐름 */
+.item-list:has(.section-box) {
   display: block;
 }
-.section-header {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  margin: 20px 0 10px;
-  padding-bottom: 4px;
-  border-bottom: 2px solid var(--accent-soft);
-  letter-spacing: 0.5px;
+
+/* 섹션 박스 — 파스텔 배경, 왼쪽 굵은 컬러 보더로 구분 */
+.section-box {
+  padding: 16px 18px 18px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--section-accent, var(--accent));
+  background: var(--section-bg, var(--bg-soft));
 }
-.section-header:first-child { margin-top: 0; }
+.section-header {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--section-accent, var(--ink));
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+}
+.section-emoji { font-size: 1.3em; line-height: 1; }
 .section-group {
   display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   align-items: start;
-  margin-bottom: 24px;
 }
+
+/* 파스텔 팔레트 8종 — 배경과 강조색 쌍 */
+.section-box[data-color="0"] { --section-bg: #ffe8e0; --section-accent: #c85a3a; }  /* 산호 */
+.section-box[data-color="1"] { --section-bg: #dcf3e0; --section-accent: #3a8a5c; }  /* 민트 */
+.section-box[data-color="2"] { --section-bg: #ffe8d1; --section-accent: #b57837; }  /* 살구 */
+.section-box[data-color="3"] { --section-bg: #d9ecfa; --section-accent: #3d6ea7; }  /* 하늘 */
+.section-box[data-color="4"] { --section-bg: #fff5d1; --section-accent: #a68433; }  /* 크림 */
+.section-box[data-color="5"] { --section-bg: #ecd9f7; --section-accent: #7a4ca3; }  /* 라일락 */
+.section-box[data-color="6"] { --section-bg: #d1f0eb; --section-accent: #2e8b7f; }  /* 청록 */
+.section-box[data-color="7"] { --section-bg: #ffe0ec; --section-accent: #b03a70; }  /* 핑크 */
 .item {
   background: var(--bg-card);
   border: 1px solid var(--line);

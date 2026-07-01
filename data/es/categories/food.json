@@ -3,6 +3,14 @@
   "name": "음식",
   "lang": "es",
   "emoji": "🍎",
+  "sections": [
+    { "name": "과일",      "emoji": "🍎" },
+    { "name": "채소",      "emoji": "🥕" },
+    { "name": "고기·생선",  "emoji": "🍖" },
+    { "name": "음료",      "emoji": "🥤" },
+    { "name": "빵·유제품",  "emoji": "🍞" },
+    { "name": "조미료·기타", "emoji": "🧂" }
+  ],
   "items": [
     { "section": "과일", "foreign": "manzana",   "pronIpa": "/manˈθana/",   "pronKo": "만**싸**나",   "korean": "사과",         "english": "apple" },
     { "section": "과일", "foreign": "plátano",   "pronIpa": "/ˈplatano/",    "pronKo": "**쁠라**따노",  "korean": "바나나",        "english": "banana" },

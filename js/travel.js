@@ -130,14 +130,28 @@ function bindItemEvents() {
   });
 }
 
-function groupBySection(items) {
+function groupBySection(items, sectionsMeta) {
   const groups = new Map();
   items.forEach((it, i) => {
     const key = it.section || "";
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push({ ...it, _idx: i });
   });
-  return [...groups.entries()];
+  if (Array.isArray(sectionsMeta) && sectionsMeta.length) {
+    const seen = new Set();
+    const ordered = [];
+    for (const s of sectionsMeta) {
+      if (groups.has(s.name)) {
+        ordered.push([s.name, groups.get(s.name), s.emoji || ""]);
+        seen.add(s.name);
+      }
+    }
+    for (const [name, list] of groups) {
+      if (!seen.has(name)) ordered.push([name, list, ""]);
+    }
+    return ordered;
+  }
+  return [...groups.entries()].map(([n, l]) => [n, l, ""]);
 }
 
 function renderCardHtml(it, i) {
@@ -170,15 +184,22 @@ function renderCardHtml(it, i) {
 
 function renderList(items) {
   $area.className = "item-list";
-  const groups = groupBySection(items);
+  const groups = groupBySection(items, _data.sections);
   if (groups.length === 1 && groups[0][0] === "") {
     $area.innerHTML = items.map((it, i) => renderCardHtml(it, i)).join("");
   } else {
-    $area.innerHTML = groups.map(([sectionName, groupItems]) => `
-      ${sectionName ? `<h2 class="section-header">${esc(sectionName)}</h2>` : ""}
-      <div class="section-group">
-        ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
-      </div>
+    $area.innerHTML = groups.map(([sectionName, groupItems, emoji], gIdx) => `
+      <section class="section-box" data-color="${gIdx % 8}">
+        ${sectionName ? `
+          <h2 class="section-header">
+            ${emoji ? `<span class="section-emoji">${emoji}</span>` : ""}
+            <span>${esc(sectionName)}</span>
+          </h2>
+        ` : ""}
+        <div class="section-group">
+          ${groupItems.map((it) => renderCardHtml(it, it._idx)).join("")}
+        </div>
+      </section>
     `).join("");
   }
 
