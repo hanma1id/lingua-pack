@@ -1,11 +1,10 @@
 /* ============================================================
  * category.js — 카테고리 상세 (필수 단어)
  * ------------------------------------------------------------
- *   - 리스트 모드만 (플래시카드 제거)
- *   - 각 카드 안에 속도 슬라이더 (0.4~1.0) — 전역 동기
- *   - 한국어 발음 + IPA를 한 줄에
- *   - 🔊 단일 재생 / 🔁 반복 따라말
- *   - 페이지 하단 "← 카테고리 목록으로"
+ *  vocab-roots 패턴 참고
+ *   - 카드 접힘/펼침 — 헤드 클릭 시 body 토글
+ *   - 헤더에 전역 속도 슬라이더
+ *   - 각 카드에 🔊 🔁 (헤드 안, 접혀도 조작 가능)
  * ============================================================ */
 
 import {
@@ -29,6 +28,8 @@ const $loading = document.getElementById("loading");
 const $footer = document.getElementById("footerArea");
 const $backBtn = document.getElementById("backBtn");
 const $langSelect = document.getElementById("langSelect");
+const $rateSlider = document.getElementById("rateSlider");
+const $rateValue = document.getElementById("rateValue");
 
 let _data = null;
 let _ttsLang = "en-US";
@@ -56,6 +57,18 @@ function renderLangSelect() {
   });
 }
 
+/* ----- 헤더 속도 슬라이더 ----- */
+function bindHeaderRate() {
+  const r = getRate();
+  $rateSlider.value = String(r);
+  $rateValue.textContent = `${r.toFixed(1)}x`;
+  $rateSlider.addEventListener("input", (e) => {
+    const v = parseFloat(e.target.value);
+    setRate(v);
+    $rateValue.textContent = `${v.toFixed(1)}x`;
+  });
+}
+
 function esc(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -64,8 +77,10 @@ function esc(s) {
 /* ----- 카드 이벤트 ----- */
 function bindItemEvents() {
   $area.addEventListener("click", (e) => {
+    // 🔊 재생 — 카드 접힘/펼침과 별개
     const playBtn = e.target.closest("[data-action='play']");
     if (playBtn) {
+      e.stopPropagation();
       const idx = parseInt(playBtn.dataset.idx, 10);
       const item = _data.items[idx];
       const card = playBtn.closest(".item");
@@ -73,8 +88,10 @@ function bindItemEvents() {
       playOnce({ text: item.foreign, ttsLang: _ttsLang, progressEl: progEl });
       return;
     }
+    // 🔁 반복
     const repeatBtn = e.target.closest("[data-action='repeat']");
     if (repeatBtn) {
+      e.stopPropagation();
       const idx = parseInt(repeatBtn.dataset.idx, 10);
       const item = _data.items[idx];
       const card = repeatBtn.closest(".item");
@@ -93,53 +110,55 @@ function bindItemEvents() {
         ttsLang: _ttsLang,
         progressEl: progEl,
       });
+      return;
     }
-  });
-
-  // 카드 안 속도 슬라이더 — 한 곳 움직이면 모두 동기
-  $area.addEventListener("input", (e) => {
-    const sl = e.target.closest("input[data-action='rate-slider']");
-    if (!sl) return;
-    setRate(parseFloat(sl.value));
-  });
-  // 다른 슬라이더도 새 값으로 갱신
-  document.addEventListener("rate-changed", (e) => {
-    const r = e.detail;
-    $area.querySelectorAll("input[data-action='rate-slider']").forEach((sl) => {
-      sl.value = String(r);
-      const lbl = sl.parentElement.querySelector(".rate-value");
-      if (lbl) lbl.textContent = `${r.toFixed(1)}x`;
-    });
+    // 헤드 클릭 — 접힘/펼침 토글
+    const head = e.target.closest("[data-action='toggle']");
+    if (!head) return;
+    const card = head.closest(".item");
+    const expanded = card.getAttribute("aria-expanded") === "true";
+    card.setAttribute("aria-expanded", expanded ? "false" : "true");
   });
 }
 
 function renderList(items) {
   $area.className = "item-list";
-  const r = getRate();
   $area.innerHTML = items.map((it, i) => `
-    <div class="item" data-idx="${i}">
-      <div class="item-foreign">
+    <div class="item" aria-expanded="false" data-idx="${i}">
+      <!-- 헤드 — 접혔을 때도 보이는 부분 -->
+      <div class="item-head" data-action="toggle" role="button" tabindex="0">
         <span class="item-foreign-text">${esc(it.foreign)}</span>
         <span class="item-actions">
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
-          <span class="item-rate-inline">
-            <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
-            <span class="rate-value">${r.toFixed(1)}x</span>
-          </span>
         </span>
+        <span class="item-chevron" aria-hidden="true">⌄</span>
       </div>
+      <!-- 진행 바 — 접혔을 때도 재생 상태 보임 -->
       <div class="item-progress"><div class="fill"></div></div>
-      <div class="item-pron">
-        ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
-        ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
+      <!-- 본문 — 펼침 상태에서만 -->
+      <div class="item-body">
+        <div class="item-pron">
+          ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
+          ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
+        </div>
+        <div class="item-meaning">
+          <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
+        </div>
+        ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
       </div>
-      <div class="item-meaning">
-        <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
-      </div>
-      ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
     </div>
   `).join("");
+
+  // 키보드 접근성 — Enter/Space로 토글
+  $area.querySelectorAll(".item-head").forEach((h) => {
+    h.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        h.click();
+      }
+    });
+  });
 }
 
 function renderFooter() {
@@ -165,6 +184,7 @@ function render() {
   }
   try {
     bindItemEvents();
+    bindHeaderRate();
     const [langs, data] = await Promise.all([loadLanguages(), loadCategory(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";

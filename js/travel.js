@@ -23,6 +23,8 @@ const $loading = document.getElementById("loading");
 const $footer = document.getElementById("footerArea");
 const $backBtn = document.getElementById("backBtn");
 const $langSelect = document.getElementById("langSelect");
+const $rateSlider = document.getElementById("rateSlider");
+const $rateValue = document.getElementById("rateValue");
 
 let _data = null;
 let _ttsLang = "en-US";
@@ -50,6 +52,17 @@ function renderLangSelect() {
   });
 }
 
+function bindHeaderRate() {
+  const r = getRate();
+  $rateSlider.value = String(r);
+  $rateValue.textContent = `${r.toFixed(1)}x`;
+  $rateSlider.addEventListener("input", (e) => {
+    const v = parseFloat(e.target.value);
+    setRate(v);
+    $rateValue.textContent = `${v.toFixed(1)}x`;
+  });
+}
+
 function esc(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -59,6 +72,7 @@ function bindItemEvents() {
   $area.addEventListener("click", (e) => {
     const playBtn = e.target.closest("[data-action='play']");
     if (playBtn) {
+      e.stopPropagation();
       const idx = parseInt(playBtn.dataset.idx, 10);
       const item = _data.items[idx];
       const card = playBtn.closest(".item");
@@ -68,6 +82,7 @@ function bindItemEvents() {
     }
     const repeatBtn = e.target.closest("[data-action='repeat']");
     if (repeatBtn) {
+      e.stopPropagation();
       const idx = parseInt(repeatBtn.dataset.idx, 10);
       const item = _data.items[idx];
       const card = repeatBtn.closest(".item");
@@ -86,51 +101,50 @@ function bindItemEvents() {
         ttsLang: _ttsLang,
         progressEl: progEl,
       });
+      return;
     }
-  });
-
-  $area.addEventListener("input", (e) => {
-    const sl = e.target.closest("input[data-action='rate-slider']");
-    if (!sl) return;
-    setRate(parseFloat(sl.value));
-  });
-  document.addEventListener("rate-changed", (e) => {
-    const r = e.detail;
-    $area.querySelectorAll("input[data-action='rate-slider']").forEach((sl) => {
-      sl.value = String(r);
-      const lbl = sl.parentElement.querySelector(".rate-value");
-      if (lbl) lbl.textContent = `${r.toFixed(1)}x`;
-    });
+    const head = e.target.closest("[data-action='toggle']");
+    if (!head) return;
+    const card = head.closest(".item");
+    const expanded = card.getAttribute("aria-expanded") === "true";
+    card.setAttribute("aria-expanded", expanded ? "false" : "true");
   });
 }
 
 function renderList(items) {
   $area.className = "item-list";
-  const r = getRate();
   $area.innerHTML = items.map((it, i) => `
-    <div class="item" data-idx="${i}">
-      <div class="item-foreign">
+    <div class="item" aria-expanded="false" data-idx="${i}">
+      <div class="item-head" data-action="toggle" role="button" tabindex="0">
         <span class="item-foreign-text">${esc(it.foreign)}</span>
         <span class="item-actions">
           <button class="item-tts" type="button" data-action="play" data-idx="${i}" aria-label="발음 듣기">🔊</button>
           <button class="item-tts repeat-btn" type="button" data-action="repeat" data-idx="${i}" aria-label="반복 따라 말하기" title="반복 따라 말하기">🔁</button>
-          <span class="item-rate-inline">
-            <input type="range" min="0.4" max="1.0" step="0.1" value="${r}" data-action="rate-slider" aria-label="발음 속도" />
-            <span class="rate-value">${r.toFixed(1)}x</span>
-          </span>
         </span>
+        <span class="item-chevron" aria-hidden="true">⌄</span>
       </div>
       <div class="item-progress"><div class="fill"></div></div>
-      <div class="item-pron">
-        ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
-        ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
+      <div class="item-body">
+        <div class="item-pron">
+          ${it.pronKo ? `<span class="item-pron-ko">${renderPronKo(it.pronKo)}</span>` : ""}
+          ${it.pronIpa ? `<span class="item-pron-ipa">${esc(it.pronIpa)}</span>` : ""}
+        </div>
+        <div class="item-meaning">
+          <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
+        </div>
+        ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
       </div>
-      <div class="item-meaning">
-        <span class="item-korean">${esc(it.korean)}</span>${it.english ? `<span class="item-english">, ${esc(it.english)}</span>` : ""}
-      </div>
-      ${it.context ? `<div class="item-context">${esc(it.context)}</div>` : ""}
     </div>
   `).join("");
+
+  $area.querySelectorAll(".item-head").forEach((h) => {
+    h.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        h.click();
+      }
+    });
+  });
 }
 
 function renderFooter() {
@@ -156,6 +170,7 @@ function render() {
   }
   try {
     bindItemEvents();
+    bindHeaderRate();
     const [langs, data] = await Promise.all([loadLanguages(), loadTravel(lang, id)]);
     const langMeta = langs.find((l) => l.id === lang);
     _ttsLang = langMeta?.ttsLang || "en-US";
