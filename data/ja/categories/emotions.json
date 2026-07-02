@@ -27,9 +27,9 @@
     { "section": "성격", "foreign": "やさしい","pronIpa": "/jasaɕiː/",   "pronKo": "야**사**시-", "korean": "친절하다",   "english": "kind" },
     { "section": "성격", "foreign": "げんき",   "pronIpa": "/ɡeɴki/",      "pronKo": "**겡**끼",   "korean": "활발하다",    "english": "energetic" },
     { "section": "성격", "foreign": "しずか",   "pronIpa": "/ɕizɯka/",     "pronKo": "시**즈**까", "korean": "조용하다",    "english": "quiet" },
-    { "section": "성격", "foreign": "面白いおもしろいひと","pronIpa": "/omoɕiɾoi hito/","pronKo": "오모**시**로이 **히**또","korean": "재밌는 사람", "english": "funny person" },
+    { "section": "성격", "foreign": "おもしろいひと","pronIpa": "/omoɕiɾoi hito/","pronKo": "오모**시**로이 **히**또","korean": "재밌는 사람", "english": "funny person" },
     { "section": "성격", "foreign": "まじめ", "pronIpa": "/madʑime/",    "pronKo": "**마**지메",  "korean": "성실하다",    "english": "serious" },
-    { "section": "성격", "foreign": "頭がいい",        "pronIpa": "/atama ɡa iː/","pronKo": "아**타**마가 **이**-","korean": "머리 좋다","english": "smart" },
+    { "section": "성격", "foreign": "あたまがいい",        "pronIpa": "/atama ɡa iː/","pronKo": "아**타**마가 **이**-","korean": "머리 좋다","english": "smart" },
 
     { "section": "표현", "foreign": "今日は嬉しいです。",   "pronIpa": "/kʲoː wa ɯɾeɕiː desɯ/",     "pronKo": "**쿄**-와 우**레**시-데스",  "korean": "오늘 기뻐요.",         "english": "I'm happy today." },
     { "section": "표현", "foreign": "少し悲しいです。",     "pronIpa": "/sɯkoɕi kanaɕiː desɯ/",     "pronKo": "스**꼬**시 카**나**시-데스", "korean": "조금 슬퍼요.",         "english": "I'm a bit sad." },

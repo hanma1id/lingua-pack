@@ -29,7 +29,7 @@
     { "section": "거실 가구", "foreign": "ドア",           "pronIpa": "/doa/",         "pronKo": "**도**아",     "korean": "문",       "english": "door" },
 
     { "section": "부엌·욕실", "foreign": "れいぞうこ","pronIpa": "/ɾeːzoːko/","pronKo": "**레**-조-꼬","korean": "냉장고",  "english": "fridge" },
-    { "section": "부엌·욕실", "foreign": "電子レンジ",     "pronIpa": "/deɴɕiɾeɴdʑi/", "pronKo": "덴시**렌**지", "korean": "전자레인지","english": "microwave" },
+    { "section": "부엌·욕실", "foreign": "でんしレンジ",     "pronIpa": "/deɴɕiɾeɴdʑi/", "pronKo": "덴시**렌**지", "korean": "전자레인지","english": "microwave" },
     { "section": "부엌·욕실", "foreign": "さら",      "pronIpa": "/saɾa/",       "pronKo": "**사**라",     "korean": "접시",     "english": "plate" },
     { "section": "부엌·욕실", "foreign": "コップ",          "pronIpa": "/koppɯ/",      "pronKo": "**콥**뿌",     "korean": "컵",       "english": "cup" },
     { "section": "부엌·욕실", "foreign": "タオル",          "pronIpa": "/taoɾɯ/",      "pronKo": "**타**오루",   "korean": "수건",     "english": "towel" },
