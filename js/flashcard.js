@@ -10,6 +10,7 @@
  * ============================================================ */
 
 import { speak } from "./tts.js";
+import { getRate } from "./practice.js";
 import { renderPronKo } from "./pron-render.js";
 
 function esc(s) {
@@ -21,7 +22,7 @@ function esc(s) {
 export function createFlashcard({ container, items, ttsLang = "en-US" }) {
   if (!items || !items.length) {
     container.innerHTML = `<div class="empty">표시할 항목이 없습니다</div>`;
-    return;
+    return () => {};
   }
 
   let idx = 0;
@@ -78,7 +79,7 @@ export function createFlashcard({ container, items, ttsLang = "en-US" }) {
   // 카드 자체 클릭/탭 — 뒤집기 (단, TTS 버튼은 제외)
   $card.addEventListener("click", (e) => {
     if (e.target.closest("[data-action='tts']")) {
-      speak(items[idx].foreign, ttsLang);
+      speak(items[idx].foreign, ttsLang, { rate: getRate() });
       return;
     }
     $card.classList.toggle("flipped");
@@ -88,12 +89,13 @@ export function createFlashcard({ container, items, ttsLang = "en-US" }) {
   $prev.addEventListener("click", () => go(-1));
   $next.addEventListener("click", () => go(1));
 
-  // 키보드 화살표
-  document.addEventListener("keydown", (e) => {
+  // 키보드 화살표 — destroy()에서 해제 (모드 전환 시 중첩 방지)
+  const onKey = (e) => {
     if (e.key === "ArrowLeft") go(-1);
     if (e.key === "ArrowRight") go(1);
     if (e.key === " " || e.key === "Enter") { e.preventDefault(); $card.classList.toggle("flipped"); }
-  });
+  };
+  document.addEventListener("keydown", onKey);
 
   // 터치 스와이프
   let touchStartX = 0, touchStartY = 0, touching = false;
@@ -114,4 +116,7 @@ export function createFlashcard({ container, items, ttsLang = "en-US" }) {
   });
 
   renderCard();
+
+  // 목록 모드로 돌아갈 때 호출 — 키보드 리스너 해제
+  return () => document.removeEventListener("keydown", onKey);
 }

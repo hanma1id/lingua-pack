@@ -15,6 +15,7 @@ import { renderPronKo } from "./pron-render.js";
 import {
   getRate, setRate, startRepeat, stopRepeat, playOnce,
 } from "./practice.js";
+import { createFlashcard } from "./flashcard.js";
 
 registerServiceWorker();
 
@@ -32,13 +33,21 @@ const $rateSlider = document.getElementById("rateSlider");
 const $rateValue = document.getElementById("rateValue");
 const $flipBtn = document.getElementById("flipBtn");
 const $flipLabel = document.getElementById("flipLabel");
+const $modeBar = document.getElementById("modeBar");
 
 const LS_FLIP = "lingua-pack-flip";
+const LS_MODE = "lingua-pack-view-mode";
 
 let _data = null;
 let _ttsLang = "en-US";
 let _activeRepeatId = null;
 let _langs = [];
+let _flipped = false;
+let _flashDestroy = null;
+let _mode = (() => {
+  try { return localStorage.getItem(LS_MODE) === "flash" ? "flash" : "list"; }
+  catch { return "list"; }
+})();
 
 function goBackToList() {
   stopRepeat();
@@ -68,6 +77,7 @@ function renderLangSelect() {
 
 /* ----- 반전 토글 — 카드 헤드 원문/뜻 전환 ----- */
 function applyFlip(flipped) {
+  _flipped = flipped;
   $area.classList.toggle("flipped", flipped);
   $flipBtn.classList.toggle("active", flipped);
   $flipLabel.textContent = flipped ? "뜻" : "원문";
@@ -203,7 +213,7 @@ function renderCardHtml(it, i) {
 }
 
 function renderList(items) {
-  $area.className = "item-list";
+  $area.className = "item-list" + (_flipped ? " flipped" : "");
   const groups = groupBySection(items, _data.sections);
   if (groups.length === 1 && groups[0][0] === "") {
     $area.innerHTML = items.map((it, i) => renderCardHtml(it, i)).join("");
@@ -242,11 +252,35 @@ function renderFooter() {
   `;
 }
 
+/* ----- 보기 모드 (목록 / 플래시카드) ----- */
+function renderModeBar() {
+  $modeBar.innerHTML = `
+    <button type="button" data-mode="list" class="${_mode === "list" ? "active" : ""}" role="tab" aria-selected="${_mode === "list"}">📋 목록</button>
+    <button type="button" data-mode="flash" class="${_mode === "flash" ? "active" : ""}" role="tab" aria-selected="${_mode === "flash"}">🃏 카드 넘기기</button>
+  `;
+}
+$modeBar?.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-mode]");
+  if (!btn || btn.dataset.mode === _mode) return;
+  _mode = btn.dataset.mode;
+  try { localStorage.setItem(LS_MODE, _mode); } catch {}
+  render();
+});
+
 function render() {
   if (!_data) return;
   stopRepeat();
   _activeRepeatId = null;
-  renderList(_data.items);
+  if (_flashDestroy) { _flashDestroy(); _flashDestroy = null; }
+  renderModeBar();
+  // 원문/뜻 반전은 목록 모드 전용 — 카드 모드에선 탭으로 뒤집으므로 숨김
+  $flipBtn.style.display = _mode === "flash" ? "none" : "";
+  if (_mode === "flash") {
+    $area.className = "flash-area";
+    _flashDestroy = createFlashcard({ container: $area, items: _data.items, ttsLang: _ttsLang });
+  } else {
+    renderList(_data.items);
+  }
   renderFooter();
 }
 

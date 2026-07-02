@@ -277,6 +277,11 @@ a { color: var(--accent); text-decoration: none; }
   background: var(--accent);
   color: #fff;
 }
+/* 좁은 화면 — 탭 3개(알파벳/필수단어/여행회화)가 한 줄에 들어가게 */
+@media (max-width: 400px) {
+  .tab-bar { gap: 4px; }
+  .tab-bar button { padding: 10px 13px; font-size: 0.9rem; }
+}
 
 .section-title {
   font-size: 0.95rem;
@@ -322,14 +327,20 @@ a { color: var(--accent); text-decoration: none; }
 .view-mode-bar {
   display: flex;
   gap: 8px;
+  justify-content: center;
+  margin: 0 0 16px;
 }
+.view-mode-bar:empty { display: none; }
 .view-mode-bar button {
-  padding: 6px 14px;
+  padding: 8px 18px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--ink-soft);
   background: var(--bg-card);
+  min-height: 40px;
+  cursor: pointer;
 }
 .view-mode-bar button.active {
   background: var(--accent);

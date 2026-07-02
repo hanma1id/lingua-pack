@@ -7,7 +7,7 @@
  *  CACHE_VERSION을 변경할 때마다 sync_index.py가 자동 갱신
  * ============================================================ */
 
-const CACHE_VERSION = "lingua-pack-v30-2026-07-02";
+const CACHE_VERSION = "lingua-pack-v31-2026-07-02";
 
 const CORE_ASSETS = [
   "./",
